@@ -1,0 +1,242 @@
+set_location_hint "\Counter_1:CounterUDB:reload\" 2 5 0 0
+set_location_hint "\Counter_1:CounterUDB:overflow_reg_i\" 2 5 0 1
+set_location_hint "\Counter_1:CounterUDB:status_2\" 2 5 0 2
+set_location_hint "\Counter_1:CounterUDB:underflow_reg_i\" 2 5 0 3
+set_location_hint "\Counter_1:CounterUDB:status_3\" 2 5 1 0
+set_location_hint "\Counter_1:CounterUDB:count_enable\" 2 5 1 1
+set_location_hint "\Counter_1:CounterUDB:count_up\" 2 5 1 2
+set_location_hint "\Counter_1:CounterUDB:count_down\" 2 5 1 3
+set_location_hint "\Counter_1:CounterUDB:sC16:counterdp:u0\" 2 5 2 
+set_location_hint "\Counter_1:CounterUDB:sSTSReg:rstSts:stsreg\" 2 5 4 
+set_location_hint "\Counter_1:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 5 6
+set_location_hint "\Counter_1:CounterUDB:prevCompare\" 3 5 0 0
+set_location_hint "\Counter_1:CounterUDB:status_0\" 3 5 0 1
+set_location_hint "\Counter_1:CounterUDB:dp_dir\" 3 5 0 2
+set_location_hint "\Counter_1:CounterUDB:dwncnt_stored\" 3 5 0 3
+set_location_hint "\Counter_1:CounterUDB:upcnt_stored\" 3 5 1 0
+set_location_hint "\EdgeDetect_1:last\" 3 5 1 1
+set_location_hint "\UART_1:BUART:rx_status_0\" 3 5 1 2
+set_location_hint "\UART_1:BUART:rx_status_1\" 3 5 1 3
+set_location_hint "\Counter_1:CounterUDB:sC16:counterdp:u1\" 3 5 2 
+set_location_hint "Encoder_1_A(0)_SYNC" 3 5 5 -1
+set_location_hint "Encoder_1_B(0)_SYNC" 3 5 5 -1
+set_location_hint "\Counter_2:CounterUDB:reload\" 3 4 0 0
+set_location_hint "\Counter_2:CounterUDB:overflow_reg_i\" 3 4 0 1
+set_location_hint "\Counter_2:CounterUDB:status_2\" 3 4 0 2
+set_location_hint "\Counter_2:CounterUDB:underflow_reg_i\" 3 4 0 3
+set_location_hint "\Counter_2:CounterUDB:status_3\" 3 4 1 0
+set_location_hint "\Counter_2:CounterUDB:count_enable\" 3 4 1 1
+set_location_hint "\Counter_2:CounterUDB:count_up\" 3 4 1 2
+set_location_hint "\Counter_2:CounterUDB:count_down\" 3 4 1 3
+set_location_hint "\Counter_2:CounterUDB:sC16:counterdp:u0\" 3 4 2 
+set_location_hint "\Counter_2:CounterUDB:sSTSReg:rstSts:stsreg\" 3 4 4 
+set_location_hint "\Counter_2:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 4 6
+set_location_hint "\Counter_2:CounterUDB:prevCompare\" 2 4 0 0
+set_location_hint "\Counter_2:CounterUDB:status_0\" 2 4 0 1
+set_location_hint "\Counter_2:CounterUDB:dp_dir\" 2 4 0 2
+set_location_hint "\Counter_2:CounterUDB:dwncnt_stored\" 2 4 0 3
+set_location_hint "\Counter_2:CounterUDB:upcnt_stored\" 2 4 1 0
+set_location_hint "\EdgeDetect_3:last\" 2 4 1 1
+set_location_hint "\UART_1:BUART:rx_bitclk_enable\" 2 4 1 2
+set_location_hint "\UART_1:BUART:reset_sr\" 2 4 1 3
+set_location_hint "\Counter_2:CounterUDB:sC16:counterdp:u1\" 2 4 2 
+set_location_hint "Encoder_2_A(0)_SYNC" 2 4 5 -1
+set_location_hint "Encoder_2_B(0)_SYNC" 2 4 5 -1
+set_location_hint "\Counter_4:CounterUDB:reload\" 2 3 0 0
+set_location_hint "\Counter_4:CounterUDB:overflow_reg_i\" 2 3 0 1
+set_location_hint "\Counter_4:CounterUDB:status_2\" 2 3 0 2
+set_location_hint "\Counter_4:CounterUDB:underflow_reg_i\" 2 3 0 3
+set_location_hint "\Counter_4:CounterUDB:status_3\" 2 3 1 0
+set_location_hint "\Counter_4:CounterUDB:count_enable\" 2 3 1 1
+set_location_hint "\Counter_4:CounterUDB:count_up\" 2 3 1 2
+set_location_hint "\Counter_4:CounterUDB:count_down\" 2 3 1 3
+set_location_hint "\Counter_4:CounterUDB:sC16:counterdp:u0\" 2 3 2 
+set_location_hint "\Counter_4:CounterUDB:sSTSReg:rstSts:stsreg\" 2 3 4 
+set_location_hint "\Counter_4:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 3 6
+set_location_hint "\Counter_4:CounterUDB:prevCompare\" 3 3 0 0
+set_location_hint "\Counter_4:CounterUDB:status_0\" 3 3 0 1
+set_location_hint "\Counter_4:CounterUDB:dp_dir\" 3 3 0 2
+set_location_hint "\Counter_4:CounterUDB:dwncnt_stored\" 3 3 0 3
+set_location_hint "\Counter_4:CounterUDB:upcnt_stored\" 3 3 1 0
+set_location_hint "\EdgeDetect_7:last\" 3 3 1 1
+set_location_hint "\UART_2:BUART:rx_counter_load\" 3 3 1 2
+set_location_hint "\UART_1:BUART:rx_status_5\" 3 3 1 3
+set_location_hint "\Counter_4:CounterUDB:sC16:counterdp:u1\" 3 3 2 
+set_location_hint "Encoder_4_A(0)_SYNC" 3 3 5 -1
+set_location_hint "Encoder_4_B(0)_SYNC" 3 3 5 -1
+set_location_hint "\Counter_5:CounterUDB:reload\" 3 2 0 0
+set_location_hint "\Counter_5:CounterUDB:overflow_reg_i\" 3 2 0 1
+set_location_hint "\Counter_5:CounterUDB:status_2\" 3 2 0 2
+set_location_hint "\Counter_5:CounterUDB:underflow_reg_i\" 3 2 0 3
+set_location_hint "\Counter_5:CounterUDB:status_3\" 3 2 1 0
+set_location_hint "\Counter_5:CounterUDB:count_enable\" 3 2 1 1
+set_location_hint "\Counter_5:CounterUDB:count_up\" 3 2 1 2
+set_location_hint "\Counter_5:CounterUDB:count_down\" 3 2 1 3
+set_location_hint "\Counter_5:CounterUDB:sC16:counterdp:u0\" 3 2 2 
+set_location_hint "\Counter_5:CounterUDB:sSTSReg:rstSts:stsreg\" 3 2 4 
+set_location_hint "\Counter_5:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 2 6
+set_location_hint "\Counter_5:CounterUDB:prevCompare\" 2 2 0 0
+set_location_hint "\Counter_5:CounterUDB:status_0\" 2 2 0 1
+set_location_hint "\Counter_5:CounterUDB:dp_dir\" 2 2 0 2
+set_location_hint "\Counter_5:CounterUDB:dwncnt_stored\" 2 2 0 3
+set_location_hint "\Counter_5:CounterUDB:upcnt_stored\" 2 2 1 0
+set_location_hint "\EdgeDetect_10:last\" 2 2 1 1
+set_location_hint "\UART_1:BUART:rx_postpoll\" 2 2 1 2
+set_location_hint "\UART_2:BUART:rx_postpoll\" 2 2 1 3
+set_location_hint "\Counter_5:CounterUDB:sC16:counterdp:u1\" 2 2 2 
+set_location_hint "Encoder_5_A(0)_SYNC" 2 2 5 -1
+set_location_hint "Encoder_5_B(0)_SYNC" 2 2 5 -1
+set_location_hint "\Counter_6:CounterUDB:reload\" 1 2 0 0
+set_location_hint "\Counter_6:CounterUDB:overflow_reg_i\" 1 2 0 1
+set_location_hint "\Counter_6:CounterUDB:status_2\" 1 2 0 2
+set_location_hint "\Counter_6:CounterUDB:underflow_reg_i\" 1 2 0 3
+set_location_hint "\Counter_6:CounterUDB:status_3\" 1 2 1 0
+set_location_hint "\Counter_6:CounterUDB:count_enable\" 1 2 1 1
+set_location_hint "\Counter_6:CounterUDB:count_up\" 1 2 1 2
+set_location_hint "\Counter_6:CounterUDB:count_down\" 1 2 1 3
+set_location_hint "\Counter_6:CounterUDB:sC16:counterdp:u0\" 1 2 2 
+set_location_hint "\Counter_6:CounterUDB:sSTSReg:rstSts:stsreg\" 1 2 4 
+set_location_hint "\Counter_6:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 2 6
+set_location_hint "\Counter_6:CounterUDB:prevCompare\" 0 2 0 0
+set_location_hint "\Counter_6:CounterUDB:status_0\" 0 2 0 1
+set_location_hint "\Counter_6:CounterUDB:dp_dir\" 0 2 0 2
+set_location_hint "\Counter_6:CounterUDB:dwncnt_stored\" 0 2 0 3
+set_location_hint "\Counter_6:CounterUDB:upcnt_stored\" 0 2 1 0
+set_location_hint "\EdgeDetect_11:last\" 0 2 1 1
+set_location_hint "\UART_2:BUART:rx_status_5\" 0 2 1 2
+set_location_hint "\UART_2:BUART:rx_status_4\" 0 2 1 3
+set_location_hint "\Counter_6:CounterUDB:sC16:counterdp:u1\" 0 2 2 
+set_location_hint "Encoder_6_A(0)_SYNC" 0 2 5 -1
+set_location_hint "Encoder_6_B(0)_SYNC" 0 2 5 -1
+set_location_hint "\Counter_7:CounterUDB:reload\" 0 3 0 0
+set_location_hint "\Counter_7:CounterUDB:overflow_reg_i\" 0 3 0 1
+set_location_hint "\Counter_7:CounterUDB:status_2\" 0 3 0 2
+set_location_hint "\Counter_7:CounterUDB:underflow_reg_i\" 0 3 0 3
+set_location_hint "\Counter_7:CounterUDB:status_3\" 0 3 1 0
+set_location_hint "\Counter_7:CounterUDB:count_enable\" 0 3 1 1
+set_location_hint "\Counter_7:CounterUDB:count_up\" 0 3 1 2
+set_location_hint "\Counter_7:CounterUDB:count_down\" 0 3 1 3
+set_location_hint "\Counter_7:CounterUDB:sC16:counterdp:u0\" 0 3 2 
+set_location_hint "\Counter_7:CounterUDB:sSTSReg:rstSts:stsreg\" 0 3 4 
+set_location_hint "\Counter_7:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 3 6
+set_location_hint "\Counter_7:CounterUDB:prevCompare\" 1 3 0 0
+set_location_hint "\Counter_7:CounterUDB:status_0\" 1 3 0 1
+set_location_hint "\Counter_7:CounterUDB:dp_dir\" 1 3 0 2
+set_location_hint "\Counter_7:CounterUDB:dwncnt_stored\" 1 3 0 3
+set_location_hint "\Counter_7:CounterUDB:upcnt_stored\" 1 3 1 0
+set_location_hint "\EdgeDetect_13:last\" 1 3 1 1
+set_location_hint "\UART_1:BUART:rx_status_4\" 1 3 1 2
+set_location_hint "\PWM_1:PWMUDB:status_5\" 1 3 1 3
+set_location_hint "\Counter_7:CounterUDB:sC16:counterdp:u1\" 1 3 2 
+set_location_hint "Encoder_7_A(0)_SYNC" 1 3 5 -1
+set_location_hint "Encoder_7_B(0)_SYNC" 1 3 5 -1
+set_location_hint "\Counter_8:CounterUDB:reload\" 1 4 0 0
+set_location_hint "\Counter_8:CounterUDB:overflow_reg_i\" 1 4 0 1
+set_location_hint "\Counter_8:CounterUDB:status_2\" 1 4 0 2
+set_location_hint "\Counter_8:CounterUDB:underflow_reg_i\" 1 4 0 3
+set_location_hint "\Counter_8:CounterUDB:status_3\" 1 4 1 0
+set_location_hint "\Counter_8:CounterUDB:count_enable\" 1 4 1 1
+set_location_hint "\Counter_8:CounterUDB:count_up\" 1 4 1 2
+set_location_hint "\Counter_8:CounterUDB:count_down\" 1 4 1 3
+set_location_hint "\Counter_8:CounterUDB:sC16:counterdp:u0\" 1 4 2 
+set_location_hint "\Counter_8:CounterUDB:sSTSReg:rstSts:stsreg\" 1 4 4 
+set_location_hint "\Counter_8:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 4 6
+set_location_hint "\Counter_8:CounterUDB:prevCompare\" 0 4 0 0
+set_location_hint "\Counter_8:CounterUDB:status_0\" 0 4 0 1
+set_location_hint "\Counter_8:CounterUDB:dp_dir\" 0 4 0 2
+set_location_hint "\Counter_8:CounterUDB:dwncnt_stored\" 0 4 0 3
+set_location_hint "\Counter_8:CounterUDB:upcnt_stored\" 0 4 1 0
+set_location_hint "\EdgeDetect_15:last\" 0 4 1 1
+set_location_hint "Net_158" 0 4 1 2
+set_location_hint "\Counter_8:CounterUDB:sC16:counterdp:u1\" 0 4 2 
+set_location_hint "Encoder_8_A(0)_SYNC" 0 4 5 -1
+set_location_hint "Encoder_8_B(0)_SYNC" 0 4 5 -1
+set_location_hint "\PWM_1:PWMUDB:runmode_enable\" 0 5 0 0
+set_location_hint "Net_349" 0 5 0 1
+set_location_hint "\PWM_1:PWMUDB:prevCompare1\" 0 5 0 2
+set_location_hint "\PWM_1:PWMUDB:status_0\" 0 5 0 3
+set_location_hint "Net_350" 0 5 1 0
+set_location_hint "\PWM_1:PWMUDB:prevCompare2\" 0 5 1 1
+set_location_hint "\PWM_1:PWMUDB:status_1\" 0 5 1 2
+set_location_hint "\PWM_1:PWMUDB:final_kill_reg\" 0 5 1 3
+set_location_hint "\PWM_1:PWMUDB:sP16:pwmdp:u0\" 0 5 2 
+set_location_hint "\PWM_1:PWMUDB:genblk8:stsreg\" 0 5 4 
+set_location_hint "\PWM_1:PWMUDB:genblk1:ctrlreg\" 0 5 6
+set_location_hint "\UART_2:BUART:rx_state_0\" 1 5 0 0
+set_location_hint "\UART_2:BUART:rx_status_3\" 1 5 0 1
+set_location_hint "\UART_2:BUART:rx_state_2\" 1 5 0 2
+set_location_hint "\UART_2:BUART:rx_address_detected\" 1 5 0 3
+set_location_hint "\UART_2:BUART:rx_state_3\" 1 5 1 0
+set_location_hint "\UART_2:BUART:rx_load_fifo\" 1 5 1 1
+set_location_hint "\UART_2:BUART:rx_state_stop1_reg\" 1 5 1 2
+set_location_hint "\UART_2:BUART:rx_last\" 1 5 1 3
+set_location_hint "\PWM_1:PWMUDB:sP16:pwmdp:u1\" 1 5 2 
+set_location_hint "\UART_2:BUART:sRX:RxBitCounter\" 1 5 7
+set_location_hint "\PWM_2:PWMUDB:runmode_enable\" 2 0 0 0
+set_location_hint "Net_503" 2 0 0 1
+set_location_hint "\PWM_2:PWMUDB:prevCompare1\" 2 0 0 2
+set_location_hint "\PWM_2:PWMUDB:status_0\" 2 0 0 3
+set_location_hint "Net_504" 2 0 1 0
+set_location_hint "\PWM_2:PWMUDB:prevCompare2\" 2 0 1 1
+set_location_hint "\PWM_2:PWMUDB:status_1\" 2 0 1 2
+set_location_hint "\PWM_2:PWMUDB:sP16:pwmdp:u0\" 2 0 2 
+set_location_hint "\PWM_2:PWMUDB:genblk8:stsreg\" 2 0 4 
+set_location_hint "\PWM_2:PWMUDB:genblk1:ctrlreg\" 2 0 6
+set_location_hint "\UART_1:BUART:rx_status_3\" 3 0 0 0
+set_location_hint "\UART_1:BUART:txn\" 3 0 0 1
+set_location_hint "\UART_1:BUART:rx_state_1\" 3 0 0 2
+set_location_hint "\UART_2:BUART:pollcount_1\" 3 0 1 0
+set_location_hint "\UART_2:BUART:pollcount_0\" 3 0 1 1
+set_location_hint "\UART_2:BUART:rx_bitclk_enable\" 3 0 1 2
+set_location_hint "\PWM_2:PWMUDB:sP16:pwmdp:u1\" 3 0 2 
+set_location_hint "\UART_1:BUART:sRX:RxSts\" 3 0 4 
+set_location_hint "\PWM_3:PWMUDB:runmode_enable\" 3 1 0 0
+set_location_hint "Net_548" 3 1 0 1
+set_location_hint "\PWM_3:PWMUDB:prevCompare1\" 3 1 0 2
+set_location_hint "\PWM_3:PWMUDB:status_0\" 3 1 0 3
+set_location_hint "Net_549" 3 1 1 0
+set_location_hint "\PWM_3:PWMUDB:prevCompare2\" 3 1 1 1
+set_location_hint "\PWM_3:PWMUDB:status_1\" 3 1 1 2
+set_location_hint "\PWM_3:PWMUDB:sP16:pwmdp:u0\" 3 1 2 
+set_location_hint "\PWM_3:PWMUDB:genblk8:stsreg\" 3 1 4 
+set_location_hint "\PWM_3:PWMUDB:genblk1:ctrlreg\" 3 1 6
+set_location_hint "MODIN3_1" 2 1 0 0
+set_location_hint "MODIN3_0" 2 1 0 1
+set_location_hint "\UART_1:BUART:rx_bitclk\" 2 1 0 2
+set_location_hint "\PWM_3:PWMUDB:sP16:pwmdp:u1\" 2 1 2 
+set_location_hint "\UART_2:BUART:sRX:RxSts\" 2 1 4 
+set_location_hint "\Counter_3:CounterUDB:reload\" 1 1 0 0
+set_location_hint "\Counter_3:CounterUDB:overflow_reg_i\" 1 1 0 1
+set_location_hint "\Counter_3:CounterUDB:status_2\" 1 1 0 2
+set_location_hint "\Counter_3:CounterUDB:underflow_reg_i\" 1 1 0 3
+set_location_hint "\Counter_3:CounterUDB:status_3\" 1 1 1 0
+set_location_hint "\Counter_3:CounterUDB:count_enable\" 1 1 1 1
+set_location_hint "\Counter_3:CounterUDB:count_up\" 1 1 1 2
+set_location_hint "\Counter_3:CounterUDB:count_down\" 1 1 1 3
+set_location_hint "\Counter_3:CounterUDB:sC16:counterdp:u0\" 1 1 2 
+set_location_hint "\Counter_3:CounterUDB:sSTSReg:rstSts:stsreg\" 1 1 4 
+set_location_hint "\Counter_3:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 1 6
+set_location_hint "\Counter_3:CounterUDB:prevCompare\" 0 1 0 0
+set_location_hint "\Counter_3:CounterUDB:status_0\" 0 1 0 1
+set_location_hint "\Counter_3:CounterUDB:dp_dir\" 0 1 0 2
+set_location_hint "\Counter_3:CounterUDB:upcnt_stored\" 0 1 0 3
+set_location_hint "\Counter_3:CounterUDB:dwncnt_stored\" 0 1 1 0
+set_location_hint "\EdgeDetect_5:last\" 0 1 1 1
+set_location_hint "\Counter_3:CounterUDB:sC16:counterdp:u1\" 0 1 2 
+set_location_hint "Encoder_3_A(0)_SYNC" 0 1 5 -1
+set_location_hint "Encoder_3_B(0)_SYNC" 0 1 5 -1
+set_location_hint "\UART_1:BUART:rx_state_0\" 0 0 0 0
+set_location_hint "\UART_1:BUART:rx_load_fifo\" 0 0 0 1
+set_location_hint "__ONE__" 0 0 0 2
+set_location_hint "\UART_1:BUART:txn_split\" 0 0 1 0
+set_location_hint "\UART_1:BUART:rx_counter_load\" 0 0 1 1
+set_location_hint "\UART_1:BUART:rx_state_stop1_reg\" 0 0 1 2
+set_location_hint "\UART_1:BUART:sRX:RxShifter:u0\" 0 0 2 
+set_location_hint "\UART_1:BUART:sRX:RxBitCounter\" 0 0 7
+set_location_hint "\UART_1:BUART:rx_state_2\" 1 0 0 0
+set_location_hint "\UART_1:BUART:rx_state_3\" 1 0 0 1
+set_location_hint "\UART_1:BUART:HalfDuplexSend_last\" 1 0 0 2
+set_location_hint "\UART_1:BUART:rx_state_2_split\" 1 0 1 0
+set_location_hint "\UART_1:BUART:rx_last\" 1 0 1 1
+set_location_hint "\UART_2:BUART:sRX:RxShifter:u0\" 1 0 2 
+set_location_hint "\UART_1:BUART:sCR:SyncCtl:CtrlReg\" 1 0 6

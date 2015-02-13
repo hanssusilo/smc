@@ -1,0 +1,315 @@
+# Design02
+# 2015-02-05 19:55:29Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+dont_use_location sccell -1 -1 1
+dont_use_location sccell -1 -1 3
+dont_use_location vidaccell -1 -1 1
+dont_use_location vidaccell -1 -1 3
+dont_use_location sarcell -1 -1 1
+dont_use_location abufcell -1 -1 1
+dont_use_location abufcell -1 -1 3
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "Enable_1(0)" iocell 2 5
+set_io "Enable_2(0)" iocell 12 5
+set_io "Enable_3(0)" iocell 15 3
+set_io "Enable_4(0)" iocell 4 1
+set_io "Enable_5(0)" iocell 5 0
+set_io "Enable_6(0)" iocell 1 6
+set_io "Enable_7(0)" iocell 0 4
+set_io "Enable_8(0)" iocell 4 2
+set_io "Encoder_1_A(0)" iocell 2 7
+set_location "Encoder_1_A(0)_SYNC" 2 5 5 1
+set_io "Encoder_1_B(0)" iocell 12 4
+set_location "Encoder_1_B(0)_SYNC" 2 5 5 0
+set_io "Encoder_2_A(0)" iocell 6 5
+set_location "Encoder_2_A(0)_SYNC" 2 2 5 1
+set_io "Encoder_2_B(0)" iocell 6 6
+set_location "Encoder_2_B(0)_SYNC" 2 2 5 0
+set_io "Encoder_3_A(0)" iocell 12 3
+set_location "Encoder_3_A(0)_SYNC" 3 1 5 2
+set_io "Encoder_3_B(0)" iocell 4 0
+set_location "Encoder_3_B(0)_SYNC" 3 1 5 0
+set_io "Encoder_4_A(0)" iocell 0 1
+set_location "Encoder_4_A(0)_SYNC" 3 1 5 3
+set_io "Encoder_4_B(0)" iocell 0 2
+set_location "Encoder_4_B(0)_SYNC" 3 1 5 1
+set_io "Encoder_5_A(0)" iocell 5 2
+set_location "Encoder_5_A(0)_SYNC" 0 4 5 2
+set_io "Encoder_5_B(0)" iocell 5 3
+set_location "Encoder_5_B(0)_SYNC" 0 4 5 1
+set_io "Encoder_6_A(0)" iocell 1 2
+set_location "Encoder_6_A(0)_SYNC" 0 0 5 1
+set_io "Encoder_6_B(0)" iocell 1 7
+set_location "Encoder_6_B(0)_SYNC" 0 0 5 0
+set_io "Encoder_7_A(0)" iocell 0 6
+set_location "Encoder_7_A(0)_SYNC" 0 4 5 3
+set_io "Encoder_7_B(0)" iocell 0 7
+set_location "Encoder_7_B(0)_SYNC" 0 4 5 0
+set_io "Encoder_8_A(0)" iocell 4 4
+set_location "Encoder_8_A(0)_SYNC" 1 5 5 1
+set_io "Encoder_8_B(0)" iocell 4 5
+set_location "Encoder_8_B(0)_SYNC" 1 5 5 0
+set_io "LED1(0)" iocell 5 5
+set_io "LED2(0)" iocell 5 6
+set_io "LED3(0)" iocell 5 7
+set_io "LED4(0)" iocell 2 3
+set_io "LED5(0)" iocell 2 4
+set_location "MODIN3_0" 3 2 1 1
+set_location "MODIN3_1" 3 2 1 0
+set_io "MotorPWM_1(0)" iocell 2 6
+set_io "MotorPWM_2(0)" iocell 6 4
+set_io "MotorPWM_3(0)" iocell 12 2
+set_io "MotorPWM_4(0)" iocell 0 0
+set_io "MotorPWM_5(0)" iocell 5 1
+set_io "MotorPWM_6(0)" iocell 12 6
+set_io "MotorPWM_7(0)" iocell 0 5
+set_io "MotorPWM_8(0)" iocell 4 3
+set_location "Net_158" 3 2 1 2
+set_location "Net_349" 2 1 1 1
+set_location "Net_350" 3 2 0 0
+set_location "Net_503" 2 5 0 0
+set_location "Net_504" 2 3 1 1
+set_location "Net_548" 0 5 1 1
+set_location "Net_549" 0 5 0 0
+set_io "Rx_1(0)" iocell 4 7
+set_location "Rx_1(0)_SYNC" 2 1 5 0
+set_io "Rx_2(0)" iocell 1 5
+set_location "Rx_2(0)_SYNC" 3 3 5 0
+set_io "Tx_1(0)" iocell 6 0
+set_location "\Counter_1:CounterUDB:count_down\" 3 5 0 3
+set_location "\Counter_1:CounterUDB:count_enable\" 3 4 0 3
+set_location "\Counter_1:CounterUDB:count_up\" 3 5 0 0
+set_location "\Counter_1:CounterUDB:dp_dir\" 3 5 0 2
+set_location "\Counter_1:CounterUDB:dwncnt_stored\" 3 5 0 1
+set_location "\Counter_1:CounterUDB:overflow_reg_i\" 2 4 1 1
+set_location "\Counter_1:CounterUDB:prevCompare\" 2 5 1 1
+set_location "\Counter_1:CounterUDB:reload\" 2 4 1 0
+set_location "\Counter_1:CounterUDB:sC16:counterdp:u0\" 3 4 2
+set_location "\Counter_1:CounterUDB:sC16:counterdp:u1\" 2 4 2
+set_location "\Counter_1:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 4 6
+set_location "\Counter_1:CounterUDB:sSTSReg:rstSts:stsreg\" 2 4 4
+set_location "\Counter_1:CounterUDB:status_0\" 2 4 0 0
+set_location "\Counter_1:CounterUDB:status_2\" 2 4 1 2
+set_location "\Counter_1:CounterUDB:status_3\" 3 4 1 1
+set_location "\Counter_1:CounterUDB:underflow_reg_i\" 2 4 1 3
+set_location "\Counter_1:CounterUDB:upcnt_stored\" 3 5 1 3
+set_location "\Counter_2:CounterUDB:count_down\" 1 2 1 0
+set_location "\Counter_2:CounterUDB:count_enable\" 1 2 1 3
+set_location "\Counter_2:CounterUDB:count_up\" 1 2 1 1
+set_location "\Counter_2:CounterUDB:dp_dir\" 1 2 1 2
+set_location "\Counter_2:CounterUDB:dwncnt_stored\" 1 2 0 2
+set_location "\Counter_2:CounterUDB:overflow_reg_i\" 0 2 1 0
+set_location "\Counter_2:CounterUDB:prevCompare\" 0 1 0 0
+set_location "\Counter_2:CounterUDB:reload\" 0 2 1 2
+set_location "\Counter_2:CounterUDB:sC16:counterdp:u0\" 1 2 2
+set_location "\Counter_2:CounterUDB:sC16:counterdp:u1\" 0 2 2
+set_location "\Counter_2:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 2 6
+set_location "\Counter_2:CounterUDB:sSTSReg:rstSts:stsreg\" 0 2 4
+set_location "\Counter_2:CounterUDB:status_0\" 0 1 0 1
+set_location "\Counter_2:CounterUDB:status_2\" 0 2 1 1
+set_location "\Counter_2:CounterUDB:status_3\" 0 2 0 1
+set_location "\Counter_2:CounterUDB:underflow_reg_i\" 0 2 1 3
+set_location "\Counter_2:CounterUDB:upcnt_stored\" 1 2 0 0
+set_location "\Counter_3:CounterUDB:count_down\" 3 1 1 0
+set_location "\Counter_3:CounterUDB:count_enable\" 3 1 0 2
+set_location "\Counter_3:CounterUDB:count_up\" 3 1 0 3
+set_location "\Counter_3:CounterUDB:dp_dir\" 3 1 1 2
+set_location "\Counter_3:CounterUDB:dwncnt_stored\" 3 1 0 0
+set_location "\Counter_3:CounterUDB:overflow_reg_i\" 2 1 0 1
+set_location "\Counter_3:CounterUDB:prevCompare\" 1 1 1 0
+set_location "\Counter_3:CounterUDB:reload\" 2 1 0 0
+set_location "\Counter_3:CounterUDB:sC16:counterdp:u0\" 3 1 2
+set_location "\Counter_3:CounterUDB:sC16:counterdp:u1\" 2 1 2
+set_location "\Counter_3:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 1 6
+set_location "\Counter_3:CounterUDB:sSTSReg:rstSts:stsreg\" 1 1 4
+set_location "\Counter_3:CounterUDB:status_0\" 1 1 1 3
+set_location "\Counter_3:CounterUDB:status_2\" 2 1 0 2
+set_location "\Counter_3:CounterUDB:status_3\" 1 1 0 0
+set_location "\Counter_3:CounterUDB:underflow_reg_i\" 2 1 0 3
+set_location "\Counter_3:CounterUDB:upcnt_stored\" 3 1 1 1
+set_location "\Counter_4:CounterUDB:count_down\" 3 0 1 2
+set_location "\Counter_4:CounterUDB:count_enable\" 3 0 1 0
+set_location "\Counter_4:CounterUDB:count_up\" 3 0 0 1
+set_location "\Counter_4:CounterUDB:dp_dir\" 3 0 0 3
+set_location "\Counter_4:CounterUDB:dwncnt_stored\" 3 0 1 1
+set_location "\Counter_4:CounterUDB:overflow_reg_i\" 2 0 1 1
+set_location "\Counter_4:CounterUDB:prevCompare\" 3 1 0 1
+set_location "\Counter_4:CounterUDB:reload\" 2 0 1 0
+set_location "\Counter_4:CounterUDB:sC16:counterdp:u0\" 2 0 2
+set_location "\Counter_4:CounterUDB:sC16:counterdp:u1\" 3 0 2
+set_location "\Counter_4:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 3 0 6
+set_location "\Counter_4:CounterUDB:sSTSReg:rstSts:stsreg\" 3 0 4
+set_location "\Counter_4:CounterUDB:status_0\" 3 0 0 2
+set_location "\Counter_4:CounterUDB:status_2\" 2 0 1 2
+set_location "\Counter_4:CounterUDB:status_3\" 2 0 0 2
+set_location "\Counter_4:CounterUDB:underflow_reg_i\" 2 0 0 3
+set_location "\Counter_4:CounterUDB:upcnt_stored\" 3 0 1 3
+set_location "\Counter_5:CounterUDB:count_down\" 0 3 0 0
+set_location "\Counter_5:CounterUDB:count_enable\" 0 3 1 1
+set_location "\Counter_5:CounterUDB:count_up\" 0 3 0 2
+set_location "\Counter_5:CounterUDB:dp_dir\" 0 3 0 3
+set_location "\Counter_5:CounterUDB:dwncnt_stored\" 0 3 0 1
+set_location "\Counter_5:CounterUDB:overflow_reg_i\" 0 0 0 3
+set_location "\Counter_5:CounterUDB:prevCompare\" 0 2 0 2
+set_location "\Counter_5:CounterUDB:reload\" 0 3 1 3
+set_location "\Counter_5:CounterUDB:sC16:counterdp:u0\" 0 3 2
+set_location "\Counter_5:CounterUDB:sC16:counterdp:u1\" 1 3 2
+set_location "\Counter_5:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 3 6
+set_location "\Counter_5:CounterUDB:sSTSReg:rstSts:stsreg\" 0 1 4
+set_location "\Counter_5:CounterUDB:status_0\" 0 2 0 3
+set_location "\Counter_5:CounterUDB:status_2\" 0 0 0 1
+set_location "\Counter_5:CounterUDB:status_3\" 0 1 0 2
+set_location "\Counter_5:CounterUDB:underflow_reg_i\" 0 1 0 3
+set_location "\Counter_5:CounterUDB:upcnt_stored\" 0 3 1 0
+set_location "\Counter_6:CounterUDB:count_down\" 1 0 1 3
+set_location "\Counter_6:CounterUDB:count_enable\" 1 0 0 3
+set_location "\Counter_6:CounterUDB:count_up\" 1 0 1 2
+set_location "\Counter_6:CounterUDB:dp_dir\" 1 0 1 0
+set_location "\Counter_6:CounterUDB:dwncnt_stored\" 1 1 0 3
+set_location "\Counter_6:CounterUDB:overflow_reg_i\" 1 0 0 0
+set_location "\Counter_6:CounterUDB:prevCompare\" 0 0 0 2
+set_location "\Counter_6:CounterUDB:reload\" 1 0 0 1
+set_location "\Counter_6:CounterUDB:sC16:counterdp:u0\" 0 0 2
+set_location "\Counter_6:CounterUDB:sC16:counterdp:u1\" 1 0 2
+set_location "\Counter_6:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 0 6
+set_location "\Counter_6:CounterUDB:sSTSReg:rstSts:stsreg\" 1 0 4
+set_location "\Counter_6:CounterUDB:status_0\" 0 0 0 0
+set_location "\Counter_6:CounterUDB:status_2\" 1 0 0 2
+set_location "\Counter_6:CounterUDB:status_3\" 1 1 0 2
+set_location "\Counter_6:CounterUDB:underflow_reg_i\" 1 2 0 3
+set_location "\Counter_6:CounterUDB:upcnt_stored\" 1 1 0 1
+set_location "\Counter_7:CounterUDB:count_down\" 0 1 1 3
+set_location "\Counter_7:CounterUDB:count_enable\" 1 1 1 1
+set_location "\Counter_7:CounterUDB:count_up\" 0 1 1 1
+set_location "\Counter_7:CounterUDB:dp_dir\" 0 1 1 2
+set_location "\Counter_7:CounterUDB:dwncnt_stored\" 0 1 1 0
+set_location "\Counter_7:CounterUDB:overflow_reg_i\" 0 0 1 0
+set_location "\Counter_7:CounterUDB:prevCompare\" 2 0 0 0
+set_location "\Counter_7:CounterUDB:reload\" 1 1 1 2
+set_location "\Counter_7:CounterUDB:sC16:counterdp:u0\" 1 1 2
+set_location "\Counter_7:CounterUDB:sC16:counterdp:u1\" 0 1 2
+set_location "\Counter_7:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 1 6
+set_location "\Counter_7:CounterUDB:sSTSReg:rstSts:stsreg\" 2 0 4
+set_location "\Counter_7:CounterUDB:status_0\" 2 0 0 1
+set_location "\Counter_7:CounterUDB:status_2\" 0 0 1 2
+set_location "\Counter_7:CounterUDB:status_3\" 2 0 1 3
+set_location "\Counter_7:CounterUDB:underflow_reg_i\" 0 0 1 1
+set_location "\Counter_7:CounterUDB:upcnt_stored\" 0 0 1 3
+set_location "\Counter_8:CounterUDB:count_down\" 1 4 1 2
+set_location "\Counter_8:CounterUDB:count_enable\" 1 4 0 0
+set_location "\Counter_8:CounterUDB:count_up\" 1 4 1 1
+set_location "\Counter_8:CounterUDB:dp_dir\" 1 4 1 3
+set_location "\Counter_8:CounterUDB:dwncnt_stored\" 1 4 1 0
+set_location "\Counter_8:CounterUDB:overflow_reg_i\" 0 4 1 1
+set_location "\Counter_8:CounterUDB:prevCompare\" 0 4 0 0
+set_location "\Counter_8:CounterUDB:reload\" 0 4 1 0
+set_location "\Counter_8:CounterUDB:sC16:counterdp:u0\" 1 4 2
+set_location "\Counter_8:CounterUDB:sC16:counterdp:u1\" 0 4 2
+set_location "\Counter_8:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 3 6
+set_location "\Counter_8:CounterUDB:sSTSReg:rstSts:stsreg\" 0 3 4
+set_location "\Counter_8:CounterUDB:status_0\" 0 4 0 1
+set_location "\Counter_8:CounterUDB:status_2\" 0 4 1 2
+set_location "\Counter_8:CounterUDB:status_3\" 1 3 1 1
+set_location "\Counter_8:CounterUDB:underflow_reg_i\" 1 3 1 0
+set_location "\Counter_8:CounterUDB:upcnt_stored\" 1 4 0 3
+set_location "\EdgeDetect_10:last\" 0 3 1 2
+set_location "\EdgeDetect_11:last\" 1 0 1 1
+set_location "\EdgeDetect_13:last\" 0 2 0 0
+set_location "\EdgeDetect_15:last\" 1 4 0 1
+set_location "\EdgeDetect_1:last\" 3 5 1 2
+set_location "\EdgeDetect_3:last\" 1 2 0 1
+set_location "\EdgeDetect_5:last\" 3 1 1 3
+set_location "\EdgeDetect_7:last\" 3 0 0 0
+set_location "\PWM_1:PWMUDB:final_kill_reg\" 2 3 1 0
+set_location "\PWM_1:PWMUDB:genblk1:ctrlreg\" 3 2 6
+set_location "\PWM_1:PWMUDB:genblk8:stsreg\" 3 2 4
+set_location "\PWM_1:PWMUDB:prevCompare1\" 2 1 1 2
+set_location "\PWM_1:PWMUDB:prevCompare2\" 3 2 0 1
+set_location "\PWM_1:PWMUDB:runmode_enable\" 2 1 1 0
+set_location "\PWM_1:PWMUDB:sP16:pwmdp:u0\" 3 2 2
+set_location "\PWM_1:PWMUDB:sP16:pwmdp:u1\" 2 2 2
+set_location "\PWM_1:PWMUDB:status_0\" 2 1 1 3
+set_location "\PWM_1:PWMUDB:status_1\" 3 2 0 2
+set_location "\PWM_1:PWMUDB:status_5\" 2 3 0 3
+set_location "\PWM_2:PWMUDB:genblk1:ctrlreg\" 1 4 6
+set_location "\PWM_2:PWMUDB:genblk8:stsreg\" 1 4 4
+set_location "\PWM_2:PWMUDB:prevCompare1\" 2 5 0 2
+set_location "\PWM_2:PWMUDB:prevCompare2\" 2 4 0 1
+set_location "\PWM_2:PWMUDB:runmode_enable\" 2 3 1 3
+set_location "\PWM_2:PWMUDB:sP16:pwmdp:u0\" 2 3 2
+set_location "\PWM_2:PWMUDB:sP16:pwmdp:u1\" 3 3 2
+set_location "\PWM_2:PWMUDB:status_0\" 2 5 0 3
+set_location "\PWM_2:PWMUDB:status_1\" 2 4 0 2
+set_location "\PWM_3:PWMUDB:genblk1:ctrlreg\" 0 5 6
+set_location "\PWM_3:PWMUDB:genblk8:stsreg\" 0 5 4
+set_location "\PWM_3:PWMUDB:prevCompare1\" 0 5 1 2
+set_location "\PWM_3:PWMUDB:prevCompare2\" 0 5 0 1
+set_location "\PWM_3:PWMUDB:runmode_enable\" 0 5 1 0
+set_location "\PWM_3:PWMUDB:sP16:pwmdp:u0\" 0 5 2
+set_location "\PWM_3:PWMUDB:sP16:pwmdp:u1\" 1 5 2
+set_location "\PWM_3:PWMUDB:status_0\" 0 5 1 3
+set_location "\PWM_3:PWMUDB:status_1\" 0 5 0 2
+set_location "\PWM_4:PWMHW\" timercell -1 -1 0
+set_location "\PWM_5:PWMHW\" timercell -1 -1 1
+set_location "\Timer_2:TimerHW\" timercell -1 -1 2
+set_location "\Timer_3:TimerHW\" timercell -1 -1 3
+set_location "\UART_1:BUART:HalfDuplexSend_last\" 2 2 1 2
+set_location "\UART_1:BUART:reset_sr\" 2 3 0 0
+set_location "\UART_1:BUART:rx_bitclk\" 2 3 0 2
+set_location "\UART_1:BUART:rx_bitclk_enable\" 2 3 0 1
+set_location "\UART_1:BUART:rx_counter_load\" 2 5 1 3
+set_location "\UART_1:BUART:rx_last\" 2 2 0 1
+set_location "\UART_1:BUART:rx_load_fifo\" 1 5 0 1
+set_location "\UART_1:BUART:rx_postpoll\" 2 4 0 3
+set_location "\UART_1:BUART:rx_state_0\" 1 5 0 0
+set_location "\UART_1:BUART:rx_state_1\" 1 3 0 0
+set_location "\UART_1:BUART:rx_state_2\" 2 2 1 0
+set_location "\UART_1:BUART:rx_state_2_split\" 2 2 0 0
+set_location "\UART_1:BUART:rx_state_3\" 2 2 1 1
+set_location "\UART_1:BUART:rx_state_stop1_reg\" 1 5 1 1
+set_location "\UART_1:BUART:rx_status_0\" 2 5 1 2
+set_location "\UART_1:BUART:rx_status_1\" 1 3 1 3
+set_location "\UART_1:BUART:rx_status_3\" 1 3 0 1
+set_location "\UART_1:BUART:rx_status_4\" 1 4 0 2
+set_location "\UART_1:BUART:rx_status_5\" 2 5 1 0
+set_location "\UART_1:BUART:sCR:SyncCtl:CtrlReg\" 1 2 6
+set_location "\UART_1:BUART:sRX:RxBitCounter\" 2 3 7
+set_location "\UART_1:BUART:sRX:RxShifter:u0\" 2 5 2
+set_location "\UART_1:BUART:sRX:RxSts\" 1 2 4
+set_location "\UART_1:BUART:txn\" 1 3 0 2
+set_location "\UART_1:BUART:txn_split\" 1 5 1 0
+set_location "\UART_2:BUART:pollcount_0\" 3 4 0 0
+set_location "\UART_2:BUART:pollcount_1\" 3 4 0 2
+set_location "\UART_2:BUART:rx_address_detected\" 3 4 1 2
+set_location "\UART_2:BUART:rx_bitclk_enable\" 3 4 0 1
+set_location "\UART_2:BUART:rx_counter_load\" 3 3 0 3
+set_location "\UART_2:BUART:rx_last\" 3 4 1 0
+set_location "\UART_2:BUART:rx_load_fifo\" 3 3 1 2
+set_location "\UART_2:BUART:rx_postpoll\" 3 3 0 2
+set_location "\UART_2:BUART:rx_state_0\" 3 3 0 0
+set_location "\UART_2:BUART:rx_state_2\" 3 3 1 3
+set_location "\UART_2:BUART:rx_state_3\" 3 3 1 1
+set_location "\UART_2:BUART:rx_state_stop1_reg\" 3 3 1 0
+set_location "\UART_2:BUART:rx_status_3\" 3 3 0 1
+set_location "\UART_2:BUART:rx_status_4\" 3 5 1 0
+set_location "\UART_2:BUART:rx_status_5\" 3 5 1 1
+set_location "\UART_2:BUART:sRX:RxBitCounter\" 3 4 7
+set_location "\UART_2:BUART:sRX:RxShifter:u0\" 3 5 2
+set_location "\UART_2:BUART:sRX:RxSts\" 3 5 4
+set_location "\UART_2:RXInternalInterrupt\" interrupt -1 -1 0
+set_location "__ONE__" 0 4 0 3
+set_io "ePin(0)" iocell 12 7
+set_io "foot12(0)" iocell 6 7
+set_io "foot34(0)" iocell 0 3
+set_io "foot56(0)" iocell 1 4
+set_io "foot78(0)" iocell 4 6
+set_location "isr_1" interrupt -1 -1 1
+set_location "isr_3" interrupt -1 -1 2
+set_io "pinA(0)" iocell 3 0
+set_io "startPin(0)" iocell 5 4

@@ -1,0 +1,2626 @@
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"QuadDec_1_Cnt16.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	QuadDec_1_Cnt16_initVar
+  19              		.bss
+  20              		.type	QuadDec_1_Cnt16_initVar, %object
+  21              		.size	QuadDec_1_Cnt16_initVar, 1
+  22              	QuadDec_1_Cnt16_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.QuadDec_1_Cnt16_Init,"ax",%progbits
+  25              		.align	2
+  26              		.global	QuadDec_1_Cnt16_Init
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	QuadDec_1_Cnt16_Init, %function
+  30              	QuadDec_1_Cnt16_Init:
+  31              	.LFB0:
+  32              		.file 1 ".\\Generated_Source\\PSoC5\\QuadDec_1_Cnt16.c"
+   1:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * File Name: QuadDec_1_Cnt16.c  
+   3:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Version 2.40
+   4:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+   5:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  Description:
+   6:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *     The Counter component consists of a 8, 16, 24 or 32-bit counter with
+   7:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *     a selectable period between 2 and 2^Width - 1.  
+   8:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+   9:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   Note:
+  10:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *     None
+  11:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+  12:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************
+  13:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  15:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  16:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************/
+  18:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+  19:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #include "QuadDec_1_Cnt16.h"
+  20:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+  21:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint8 QuadDec_1_Cnt16_initVar = 0u;
+  22:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+  23:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+  24:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_Init
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 2
+
+
+  26:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+  28:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *     Initialize to the schematic state
+  29:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * 
+  30:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+  31:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void  
+  32:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+  33:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+  34:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+  35:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+  36:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+  37:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_Init(void) 
+  38:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+  33              		.loc 1 38 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 8
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 7, -8
+  41              		.cfi_offset 14, -4
+  42 0002 82B0     		sub	sp, sp, #8
+  43              	.LCFI1:
+  44              		.cfi_def_cfa_offset 16
+  45 0004 00AF     		add	r7, sp, #0
+  46              	.LCFI2:
+  47              		.cfi_def_cfa_register 7
+  39:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if (!QuadDec_1_Cnt16_UsingFixedFunction && !QuadDec_1_Cnt16_ControlRegRemoved)
+  40:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             uint8 ctrl;
+  41:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (!QuadDec_1_Cnt16_UsingFixedFunction && !QuadDec_1_Cnt16_ControlRegRemoved) */
+  42:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+  43:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if(!QuadDec_1_Cnt16_UsingFixedFunction) 
+  44:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Interrupt State Backup for Critical Region*/
+  45:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             uint8 QuadDec_1_Cnt16_interruptState;
+  46:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (!QuadDec_1_Cnt16_UsingFixedFunction) */
+  47:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+  48:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if (QuadDec_1_Cnt16_UsingFixedFunction)
+  49:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Clear all bits but the enable bit (if it's already set for Timer operation */
+  50:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_CONTROL &= QuadDec_1_Cnt16_CTRL_ENABLE;
+  51:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+  52:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Clear the mode bits for continuous run mode */
+  53:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #if (CY_PSOC5A)
+  54:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 QuadDec_1_Cnt16_CONTROL2 &= ((uint8)(~QuadDec_1_Cnt16_CTRL_MODE_MASK));
+  55:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #endif /* (CY_PSOC5A) */
+  56:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
+  57:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 QuadDec_1_Cnt16_CONTROL3 &= ((uint8)(~QuadDec_1_Cnt16_CTRL_MODE_MASK));            
+  58:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #endif /* (CY_PSOC3 || CY_PSOC5LP) */
+  59:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Check if One Shot mode is enabled i.e. RunMode !=0*/
+  60:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #if (QuadDec_1_Cnt16_RunModeUsed != 0x0u)
+  61:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 /* Set 3rd bit of Control register to enable one shot mode */
+  62:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 QuadDec_1_Cnt16_CONTROL |= QuadDec_1_Cnt16_ONESHOT;
+  63:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #endif /* (QuadDec_1_Cnt16_RunModeUsed != 0x0u) */
+  64:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+  65:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Set the IRQ to use the status register interrupts */
+  66:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_CONTROL2 |= QuadDec_1_Cnt16_CTRL2_IRQ_SEL;
+  67:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 3
+
+
+  68:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+  69:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_RT1 &= ((uint8)(~QuadDec_1_Cnt16_RT1_MASK));
+  70:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_RT1 |= QuadDec_1_Cnt16_SYNC;     
+  71:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                     
+  72:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /*Enable DSI Sync all all inputs of the Timer*/
+  73:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_RT1 &= ((uint8)(~QuadDec_1_Cnt16_SYNCDSI_MASK));
+  74:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_RT1 |= QuadDec_1_Cnt16_SYNCDSI_EN;
+  75:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+  76:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #else
+  77:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #if(!QuadDec_1_Cnt16_ControlRegRemoved)
+  78:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Set the default compare mode defined in the parameter */
+  79:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             ctrl = QuadDec_1_Cnt16_CONTROL & ((uint8)(~QuadDec_1_Cnt16_CTRL_CMPMODE_MASK));
+  48              		.loc 1 79 0
+  49 0006 46F27C43 		movw	r3, #25724
+  50 000a C4F20003 		movt	r3, 16384
+  51 000e 1B78     		ldrb	r3, [r3, #0]
+  52 0010 DBB2     		uxtb	r3, r3
+  53 0012 23F00703 		bic	r3, r3, #7
+  54 0016 FB71     		strb	r3, [r7, #7]
+  80:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_CONTROL = ctrl | QuadDec_1_Cnt16_DEFAULT_COMPARE_MODE;
+  55              		.loc 1 80 0
+  56 0018 46F27C43 		movw	r3, #25724
+  57 001c C4F20003 		movt	r3, 16384
+  58 0020 FA79     		ldrb	r2, [r7, #7]
+  59 0022 1A70     		strb	r2, [r3, #0]
+  81:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+  82:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Set the default capture mode defined in the parameter */
+  83:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             ctrl = QuadDec_1_Cnt16_CONTROL & ((uint8)(~QuadDec_1_Cnt16_CTRL_CAPMODE_MASK));
+  60              		.loc 1 83 0
+  61 0024 46F27C43 		movw	r3, #25724
+  62 0028 C4F20003 		movt	r3, 16384
+  63 002c 1B78     		ldrb	r3, [r3, #0]
+  64 002e DBB2     		uxtb	r3, r3
+  65 0030 23F00303 		bic	r3, r3, #3
+  66 0034 FB71     		strb	r3, [r7, #7]
+  84:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+  85:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #if( 0 != QuadDec_1_Cnt16_CAPTURE_MODE_CONF)
+  86:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 QuadDec_1_Cnt16_CONTROL = ctrl | QuadDec_1_Cnt16_DEFAULT_CAPTURE_MODE;
+  87:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #else
+  88:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                 QuadDec_1_Cnt16_CONTROL = ctrl;
+  67              		.loc 1 88 0
+  68 0036 46F27C43 		movw	r3, #25724
+  69 003a C4F20003 		movt	r3, 16384
+  70 003e FA79     		ldrb	r2, [r7, #7]
+  71 0040 1A70     		strb	r2, [r3, #0]
+  89:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #endif /* 0 != QuadDec_1_Cnt16_CAPTURE_MODE */ 
+  90:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+  91:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             #endif /* (!QuadDec_1_Cnt16_ControlRegRemoved) */
+  92:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+  93:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+  94:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         /* Clear all data in the FIFO's */
+  95:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if (!QuadDec_1_Cnt16_UsingFixedFunction)
+  96:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_ClearFIFO();
+  72              		.loc 1 96 0
+  73 0042 FFF7FEFF 		bl	QuadDec_1_Cnt16_ClearFIFO
+  97:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (!QuadDec_1_Cnt16_UsingFixedFunction) */
+  98:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 4
+
+
+  99:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         /* Set Initial values from Configuration */
+ 100:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_WritePeriod(QuadDec_1_Cnt16_INIT_PERIOD_VALUE);
+  74              		.loc 1 100 0
+  75 0046 4FF40040 		mov	r0, #32768
+  76 004a FFF7FEFF 		bl	QuadDec_1_Cnt16_WritePeriod
+ 101:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if (!(QuadDec_1_Cnt16_UsingFixedFunction && (CY_PSOC5A)))
+ 102:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_WriteCounter(QuadDec_1_Cnt16_INIT_COUNTER_VALUE);
+  77              		.loc 1 102 0
+  78 004e 4FF40040 		mov	r0, #32768
+  79 0052 FFF7FEFF 		bl	QuadDec_1_Cnt16_WriteCounter
+ 103:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (!(QuadDec_1_Cnt16_UsingFixedFunction && (CY_PSOC5A))) */
+ 104:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_SetInterruptMode(QuadDec_1_Cnt16_INIT_INTERRUPTS_MASK);
+  80              		.loc 1 104 0
+  81 0056 4FF00000 		mov	r0, #0
+  82 005a FFF7FEFF 		bl	QuadDec_1_Cnt16_SetInterruptMode
+ 105:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+ 106:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #if (!QuadDec_1_Cnt16_UsingFixedFunction)
+ 107:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Read the status register to clear the unwanted interrupts */
+ 108:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             (void)QuadDec_1_Cnt16_ReadStatusRegister();
+  83              		.loc 1 108 0
+  84 005e FFF7FEFF 		bl	QuadDec_1_Cnt16_ReadStatusRegister
+ 109:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Set the compare value (only available to non-fixed function implementation */
+ 110:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_WriteCompare(QuadDec_1_Cnt16_INIT_COMPARE_VALUE);
+  85              		.loc 1 110 0
+  86 0062 4FF40040 		mov	r0, #32768
+  87 0066 FFF7FEFF 		bl	QuadDec_1_Cnt16_WriteCompare
+ 111:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 112:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+ 113:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 114:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Enter Critical Region*/
+ 115:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_interruptState = CyEnterCriticalSection();
+  88              		.loc 1 115 0
+  89 006a FFF7FEFF 		bl	CyEnterCriticalSection
+  90 006e 0346     		mov	r3, r0
+  91 0070 BB71     		strb	r3, [r7, #6]
+ 116:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+ 117:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             QuadDec_1_Cnt16_STATUS_AUX_CTRL |= QuadDec_1_Cnt16_STATUS_ACTL_INT_EN_MASK;
+  92              		.loc 1 117 0
+  93 0072 46F29B43 		movw	r3, #25755
+  94 0076 C4F20003 		movt	r3, 16384
+  95 007a 46F29B42 		movw	r2, #25755
+  96 007e C4F20002 		movt	r2, 16384
+  97 0082 1278     		ldrb	r2, [r2, #0]
+  98 0084 D2B2     		uxtb	r2, r2
+  99 0086 42F01002 		orr	r2, r2, #16
+ 100 008a D2B2     		uxtb	r2, r2
+ 101 008c 1A70     		strb	r2, [r3, #0]
+ 118:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+ 119:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             /* Exit Critical Region*/
+ 120:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             CyExitCriticalSection(QuadDec_1_Cnt16_interruptState);
+ 102              		.loc 1 120 0
+ 103 008e BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 104 0090 1846     		mov	r0, r3
+ 105 0092 FFF7FEFF 		bl	CyExitCriticalSection
+ 121:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****             
+ 122:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         #endif /* (!QuadDec_1_Cnt16_UsingFixedFunction) */
+ 123:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 5
+
+
+ 106              		.loc 1 123 0
+ 107 0096 07F10807 		add	r7, r7, #8
+ 108 009a BD46     		mov	sp, r7
+ 109 009c 80BD     		pop	{r7, pc}
+ 110              		.cfi_endproc
+ 111              	.LFE0:
+ 112              		.size	QuadDec_1_Cnt16_Init, .-QuadDec_1_Cnt16_Init
+ 113 009e 00BF     		.section	.text.QuadDec_1_Cnt16_Enable,"ax",%progbits
+ 114              		.align	2
+ 115              		.global	QuadDec_1_Cnt16_Enable
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.type	QuadDec_1_Cnt16_Enable, %function
+ 119              	QuadDec_1_Cnt16_Enable:
+ 120              	.LFB1:
+ 124:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 125:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 126:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 127:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_Enable
+ 128:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 129:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 130:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *     Enable the Counter
+ 131:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * 
+ 132:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 133:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void  
+ 134:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 135:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 136:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 137:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 138:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Side Effects: 
+ 139:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   If the Enable mode is set to Hardware only then this function has no effect 
+ 140:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   on the operation of the counter.
+ 141:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 142:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 143:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_Enable(void) 
+ 144:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 121              		.loc 1 144 0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 1, uses_anonymous_args = 0
+ 125              		@ link register save eliminated.
+ 126 0000 80B4     		push	{r7}
+ 127              	.LCFI3:
+ 128              		.cfi_def_cfa_offset 4
+ 129              		.cfi_offset 7, -4
+ 130 0002 00AF     		add	r7, sp, #0
+ 131              	.LCFI4:
+ 132              		.cfi_def_cfa_register 7
+ 145:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 146:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if (QuadDec_1_Cnt16_UsingFixedFunction)
+ 147:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_ENABLE |= QuadDec_1_Cnt16_BLOCK_EN_MASK;
+ 148:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_STBY_ENABLE |= QuadDec_1_Cnt16_BLOCK_STBY_EN_MASK;
+ 149:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */  
+ 150:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+ 151:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Enable the counter from the control register  */
+ 152:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* If Fixed Function then make sure Mode is set correctly */
+ 153:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* else make sure reset is clear */
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 6
+
+
+ 154:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(!QuadDec_1_Cnt16_ControlRegRemoved || QuadDec_1_Cnt16_UsingFixedFunction)
+ 155:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_CONTROL |= QuadDec_1_Cnt16_CTRL_ENABLE;                
+ 133              		.loc 1 155 0
+ 134 0004 46F27C43 		movw	r3, #25724
+ 135 0008 C4F20003 		movt	r3, 16384
+ 136 000c 46F27C42 		movw	r2, #25724
+ 137 0010 C4F20002 		movt	r2, 16384
+ 138 0014 1278     		ldrb	r2, [r2, #0]
+ 139 0016 D2B2     		uxtb	r2, r2
+ 140 0018 62F07F02 		orn	r2, r2, #127
+ 141 001c D2B2     		uxtb	r2, r2
+ 142 001e 1A70     		strb	r2, [r3, #0]
+ 156:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (!QuadDec_1_Cnt16_ControlRegRemoved || QuadDec_1_Cnt16_UsingFixedFunction) */
+ 157:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ 158:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 143              		.loc 1 158 0
+ 144 0020 BD46     		mov	sp, r7
+ 145 0022 80BC     		pop	{r7}
+ 146 0024 7047     		bx	lr
+ 147              		.cfi_endproc
+ 148              	.LFE1:
+ 149              		.size	QuadDec_1_Cnt16_Enable, .-QuadDec_1_Cnt16_Enable
+ 150 0026 00BF     		.section	.text.QuadDec_1_Cnt16_Start,"ax",%progbits
+ 151              		.align	2
+ 152              		.global	QuadDec_1_Cnt16_Start
+ 153              		.thumb
+ 154              		.thumb_func
+ 155              		.type	QuadDec_1_Cnt16_Start, %function
+ 156              	QuadDec_1_Cnt16_Start:
+ 157              	.LFB2:
+ 159:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 160:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 161:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 162:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_Start
+ 163:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 164:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 165:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  Enables the counter for operation 
+ 166:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 167:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 168:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void  
+ 169:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 170:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 171:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 172:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 173:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Global variables:
+ 174:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  QuadDec_1_Cnt16_initVar: Is modified when this function is called for the  
+ 175:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   first time. Is used to ensure that initialization happens only once.
+ 176:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 177:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 178:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_Start(void) 
+ 179:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 158              		.loc 1 179 0
+ 159              		.cfi_startproc
+ 160              		@ args = 0, pretend = 0, frame = 0
+ 161              		@ frame_needed = 1, uses_anonymous_args = 0
+ 162 0000 80B5     		push	{r7, lr}
+ 163              	.LCFI5:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 7
+
+
+ 164              		.cfi_def_cfa_offset 8
+ 165              		.cfi_offset 7, -8
+ 166              		.cfi_offset 14, -4
+ 167 0002 00AF     		add	r7, sp, #0
+ 168              	.LCFI6:
+ 169              		.cfi_def_cfa_register 7
+ 180:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     if(QuadDec_1_Cnt16_initVar == 0u)
+ 170              		.loc 1 180 0
+ 171 0004 40F20003 		movw	r3, #:lower16:QuadDec_1_Cnt16_initVar
+ 172 0008 C0F20003 		movt	r3, #:upper16:QuadDec_1_Cnt16_initVar
+ 173 000c 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 174 000e 002B     		cmp	r3, #0
+ 175 0010 08D1     		bne	.L4
+ 181:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     {
+ 182:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_Init();
+ 176              		.loc 1 182 0
+ 177 0012 FFF7FEFF 		bl	QuadDec_1_Cnt16_Init
+ 183:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         
+ 184:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_initVar = 1u; /* Clear this bit for Initialization */        
+ 178              		.loc 1 184 0
+ 179 0016 40F20003 		movw	r3, #:lower16:QuadDec_1_Cnt16_initVar
+ 180 001a C0F20003 		movt	r3, #:upper16:QuadDec_1_Cnt16_initVar
+ 181 001e 4FF00102 		mov	r2, #1
+ 182 0022 1A70     		strb	r2, [r3, #0]
+ 183              	.L4:
+ 185:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     }
+ 186:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ 187:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Enable the Counter */
+ 188:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_Enable();        
+ 184              		.loc 1 188 0
+ 185 0024 FFF7FEFF 		bl	QuadDec_1_Cnt16_Enable
+ 189:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 186              		.loc 1 189 0
+ 187 0028 80BD     		pop	{r7, pc}
+ 188              		.cfi_endproc
+ 189              	.LFE2:
+ 190              		.size	QuadDec_1_Cnt16_Start, .-QuadDec_1_Cnt16_Start
+ 191 002a 00BF     		.section	.text.QuadDec_1_Cnt16_Stop,"ax",%progbits
+ 192              		.align	2
+ 193              		.global	QuadDec_1_Cnt16_Stop
+ 194              		.thumb
+ 195              		.thumb_func
+ 196              		.type	QuadDec_1_Cnt16_Stop, %function
+ 197              	QuadDec_1_Cnt16_Stop:
+ 198              	.LFB3:
+ 190:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 191:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 192:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 193:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_Stop
+ 194:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 195:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 196:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Halts the counter, but does not change any modes or disable interrupts.
+ 197:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 198:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 199:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void  
+ 200:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 201:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 8
+
+
+ 202:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 203:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 204:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
+ 205:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *               has no effect on the operation of the counter.
+ 206:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 207:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 208:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_Stop(void) 
+ 209:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 199              		.loc 1 209 0
+ 200              		.cfi_startproc
+ 201              		@ args = 0, pretend = 0, frame = 0
+ 202              		@ frame_needed = 1, uses_anonymous_args = 0
+ 203              		@ link register save eliminated.
+ 204 0000 80B4     		push	{r7}
+ 205              	.LCFI7:
+ 206              		.cfi_def_cfa_offset 4
+ 207              		.cfi_offset 7, -4
+ 208 0002 00AF     		add	r7, sp, #0
+ 209              	.LCFI8:
+ 210              		.cfi_def_cfa_register 7
+ 210:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Disable Counter */
+ 211:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(!QuadDec_1_Cnt16_ControlRegRemoved || QuadDec_1_Cnt16_UsingFixedFunction)
+ 212:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_CONTROL &= ((uint8)(~QuadDec_1_Cnt16_CTRL_ENABLE));        
+ 211              		.loc 1 212 0
+ 212 0004 46F27C43 		movw	r3, #25724
+ 213 0008 C4F20003 		movt	r3, 16384
+ 214 000c 46F27C42 		movw	r2, #25724
+ 215 0010 C4F20002 		movt	r2, 16384
+ 216 0014 1278     		ldrb	r2, [r2, #0]
+ 217 0016 D2B2     		uxtb	r2, r2
+ 218 0018 02F07F02 		and	r2, r2, #127
+ 219 001c D2B2     		uxtb	r2, r2
+ 220 001e 1A70     		strb	r2, [r3, #0]
+ 213:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (!QuadDec_1_Cnt16_ControlRegRemoved || QuadDec_1_Cnt16_UsingFixedFunction) */
+ 214:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ 215:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Globally disable the Fixed Function Block chosen */
+ 216:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if (QuadDec_1_Cnt16_UsingFixedFunction)
+ 217:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_ENABLE &= ((uint8)(~QuadDec_1_Cnt16_BLOCK_EN_MASK));
+ 218:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_STBY_ENABLE &= ((uint8)(~QuadDec_1_Cnt16_BLOCK_STBY_EN_MASK));
+ 219:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 220:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 221              		.loc 1 220 0
+ 222 0020 BD46     		mov	sp, r7
+ 223 0022 80BC     		pop	{r7}
+ 224 0024 7047     		bx	lr
+ 225              		.cfi_endproc
+ 226              	.LFE3:
+ 227              		.size	QuadDec_1_Cnt16_Stop, .-QuadDec_1_Cnt16_Stop
+ 228 0026 00BF     		.section	.text.QuadDec_1_Cnt16_SetInterruptMode,"ax",%progbits
+ 229              		.align	2
+ 230              		.global	QuadDec_1_Cnt16_SetInterruptMode
+ 231              		.thumb
+ 232              		.thumb_func
+ 233              		.type	QuadDec_1_Cnt16_SetInterruptMode, %function
+ 234              	QuadDec_1_Cnt16_SetInterruptMode:
+ 235              	.LFB4:
+ 221:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 9
+
+
+ 222:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 223:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 224:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_SetInterruptMode
+ 225:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 226:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 227:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Configures which interrupt sources are enabled to generate the final interrupt
+ 228:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 229:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 230:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  InterruptsMask: This parameter is an or'd collection of the status bits
+ 231:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *                   which will be allowed to generate the counters interrupt.   
+ 232:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 233:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 234:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 235:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 236:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 237:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_SetInterruptMode(uint8 interruptsMask) 
+ 238:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 236              		.loc 1 238 0
+ 237              		.cfi_startproc
+ 238              		@ args = 0, pretend = 0, frame = 8
+ 239              		@ frame_needed = 1, uses_anonymous_args = 0
+ 240              		@ link register save eliminated.
+ 241 0000 80B4     		push	{r7}
+ 242              	.LCFI9:
+ 243              		.cfi_def_cfa_offset 4
+ 244              		.cfi_offset 7, -4
+ 245 0002 83B0     		sub	sp, sp, #12
+ 246              	.LCFI10:
+ 247              		.cfi_def_cfa_offset 16
+ 248 0004 00AF     		add	r7, sp, #0
+ 249              	.LCFI11:
+ 250              		.cfi_def_cfa_register 7
+ 251 0006 0346     		mov	r3, r0
+ 252 0008 FB71     		strb	r3, [r7, #7]
+ 239:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_STATUS_MASK = interruptsMask;
+ 253              		.loc 1 239 0
+ 254 000a 46F28B43 		movw	r3, #25739
+ 255 000e C4F20003 		movt	r3, 16384
+ 256 0012 FA79     		ldrb	r2, [r7, #7]
+ 257 0014 1A70     		strb	r2, [r3, #0]
+ 240:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 258              		.loc 1 240 0
+ 259 0016 07F10C07 		add	r7, r7, #12
+ 260 001a BD46     		mov	sp, r7
+ 261 001c 80BC     		pop	{r7}
+ 262 001e 7047     		bx	lr
+ 263              		.cfi_endproc
+ 264              	.LFE4:
+ 265              		.size	QuadDec_1_Cnt16_SetInterruptMode, .-QuadDec_1_Cnt16_SetInterruptMode
+ 266              		.section	.text.QuadDec_1_Cnt16_ReadStatusRegister,"ax",%progbits
+ 267              		.align	2
+ 268              		.global	QuadDec_1_Cnt16_ReadStatusRegister
+ 269              		.thumb
+ 270              		.thumb_func
+ 271              		.type	QuadDec_1_Cnt16_ReadStatusRegister, %function
+ 272              	QuadDec_1_Cnt16_ReadStatusRegister:
+ 273              	.LFB5:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 10
+
+
+ 241:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 242:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 243:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 244:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadStatusRegister
+ 245:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 246:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 247:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   Reads the status register and returns it's state. This function should use
+ 248:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       defined types for the bit-field information as the bits in this
+ 249:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       register may be permuteable.
+ 250:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 251:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 252:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 253:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 254:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 255:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint8) The contents of the status register
+ 256:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 257:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Side Effects:
+ 258:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   Status register bits may be clear on read. 
+ 259:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 260:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 261:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint8   QuadDec_1_Cnt16_ReadStatusRegister(void) 
+ 262:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 274              		.loc 1 262 0
+ 275              		.cfi_startproc
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 1, uses_anonymous_args = 0
+ 278              		@ link register save eliminated.
+ 279 0000 80B4     		push	{r7}
+ 280              	.LCFI12:
+ 281              		.cfi_def_cfa_offset 4
+ 282              		.cfi_offset 7, -4
+ 283 0002 00AF     		add	r7, sp, #0
+ 284              	.LCFI13:
+ 285              		.cfi_def_cfa_register 7
+ 263:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     return QuadDec_1_Cnt16_STATUS;
+ 286              		.loc 1 263 0
+ 287 0004 46F26B43 		movw	r3, #25707
+ 288 0008 C4F20003 		movt	r3, 16384
+ 289 000c 1B78     		ldrb	r3, [r3, #0]
+ 290 000e DBB2     		uxtb	r3, r3
+ 264:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 291              		.loc 1 264 0
+ 292 0010 1846     		mov	r0, r3
+ 293 0012 BD46     		mov	sp, r7
+ 294 0014 80BC     		pop	{r7}
+ 295 0016 7047     		bx	lr
+ 296              		.cfi_endproc
+ 297              	.LFE5:
+ 298              		.size	QuadDec_1_Cnt16_ReadStatusRegister, .-QuadDec_1_Cnt16_ReadStatusRegister
+ 299              		.section	.text.QuadDec_1_Cnt16_ReadControlRegister,"ax",%progbits
+ 300              		.align	2
+ 301              		.global	QuadDec_1_Cnt16_ReadControlRegister
+ 302              		.thumb
+ 303              		.thumb_func
+ 304              		.type	QuadDec_1_Cnt16_ReadControlRegister, %function
+ 305              	QuadDec_1_Cnt16_ReadControlRegister:
+ 306              	.LFB6:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 11
+
+
+ 265:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 266:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 267:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #if(!QuadDec_1_Cnt16_ControlRegRemoved)
+ 268:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 269:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadControlRegister
+ 270:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 271:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 272:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   Reads the control register and returns it's state. This function should use
+ 273:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       defined types for the bit-field information as the bits in this
+ 274:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       register may be permuteable.
+ 275:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 276:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 277:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 278:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 279:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 280:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint8) The contents of the control register
+ 281:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 282:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 283:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint8   QuadDec_1_Cnt16_ReadControlRegister(void) 
+ 284:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 307              		.loc 1 284 0
+ 308              		.cfi_startproc
+ 309              		@ args = 0, pretend = 0, frame = 0
+ 310              		@ frame_needed = 1, uses_anonymous_args = 0
+ 311              		@ link register save eliminated.
+ 312 0000 80B4     		push	{r7}
+ 313              	.LCFI14:
+ 314              		.cfi_def_cfa_offset 4
+ 315              		.cfi_offset 7, -4
+ 316 0002 00AF     		add	r7, sp, #0
+ 317              	.LCFI15:
+ 318              		.cfi_def_cfa_register 7
+ 285:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     return QuadDec_1_Cnt16_CONTROL;
+ 319              		.loc 1 285 0
+ 320 0004 46F27C43 		movw	r3, #25724
+ 321 0008 C4F20003 		movt	r3, 16384
+ 322 000c 1B78     		ldrb	r3, [r3, #0]
+ 323 000e DBB2     		uxtb	r3, r3
+ 286:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 324              		.loc 1 286 0
+ 325 0010 1846     		mov	r0, r3
+ 326 0012 BD46     		mov	sp, r7
+ 327 0014 80BC     		pop	{r7}
+ 328 0016 7047     		bx	lr
+ 329              		.cfi_endproc
+ 330              	.LFE6:
+ 331              		.size	QuadDec_1_Cnt16_ReadControlRegister, .-QuadDec_1_Cnt16_ReadControlRegister
+ 332              		.section	.text.QuadDec_1_Cnt16_WriteControlRegister,"ax",%progbits
+ 333              		.align	2
+ 334              		.global	QuadDec_1_Cnt16_WriteControlRegister
+ 335              		.thumb
+ 336              		.thumb_func
+ 337              		.type	QuadDec_1_Cnt16_WriteControlRegister, %function
+ 338              	QuadDec_1_Cnt16_WriteControlRegister:
+ 339              	.LFB7:
+ 287:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 288:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 12
+
+
+ 289:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 290:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_WriteControlRegister
+ 291:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 292:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 293:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   Sets the bit-field of the control register.  This function should use
+ 294:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       defined types for the bit-field information as the bits in this
+ 295:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *       register may be permuteable.
+ 296:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 297:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 298:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 299:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 300:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 301:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint8) The contents of the control register
+ 302:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 303:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 304:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void    QuadDec_1_Cnt16_WriteControlRegister(uint8 control) 
+ 305:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 340              		.loc 1 305 0
+ 341              		.cfi_startproc
+ 342              		@ args = 0, pretend = 0, frame = 8
+ 343              		@ frame_needed = 1, uses_anonymous_args = 0
+ 344              		@ link register save eliminated.
+ 345 0000 80B4     		push	{r7}
+ 346              	.LCFI16:
+ 347              		.cfi_def_cfa_offset 4
+ 348              		.cfi_offset 7, -4
+ 349 0002 83B0     		sub	sp, sp, #12
+ 350              	.LCFI17:
+ 351              		.cfi_def_cfa_offset 16
+ 352 0004 00AF     		add	r7, sp, #0
+ 353              	.LCFI18:
+ 354              		.cfi_def_cfa_register 7
+ 355 0006 0346     		mov	r3, r0
+ 356 0008 FB71     		strb	r3, [r7, #7]
+ 306:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_CONTROL = control;
+ 357              		.loc 1 306 0
+ 358 000a 46F27C43 		movw	r3, #25724
+ 359 000e C4F20003 		movt	r3, 16384
+ 360 0012 FA79     		ldrb	r2, [r7, #7]
+ 361 0014 1A70     		strb	r2, [r3, #0]
+ 307:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 362              		.loc 1 307 0
+ 363 0016 07F10C07 		add	r7, r7, #12
+ 364 001a BD46     		mov	sp, r7
+ 365 001c 80BC     		pop	{r7}
+ 366 001e 7047     		bx	lr
+ 367              		.cfi_endproc
+ 368              	.LFE7:
+ 369              		.size	QuadDec_1_Cnt16_WriteControlRegister, .-QuadDec_1_Cnt16_WriteControlRegister
+ 370              		.section	.text.QuadDec_1_Cnt16_WriteCounter,"ax",%progbits
+ 371              		.align	2
+ 372              		.global	QuadDec_1_Cnt16_WriteCounter
+ 373              		.thumb
+ 374              		.thumb_func
+ 375              		.type	QuadDec_1_Cnt16_WriteCounter, %function
+ 376              	QuadDec_1_Cnt16_WriteCounter:
+ 377              	.LFB8:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 13
+
+
+ 308:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 309:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #endif  /* (!QuadDec_1_Cnt16_ControlRegRemoved) */
+ 310:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 311:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 312:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #if (!(QuadDec_1_Cnt16_UsingFixedFunction && (CY_PSOC5A)))
+ 313:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 314:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_WriteCounter
+ 315:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 316:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 317:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   This funtion is used to set the counter to a specific value
+ 318:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 319:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 320:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  counter:  New counter value. 
+ 321:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 322:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 323:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void 
+ 324:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 325:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 326:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_WriteCounter(uint16 counter) \
+ 327:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                                    
+ 328:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 378              		.loc 1 328 0
+ 379              		.cfi_startproc
+ 380              		@ args = 0, pretend = 0, frame = 8
+ 381              		@ frame_needed = 1, uses_anonymous_args = 0
+ 382              		@ link register save eliminated.
+ 383 0000 80B4     		push	{r7}
+ 384              	.LCFI19:
+ 385              		.cfi_def_cfa_offset 4
+ 386              		.cfi_offset 7, -4
+ 387 0002 83B0     		sub	sp, sp, #12
+ 388              	.LCFI20:
+ 389              		.cfi_def_cfa_offset 16
+ 390 0004 00AF     		add	r7, sp, #0
+ 391              	.LCFI21:
+ 392              		.cfi_def_cfa_register 7
+ 393 0006 0346     		mov	r3, r0
+ 394 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 329:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 330:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         /* assert if block is already enabled */
+ 331:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CYASSERT (0u == (QuadDec_1_Cnt16_GLOBAL_ENABLE & QuadDec_1_Cnt16_BLOCK_EN_MASK));
+ 332:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         /* If block is disabled, enable it and then write the counter */
+ 333:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_ENABLE |= QuadDec_1_Cnt16_BLOCK_EN_MASK;
+ 334:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_COUNTER_LSB_PTR, (uint16)counter);
+ 335:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         QuadDec_1_Cnt16_GLOBAL_ENABLE &= ((uint8)(~QuadDec_1_Cnt16_BLOCK_EN_MASK));
+ 336:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 337:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_COUNTER_LSB_PTR, counter);
+ 395              		.loc 1 337 0
+ 396 000a 46F61403 		movw	r3, #26644
+ 397 000e C4F20003 		movt	r3, 16384
+ 398 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 399 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 338:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 339:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 400              		.loc 1 339 0
+ 401 0016 07F10C07 		add	r7, r7, #12
+ 402 001a BD46     		mov	sp, r7
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 14
+
+
+ 403 001c 80BC     		pop	{r7}
+ 404 001e 7047     		bx	lr
+ 405              		.cfi_endproc
+ 406              	.LFE8:
+ 407              		.size	QuadDec_1_Cnt16_WriteCounter, .-QuadDec_1_Cnt16_WriteCounter
+ 408              		.section	.text.QuadDec_1_Cnt16_ReadCounter,"ax",%progbits
+ 409              		.align	2
+ 410              		.global	QuadDec_1_Cnt16_ReadCounter
+ 411              		.thumb
+ 412              		.thumb_func
+ 413              		.type	QuadDec_1_Cnt16_ReadCounter, %function
+ 414              	QuadDec_1_Cnt16_ReadCounter:
+ 415              	.LFB9:
+ 340:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #endif /* (!(QuadDec_1_Cnt16_UsingFixedFunction && (CY_PSOC5A))) */
+ 341:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 342:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 343:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 344:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadCounter
+ 345:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 346:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 347:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Returns the current value of the counter.  It doesn't matter
+ 348:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * if the counter is enabled or running.
+ 349:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 350:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 351:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void:  
+ 352:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 353:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 354:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint16) The present value of the counter.
+ 355:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 356:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 357:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint16 QuadDec_1_Cnt16_ReadCounter(void) 
+ 358:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 416              		.loc 1 358 0
+ 417              		.cfi_startproc
+ 418              		@ args = 0, pretend = 0, frame = 0
+ 419              		@ frame_needed = 1, uses_anonymous_args = 0
+ 420              		@ link register save eliminated.
+ 421 0000 80B4     		push	{r7}
+ 422              	.LCFI22:
+ 423              		.cfi_def_cfa_offset 4
+ 424              		.cfi_offset 7, -4
+ 425 0002 00AF     		add	r7, sp, #0
+ 426              	.LCFI23:
+ 427              		.cfi_def_cfa_register 7
+ 359:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Force capture by reading Accumulator */
+ 360:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Must first do a software capture to be able to read the counter */
+ 361:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 362:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 363:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 		(void)CY_GET_REG16(QuadDec_1_Cnt16_COUNTER_LSB_PTR);
+ 364:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 	#else
+ 365:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 		(void)CY_GET_REG8(QuadDec_1_Cnt16_COUNTER_LSB_PTR_8BIT);
+ 428              		.loc 1 365 0
+ 429 0004 46F20A43 		movw	r3, #25610
+ 430 0008 C4F20003 		movt	r3, 16384
+ 431 000c 1B78     		ldrb	r3, [r3, #0]
+ 366:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 	#endif/* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 367:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 15
+
+
+ 368:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
+ 369:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 370:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return ((uint16)CY_GET_REG16(QuadDec_1_Cnt16_STATICCOUNT_LSB_PTR));
+ 371:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 372:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return (CY_GET_REG16(QuadDec_1_Cnt16_STATICCOUNT_LSB_PTR));
+ 432              		.loc 1 372 0
+ 433 000e 46F69403 		movw	r3, #26772
+ 434 0012 C4F20003 		movt	r3, 16384
+ 435 0016 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 436 0018 9BB2     		uxth	r3, r3
+ 373:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 374:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 437              		.loc 1 374 0
+ 438 001a 1846     		mov	r0, r3
+ 439 001c BD46     		mov	sp, r7
+ 440 001e 80BC     		pop	{r7}
+ 441 0020 7047     		bx	lr
+ 442              		.cfi_endproc
+ 443              	.LFE9:
+ 444              		.size	QuadDec_1_Cnt16_ReadCounter, .-QuadDec_1_Cnt16_ReadCounter
+ 445 0022 00BF     		.section	.text.QuadDec_1_Cnt16_ReadCapture,"ax",%progbits
+ 446              		.align	2
+ 447              		.global	QuadDec_1_Cnt16_ReadCapture
+ 448              		.thumb
+ 449              		.thumb_func
+ 450              		.type	QuadDec_1_Cnt16_ReadCapture, %function
+ 451              	QuadDec_1_Cnt16_ReadCapture:
+ 452              	.LFB10:
+ 375:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 376:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 377:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 378:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadCapture
+ 379:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 380:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 381:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   This function returns the last value captured.
+ 382:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 383:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 384:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 385:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 386:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 387:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint16) Present Capture value.
+ 388:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 389:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 390:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint16 QuadDec_1_Cnt16_ReadCapture(void) 
+ 391:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 453              		.loc 1 391 0
+ 454              		.cfi_startproc
+ 455              		@ args = 0, pretend = 0, frame = 0
+ 456              		@ frame_needed = 1, uses_anonymous_args = 0
+ 457              		@ link register save eliminated.
+ 458 0000 80B4     		push	{r7}
+ 459              	.LCFI24:
+ 460              		.cfi_def_cfa_offset 4
+ 461              		.cfi_offset 7, -4
+ 462 0002 00AF     		add	r7, sp, #0
+ 463              	.LCFI25:
+ 464              		.cfi_def_cfa_register 7
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 16
+
+
+ 392:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 393:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return ((uint16)CY_GET_REG16(QuadDec_1_Cnt16_STATICCOUNT_LSB_PTR));
+ 394:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 395:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return (CY_GET_REG16(QuadDec_1_Cnt16_STATICCOUNT_LSB_PTR));
+ 465              		.loc 1 395 0
+ 466 0004 46F69403 		movw	r3, #26772
+ 467 0008 C4F20003 		movt	r3, 16384
+ 468 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 469 000e 9BB2     		uxth	r3, r3
+ 396:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 397:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 470              		.loc 1 397 0
+ 471 0010 1846     		mov	r0, r3
+ 472 0012 BD46     		mov	sp, r7
+ 473 0014 80BC     		pop	{r7}
+ 474 0016 7047     		bx	lr
+ 475              		.cfi_endproc
+ 476              	.LFE10:
+ 477              		.size	QuadDec_1_Cnt16_ReadCapture, .-QuadDec_1_Cnt16_ReadCapture
+ 478              		.section	.text.QuadDec_1_Cnt16_WritePeriod,"ax",%progbits
+ 479              		.align	2
+ 480              		.global	QuadDec_1_Cnt16_WritePeriod
+ 481              		.thumb
+ 482              		.thumb_func
+ 483              		.type	QuadDec_1_Cnt16_WritePeriod, %function
+ 484              	QuadDec_1_Cnt16_WritePeriod:
+ 485              	.LFB11:
+ 398:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 399:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 400:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 401:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_WritePeriod
+ 402:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 403:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 404:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Changes the period of the counter.  The new period 
+ 405:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * will be loaded the next time terminal count is detected.
+ 406:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 407:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 408:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  period: (uint16) A value of 0 will result in
+ 409:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *         the counter remaining at zero.  
+ 410:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 411:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 412:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 413:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 414:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 415:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_WritePeriod(uint16 period) 
+ 416:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 486              		.loc 1 416 0
+ 487              		.cfi_startproc
+ 488              		@ args = 0, pretend = 0, frame = 8
+ 489              		@ frame_needed = 1, uses_anonymous_args = 0
+ 490              		@ link register save eliminated.
+ 491 0000 80B4     		push	{r7}
+ 492              	.LCFI26:
+ 493              		.cfi_def_cfa_offset 4
+ 494              		.cfi_offset 7, -4
+ 495 0002 83B0     		sub	sp, sp, #12
+ 496              	.LCFI27:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 17
+
+
+ 497              		.cfi_def_cfa_offset 16
+ 498 0004 00AF     		add	r7, sp, #0
+ 499              	.LCFI28:
+ 500              		.cfi_def_cfa_register 7
+ 501 0006 0346     		mov	r3, r0
+ 502 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 417:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 418:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_PERIOD_LSB_PTR,(uint16)period);
+ 419:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 420:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_PERIOD_LSB_PTR, period);
+ 503              		.loc 1 420 0
+ 504 000a 46F65403 		movw	r3, #26708
+ 505 000e C4F20003 		movt	r3, 16384
+ 506 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 507 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 421:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 422:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 508              		.loc 1 422 0
+ 509 0016 07F10C07 		add	r7, r7, #12
+ 510 001a BD46     		mov	sp, r7
+ 511 001c 80BC     		pop	{r7}
+ 512 001e 7047     		bx	lr
+ 513              		.cfi_endproc
+ 514              	.LFE11:
+ 515              		.size	QuadDec_1_Cnt16_WritePeriod, .-QuadDec_1_Cnt16_WritePeriod
+ 516              		.section	.text.QuadDec_1_Cnt16_ReadPeriod,"ax",%progbits
+ 517              		.align	2
+ 518              		.global	QuadDec_1_Cnt16_ReadPeriod
+ 519              		.thumb
+ 520              		.thumb_func
+ 521              		.type	QuadDec_1_Cnt16_ReadPeriod, %function
+ 522              	QuadDec_1_Cnt16_ReadPeriod:
+ 523              	.LFB12:
+ 423:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 424:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 425:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 426:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadPeriod
+ 427:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 428:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 429:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Reads the current period value without affecting counter operation.
+ 430:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 431:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 432:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void:  
+ 433:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 434:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 435:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint16) Present period value.
+ 436:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 437:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 438:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint16 QuadDec_1_Cnt16_ReadPeriod(void) 
+ 439:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 524              		.loc 1 439 0
+ 525              		.cfi_startproc
+ 526              		@ args = 0, pretend = 0, frame = 0
+ 527              		@ frame_needed = 1, uses_anonymous_args = 0
+ 528              		@ link register save eliminated.
+ 529 0000 80B4     		push	{r7}
+ 530              	.LCFI29:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 18
+
+
+ 531              		.cfi_def_cfa_offset 4
+ 532              		.cfi_offset 7, -4
+ 533 0002 00AF     		add	r7, sp, #0
+ 534              	.LCFI30:
+ 535              		.cfi_def_cfa_register 7
+ 440:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 441:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return ((uint16)CY_GET_REG16(QuadDec_1_Cnt16_PERIOD_LSB_PTR));
+ 442:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 443:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         return (CY_GET_REG16(QuadDec_1_Cnt16_PERIOD_LSB_PTR));
+ 536              		.loc 1 443 0
+ 537 0004 46F65403 		movw	r3, #26708
+ 538 0008 C4F20003 		movt	r3, 16384
+ 539 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 540 000e 9BB2     		uxth	r3, r3
+ 444:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 445:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 541              		.loc 1 445 0
+ 542 0010 1846     		mov	r0, r3
+ 543 0012 BD46     		mov	sp, r7
+ 544 0014 80BC     		pop	{r7}
+ 545 0016 7047     		bx	lr
+ 546              		.cfi_endproc
+ 547              	.LFE12:
+ 548              		.size	QuadDec_1_Cnt16_ReadPeriod, .-QuadDec_1_Cnt16_ReadPeriod
+ 549              		.section	.text.QuadDec_1_Cnt16_WriteCompare,"ax",%progbits
+ 550              		.align	2
+ 551              		.global	QuadDec_1_Cnt16_WriteCompare
+ 552              		.thumb
+ 553              		.thumb_func
+ 554              		.type	QuadDec_1_Cnt16_WriteCompare, %function
+ 555              	QuadDec_1_Cnt16_WriteCompare:
+ 556              	.LFB13:
+ 446:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 447:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 448:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #if (!QuadDec_1_Cnt16_UsingFixedFunction)
+ 449:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 450:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_WriteCompare
+ 451:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 452:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 453:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Changes the compare value.  The compare output will 
+ 454:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * reflect the new value on the next UDB clock.  The compare output will be 
+ 455:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * driven high when the present counter value compares true based on the 
+ 456:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * configured compare mode setting. 
+ 457:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 458:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 459:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  Compare:  New compare value. 
+ 460:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 461:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 462:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 463:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 464:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 465:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_WriteCompare(uint16 compare) \
+ 466:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****                                    
+ 467:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 557              		.loc 1 467 0
+ 558              		.cfi_startproc
+ 559              		@ args = 0, pretend = 0, frame = 8
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 19
+
+
+ 560              		@ frame_needed = 1, uses_anonymous_args = 0
+ 561              		@ link register save eliminated.
+ 562 0000 80B4     		push	{r7}
+ 563              	.LCFI31:
+ 564              		.cfi_def_cfa_offset 4
+ 565              		.cfi_offset 7, -4
+ 566 0002 83B0     		sub	sp, sp, #12
+ 567              	.LCFI32:
+ 568              		.cfi_def_cfa_offset 16
+ 569 0004 00AF     		add	r7, sp, #0
+ 570              	.LCFI33:
+ 571              		.cfi_def_cfa_register 7
+ 572 0006 0346     		mov	r3, r0
+ 573 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 468:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #if(QuadDec_1_Cnt16_UsingFixedFunction)
+ 469:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_COMPARE_LSB_PTR, (uint16)compare);
+ 470:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #else
+ 471:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         CY_SET_REG16(QuadDec_1_Cnt16_COMPARE_LSB_PTR, compare);
+ 574              		.loc 1 471 0
+ 575 000a 46F67403 		movw	r3, #26740
+ 576 000e C4F20003 		movt	r3, 16384
+ 577 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 578 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 472:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     #endif /* (QuadDec_1_Cnt16_UsingFixedFunction) */
+ 473:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 579              		.loc 1 473 0
+ 580 0016 07F10C07 		add	r7, r7, #12
+ 581 001a BD46     		mov	sp, r7
+ 582 001c 80BC     		pop	{r7}
+ 583 001e 7047     		bx	lr
+ 584              		.cfi_endproc
+ 585              	.LFE13:
+ 586              		.size	QuadDec_1_Cnt16_WriteCompare, .-QuadDec_1_Cnt16_WriteCompare
+ 587              		.section	.text.QuadDec_1_Cnt16_ReadCompare,"ax",%progbits
+ 588              		.align	2
+ 589              		.global	QuadDec_1_Cnt16_ReadCompare
+ 590              		.thumb
+ 591              		.thumb_func
+ 592              		.type	QuadDec_1_Cnt16_ReadCompare, %function
+ 593              	QuadDec_1_Cnt16_ReadCompare:
+ 594              	.LFB14:
+ 474:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 475:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 476:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 477:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ReadCompare
+ 478:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 479:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 480:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Returns the compare value.
+ 481:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 482:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 483:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void:
+ 484:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 485:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 486:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  (uint16) Present compare value.
+ 487:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 488:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 489:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** uint16 QuadDec_1_Cnt16_ReadCompare(void) 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 20
+
+
+ 490:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 595              		.loc 1 490 0
+ 596              		.cfi_startproc
+ 597              		@ args = 0, pretend = 0, frame = 0
+ 598              		@ frame_needed = 1, uses_anonymous_args = 0
+ 599              		@ link register save eliminated.
+ 600 0000 80B4     		push	{r7}
+ 601              	.LCFI34:
+ 602              		.cfi_def_cfa_offset 4
+ 603              		.cfi_offset 7, -4
+ 604 0002 00AF     		add	r7, sp, #0
+ 605              	.LCFI35:
+ 606              		.cfi_def_cfa_register 7
+ 491:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     return (CY_GET_REG16(QuadDec_1_Cnt16_COMPARE_LSB_PTR));
+ 607              		.loc 1 491 0
+ 608 0004 46F67403 		movw	r3, #26740
+ 609 0008 C4F20003 		movt	r3, 16384
+ 610 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 611 000e 9BB2     		uxth	r3, r3
+ 492:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 612              		.loc 1 492 0
+ 613 0010 1846     		mov	r0, r3
+ 614 0012 BD46     		mov	sp, r7
+ 615 0014 80BC     		pop	{r7}
+ 616 0016 7047     		bx	lr
+ 617              		.cfi_endproc
+ 618              	.LFE14:
+ 619              		.size	QuadDec_1_Cnt16_ReadCompare, .-QuadDec_1_Cnt16_ReadCompare
+ 620              		.section	.text.QuadDec_1_Cnt16_ClearFIFO,"ax",%progbits
+ 621              		.align	2
+ 622              		.global	QuadDec_1_Cnt16_ClearFIFO
+ 623              		.thumb
+ 624              		.thumb_func
+ 625              		.type	QuadDec_1_Cnt16_ClearFIFO, %function
+ 626              	QuadDec_1_Cnt16_ClearFIFO:
+ 627              	.LFB15:
+ 493:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 494:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 495:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #if (QuadDec_1_Cnt16_COMPARE_MODE_SOFTWARE)
+ 496:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 497:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_SetCompareMode
+ 498:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 499:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 500:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  Sets the software controlled Compare Mode.
+ 501:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 502:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:
+ 503:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  compareMode:  Compare Mode Enumerated Type.
+ 504:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 505:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return:
+ 506:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 507:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 508:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 509:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_SetCompareMode(uint8 compareMode) 
+ 510:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 511:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Clear the compare mode bits in the control register */
+ 512:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_CONTROL &= ((uint8)(~QuadDec_1_Cnt16_CTRL_CMPMODE_MASK));
+ 513:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 21
+
+
+ 514:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Write the new setting */
+ 515:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_CONTROL |= compareMode;
+ 516:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 517:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #endif  /* (QuadDec_1_Cnt16_COMPARE_MODE_SOFTWARE) */
+ 518:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 519:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 520:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #if (QuadDec_1_Cnt16_CAPTURE_MODE_SOFTWARE)
+ 521:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 522:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_SetCaptureMode
+ 523:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 524:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 525:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  Sets the software controlled Capture Mode.
+ 526:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 527:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:
+ 528:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  captureMode:  Capture Mode Enumerated Type.
+ 529:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 530:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return:
+ 531:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void
+ 532:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 533:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 534:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_SetCaptureMode(uint8 captureMode) 
+ 535:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 536:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Clear the capture mode bits in the control register */
+ 537:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_CONTROL &= ((uint8)(~QuadDec_1_Cnt16_CTRL_CAPMODE_MASK));
+ 538:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     
+ 539:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     /* Write the new setting */
+ 540:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     QuadDec_1_Cnt16_CONTROL |= ((uint8)((uint8)captureMode << QuadDec_1_Cnt16_CTRL_CAPMODE0_SHIFT))
+ 541:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 542:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** #endif  /* (QuadDec_1_Cnt16_CAPTURE_MODE_SOFTWARE) */
+ 543:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 544:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 545:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** /*******************************************************************************
+ 546:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Function Name: QuadDec_1_Cnt16_ClearFIFO
+ 547:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** ********************************************************************************
+ 548:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Summary:
+ 549:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *   This function clears all capture data from the capture FIFO
+ 550:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 551:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Parameters:  
+ 552:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  void:
+ 553:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 554:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** * Return: 
+ 555:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *  None
+ 556:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *
+ 557:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** *******************************************************************************/
+ 558:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** void QuadDec_1_Cnt16_ClearFIFO(void) 
+ 559:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** {
+ 628              		.loc 1 559 0
+ 629              		.cfi_startproc
+ 630              		@ args = 0, pretend = 0, frame = 0
+ 631              		@ frame_needed = 1, uses_anonymous_args = 0
+ 632 0000 80B5     		push	{r7, lr}
+ 633              	.LCFI36:
+ 634              		.cfi_def_cfa_offset 8
+ 635              		.cfi_offset 7, -8
+ 636              		.cfi_offset 14, -4
+ 637 0002 00AF     		add	r7, sp, #0
+ 638              	.LCFI37:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 22
+
+
+ 639              		.cfi_def_cfa_register 7
+ 560:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 561:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     while(0u != (QuadDec_1_Cnt16_ReadStatusRegister() & QuadDec_1_Cnt16_STATUS_FIFONEMP))
+ 640              		.loc 1 561 0
+ 641 0004 01E0     		b	.L24
+ 642              	.L25:
+ 562:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     {
+ 563:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****         (void)QuadDec_1_Cnt16_ReadCapture();
+ 643              		.loc 1 563 0
+ 644 0006 FFF7FEFF 		bl	QuadDec_1_Cnt16_ReadCapture
+ 645              	.L24:
+ 561:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     while(0u != (QuadDec_1_Cnt16_ReadStatusRegister() & QuadDec_1_Cnt16_STATUS_FIFONEMP))
+ 646              		.loc 1 561 0 discriminator 1
+ 647 000a FFF7FEFF 		bl	QuadDec_1_Cnt16_ReadStatusRegister
+ 648 000e 0346     		mov	r3, r0
+ 649 0010 03F04003 		and	r3, r3, #64
+ 650 0014 002B     		cmp	r3, #0
+ 651 0016 F6D1     		bne	.L25
+ 564:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c ****     }
+ 565:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** 
+ 566:.\Generated_Source\PSoC5/QuadDec_1_Cnt16.c **** }
+ 652              		.loc 1 566 0
+ 653 0018 80BD     		pop	{r7, pc}
+ 654              		.cfi_endproc
+ 655              	.LFE15:
+ 656              		.size	QuadDec_1_Cnt16_ClearFIFO, .-QuadDec_1_Cnt16_ClearFIFO
+ 657 001a 00BF     		.text
+ 658              	.Letext0:
+ 659              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 660              		.section	.debug_info,"",%progbits
+ 661              	.Ldebug_info0:
+ 662 0000 D7020000 		.4byte	0x2d7
+ 663 0004 0200     		.2byte	0x2
+ 664 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 665 000a 04       		.byte	0x4
+ 666 000b 01       		.uleb128 0x1
+ 667 000c E5020000 		.4byte	.LASF40
+ 668 0010 01       		.byte	0x1
+ 669 0011 06000000 		.4byte	.LASF41
+ 670 0015 B1010000 		.4byte	.LASF42
+ 671 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 672 001d 00000000 		.4byte	0
+ 673 0021 00000000 		.4byte	0
+ 674 0025 00000000 		.4byte	.Ldebug_line0
+ 675 0029 02       		.uleb128 0x2
+ 676 002a 01       		.byte	0x1
+ 677 002b 06       		.byte	0x6
+ 678 002c 76030000 		.4byte	.LASF0
+ 679 0030 02       		.uleb128 0x2
+ 680 0031 01       		.byte	0x1
+ 681 0032 08       		.byte	0x8
+ 682 0033 D7000000 		.4byte	.LASF1
+ 683 0037 02       		.uleb128 0x2
+ 684 0038 02       		.byte	0x2
+ 685 0039 05       		.byte	0x5
+ 686 003a AA020000 		.4byte	.LASF2
+ 687 003e 02       		.uleb128 0x2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 23
+
+
+ 688 003f 02       		.byte	0x2
+ 689 0040 07       		.byte	0x7
+ 690 0041 6C000000 		.4byte	.LASF3
+ 691 0045 02       		.uleb128 0x2
+ 692 0046 04       		.byte	0x4
+ 693 0047 05       		.byte	0x5
+ 694 0048 53030000 		.4byte	.LASF4
+ 695 004c 02       		.uleb128 0x2
+ 696 004d 04       		.byte	0x4
+ 697 004e 07       		.byte	0x7
+ 698 004f EA000000 		.4byte	.LASF5
+ 699 0053 02       		.uleb128 0x2
+ 700 0054 08       		.byte	0x8
+ 701 0055 05       		.byte	0x5
+ 702 0056 97020000 		.4byte	.LASF6
+ 703 005a 02       		.uleb128 0x2
+ 704 005b 08       		.byte	0x8
+ 705 005c 07       		.byte	0x7
+ 706 005d 56020000 		.4byte	.LASF7
+ 707 0061 03       		.uleb128 0x3
+ 708 0062 04       		.byte	0x4
+ 709 0063 05       		.byte	0x5
+ 710 0064 696E7400 		.ascii	"int\000"
+ 711 0068 02       		.uleb128 0x2
+ 712 0069 04       		.byte	0x4
+ 713 006a 07       		.byte	0x7
+ 714 006b 49020000 		.4byte	.LASF8
+ 715 006f 04       		.uleb128 0x4
+ 716 0070 FC000000 		.4byte	.LASF9
+ 717 0074 02       		.byte	0x2
+ 718 0075 5B       		.byte	0x5b
+ 719 0076 30000000 		.4byte	0x30
+ 720 007a 04       		.uleb128 0x4
+ 721 007b 06020000 		.4byte	.LASF10
+ 722 007f 02       		.byte	0x2
+ 723 0080 5C       		.byte	0x5c
+ 724 0081 3E000000 		.4byte	0x3e
+ 725 0085 02       		.uleb128 0x2
+ 726 0086 04       		.byte	0x4
+ 727 0087 04       		.byte	0x4
+ 728 0088 C9000000 		.4byte	.LASF11
+ 729 008c 02       		.uleb128 0x2
+ 730 008d 08       		.byte	0x8
+ 731 008e 04       		.byte	0x4
+ 732 008f 79010000 		.4byte	.LASF12
+ 733 0093 02       		.uleb128 0x2
+ 734 0094 01       		.byte	0x1
+ 735 0095 08       		.byte	0x8
+ 736 0096 A5020000 		.4byte	.LASF13
+ 737 009a 04       		.uleb128 0x4
+ 738 009b E5000000 		.4byte	.LASF14
+ 739 009f 02       		.byte	0x2
+ 740 00a0 F0       		.byte	0xf0
+ 741 00a1 A5000000 		.4byte	0xa5
+ 742 00a5 05       		.uleb128 0x5
+ 743 00a6 6F000000 		.4byte	0x6f
+ 744 00aa 04       		.uleb128 0x4
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 24
+
+
+ 745 00ab 00000000 		.4byte	.LASF15
+ 746 00af 02       		.byte	0x2
+ 747 00b0 F1       		.byte	0xf1
+ 748 00b1 B5000000 		.4byte	0xb5
+ 749 00b5 05       		.uleb128 0x5
+ 750 00b6 7A000000 		.4byte	0x7a
+ 751 00ba 02       		.uleb128 0x2
+ 752 00bb 04       		.byte	0x4
+ 753 00bc 07       		.byte	0x7
+ 754 00bd 8E020000 		.4byte	.LASF16
+ 755 00c1 06       		.uleb128 0x6
+ 756 00c2 01       		.byte	0x1
+ 757 00c3 9C010000 		.4byte	.LASF22
+ 758 00c7 01       		.byte	0x1
+ 759 00c8 25       		.byte	0x25
+ 760 00c9 01       		.byte	0x1
+ 761 00ca 00000000 		.4byte	.LFB0
+ 762 00ce 9E000000 		.4byte	.LFE0
+ 763 00d2 00000000 		.4byte	.LLST0
+ 764 00d6 01       		.byte	0x1
+ 765 00d7 F8000000 		.4byte	0xf8
+ 766 00db 07       		.uleb128 0x7
+ 767 00dc 89020000 		.4byte	.LASF17
+ 768 00e0 01       		.byte	0x1
+ 769 00e1 28       		.byte	0x28
+ 770 00e2 6F000000 		.4byte	0x6f
+ 771 00e6 02       		.byte	0x2
+ 772 00e7 91       		.byte	0x91
+ 773 00e8 77       		.sleb128 -9
+ 774 00e9 07       		.uleb128 0x7
+ 775 00ea 0D020000 		.4byte	.LASF18
+ 776 00ee 01       		.byte	0x1
+ 777 00ef 2D       		.byte	0x2d
+ 778 00f0 6F000000 		.4byte	0x6f
+ 779 00f4 02       		.byte	0x2
+ 780 00f5 91       		.byte	0x91
+ 781 00f6 76       		.sleb128 -10
+ 782 00f7 00       		.byte	0
+ 783 00f8 08       		.uleb128 0x8
+ 784 00f9 01       		.byte	0x1
+ 785 00fa B2000000 		.4byte	.LASF19
+ 786 00fe 01       		.byte	0x1
+ 787 00ff 8F       		.byte	0x8f
+ 788 0100 01       		.byte	0x1
+ 789 0101 00000000 		.4byte	.LFB1
+ 790 0105 26000000 		.4byte	.LFE1
+ 791 0109 38000000 		.4byte	.LLST1
+ 792 010d 01       		.byte	0x1
+ 793 010e 09       		.uleb128 0x9
+ 794 010f 01       		.byte	0x1
+ 795 0110 7F000000 		.4byte	.LASF20
+ 796 0114 01       		.byte	0x1
+ 797 0115 B2       		.byte	0xb2
+ 798 0116 01       		.byte	0x1
+ 799 0117 00000000 		.4byte	.LFB2
+ 800 011b 2A000000 		.4byte	.LFE2
+ 801 011f 64000000 		.4byte	.LLST2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 25
+
+
+ 802 0123 01       		.byte	0x1
+ 803 0124 08       		.uleb128 0x8
+ 804 0125 01       		.byte	0x1
+ 805 0126 B4020000 		.4byte	.LASF21
+ 806 012a 01       		.byte	0x1
+ 807 012b D0       		.byte	0xd0
+ 808 012c 01       		.byte	0x1
+ 809 012d 00000000 		.4byte	.LFB3
+ 810 0131 26000000 		.4byte	.LFE3
+ 811 0135 90000000 		.4byte	.LLST3
+ 812 0139 01       		.byte	0x1
+ 813 013a 0A       		.uleb128 0xa
+ 814 013b 01       		.byte	0x1
+ 815 013c 3D010000 		.4byte	.LASF23
+ 816 0140 01       		.byte	0x1
+ 817 0141 ED       		.byte	0xed
+ 818 0142 01       		.byte	0x1
+ 819 0143 00000000 		.4byte	.LFB4
+ 820 0147 20000000 		.4byte	.LFE4
+ 821 014b BC000000 		.4byte	.LLST4
+ 822 014f 01       		.byte	0x1
+ 823 0150 63010000 		.4byte	0x163
+ 824 0154 0B       		.uleb128 0xb
+ 825 0155 0A010000 		.4byte	.LASF27
+ 826 0159 01       		.byte	0x1
+ 827 015a ED       		.byte	0xed
+ 828 015b 6F000000 		.4byte	0x6f
+ 829 015f 02       		.byte	0x2
+ 830 0160 91       		.byte	0x91
+ 831 0161 77       		.sleb128 -9
+ 832 0162 00       		.byte	0
+ 833 0163 0C       		.uleb128 0xc
+ 834 0164 01       		.byte	0x1
+ 835 0165 8A030000 		.4byte	.LASF24
+ 836 0169 01       		.byte	0x1
+ 837 016a 0501     		.2byte	0x105
+ 838 016c 01       		.byte	0x1
+ 839 016d 6F000000 		.4byte	0x6f
+ 840 0171 00000000 		.4byte	.LFB5
+ 841 0175 18000000 		.4byte	.LFE5
+ 842 0179 F4000000 		.4byte	.LLST5
+ 843 017d 01       		.byte	0x1
+ 844 017e 0C       		.uleb128 0xc
+ 845 017f 01       		.byte	0x1
+ 846 0180 19010000 		.4byte	.LASF25
+ 847 0184 01       		.byte	0x1
+ 848 0185 1B01     		.2byte	0x11b
+ 849 0187 01       		.byte	0x1
+ 850 0188 6F000000 		.4byte	0x6f
+ 851 018c 00000000 		.4byte	.LFB6
+ 852 0190 18000000 		.4byte	.LFE6
+ 853 0194 20010000 		.4byte	.LLST6
+ 854 0198 01       		.byte	0x1
+ 855 0199 0D       		.uleb128 0xd
+ 856 019a 01       		.byte	0x1
+ 857 019b 2E030000 		.4byte	.LASF26
+ 858 019f 01       		.byte	0x1
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 26
+
+
+ 859 01a0 3001     		.2byte	0x130
+ 860 01a2 01       		.byte	0x1
+ 861 01a3 00000000 		.4byte	.LFB7
+ 862 01a7 20000000 		.4byte	.LFE7
+ 863 01ab 4C010000 		.4byte	.LLST7
+ 864 01af 01       		.byte	0x1
+ 865 01b0 C4010000 		.4byte	0x1c4
+ 866 01b4 0E       		.uleb128 0xe
+ 867 01b5 02010000 		.4byte	.LASF28
+ 868 01b9 01       		.byte	0x1
+ 869 01ba 3001     		.2byte	0x130
+ 870 01bc 6F000000 		.4byte	0x6f
+ 871 01c0 02       		.byte	0x2
+ 872 01c1 91       		.byte	0x91
+ 873 01c2 77       		.sleb128 -9
+ 874 01c3 00       		.byte	0
+ 875 01c4 0D       		.uleb128 0xd
+ 876 01c5 01       		.byte	0x1
+ 877 01c6 2C020000 		.4byte	.LASF29
+ 878 01ca 01       		.byte	0x1
+ 879 01cb 4601     		.2byte	0x146
+ 880 01cd 01       		.byte	0x1
+ 881 01ce 00000000 		.4byte	.LFB8
+ 882 01d2 20000000 		.4byte	.LFE8
+ 883 01d6 84010000 		.4byte	.LLST8
+ 884 01da 01       		.byte	0x1
+ 885 01db EF010000 		.4byte	0x1ef
+ 886 01df 0E       		.uleb128 0xe
+ 887 01e0 CF000000 		.4byte	.LASF30
+ 888 01e4 01       		.byte	0x1
+ 889 01e5 4601     		.2byte	0x146
+ 890 01e7 7A000000 		.4byte	0x7a
+ 891 01eb 02       		.byte	0x2
+ 892 01ec 91       		.byte	0x91
+ 893 01ed 76       		.sleb128 -10
+ 894 01ee 00       		.byte	0
+ 895 01ef 0C       		.uleb128 0xc
+ 896 01f0 01       		.byte	0x1
+ 897 01f1 C9020000 		.4byte	.LASF31
+ 898 01f5 01       		.byte	0x1
+ 899 01f6 6501     		.2byte	0x165
+ 900 01f8 01       		.byte	0x1
+ 901 01f9 7A000000 		.4byte	0x7a
+ 902 01fd 00000000 		.4byte	.LFB9
+ 903 0201 22000000 		.4byte	.LFE9
+ 904 0205 BC010000 		.4byte	.LLST9
+ 905 0209 01       		.byte	0x1
+ 906 020a 0C       		.uleb128 0xc
+ 907 020b 01       		.byte	0x1
+ 908 020c 6D020000 		.4byte	.LASF32
+ 909 0210 01       		.byte	0x1
+ 910 0211 8601     		.2byte	0x186
+ 911 0213 01       		.byte	0x1
+ 912 0214 7A000000 		.4byte	0x7a
+ 913 0218 00000000 		.4byte	.LFB10
+ 914 021c 18000000 		.4byte	.LFE10
+ 915 0220 E8010000 		.4byte	.LLST10
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 27
+
+
+ 916 0224 01       		.byte	0x1
+ 917 0225 0D       		.uleb128 0xd
+ 918 0226 01       		.byte	0x1
+ 919 0227 50000000 		.4byte	.LASF33
+ 920 022b 01       		.byte	0x1
+ 921 022c 9F01     		.2byte	0x19f
+ 922 022e 01       		.byte	0x1
+ 923 022f 00000000 		.4byte	.LFB11
+ 924 0233 20000000 		.4byte	.LFE11
+ 925 0237 14020000 		.4byte	.LLST11
+ 926 023b 01       		.byte	0x1
+ 927 023c 50020000 		.4byte	0x250
+ 928 0240 0E       		.uleb128 0xe
+ 929 0241 49000000 		.4byte	.LASF34
+ 930 0245 01       		.byte	0x1
+ 931 0246 9F01     		.2byte	0x19f
+ 932 0248 7A000000 		.4byte	0x7a
+ 933 024c 02       		.byte	0x2
+ 934 024d 91       		.byte	0x91
+ 935 024e 76       		.sleb128 -10
+ 936 024f 00       		.byte	0
+ 937 0250 0C       		.uleb128 0xc
+ 938 0251 01       		.byte	0x1
+ 939 0252 5E010000 		.4byte	.LASF35
+ 940 0256 01       		.byte	0x1
+ 941 0257 B601     		.2byte	0x1b6
+ 942 0259 01       		.byte	0x1
+ 943 025a 7A000000 		.4byte	0x7a
+ 944 025e 00000000 		.4byte	.LFB12
+ 945 0262 18000000 		.4byte	.LFE12
+ 946 0266 4C020000 		.4byte	.LLST12
+ 947 026a 01       		.byte	0x1
+ 948 026b 0D       		.uleb128 0xd
+ 949 026c 01       		.byte	0x1
+ 950 026d 95000000 		.4byte	.LASF36
+ 951 0271 01       		.byte	0x1
+ 952 0272 D101     		.2byte	0x1d1
+ 953 0274 01       		.byte	0x1
+ 954 0275 00000000 		.4byte	.LFB13
+ 955 0279 20000000 		.4byte	.LFE13
+ 956 027d 78020000 		.4byte	.LLST13
+ 957 0281 01       		.byte	0x1
+ 958 0282 96020000 		.4byte	0x296
+ 959 0286 0E       		.uleb128 0xe
+ 960 0287 82030000 		.4byte	.LASF37
+ 961 028b 01       		.byte	0x1
+ 962 028c D101     		.2byte	0x1d1
+ 963 028e 7A000000 		.4byte	0x7a
+ 964 0292 02       		.byte	0x2
+ 965 0293 91       		.byte	0x91
+ 966 0294 76       		.sleb128 -10
+ 967 0295 00       		.byte	0
+ 968 0296 0C       		.uleb128 0xc
+ 969 0297 01       		.byte	0x1
+ 970 0298 80010000 		.4byte	.LASF38
+ 971 029c 01       		.byte	0x1
+ 972 029d E901     		.2byte	0x1e9
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 28
+
+
+ 973 029f 01       		.byte	0x1
+ 974 02a0 7A000000 		.4byte	0x7a
+ 975 02a4 00000000 		.4byte	.LFB14
+ 976 02a8 18000000 		.4byte	.LFE14
+ 977 02ac B0020000 		.4byte	.LLST14
+ 978 02b0 01       		.byte	0x1
+ 979 02b1 0F       		.uleb128 0xf
+ 980 02b2 01       		.byte	0x1
+ 981 02b3 5C030000 		.4byte	.LASF39
+ 982 02b7 01       		.byte	0x1
+ 983 02b8 2E02     		.2byte	0x22e
+ 984 02ba 01       		.byte	0x1
+ 985 02bb 00000000 		.4byte	.LFB15
+ 986 02bf 1A000000 		.4byte	.LFE15
+ 987 02c3 DC020000 		.4byte	.LLST15
+ 988 02c7 01       		.byte	0x1
+ 989 02c8 10       		.uleb128 0x10
+ 990 02c9 31000000 		.4byte	.LASF43
+ 991 02cd 01       		.byte	0x1
+ 992 02ce 15       		.byte	0x15
+ 993 02cf 6F000000 		.4byte	0x6f
+ 994 02d3 01       		.byte	0x1
+ 995 02d4 05       		.byte	0x5
+ 996 02d5 03       		.byte	0x3
+ 997 02d6 00000000 		.4byte	QuadDec_1_Cnt16_initVar
+ 998 02da 00       		.byte	0
+ 999              		.section	.debug_abbrev,"",%progbits
+ 1000              	.Ldebug_abbrev0:
+ 1001 0000 01       		.uleb128 0x1
+ 1002 0001 11       		.uleb128 0x11
+ 1003 0002 01       		.byte	0x1
+ 1004 0003 25       		.uleb128 0x25
+ 1005 0004 0E       		.uleb128 0xe
+ 1006 0005 13       		.uleb128 0x13
+ 1007 0006 0B       		.uleb128 0xb
+ 1008 0007 03       		.uleb128 0x3
+ 1009 0008 0E       		.uleb128 0xe
+ 1010 0009 1B       		.uleb128 0x1b
+ 1011 000a 0E       		.uleb128 0xe
+ 1012 000b 55       		.uleb128 0x55
+ 1013 000c 06       		.uleb128 0x6
+ 1014 000d 11       		.uleb128 0x11
+ 1015 000e 01       		.uleb128 0x1
+ 1016 000f 52       		.uleb128 0x52
+ 1017 0010 01       		.uleb128 0x1
+ 1018 0011 10       		.uleb128 0x10
+ 1019 0012 06       		.uleb128 0x6
+ 1020 0013 00       		.byte	0
+ 1021 0014 00       		.byte	0
+ 1022 0015 02       		.uleb128 0x2
+ 1023 0016 24       		.uleb128 0x24
+ 1024 0017 00       		.byte	0
+ 1025 0018 0B       		.uleb128 0xb
+ 1026 0019 0B       		.uleb128 0xb
+ 1027 001a 3E       		.uleb128 0x3e
+ 1028 001b 0B       		.uleb128 0xb
+ 1029 001c 03       		.uleb128 0x3
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 29
+
+
+ 1030 001d 0E       		.uleb128 0xe
+ 1031 001e 00       		.byte	0
+ 1032 001f 00       		.byte	0
+ 1033 0020 03       		.uleb128 0x3
+ 1034 0021 24       		.uleb128 0x24
+ 1035 0022 00       		.byte	0
+ 1036 0023 0B       		.uleb128 0xb
+ 1037 0024 0B       		.uleb128 0xb
+ 1038 0025 3E       		.uleb128 0x3e
+ 1039 0026 0B       		.uleb128 0xb
+ 1040 0027 03       		.uleb128 0x3
+ 1041 0028 08       		.uleb128 0x8
+ 1042 0029 00       		.byte	0
+ 1043 002a 00       		.byte	0
+ 1044 002b 04       		.uleb128 0x4
+ 1045 002c 16       		.uleb128 0x16
+ 1046 002d 00       		.byte	0
+ 1047 002e 03       		.uleb128 0x3
+ 1048 002f 0E       		.uleb128 0xe
+ 1049 0030 3A       		.uleb128 0x3a
+ 1050 0031 0B       		.uleb128 0xb
+ 1051 0032 3B       		.uleb128 0x3b
+ 1052 0033 0B       		.uleb128 0xb
+ 1053 0034 49       		.uleb128 0x49
+ 1054 0035 13       		.uleb128 0x13
+ 1055 0036 00       		.byte	0
+ 1056 0037 00       		.byte	0
+ 1057 0038 05       		.uleb128 0x5
+ 1058 0039 35       		.uleb128 0x35
+ 1059 003a 00       		.byte	0
+ 1060 003b 49       		.uleb128 0x49
+ 1061 003c 13       		.uleb128 0x13
+ 1062 003d 00       		.byte	0
+ 1063 003e 00       		.byte	0
+ 1064 003f 06       		.uleb128 0x6
+ 1065 0040 2E       		.uleb128 0x2e
+ 1066 0041 01       		.byte	0x1
+ 1067 0042 3F       		.uleb128 0x3f
+ 1068 0043 0C       		.uleb128 0xc
+ 1069 0044 03       		.uleb128 0x3
+ 1070 0045 0E       		.uleb128 0xe
+ 1071 0046 3A       		.uleb128 0x3a
+ 1072 0047 0B       		.uleb128 0xb
+ 1073 0048 3B       		.uleb128 0x3b
+ 1074 0049 0B       		.uleb128 0xb
+ 1075 004a 27       		.uleb128 0x27
+ 1076 004b 0C       		.uleb128 0xc
+ 1077 004c 11       		.uleb128 0x11
+ 1078 004d 01       		.uleb128 0x1
+ 1079 004e 12       		.uleb128 0x12
+ 1080 004f 01       		.uleb128 0x1
+ 1081 0050 40       		.uleb128 0x40
+ 1082 0051 06       		.uleb128 0x6
+ 1083 0052 9642     		.uleb128 0x2116
+ 1084 0054 0C       		.uleb128 0xc
+ 1085 0055 01       		.uleb128 0x1
+ 1086 0056 13       		.uleb128 0x13
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 30
+
+
+ 1087 0057 00       		.byte	0
+ 1088 0058 00       		.byte	0
+ 1089 0059 07       		.uleb128 0x7
+ 1090 005a 34       		.uleb128 0x34
+ 1091 005b 00       		.byte	0
+ 1092 005c 03       		.uleb128 0x3
+ 1093 005d 0E       		.uleb128 0xe
+ 1094 005e 3A       		.uleb128 0x3a
+ 1095 005f 0B       		.uleb128 0xb
+ 1096 0060 3B       		.uleb128 0x3b
+ 1097 0061 0B       		.uleb128 0xb
+ 1098 0062 49       		.uleb128 0x49
+ 1099 0063 13       		.uleb128 0x13
+ 1100 0064 02       		.uleb128 0x2
+ 1101 0065 0A       		.uleb128 0xa
+ 1102 0066 00       		.byte	0
+ 1103 0067 00       		.byte	0
+ 1104 0068 08       		.uleb128 0x8
+ 1105 0069 2E       		.uleb128 0x2e
+ 1106 006a 00       		.byte	0
+ 1107 006b 3F       		.uleb128 0x3f
+ 1108 006c 0C       		.uleb128 0xc
+ 1109 006d 03       		.uleb128 0x3
+ 1110 006e 0E       		.uleb128 0xe
+ 1111 006f 3A       		.uleb128 0x3a
+ 1112 0070 0B       		.uleb128 0xb
+ 1113 0071 3B       		.uleb128 0x3b
+ 1114 0072 0B       		.uleb128 0xb
+ 1115 0073 27       		.uleb128 0x27
+ 1116 0074 0C       		.uleb128 0xc
+ 1117 0075 11       		.uleb128 0x11
+ 1118 0076 01       		.uleb128 0x1
+ 1119 0077 12       		.uleb128 0x12
+ 1120 0078 01       		.uleb128 0x1
+ 1121 0079 40       		.uleb128 0x40
+ 1122 007a 06       		.uleb128 0x6
+ 1123 007b 9742     		.uleb128 0x2117
+ 1124 007d 0C       		.uleb128 0xc
+ 1125 007e 00       		.byte	0
+ 1126 007f 00       		.byte	0
+ 1127 0080 09       		.uleb128 0x9
+ 1128 0081 2E       		.uleb128 0x2e
+ 1129 0082 00       		.byte	0
+ 1130 0083 3F       		.uleb128 0x3f
+ 1131 0084 0C       		.uleb128 0xc
+ 1132 0085 03       		.uleb128 0x3
+ 1133 0086 0E       		.uleb128 0xe
+ 1134 0087 3A       		.uleb128 0x3a
+ 1135 0088 0B       		.uleb128 0xb
+ 1136 0089 3B       		.uleb128 0x3b
+ 1137 008a 0B       		.uleb128 0xb
+ 1138 008b 27       		.uleb128 0x27
+ 1139 008c 0C       		.uleb128 0xc
+ 1140 008d 11       		.uleb128 0x11
+ 1141 008e 01       		.uleb128 0x1
+ 1142 008f 12       		.uleb128 0x12
+ 1143 0090 01       		.uleb128 0x1
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 31
+
+
+ 1144 0091 40       		.uleb128 0x40
+ 1145 0092 06       		.uleb128 0x6
+ 1146 0093 9642     		.uleb128 0x2116
+ 1147 0095 0C       		.uleb128 0xc
+ 1148 0096 00       		.byte	0
+ 1149 0097 00       		.byte	0
+ 1150 0098 0A       		.uleb128 0xa
+ 1151 0099 2E       		.uleb128 0x2e
+ 1152 009a 01       		.byte	0x1
+ 1153 009b 3F       		.uleb128 0x3f
+ 1154 009c 0C       		.uleb128 0xc
+ 1155 009d 03       		.uleb128 0x3
+ 1156 009e 0E       		.uleb128 0xe
+ 1157 009f 3A       		.uleb128 0x3a
+ 1158 00a0 0B       		.uleb128 0xb
+ 1159 00a1 3B       		.uleb128 0x3b
+ 1160 00a2 0B       		.uleb128 0xb
+ 1161 00a3 27       		.uleb128 0x27
+ 1162 00a4 0C       		.uleb128 0xc
+ 1163 00a5 11       		.uleb128 0x11
+ 1164 00a6 01       		.uleb128 0x1
+ 1165 00a7 12       		.uleb128 0x12
+ 1166 00a8 01       		.uleb128 0x1
+ 1167 00a9 40       		.uleb128 0x40
+ 1168 00aa 06       		.uleb128 0x6
+ 1169 00ab 9742     		.uleb128 0x2117
+ 1170 00ad 0C       		.uleb128 0xc
+ 1171 00ae 01       		.uleb128 0x1
+ 1172 00af 13       		.uleb128 0x13
+ 1173 00b0 00       		.byte	0
+ 1174 00b1 00       		.byte	0
+ 1175 00b2 0B       		.uleb128 0xb
+ 1176 00b3 05       		.uleb128 0x5
+ 1177 00b4 00       		.byte	0
+ 1178 00b5 03       		.uleb128 0x3
+ 1179 00b6 0E       		.uleb128 0xe
+ 1180 00b7 3A       		.uleb128 0x3a
+ 1181 00b8 0B       		.uleb128 0xb
+ 1182 00b9 3B       		.uleb128 0x3b
+ 1183 00ba 0B       		.uleb128 0xb
+ 1184 00bb 49       		.uleb128 0x49
+ 1185 00bc 13       		.uleb128 0x13
+ 1186 00bd 02       		.uleb128 0x2
+ 1187 00be 0A       		.uleb128 0xa
+ 1188 00bf 00       		.byte	0
+ 1189 00c0 00       		.byte	0
+ 1190 00c1 0C       		.uleb128 0xc
+ 1191 00c2 2E       		.uleb128 0x2e
+ 1192 00c3 00       		.byte	0
+ 1193 00c4 3F       		.uleb128 0x3f
+ 1194 00c5 0C       		.uleb128 0xc
+ 1195 00c6 03       		.uleb128 0x3
+ 1196 00c7 0E       		.uleb128 0xe
+ 1197 00c8 3A       		.uleb128 0x3a
+ 1198 00c9 0B       		.uleb128 0xb
+ 1199 00ca 3B       		.uleb128 0x3b
+ 1200 00cb 05       		.uleb128 0x5
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 32
+
+
+ 1201 00cc 27       		.uleb128 0x27
+ 1202 00cd 0C       		.uleb128 0xc
+ 1203 00ce 49       		.uleb128 0x49
+ 1204 00cf 13       		.uleb128 0x13
+ 1205 00d0 11       		.uleb128 0x11
+ 1206 00d1 01       		.uleb128 0x1
+ 1207 00d2 12       		.uleb128 0x12
+ 1208 00d3 01       		.uleb128 0x1
+ 1209 00d4 40       		.uleb128 0x40
+ 1210 00d5 06       		.uleb128 0x6
+ 1211 00d6 9742     		.uleb128 0x2117
+ 1212 00d8 0C       		.uleb128 0xc
+ 1213 00d9 00       		.byte	0
+ 1214 00da 00       		.byte	0
+ 1215 00db 0D       		.uleb128 0xd
+ 1216 00dc 2E       		.uleb128 0x2e
+ 1217 00dd 01       		.byte	0x1
+ 1218 00de 3F       		.uleb128 0x3f
+ 1219 00df 0C       		.uleb128 0xc
+ 1220 00e0 03       		.uleb128 0x3
+ 1221 00e1 0E       		.uleb128 0xe
+ 1222 00e2 3A       		.uleb128 0x3a
+ 1223 00e3 0B       		.uleb128 0xb
+ 1224 00e4 3B       		.uleb128 0x3b
+ 1225 00e5 05       		.uleb128 0x5
+ 1226 00e6 27       		.uleb128 0x27
+ 1227 00e7 0C       		.uleb128 0xc
+ 1228 00e8 11       		.uleb128 0x11
+ 1229 00e9 01       		.uleb128 0x1
+ 1230 00ea 12       		.uleb128 0x12
+ 1231 00eb 01       		.uleb128 0x1
+ 1232 00ec 40       		.uleb128 0x40
+ 1233 00ed 06       		.uleb128 0x6
+ 1234 00ee 9742     		.uleb128 0x2117
+ 1235 00f0 0C       		.uleb128 0xc
+ 1236 00f1 01       		.uleb128 0x1
+ 1237 00f2 13       		.uleb128 0x13
+ 1238 00f3 00       		.byte	0
+ 1239 00f4 00       		.byte	0
+ 1240 00f5 0E       		.uleb128 0xe
+ 1241 00f6 05       		.uleb128 0x5
+ 1242 00f7 00       		.byte	0
+ 1243 00f8 03       		.uleb128 0x3
+ 1244 00f9 0E       		.uleb128 0xe
+ 1245 00fa 3A       		.uleb128 0x3a
+ 1246 00fb 0B       		.uleb128 0xb
+ 1247 00fc 3B       		.uleb128 0x3b
+ 1248 00fd 05       		.uleb128 0x5
+ 1249 00fe 49       		.uleb128 0x49
+ 1250 00ff 13       		.uleb128 0x13
+ 1251 0100 02       		.uleb128 0x2
+ 1252 0101 0A       		.uleb128 0xa
+ 1253 0102 00       		.byte	0
+ 1254 0103 00       		.byte	0
+ 1255 0104 0F       		.uleb128 0xf
+ 1256 0105 2E       		.uleb128 0x2e
+ 1257 0106 00       		.byte	0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 33
+
+
+ 1258 0107 3F       		.uleb128 0x3f
+ 1259 0108 0C       		.uleb128 0xc
+ 1260 0109 03       		.uleb128 0x3
+ 1261 010a 0E       		.uleb128 0xe
+ 1262 010b 3A       		.uleb128 0x3a
+ 1263 010c 0B       		.uleb128 0xb
+ 1264 010d 3B       		.uleb128 0x3b
+ 1265 010e 05       		.uleb128 0x5
+ 1266 010f 27       		.uleb128 0x27
+ 1267 0110 0C       		.uleb128 0xc
+ 1268 0111 11       		.uleb128 0x11
+ 1269 0112 01       		.uleb128 0x1
+ 1270 0113 12       		.uleb128 0x12
+ 1271 0114 01       		.uleb128 0x1
+ 1272 0115 40       		.uleb128 0x40
+ 1273 0116 06       		.uleb128 0x6
+ 1274 0117 9642     		.uleb128 0x2116
+ 1275 0119 0C       		.uleb128 0xc
+ 1276 011a 00       		.byte	0
+ 1277 011b 00       		.byte	0
+ 1278 011c 10       		.uleb128 0x10
+ 1279 011d 34       		.uleb128 0x34
+ 1280 011e 00       		.byte	0
+ 1281 011f 03       		.uleb128 0x3
+ 1282 0120 0E       		.uleb128 0xe
+ 1283 0121 3A       		.uleb128 0x3a
+ 1284 0122 0B       		.uleb128 0xb
+ 1285 0123 3B       		.uleb128 0x3b
+ 1286 0124 0B       		.uleb128 0xb
+ 1287 0125 49       		.uleb128 0x49
+ 1288 0126 13       		.uleb128 0x13
+ 1289 0127 3F       		.uleb128 0x3f
+ 1290 0128 0C       		.uleb128 0xc
+ 1291 0129 02       		.uleb128 0x2
+ 1292 012a 0A       		.uleb128 0xa
+ 1293 012b 00       		.byte	0
+ 1294 012c 00       		.byte	0
+ 1295 012d 00       		.byte	0
+ 1296              		.section	.debug_loc,"",%progbits
+ 1297              	.Ldebug_loc0:
+ 1298              	.LLST0:
+ 1299 0000 00000000 		.4byte	.LFB0
+ 1300 0004 02000000 		.4byte	.LCFI0
+ 1301 0008 0200     		.2byte	0x2
+ 1302 000a 7D       		.byte	0x7d
+ 1303 000b 00       		.sleb128 0
+ 1304 000c 02000000 		.4byte	.LCFI0
+ 1305 0010 04000000 		.4byte	.LCFI1
+ 1306 0014 0200     		.2byte	0x2
+ 1307 0016 7D       		.byte	0x7d
+ 1308 0017 08       		.sleb128 8
+ 1309 0018 04000000 		.4byte	.LCFI1
+ 1310 001c 06000000 		.4byte	.LCFI2
+ 1311 0020 0200     		.2byte	0x2
+ 1312 0022 7D       		.byte	0x7d
+ 1313 0023 10       		.sleb128 16
+ 1314 0024 06000000 		.4byte	.LCFI2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 34
+
+
+ 1315 0028 9E000000 		.4byte	.LFE0
+ 1316 002c 0200     		.2byte	0x2
+ 1317 002e 77       		.byte	0x77
+ 1318 002f 10       		.sleb128 16
+ 1319 0030 00000000 		.4byte	0
+ 1320 0034 00000000 		.4byte	0
+ 1321              	.LLST1:
+ 1322 0038 00000000 		.4byte	.LFB1
+ 1323 003c 02000000 		.4byte	.LCFI3
+ 1324 0040 0200     		.2byte	0x2
+ 1325 0042 7D       		.byte	0x7d
+ 1326 0043 00       		.sleb128 0
+ 1327 0044 02000000 		.4byte	.LCFI3
+ 1328 0048 04000000 		.4byte	.LCFI4
+ 1329 004c 0200     		.2byte	0x2
+ 1330 004e 7D       		.byte	0x7d
+ 1331 004f 04       		.sleb128 4
+ 1332 0050 04000000 		.4byte	.LCFI4
+ 1333 0054 26000000 		.4byte	.LFE1
+ 1334 0058 0200     		.2byte	0x2
+ 1335 005a 77       		.byte	0x77
+ 1336 005b 04       		.sleb128 4
+ 1337 005c 00000000 		.4byte	0
+ 1338 0060 00000000 		.4byte	0
+ 1339              	.LLST2:
+ 1340 0064 00000000 		.4byte	.LFB2
+ 1341 0068 02000000 		.4byte	.LCFI5
+ 1342 006c 0200     		.2byte	0x2
+ 1343 006e 7D       		.byte	0x7d
+ 1344 006f 00       		.sleb128 0
+ 1345 0070 02000000 		.4byte	.LCFI5
+ 1346 0074 04000000 		.4byte	.LCFI6
+ 1347 0078 0200     		.2byte	0x2
+ 1348 007a 7D       		.byte	0x7d
+ 1349 007b 08       		.sleb128 8
+ 1350 007c 04000000 		.4byte	.LCFI6
+ 1351 0080 2A000000 		.4byte	.LFE2
+ 1352 0084 0200     		.2byte	0x2
+ 1353 0086 77       		.byte	0x77
+ 1354 0087 08       		.sleb128 8
+ 1355 0088 00000000 		.4byte	0
+ 1356 008c 00000000 		.4byte	0
+ 1357              	.LLST3:
+ 1358 0090 00000000 		.4byte	.LFB3
+ 1359 0094 02000000 		.4byte	.LCFI7
+ 1360 0098 0200     		.2byte	0x2
+ 1361 009a 7D       		.byte	0x7d
+ 1362 009b 00       		.sleb128 0
+ 1363 009c 02000000 		.4byte	.LCFI7
+ 1364 00a0 04000000 		.4byte	.LCFI8
+ 1365 00a4 0200     		.2byte	0x2
+ 1366 00a6 7D       		.byte	0x7d
+ 1367 00a7 04       		.sleb128 4
+ 1368 00a8 04000000 		.4byte	.LCFI8
+ 1369 00ac 26000000 		.4byte	.LFE3
+ 1370 00b0 0200     		.2byte	0x2
+ 1371 00b2 77       		.byte	0x77
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 35
+
+
+ 1372 00b3 04       		.sleb128 4
+ 1373 00b4 00000000 		.4byte	0
+ 1374 00b8 00000000 		.4byte	0
+ 1375              	.LLST4:
+ 1376 00bc 00000000 		.4byte	.LFB4
+ 1377 00c0 02000000 		.4byte	.LCFI9
+ 1378 00c4 0200     		.2byte	0x2
+ 1379 00c6 7D       		.byte	0x7d
+ 1380 00c7 00       		.sleb128 0
+ 1381 00c8 02000000 		.4byte	.LCFI9
+ 1382 00cc 04000000 		.4byte	.LCFI10
+ 1383 00d0 0200     		.2byte	0x2
+ 1384 00d2 7D       		.byte	0x7d
+ 1385 00d3 04       		.sleb128 4
+ 1386 00d4 04000000 		.4byte	.LCFI10
+ 1387 00d8 06000000 		.4byte	.LCFI11
+ 1388 00dc 0200     		.2byte	0x2
+ 1389 00de 7D       		.byte	0x7d
+ 1390 00df 10       		.sleb128 16
+ 1391 00e0 06000000 		.4byte	.LCFI11
+ 1392 00e4 20000000 		.4byte	.LFE4
+ 1393 00e8 0200     		.2byte	0x2
+ 1394 00ea 77       		.byte	0x77
+ 1395 00eb 10       		.sleb128 16
+ 1396 00ec 00000000 		.4byte	0
+ 1397 00f0 00000000 		.4byte	0
+ 1398              	.LLST5:
+ 1399 00f4 00000000 		.4byte	.LFB5
+ 1400 00f8 02000000 		.4byte	.LCFI12
+ 1401 00fc 0200     		.2byte	0x2
+ 1402 00fe 7D       		.byte	0x7d
+ 1403 00ff 00       		.sleb128 0
+ 1404 0100 02000000 		.4byte	.LCFI12
+ 1405 0104 04000000 		.4byte	.LCFI13
+ 1406 0108 0200     		.2byte	0x2
+ 1407 010a 7D       		.byte	0x7d
+ 1408 010b 04       		.sleb128 4
+ 1409 010c 04000000 		.4byte	.LCFI13
+ 1410 0110 18000000 		.4byte	.LFE5
+ 1411 0114 0200     		.2byte	0x2
+ 1412 0116 77       		.byte	0x77
+ 1413 0117 04       		.sleb128 4
+ 1414 0118 00000000 		.4byte	0
+ 1415 011c 00000000 		.4byte	0
+ 1416              	.LLST6:
+ 1417 0120 00000000 		.4byte	.LFB6
+ 1418 0124 02000000 		.4byte	.LCFI14
+ 1419 0128 0200     		.2byte	0x2
+ 1420 012a 7D       		.byte	0x7d
+ 1421 012b 00       		.sleb128 0
+ 1422 012c 02000000 		.4byte	.LCFI14
+ 1423 0130 04000000 		.4byte	.LCFI15
+ 1424 0134 0200     		.2byte	0x2
+ 1425 0136 7D       		.byte	0x7d
+ 1426 0137 04       		.sleb128 4
+ 1427 0138 04000000 		.4byte	.LCFI15
+ 1428 013c 18000000 		.4byte	.LFE6
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 36
+
+
+ 1429 0140 0200     		.2byte	0x2
+ 1430 0142 77       		.byte	0x77
+ 1431 0143 04       		.sleb128 4
+ 1432 0144 00000000 		.4byte	0
+ 1433 0148 00000000 		.4byte	0
+ 1434              	.LLST7:
+ 1435 014c 00000000 		.4byte	.LFB7
+ 1436 0150 02000000 		.4byte	.LCFI16
+ 1437 0154 0200     		.2byte	0x2
+ 1438 0156 7D       		.byte	0x7d
+ 1439 0157 00       		.sleb128 0
+ 1440 0158 02000000 		.4byte	.LCFI16
+ 1441 015c 04000000 		.4byte	.LCFI17
+ 1442 0160 0200     		.2byte	0x2
+ 1443 0162 7D       		.byte	0x7d
+ 1444 0163 04       		.sleb128 4
+ 1445 0164 04000000 		.4byte	.LCFI17
+ 1446 0168 06000000 		.4byte	.LCFI18
+ 1447 016c 0200     		.2byte	0x2
+ 1448 016e 7D       		.byte	0x7d
+ 1449 016f 10       		.sleb128 16
+ 1450 0170 06000000 		.4byte	.LCFI18
+ 1451 0174 20000000 		.4byte	.LFE7
+ 1452 0178 0200     		.2byte	0x2
+ 1453 017a 77       		.byte	0x77
+ 1454 017b 10       		.sleb128 16
+ 1455 017c 00000000 		.4byte	0
+ 1456 0180 00000000 		.4byte	0
+ 1457              	.LLST8:
+ 1458 0184 00000000 		.4byte	.LFB8
+ 1459 0188 02000000 		.4byte	.LCFI19
+ 1460 018c 0200     		.2byte	0x2
+ 1461 018e 7D       		.byte	0x7d
+ 1462 018f 00       		.sleb128 0
+ 1463 0190 02000000 		.4byte	.LCFI19
+ 1464 0194 04000000 		.4byte	.LCFI20
+ 1465 0198 0200     		.2byte	0x2
+ 1466 019a 7D       		.byte	0x7d
+ 1467 019b 04       		.sleb128 4
+ 1468 019c 04000000 		.4byte	.LCFI20
+ 1469 01a0 06000000 		.4byte	.LCFI21
+ 1470 01a4 0200     		.2byte	0x2
+ 1471 01a6 7D       		.byte	0x7d
+ 1472 01a7 10       		.sleb128 16
+ 1473 01a8 06000000 		.4byte	.LCFI21
+ 1474 01ac 20000000 		.4byte	.LFE8
+ 1475 01b0 0200     		.2byte	0x2
+ 1476 01b2 77       		.byte	0x77
+ 1477 01b3 10       		.sleb128 16
+ 1478 01b4 00000000 		.4byte	0
+ 1479 01b8 00000000 		.4byte	0
+ 1480              	.LLST9:
+ 1481 01bc 00000000 		.4byte	.LFB9
+ 1482 01c0 02000000 		.4byte	.LCFI22
+ 1483 01c4 0200     		.2byte	0x2
+ 1484 01c6 7D       		.byte	0x7d
+ 1485 01c7 00       		.sleb128 0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 37
+
+
+ 1486 01c8 02000000 		.4byte	.LCFI22
+ 1487 01cc 04000000 		.4byte	.LCFI23
+ 1488 01d0 0200     		.2byte	0x2
+ 1489 01d2 7D       		.byte	0x7d
+ 1490 01d3 04       		.sleb128 4
+ 1491 01d4 04000000 		.4byte	.LCFI23
+ 1492 01d8 22000000 		.4byte	.LFE9
+ 1493 01dc 0200     		.2byte	0x2
+ 1494 01de 77       		.byte	0x77
+ 1495 01df 04       		.sleb128 4
+ 1496 01e0 00000000 		.4byte	0
+ 1497 01e4 00000000 		.4byte	0
+ 1498              	.LLST10:
+ 1499 01e8 00000000 		.4byte	.LFB10
+ 1500 01ec 02000000 		.4byte	.LCFI24
+ 1501 01f0 0200     		.2byte	0x2
+ 1502 01f2 7D       		.byte	0x7d
+ 1503 01f3 00       		.sleb128 0
+ 1504 01f4 02000000 		.4byte	.LCFI24
+ 1505 01f8 04000000 		.4byte	.LCFI25
+ 1506 01fc 0200     		.2byte	0x2
+ 1507 01fe 7D       		.byte	0x7d
+ 1508 01ff 04       		.sleb128 4
+ 1509 0200 04000000 		.4byte	.LCFI25
+ 1510 0204 18000000 		.4byte	.LFE10
+ 1511 0208 0200     		.2byte	0x2
+ 1512 020a 77       		.byte	0x77
+ 1513 020b 04       		.sleb128 4
+ 1514 020c 00000000 		.4byte	0
+ 1515 0210 00000000 		.4byte	0
+ 1516              	.LLST11:
+ 1517 0214 00000000 		.4byte	.LFB11
+ 1518 0218 02000000 		.4byte	.LCFI26
+ 1519 021c 0200     		.2byte	0x2
+ 1520 021e 7D       		.byte	0x7d
+ 1521 021f 00       		.sleb128 0
+ 1522 0220 02000000 		.4byte	.LCFI26
+ 1523 0224 04000000 		.4byte	.LCFI27
+ 1524 0228 0200     		.2byte	0x2
+ 1525 022a 7D       		.byte	0x7d
+ 1526 022b 04       		.sleb128 4
+ 1527 022c 04000000 		.4byte	.LCFI27
+ 1528 0230 06000000 		.4byte	.LCFI28
+ 1529 0234 0200     		.2byte	0x2
+ 1530 0236 7D       		.byte	0x7d
+ 1531 0237 10       		.sleb128 16
+ 1532 0238 06000000 		.4byte	.LCFI28
+ 1533 023c 20000000 		.4byte	.LFE11
+ 1534 0240 0200     		.2byte	0x2
+ 1535 0242 77       		.byte	0x77
+ 1536 0243 10       		.sleb128 16
+ 1537 0244 00000000 		.4byte	0
+ 1538 0248 00000000 		.4byte	0
+ 1539              	.LLST12:
+ 1540 024c 00000000 		.4byte	.LFB12
+ 1541 0250 02000000 		.4byte	.LCFI29
+ 1542 0254 0200     		.2byte	0x2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 38
+
+
+ 1543 0256 7D       		.byte	0x7d
+ 1544 0257 00       		.sleb128 0
+ 1545 0258 02000000 		.4byte	.LCFI29
+ 1546 025c 04000000 		.4byte	.LCFI30
+ 1547 0260 0200     		.2byte	0x2
+ 1548 0262 7D       		.byte	0x7d
+ 1549 0263 04       		.sleb128 4
+ 1550 0264 04000000 		.4byte	.LCFI30
+ 1551 0268 18000000 		.4byte	.LFE12
+ 1552 026c 0200     		.2byte	0x2
+ 1553 026e 77       		.byte	0x77
+ 1554 026f 04       		.sleb128 4
+ 1555 0270 00000000 		.4byte	0
+ 1556 0274 00000000 		.4byte	0
+ 1557              	.LLST13:
+ 1558 0278 00000000 		.4byte	.LFB13
+ 1559 027c 02000000 		.4byte	.LCFI31
+ 1560 0280 0200     		.2byte	0x2
+ 1561 0282 7D       		.byte	0x7d
+ 1562 0283 00       		.sleb128 0
+ 1563 0284 02000000 		.4byte	.LCFI31
+ 1564 0288 04000000 		.4byte	.LCFI32
+ 1565 028c 0200     		.2byte	0x2
+ 1566 028e 7D       		.byte	0x7d
+ 1567 028f 04       		.sleb128 4
+ 1568 0290 04000000 		.4byte	.LCFI32
+ 1569 0294 06000000 		.4byte	.LCFI33
+ 1570 0298 0200     		.2byte	0x2
+ 1571 029a 7D       		.byte	0x7d
+ 1572 029b 10       		.sleb128 16
+ 1573 029c 06000000 		.4byte	.LCFI33
+ 1574 02a0 20000000 		.4byte	.LFE13
+ 1575 02a4 0200     		.2byte	0x2
+ 1576 02a6 77       		.byte	0x77
+ 1577 02a7 10       		.sleb128 16
+ 1578 02a8 00000000 		.4byte	0
+ 1579 02ac 00000000 		.4byte	0
+ 1580              	.LLST14:
+ 1581 02b0 00000000 		.4byte	.LFB14
+ 1582 02b4 02000000 		.4byte	.LCFI34
+ 1583 02b8 0200     		.2byte	0x2
+ 1584 02ba 7D       		.byte	0x7d
+ 1585 02bb 00       		.sleb128 0
+ 1586 02bc 02000000 		.4byte	.LCFI34
+ 1587 02c0 04000000 		.4byte	.LCFI35
+ 1588 02c4 0200     		.2byte	0x2
+ 1589 02c6 7D       		.byte	0x7d
+ 1590 02c7 04       		.sleb128 4
+ 1591 02c8 04000000 		.4byte	.LCFI35
+ 1592 02cc 18000000 		.4byte	.LFE14
+ 1593 02d0 0200     		.2byte	0x2
+ 1594 02d2 77       		.byte	0x77
+ 1595 02d3 04       		.sleb128 4
+ 1596 02d4 00000000 		.4byte	0
+ 1597 02d8 00000000 		.4byte	0
+ 1598              	.LLST15:
+ 1599 02dc 00000000 		.4byte	.LFB15
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 39
+
+
+ 1600 02e0 02000000 		.4byte	.LCFI36
+ 1601 02e4 0200     		.2byte	0x2
+ 1602 02e6 7D       		.byte	0x7d
+ 1603 02e7 00       		.sleb128 0
+ 1604 02e8 02000000 		.4byte	.LCFI36
+ 1605 02ec 04000000 		.4byte	.LCFI37
+ 1606 02f0 0200     		.2byte	0x2
+ 1607 02f2 7D       		.byte	0x7d
+ 1608 02f3 08       		.sleb128 8
+ 1609 02f4 04000000 		.4byte	.LCFI37
+ 1610 02f8 1A000000 		.4byte	.LFE15
+ 1611 02fc 0200     		.2byte	0x2
+ 1612 02fe 77       		.byte	0x77
+ 1613 02ff 08       		.sleb128 8
+ 1614 0300 00000000 		.4byte	0
+ 1615 0304 00000000 		.4byte	0
+ 1616              		.section	.debug_aranges,"",%progbits
+ 1617 0000 94000000 		.4byte	0x94
+ 1618 0004 0200     		.2byte	0x2
+ 1619 0006 00000000 		.4byte	.Ldebug_info0
+ 1620 000a 04       		.byte	0x4
+ 1621 000b 00       		.byte	0
+ 1622 000c 0000     		.2byte	0
+ 1623 000e 0000     		.2byte	0
+ 1624 0010 00000000 		.4byte	.LFB0
+ 1625 0014 9E000000 		.4byte	.LFE0-.LFB0
+ 1626 0018 00000000 		.4byte	.LFB1
+ 1627 001c 26000000 		.4byte	.LFE1-.LFB1
+ 1628 0020 00000000 		.4byte	.LFB2
+ 1629 0024 2A000000 		.4byte	.LFE2-.LFB2
+ 1630 0028 00000000 		.4byte	.LFB3
+ 1631 002c 26000000 		.4byte	.LFE3-.LFB3
+ 1632 0030 00000000 		.4byte	.LFB4
+ 1633 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1634 0038 00000000 		.4byte	.LFB5
+ 1635 003c 18000000 		.4byte	.LFE5-.LFB5
+ 1636 0040 00000000 		.4byte	.LFB6
+ 1637 0044 18000000 		.4byte	.LFE6-.LFB6
+ 1638 0048 00000000 		.4byte	.LFB7
+ 1639 004c 20000000 		.4byte	.LFE7-.LFB7
+ 1640 0050 00000000 		.4byte	.LFB8
+ 1641 0054 20000000 		.4byte	.LFE8-.LFB8
+ 1642 0058 00000000 		.4byte	.LFB9
+ 1643 005c 22000000 		.4byte	.LFE9-.LFB9
+ 1644 0060 00000000 		.4byte	.LFB10
+ 1645 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1646 0068 00000000 		.4byte	.LFB11
+ 1647 006c 20000000 		.4byte	.LFE11-.LFB11
+ 1648 0070 00000000 		.4byte	.LFB12
+ 1649 0074 18000000 		.4byte	.LFE12-.LFB12
+ 1650 0078 00000000 		.4byte	.LFB13
+ 1651 007c 20000000 		.4byte	.LFE13-.LFB13
+ 1652 0080 00000000 		.4byte	.LFB14
+ 1653 0084 18000000 		.4byte	.LFE14-.LFB14
+ 1654 0088 00000000 		.4byte	.LFB15
+ 1655 008c 1A000000 		.4byte	.LFE15-.LFB15
+ 1656 0090 00000000 		.4byte	0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 40
+
+
+ 1657 0094 00000000 		.4byte	0
+ 1658              		.section	.debug_ranges,"",%progbits
+ 1659              	.Ldebug_ranges0:
+ 1660 0000 00000000 		.4byte	.LFB0
+ 1661 0004 9E000000 		.4byte	.LFE0
+ 1662 0008 00000000 		.4byte	.LFB1
+ 1663 000c 26000000 		.4byte	.LFE1
+ 1664 0010 00000000 		.4byte	.LFB2
+ 1665 0014 2A000000 		.4byte	.LFE2
+ 1666 0018 00000000 		.4byte	.LFB3
+ 1667 001c 26000000 		.4byte	.LFE3
+ 1668 0020 00000000 		.4byte	.LFB4
+ 1669 0024 20000000 		.4byte	.LFE4
+ 1670 0028 00000000 		.4byte	.LFB5
+ 1671 002c 18000000 		.4byte	.LFE5
+ 1672 0030 00000000 		.4byte	.LFB6
+ 1673 0034 18000000 		.4byte	.LFE6
+ 1674 0038 00000000 		.4byte	.LFB7
+ 1675 003c 20000000 		.4byte	.LFE7
+ 1676 0040 00000000 		.4byte	.LFB8
+ 1677 0044 20000000 		.4byte	.LFE8
+ 1678 0048 00000000 		.4byte	.LFB9
+ 1679 004c 22000000 		.4byte	.LFE9
+ 1680 0050 00000000 		.4byte	.LFB10
+ 1681 0054 18000000 		.4byte	.LFE10
+ 1682 0058 00000000 		.4byte	.LFB11
+ 1683 005c 20000000 		.4byte	.LFE11
+ 1684 0060 00000000 		.4byte	.LFB12
+ 1685 0064 18000000 		.4byte	.LFE12
+ 1686 0068 00000000 		.4byte	.LFB13
+ 1687 006c 20000000 		.4byte	.LFE13
+ 1688 0070 00000000 		.4byte	.LFB14
+ 1689 0074 18000000 		.4byte	.LFE14
+ 1690 0078 00000000 		.4byte	.LFB15
+ 1691 007c 1A000000 		.4byte	.LFE15
+ 1692 0080 00000000 		.4byte	0
+ 1693 0084 00000000 		.4byte	0
+ 1694              		.section	.debug_line,"",%progbits
+ 1695              	.Ldebug_line0:
+ 1696 0000 8F010000 		.section	.debug_str,"MS",%progbits,1
+ 1696      02004E00 
+ 1696      00000201 
+ 1696      FB0E0D00 
+ 1696      01010101 
+ 1697              	.LASF15:
+ 1698 0000 72656731 		.ascii	"reg16\000"
+ 1698      3600
+ 1699              	.LASF41:
+ 1700 0006 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDec_1_Cnt16.c\000"
+ 1700      6E657261 
+ 1700      7465645F 
+ 1700      536F7572 
+ 1700      63655C50 
+ 1701              	.LASF43:
+ 1702 0031 51756164 		.ascii	"QuadDec_1_Cnt16_initVar\000"
+ 1702      4465635F 
+ 1702      315F436E 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 41
+
+
+ 1702      7431365F 
+ 1702      696E6974 
+ 1703              	.LASF34:
+ 1704 0049 70657269 		.ascii	"period\000"
+ 1704      6F6400
+ 1705              	.LASF33:
+ 1706 0050 51756164 		.ascii	"QuadDec_1_Cnt16_WritePeriod\000"
+ 1706      4465635F 
+ 1706      315F436E 
+ 1706      7431365F 
+ 1706      57726974 
+ 1707              	.LASF3:
+ 1708 006c 73686F72 		.ascii	"short unsigned int\000"
+ 1708      7420756E 
+ 1708      7369676E 
+ 1708      65642069 
+ 1708      6E7400
+ 1709              	.LASF20:
+ 1710 007f 51756164 		.ascii	"QuadDec_1_Cnt16_Start\000"
+ 1710      4465635F 
+ 1710      315F436E 
+ 1710      7431365F 
+ 1710      53746172 
+ 1711              	.LASF36:
+ 1712 0095 51756164 		.ascii	"QuadDec_1_Cnt16_WriteCompare\000"
+ 1712      4465635F 
+ 1712      315F436E 
+ 1712      7431365F 
+ 1712      57726974 
+ 1713              	.LASF19:
+ 1714 00b2 51756164 		.ascii	"QuadDec_1_Cnt16_Enable\000"
+ 1714      4465635F 
+ 1714      315F436E 
+ 1714      7431365F 
+ 1714      456E6162 
+ 1715              	.LASF11:
+ 1716 00c9 666C6F61 		.ascii	"float\000"
+ 1716      7400
+ 1717              	.LASF30:
+ 1718 00cf 636F756E 		.ascii	"counter\000"
+ 1718      74657200 
+ 1719              	.LASF1:
+ 1720 00d7 756E7369 		.ascii	"unsigned char\000"
+ 1720      676E6564 
+ 1720      20636861 
+ 1720      7200
+ 1721              	.LASF14:
+ 1722 00e5 72656738 		.ascii	"reg8\000"
+ 1722      00
+ 1723              	.LASF5:
+ 1724 00ea 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1724      20756E73 
+ 1724      69676E65 
+ 1724      6420696E 
+ 1724      7400
+ 1725              	.LASF9:
+ 1726 00fc 75696E74 		.ascii	"uint8\000"
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 42
+
+
+ 1726      3800
+ 1727              	.LASF28:
+ 1728 0102 636F6E74 		.ascii	"control\000"
+ 1728      726F6C00 
+ 1729              	.LASF27:
+ 1730 010a 696E7465 		.ascii	"interruptsMask\000"
+ 1730      72727570 
+ 1730      74734D61 
+ 1730      736B00
+ 1731              	.LASF25:
+ 1732 0119 51756164 		.ascii	"QuadDec_1_Cnt16_ReadControlRegister\000"
+ 1732      4465635F 
+ 1732      315F436E 
+ 1732      7431365F 
+ 1732      52656164 
+ 1733              	.LASF23:
+ 1734 013d 51756164 		.ascii	"QuadDec_1_Cnt16_SetInterruptMode\000"
+ 1734      4465635F 
+ 1734      315F436E 
+ 1734      7431365F 
+ 1734      53657449 
+ 1735              	.LASF35:
+ 1736 015e 51756164 		.ascii	"QuadDec_1_Cnt16_ReadPeriod\000"
+ 1736      4465635F 
+ 1736      315F436E 
+ 1736      7431365F 
+ 1736      52656164 
+ 1737              	.LASF12:
+ 1738 0179 646F7562 		.ascii	"double\000"
+ 1738      6C6500
+ 1739              	.LASF38:
+ 1740 0180 51756164 		.ascii	"QuadDec_1_Cnt16_ReadCompare\000"
+ 1740      4465635F 
+ 1740      315F436E 
+ 1740      7431365F 
+ 1740      52656164 
+ 1741              	.LASF22:
+ 1742 019c 51756164 		.ascii	"QuadDec_1_Cnt16_Init\000"
+ 1742      4465635F 
+ 1742      315F436E 
+ 1742      7431365F 
+ 1742      496E6974 
+ 1743              	.LASF42:
+ 1744 01b1 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
+ 1744      73657273 
+ 1744      5C62696F 
+ 1744      6D696D65 
+ 1744      74696373 
+ 1745 01de 46726F67 		.ascii	"Frog Leg Jacobian Bi-Ped\\Design02.cydsn\000"
+ 1745      204C6567 
+ 1745      204A6163 
+ 1745      6F626961 
+ 1745      6E204269 
+ 1746              	.LASF10:
+ 1747 0206 75696E74 		.ascii	"uint16\000"
+ 1747      313600
+ 1748              	.LASF18:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 43
+
+
+ 1749 020d 51756164 		.ascii	"QuadDec_1_Cnt16_interruptState\000"
+ 1749      4465635F 
+ 1749      315F436E 
+ 1749      7431365F 
+ 1749      696E7465 
+ 1750              	.LASF29:
+ 1751 022c 51756164 		.ascii	"QuadDec_1_Cnt16_WriteCounter\000"
+ 1751      4465635F 
+ 1751      315F436E 
+ 1751      7431365F 
+ 1751      57726974 
+ 1752              	.LASF8:
+ 1753 0249 756E7369 		.ascii	"unsigned int\000"
+ 1753      676E6564 
+ 1753      20696E74 
+ 1753      00
+ 1754              	.LASF7:
+ 1755 0256 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1755      206C6F6E 
+ 1755      6720756E 
+ 1755      7369676E 
+ 1755      65642069 
+ 1756              	.LASF32:
+ 1757 026d 51756164 		.ascii	"QuadDec_1_Cnt16_ReadCapture\000"
+ 1757      4465635F 
+ 1757      315F436E 
+ 1757      7431365F 
+ 1757      52656164 
+ 1758              	.LASF17:
+ 1759 0289 6374726C 		.ascii	"ctrl\000"
+ 1759      00
+ 1760              	.LASF16:
+ 1761 028e 73697A65 		.ascii	"sizetype\000"
+ 1761      74797065 
+ 1761      00
+ 1762              	.LASF6:
+ 1763 0297 6C6F6E67 		.ascii	"long long int\000"
+ 1763      206C6F6E 
+ 1763      6720696E 
+ 1763      7400
+ 1764              	.LASF13:
+ 1765 02a5 63686172 		.ascii	"char\000"
+ 1765      00
+ 1766              	.LASF2:
+ 1767 02aa 73686F72 		.ascii	"short int\000"
+ 1767      7420696E 
+ 1767      7400
+ 1768              	.LASF21:
+ 1769 02b4 51756164 		.ascii	"QuadDec_1_Cnt16_Stop\000"
+ 1769      4465635F 
+ 1769      315F436E 
+ 1769      7431365F 
+ 1769      53746F70 
+ 1770              	.LASF31:
+ 1771 02c9 51756164 		.ascii	"QuadDec_1_Cnt16_ReadCounter\000"
+ 1771      4465635F 
+ 1771      315F436E 
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cckK8Auh.s 			page 44
+
+
+ 1771      7431365F 
+ 1771      52656164 
+ 1772              	.LASF40:
+ 1773 02e5 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1773      4320342E 
+ 1773      372E3320 
+ 1773      32303133 
+ 1773      30333132 
+ 1774 0318 616E6368 		.ascii	"anch revision 196615]\000"
+ 1774      20726576 
+ 1774      6973696F 
+ 1774      6E203139 
+ 1774      36363135 
+ 1775              	.LASF26:
+ 1776 032e 51756164 		.ascii	"QuadDec_1_Cnt16_WriteControlRegister\000"
+ 1776      4465635F 
+ 1776      315F436E 
+ 1776      7431365F 
+ 1776      57726974 
+ 1777              	.LASF4:
+ 1778 0353 6C6F6E67 		.ascii	"long int\000"
+ 1778      20696E74 
+ 1778      00
+ 1779              	.LASF39:
+ 1780 035c 51756164 		.ascii	"QuadDec_1_Cnt16_ClearFIFO\000"
+ 1780      4465635F 
+ 1780      315F436E 
+ 1780      7431365F 
+ 1780      436C6561 
+ 1781              	.LASF0:
+ 1782 0376 7369676E 		.ascii	"signed char\000"
+ 1782      65642063 
+ 1782      68617200 
+ 1783              	.LASF37:
+ 1784 0382 636F6D70 		.ascii	"compare\000"
+ 1784      61726500 
+ 1785              	.LASF24:
+ 1786 038a 51756164 		.ascii	"QuadDec_1_Cnt16_ReadStatusRegister\000"
+ 1786      4465635F 
+ 1786      315F436E 
+ 1786      7431365F 
+ 1786      52656164 
+ 1787              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

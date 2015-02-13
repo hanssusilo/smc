@@ -1,0 +1,2625 @@
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Counter_7.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	Counter_7_initVar
+  19              		.bss
+  20              		.type	Counter_7_initVar, %object
+  21              		.size	Counter_7_initVar, 1
+  22              	Counter_7_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.Counter_7_Init,"ax",%progbits
+  25              		.align	2
+  26              		.global	Counter_7_Init
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	Counter_7_Init, %function
+  30              	Counter_7_Init:
+  31              	.LFB0:
+  32              		.file 1 ".\\Generated_Source\\PSoC5\\Counter_7.c"
+   1:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/Counter_7.c **** * File Name: Counter_7.c  
+   3:.\Generated_Source\PSoC5/Counter_7.c **** * Version 2.40
+   4:.\Generated_Source\PSoC5/Counter_7.c **** *
+   5:.\Generated_Source\PSoC5/Counter_7.c **** *  Description:
+   6:.\Generated_Source\PSoC5/Counter_7.c **** *     The Counter component consists of a 8, 16, 24 or 32-bit counter with
+   7:.\Generated_Source\PSoC5/Counter_7.c **** *     a selectable period between 2 and 2^Width - 1.  
+   8:.\Generated_Source\PSoC5/Counter_7.c **** *
+   9:.\Generated_Source\PSoC5/Counter_7.c **** *   Note:
+  10:.\Generated_Source\PSoC5/Counter_7.c **** *     None
+  11:.\Generated_Source\PSoC5/Counter_7.c **** *
+  12:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************
+  13:.\Generated_Source\PSoC5/Counter_7.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC5/Counter_7.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  15:.\Generated_Source\PSoC5/Counter_7.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  16:.\Generated_Source\PSoC5/Counter_7.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************/
+  18:.\Generated_Source\PSoC5/Counter_7.c **** 
+  19:.\Generated_Source\PSoC5/Counter_7.c **** #include "Counter_7.h"
+  20:.\Generated_Source\PSoC5/Counter_7.c **** 
+  21:.\Generated_Source\PSoC5/Counter_7.c **** uint8 Counter_7_initVar = 0u;
+  22:.\Generated_Source\PSoC5/Counter_7.c **** 
+  23:.\Generated_Source\PSoC5/Counter_7.c **** 
+  24:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_Init
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 2
+
+
+  26:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+  28:.\Generated_Source\PSoC5/Counter_7.c **** *     Initialize to the schematic state
+  29:.\Generated_Source\PSoC5/Counter_7.c **** * 
+  30:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+  31:.\Generated_Source\PSoC5/Counter_7.c **** *  void  
+  32:.\Generated_Source\PSoC5/Counter_7.c **** *
+  33:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+  34:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+  35:.\Generated_Source\PSoC5/Counter_7.c **** *
+  36:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+  37:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_Init(void) 
+  38:.\Generated_Source\PSoC5/Counter_7.c **** {
+  33              		.loc 1 38 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 8
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 7, -8
+  41              		.cfi_offset 14, -4
+  42 0002 82B0     		sub	sp, sp, #8
+  43              	.LCFI1:
+  44              		.cfi_def_cfa_offset 16
+  45 0004 00AF     		add	r7, sp, #0
+  46              	.LCFI2:
+  47              		.cfi_def_cfa_register 7
+  39:.\Generated_Source\PSoC5/Counter_7.c ****         #if (!Counter_7_UsingFixedFunction && !Counter_7_ControlRegRemoved)
+  40:.\Generated_Source\PSoC5/Counter_7.c ****             uint8 ctrl;
+  41:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (!Counter_7_UsingFixedFunction && !Counter_7_ControlRegRemoved) */
+  42:.\Generated_Source\PSoC5/Counter_7.c ****         
+  43:.\Generated_Source\PSoC5/Counter_7.c ****         #if(!Counter_7_UsingFixedFunction) 
+  44:.\Generated_Source\PSoC5/Counter_7.c ****             /* Interrupt State Backup for Critical Region*/
+  45:.\Generated_Source\PSoC5/Counter_7.c ****             uint8 Counter_7_interruptState;
+  46:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (!Counter_7_UsingFixedFunction) */
+  47:.\Generated_Source\PSoC5/Counter_7.c ****         
+  48:.\Generated_Source\PSoC5/Counter_7.c ****         #if (Counter_7_UsingFixedFunction)
+  49:.\Generated_Source\PSoC5/Counter_7.c ****             /* Clear all bits but the enable bit (if it's already set for Timer operation */
+  50:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_CONTROL &= Counter_7_CTRL_ENABLE;
+  51:.\Generated_Source\PSoC5/Counter_7.c ****             
+  52:.\Generated_Source\PSoC5/Counter_7.c ****             /* Clear the mode bits for continuous run mode */
+  53:.\Generated_Source\PSoC5/Counter_7.c ****             #if (CY_PSOC5A)
+  54:.\Generated_Source\PSoC5/Counter_7.c ****                 Counter_7_CONTROL2 &= ((uint8)(~Counter_7_CTRL_MODE_MASK));
+  55:.\Generated_Source\PSoC5/Counter_7.c ****             #endif /* (CY_PSOC5A) */
+  56:.\Generated_Source\PSoC5/Counter_7.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
+  57:.\Generated_Source\PSoC5/Counter_7.c ****                 Counter_7_CONTROL3 &= ((uint8)(~Counter_7_CTRL_MODE_MASK));                
+  58:.\Generated_Source\PSoC5/Counter_7.c ****             #endif /* (CY_PSOC3 || CY_PSOC5LP) */
+  59:.\Generated_Source\PSoC5/Counter_7.c ****             /* Check if One Shot mode is enabled i.e. RunMode !=0*/
+  60:.\Generated_Source\PSoC5/Counter_7.c ****             #if (Counter_7_RunModeUsed != 0x0u)
+  61:.\Generated_Source\PSoC5/Counter_7.c ****                 /* Set 3rd bit of Control register to enable one shot mode */
+  62:.\Generated_Source\PSoC5/Counter_7.c ****                 Counter_7_CONTROL |= Counter_7_ONESHOT;
+  63:.\Generated_Source\PSoC5/Counter_7.c ****             #endif /* (Counter_7_RunModeUsed != 0x0u) */
+  64:.\Generated_Source\PSoC5/Counter_7.c ****             
+  65:.\Generated_Source\PSoC5/Counter_7.c ****             /* Set the IRQ to use the status register interrupts */
+  66:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_CONTROL2 |= Counter_7_CTRL2_IRQ_SEL;
+  67:.\Generated_Source\PSoC5/Counter_7.c ****             
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 3
+
+
+  68:.\Generated_Source\PSoC5/Counter_7.c ****             /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+  69:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_RT1 &= ((uint8)(~Counter_7_RT1_MASK));
+  70:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_RT1 |= Counter_7_SYNC;     
+  71:.\Generated_Source\PSoC5/Counter_7.c ****                     
+  72:.\Generated_Source\PSoC5/Counter_7.c ****             /*Enable DSI Sync all all inputs of the Timer*/
+  73:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_RT1 &= ((uint8)(~Counter_7_SYNCDSI_MASK));
+  74:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_RT1 |= Counter_7_SYNCDSI_EN;
+  75:.\Generated_Source\PSoC5/Counter_7.c **** 
+  76:.\Generated_Source\PSoC5/Counter_7.c ****         #else
+  77:.\Generated_Source\PSoC5/Counter_7.c ****             #if(!Counter_7_ControlRegRemoved)
+  78:.\Generated_Source\PSoC5/Counter_7.c ****             /* Set the default compare mode defined in the parameter */
+  79:.\Generated_Source\PSoC5/Counter_7.c ****             ctrl = Counter_7_CONTROL & ((uint8)(~Counter_7_CTRL_CMPMODE_MASK));
+  48              		.loc 1 79 0
+  49 0006 46F27853 		movw	r3, #25976
+  50 000a C4F20003 		movt	r3, 16384
+  51 000e 1B78     		ldrb	r3, [r3, #0]
+  52 0010 DBB2     		uxtb	r3, r3
+  53 0012 23F00703 		bic	r3, r3, #7
+  54 0016 FB71     		strb	r3, [r7, #7]
+  80:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_CONTROL = ctrl | Counter_7_DEFAULT_COMPARE_MODE;
+  55              		.loc 1 80 0
+  56 0018 46F27853 		movw	r3, #25976
+  57 001c C4F20003 		movt	r3, 16384
+  58 0020 FA79     		ldrb	r2, [r7, #7]
+  59 0022 42F00102 		orr	r2, r2, #1
+  60 0026 D2B2     		uxtb	r2, r2
+  61 0028 1A70     		strb	r2, [r3, #0]
+  81:.\Generated_Source\PSoC5/Counter_7.c ****             
+  82:.\Generated_Source\PSoC5/Counter_7.c ****             /* Set the default capture mode defined in the parameter */
+  83:.\Generated_Source\PSoC5/Counter_7.c ****             ctrl = Counter_7_CONTROL & ((uint8)(~Counter_7_CTRL_CAPMODE_MASK));
+  62              		.loc 1 83 0
+  63 002a 46F27853 		movw	r3, #25976
+  64 002e C4F20003 		movt	r3, 16384
+  65 0032 1B78     		ldrb	r3, [r3, #0]
+  66 0034 DBB2     		uxtb	r3, r3
+  67 0036 23F00303 		bic	r3, r3, #3
+  68 003a FB71     		strb	r3, [r7, #7]
+  84:.\Generated_Source\PSoC5/Counter_7.c ****             
+  85:.\Generated_Source\PSoC5/Counter_7.c ****             #if( 0 != Counter_7_CAPTURE_MODE_CONF)
+  86:.\Generated_Source\PSoC5/Counter_7.c ****                 Counter_7_CONTROL = ctrl | Counter_7_DEFAULT_CAPTURE_MODE;
+  87:.\Generated_Source\PSoC5/Counter_7.c ****             #else
+  88:.\Generated_Source\PSoC5/Counter_7.c ****                 Counter_7_CONTROL = ctrl;
+  69              		.loc 1 88 0
+  70 003c 46F27853 		movw	r3, #25976
+  71 0040 C4F20003 		movt	r3, 16384
+  72 0044 FA79     		ldrb	r2, [r7, #7]
+  73 0046 1A70     		strb	r2, [r3, #0]
+  89:.\Generated_Source\PSoC5/Counter_7.c ****             #endif /* 0 != Counter_7_CAPTURE_MODE */ 
+  90:.\Generated_Source\PSoC5/Counter_7.c ****             
+  91:.\Generated_Source\PSoC5/Counter_7.c ****             #endif /* (!Counter_7_ControlRegRemoved) */
+  92:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (Counter_7_UsingFixedFunction) */
+  93:.\Generated_Source\PSoC5/Counter_7.c ****         
+  94:.\Generated_Source\PSoC5/Counter_7.c ****         /* Clear all data in the FIFO's */
+  95:.\Generated_Source\PSoC5/Counter_7.c ****         #if (!Counter_7_UsingFixedFunction)
+  96:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_ClearFIFO();
+  74              		.loc 1 96 0
+  75 0048 FFF7FEFF 		bl	Counter_7_ClearFIFO
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 4
+
+
+  97:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (!Counter_7_UsingFixedFunction) */
+  98:.\Generated_Source\PSoC5/Counter_7.c ****         
+  99:.\Generated_Source\PSoC5/Counter_7.c ****         /* Set Initial values from Configuration */
+ 100:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_WritePeriod(Counter_7_INIT_PERIOD_VALUE);
+  76              		.loc 1 100 0
+  77 004c 47F6F870 		movw	r0, #32760
+  78 0050 FFF7FEFF 		bl	Counter_7_WritePeriod
+ 101:.\Generated_Source\PSoC5/Counter_7.c ****         #if (!(Counter_7_UsingFixedFunction && (CY_PSOC5A)))
+ 102:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_WriteCounter(Counter_7_INIT_COUNTER_VALUE);
+  79              		.loc 1 102 0
+  80 0054 47F6F870 		movw	r0, #32760
+  81 0058 FFF7FEFF 		bl	Counter_7_WriteCounter
+ 103:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (!(Counter_7_UsingFixedFunction && (CY_PSOC5A))) */
+ 104:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_SetInterruptMode(Counter_7_INIT_INTERRUPTS_MASK);
+  82              		.loc 1 104 0
+  83 005c 4FF00000 		mov	r0, #0
+  84 0060 FFF7FEFF 		bl	Counter_7_SetInterruptMode
+ 105:.\Generated_Source\PSoC5/Counter_7.c ****         
+ 106:.\Generated_Source\PSoC5/Counter_7.c ****         #if (!Counter_7_UsingFixedFunction)
+ 107:.\Generated_Source\PSoC5/Counter_7.c ****             /* Read the status register to clear the unwanted interrupts */
+ 108:.\Generated_Source\PSoC5/Counter_7.c ****             (void)Counter_7_ReadStatusRegister();
+  85              		.loc 1 108 0
+  86 0064 FFF7FEFF 		bl	Counter_7_ReadStatusRegister
+ 109:.\Generated_Source\PSoC5/Counter_7.c ****             /* Set the compare value (only available to non-fixed function implementation */
+ 110:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_WriteCompare(Counter_7_INIT_COMPARE_VALUE);
+  87              		.loc 1 110 0
+  88 0068 4FF6FF70 		movw	r0, #65535
+  89 006c FFF7FEFF 		bl	Counter_7_WriteCompare
+ 111:.\Generated_Source\PSoC5/Counter_7.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 112:.\Generated_Source\PSoC5/Counter_7.c ****             
+ 113:.\Generated_Source\PSoC5/Counter_7.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 114:.\Generated_Source\PSoC5/Counter_7.c ****             /* Enter Critical Region*/
+ 115:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_interruptState = CyEnterCriticalSection();
+  90              		.loc 1 115 0
+  91 0070 FFF7FEFF 		bl	CyEnterCriticalSection
+  92 0074 0346     		mov	r3, r0
+  93 0076 BB71     		strb	r3, [r7, #6]
+ 116:.\Generated_Source\PSoC5/Counter_7.c ****             
+ 117:.\Generated_Source\PSoC5/Counter_7.c ****             Counter_7_STATUS_AUX_CTRL |= Counter_7_STATUS_ACTL_INT_EN_MASK;
+  94              		.loc 1 117 0
+  95 0078 46F29453 		movw	r3, #26004
+  96 007c C4F20003 		movt	r3, 16384
+  97 0080 46F29452 		movw	r2, #26004
+  98 0084 C4F20002 		movt	r2, 16384
+  99 0088 1278     		ldrb	r2, [r2, #0]
+ 100 008a D2B2     		uxtb	r2, r2
+ 101 008c 42F01002 		orr	r2, r2, #16
+ 102 0090 D2B2     		uxtb	r2, r2
+ 103 0092 1A70     		strb	r2, [r3, #0]
+ 118:.\Generated_Source\PSoC5/Counter_7.c ****             
+ 119:.\Generated_Source\PSoC5/Counter_7.c ****             /* Exit Critical Region*/
+ 120:.\Generated_Source\PSoC5/Counter_7.c ****             CyExitCriticalSection(Counter_7_interruptState);
+ 104              		.loc 1 120 0
+ 105 0094 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 106 0096 1846     		mov	r0, r3
+ 107 0098 FFF7FEFF 		bl	CyExitCriticalSection
+ 121:.\Generated_Source\PSoC5/Counter_7.c ****             
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 5
+
+
+ 122:.\Generated_Source\PSoC5/Counter_7.c ****         #endif /* (!Counter_7_UsingFixedFunction) */
+ 123:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 108              		.loc 1 123 0
+ 109 009c 07F10807 		add	r7, r7, #8
+ 110 00a0 BD46     		mov	sp, r7
+ 111 00a2 80BD     		pop	{r7, pc}
+ 112              		.cfi_endproc
+ 113              	.LFE0:
+ 114              		.size	Counter_7_Init, .-Counter_7_Init
+ 115              		.section	.text.Counter_7_Enable,"ax",%progbits
+ 116              		.align	2
+ 117              		.global	Counter_7_Enable
+ 118              		.thumb
+ 119              		.thumb_func
+ 120              		.type	Counter_7_Enable, %function
+ 121              	Counter_7_Enable:
+ 122              	.LFB1:
+ 124:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 125:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 126:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 127:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_Enable
+ 128:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 129:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 130:.\Generated_Source\PSoC5/Counter_7.c **** *     Enable the Counter
+ 131:.\Generated_Source\PSoC5/Counter_7.c **** * 
+ 132:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 133:.\Generated_Source\PSoC5/Counter_7.c **** *  void  
+ 134:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 135:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 136:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 137:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 138:.\Generated_Source\PSoC5/Counter_7.c **** * Side Effects: 
+ 139:.\Generated_Source\PSoC5/Counter_7.c **** *   If the Enable mode is set to Hardware only then this function has no effect 
+ 140:.\Generated_Source\PSoC5/Counter_7.c **** *   on the operation of the counter.
+ 141:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 142:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 143:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_Enable(void) 
+ 144:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 123              		.loc 1 144 0
+ 124              		.cfi_startproc
+ 125              		@ args = 0, pretend = 0, frame = 0
+ 126              		@ frame_needed = 1, uses_anonymous_args = 0
+ 127              		@ link register save eliminated.
+ 128 0000 80B4     		push	{r7}
+ 129              	.LCFI3:
+ 130              		.cfi_def_cfa_offset 4
+ 131              		.cfi_offset 7, -4
+ 132 0002 00AF     		add	r7, sp, #0
+ 133              	.LCFI4:
+ 134              		.cfi_def_cfa_register 7
+ 145:.\Generated_Source\PSoC5/Counter_7.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 146:.\Generated_Source\PSoC5/Counter_7.c ****     #if (Counter_7_UsingFixedFunction)
+ 147:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_ENABLE |= Counter_7_BLOCK_EN_MASK;
+ 148:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_STBY_ENABLE |= Counter_7_BLOCK_STBY_EN_MASK;
+ 149:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */  
+ 150:.\Generated_Source\PSoC5/Counter_7.c ****         
+ 151:.\Generated_Source\PSoC5/Counter_7.c ****     /* Enable the counter from the control register  */
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 6
+
+
+ 152:.\Generated_Source\PSoC5/Counter_7.c ****     /* If Fixed Function then make sure Mode is set correctly */
+ 153:.\Generated_Source\PSoC5/Counter_7.c ****     /* else make sure reset is clear */
+ 154:.\Generated_Source\PSoC5/Counter_7.c ****     #if(!Counter_7_ControlRegRemoved || Counter_7_UsingFixedFunction)
+ 155:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_CONTROL |= Counter_7_CTRL_ENABLE;                
+ 135              		.loc 1 155 0
+ 136 0004 46F27853 		movw	r3, #25976
+ 137 0008 C4F20003 		movt	r3, 16384
+ 138 000c 46F27852 		movw	r2, #25976
+ 139 0010 C4F20002 		movt	r2, 16384
+ 140 0014 1278     		ldrb	r2, [r2, #0]
+ 141 0016 D2B2     		uxtb	r2, r2
+ 142 0018 62F07F02 		orn	r2, r2, #127
+ 143 001c D2B2     		uxtb	r2, r2
+ 144 001e 1A70     		strb	r2, [r3, #0]
+ 156:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (!Counter_7_ControlRegRemoved || Counter_7_UsingFixedFunction) */
+ 157:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 158:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 145              		.loc 1 158 0
+ 146 0020 BD46     		mov	sp, r7
+ 147 0022 80BC     		pop	{r7}
+ 148 0024 7047     		bx	lr
+ 149              		.cfi_endproc
+ 150              	.LFE1:
+ 151              		.size	Counter_7_Enable, .-Counter_7_Enable
+ 152 0026 00BF     		.section	.text.Counter_7_Start,"ax",%progbits
+ 153              		.align	2
+ 154              		.global	Counter_7_Start
+ 155              		.thumb
+ 156              		.thumb_func
+ 157              		.type	Counter_7_Start, %function
+ 158              	Counter_7_Start:
+ 159              	.LFB2:
+ 159:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 160:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 161:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 162:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_Start
+ 163:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 164:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 165:.\Generated_Source\PSoC5/Counter_7.c **** *  Enables the counter for operation 
+ 166:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 167:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 168:.\Generated_Source\PSoC5/Counter_7.c **** *  void  
+ 169:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 170:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 171:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 172:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 173:.\Generated_Source\PSoC5/Counter_7.c **** * Global variables:
+ 174:.\Generated_Source\PSoC5/Counter_7.c **** *  Counter_7_initVar: Is modified when this function is called for the  
+ 175:.\Generated_Source\PSoC5/Counter_7.c **** *   first time. Is used to ensure that initialization happens only once.
+ 176:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 177:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 178:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_Start(void) 
+ 179:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 160              		.loc 1 179 0
+ 161              		.cfi_startproc
+ 162              		@ args = 0, pretend = 0, frame = 0
+ 163              		@ frame_needed = 1, uses_anonymous_args = 0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 7
+
+
+ 164 0000 80B5     		push	{r7, lr}
+ 165              	.LCFI5:
+ 166              		.cfi_def_cfa_offset 8
+ 167              		.cfi_offset 7, -8
+ 168              		.cfi_offset 14, -4
+ 169 0002 00AF     		add	r7, sp, #0
+ 170              	.LCFI6:
+ 171              		.cfi_def_cfa_register 7
+ 180:.\Generated_Source\PSoC5/Counter_7.c ****     if(Counter_7_initVar == 0u)
+ 172              		.loc 1 180 0
+ 173 0004 40F20003 		movw	r3, #:lower16:Counter_7_initVar
+ 174 0008 C0F20003 		movt	r3, #:upper16:Counter_7_initVar
+ 175 000c 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 176 000e 002B     		cmp	r3, #0
+ 177 0010 08D1     		bne	.L4
+ 181:.\Generated_Source\PSoC5/Counter_7.c ****     {
+ 182:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_Init();
+ 178              		.loc 1 182 0
+ 179 0012 FFF7FEFF 		bl	Counter_7_Init
+ 183:.\Generated_Source\PSoC5/Counter_7.c ****         
+ 184:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_initVar = 1u; /* Clear this bit for Initialization */        
+ 180              		.loc 1 184 0
+ 181 0016 40F20003 		movw	r3, #:lower16:Counter_7_initVar
+ 182 001a C0F20003 		movt	r3, #:upper16:Counter_7_initVar
+ 183 001e 4FF00102 		mov	r2, #1
+ 184 0022 1A70     		strb	r2, [r3, #0]
+ 185              	.L4:
+ 185:.\Generated_Source\PSoC5/Counter_7.c ****     }
+ 186:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 187:.\Generated_Source\PSoC5/Counter_7.c ****     /* Enable the Counter */
+ 188:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_Enable();        
+ 186              		.loc 1 188 0
+ 187 0024 FFF7FEFF 		bl	Counter_7_Enable
+ 189:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 188              		.loc 1 189 0
+ 189 0028 80BD     		pop	{r7, pc}
+ 190              		.cfi_endproc
+ 191              	.LFE2:
+ 192              		.size	Counter_7_Start, .-Counter_7_Start
+ 193 002a 00BF     		.section	.text.Counter_7_Stop,"ax",%progbits
+ 194              		.align	2
+ 195              		.global	Counter_7_Stop
+ 196              		.thumb
+ 197              		.thumb_func
+ 198              		.type	Counter_7_Stop, %function
+ 199              	Counter_7_Stop:
+ 200              	.LFB3:
+ 190:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 191:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 192:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 193:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_Stop
+ 194:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 195:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 196:.\Generated_Source\PSoC5/Counter_7.c **** * Halts the counter, but does not change any modes or disable interrupts.
+ 197:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 198:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 199:.\Generated_Source\PSoC5/Counter_7.c **** *  void  
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 8
+
+
+ 200:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 201:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 202:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 203:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 204:.\Generated_Source\PSoC5/Counter_7.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
+ 205:.\Generated_Source\PSoC5/Counter_7.c **** *               has no effect on the operation of the counter.
+ 206:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 207:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 208:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_Stop(void) 
+ 209:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 201              		.loc 1 209 0
+ 202              		.cfi_startproc
+ 203              		@ args = 0, pretend = 0, frame = 0
+ 204              		@ frame_needed = 1, uses_anonymous_args = 0
+ 205              		@ link register save eliminated.
+ 206 0000 80B4     		push	{r7}
+ 207              	.LCFI7:
+ 208              		.cfi_def_cfa_offset 4
+ 209              		.cfi_offset 7, -4
+ 210 0002 00AF     		add	r7, sp, #0
+ 211              	.LCFI8:
+ 212              		.cfi_def_cfa_register 7
+ 210:.\Generated_Source\PSoC5/Counter_7.c ****     /* Disable Counter */
+ 211:.\Generated_Source\PSoC5/Counter_7.c ****     #if(!Counter_7_ControlRegRemoved || Counter_7_UsingFixedFunction)
+ 212:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_CONTROL &= ((uint8)(~Counter_7_CTRL_ENABLE));        
+ 213              		.loc 1 212 0
+ 214 0004 46F27853 		movw	r3, #25976
+ 215 0008 C4F20003 		movt	r3, 16384
+ 216 000c 46F27852 		movw	r2, #25976
+ 217 0010 C4F20002 		movt	r2, 16384
+ 218 0014 1278     		ldrb	r2, [r2, #0]
+ 219 0016 D2B2     		uxtb	r2, r2
+ 220 0018 02F07F02 		and	r2, r2, #127
+ 221 001c D2B2     		uxtb	r2, r2
+ 222 001e 1A70     		strb	r2, [r3, #0]
+ 213:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (!Counter_7_ControlRegRemoved || Counter_7_UsingFixedFunction) */
+ 214:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 215:.\Generated_Source\PSoC5/Counter_7.c ****     /* Globally disable the Fixed Function Block chosen */
+ 216:.\Generated_Source\PSoC5/Counter_7.c ****     #if (Counter_7_UsingFixedFunction)
+ 217:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_ENABLE &= ((uint8)(~Counter_7_BLOCK_EN_MASK));
+ 218:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_STBY_ENABLE &= ((uint8)(~Counter_7_BLOCK_STBY_EN_MASK));
+ 219:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 220:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 223              		.loc 1 220 0
+ 224 0020 BD46     		mov	sp, r7
+ 225 0022 80BC     		pop	{r7}
+ 226 0024 7047     		bx	lr
+ 227              		.cfi_endproc
+ 228              	.LFE3:
+ 229              		.size	Counter_7_Stop, .-Counter_7_Stop
+ 230 0026 00BF     		.section	.text.Counter_7_SetInterruptMode,"ax",%progbits
+ 231              		.align	2
+ 232              		.global	Counter_7_SetInterruptMode
+ 233              		.thumb
+ 234              		.thumb_func
+ 235              		.type	Counter_7_SetInterruptMode, %function
+ 236              	Counter_7_SetInterruptMode:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 9
+
+
+ 237              	.LFB4:
+ 221:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 222:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 223:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 224:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_SetInterruptMode
+ 225:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 226:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 227:.\Generated_Source\PSoC5/Counter_7.c **** * Configures which interrupt sources are enabled to generate the final interrupt
+ 228:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 229:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 230:.\Generated_Source\PSoC5/Counter_7.c **** *  InterruptsMask: This parameter is an or'd collection of the status bits
+ 231:.\Generated_Source\PSoC5/Counter_7.c **** *                   which will be allowed to generate the counters interrupt.   
+ 232:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 233:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 234:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 235:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 236:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 237:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_SetInterruptMode(uint8 interruptsMask) 
+ 238:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 238              		.loc 1 238 0
+ 239              		.cfi_startproc
+ 240              		@ args = 0, pretend = 0, frame = 8
+ 241              		@ frame_needed = 1, uses_anonymous_args = 0
+ 242              		@ link register save eliminated.
+ 243 0000 80B4     		push	{r7}
+ 244              	.LCFI9:
+ 245              		.cfi_def_cfa_offset 4
+ 246              		.cfi_offset 7, -4
+ 247 0002 83B0     		sub	sp, sp, #12
+ 248              	.LCFI10:
+ 249              		.cfi_def_cfa_offset 16
+ 250 0004 00AF     		add	r7, sp, #0
+ 251              	.LCFI11:
+ 252              		.cfi_def_cfa_register 7
+ 253 0006 0346     		mov	r3, r0
+ 254 0008 FB71     		strb	r3, [r7, #7]
+ 239:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_STATUS_MASK = interruptsMask;
+ 255              		.loc 1 239 0
+ 256 000a 46F28453 		movw	r3, #25988
+ 257 000e C4F20003 		movt	r3, 16384
+ 258 0012 FA79     		ldrb	r2, [r7, #7]
+ 259 0014 1A70     		strb	r2, [r3, #0]
+ 240:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 260              		.loc 1 240 0
+ 261 0016 07F10C07 		add	r7, r7, #12
+ 262 001a BD46     		mov	sp, r7
+ 263 001c 80BC     		pop	{r7}
+ 264 001e 7047     		bx	lr
+ 265              		.cfi_endproc
+ 266              	.LFE4:
+ 267              		.size	Counter_7_SetInterruptMode, .-Counter_7_SetInterruptMode
+ 268              		.section	.text.Counter_7_ReadStatusRegister,"ax",%progbits
+ 269              		.align	2
+ 270              		.global	Counter_7_ReadStatusRegister
+ 271              		.thumb
+ 272              		.thumb_func
+ 273              		.type	Counter_7_ReadStatusRegister, %function
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 10
+
+
+ 274              	Counter_7_ReadStatusRegister:
+ 275              	.LFB5:
+ 241:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 242:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 243:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 244:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadStatusRegister
+ 245:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 246:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 247:.\Generated_Source\PSoC5/Counter_7.c **** *   Reads the status register and returns it's state. This function should use
+ 248:.\Generated_Source\PSoC5/Counter_7.c **** *       defined types for the bit-field information as the bits in this
+ 249:.\Generated_Source\PSoC5/Counter_7.c **** *       register may be permuteable.
+ 250:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 251:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 252:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 253:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 254:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 255:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint8) The contents of the status register
+ 256:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 257:.\Generated_Source\PSoC5/Counter_7.c **** * Side Effects:
+ 258:.\Generated_Source\PSoC5/Counter_7.c **** *   Status register bits may be clear on read. 
+ 259:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 260:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 261:.\Generated_Source\PSoC5/Counter_7.c **** uint8   Counter_7_ReadStatusRegister(void) 
+ 262:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 276              		.loc 1 262 0
+ 277              		.cfi_startproc
+ 278              		@ args = 0, pretend = 0, frame = 0
+ 279              		@ frame_needed = 1, uses_anonymous_args = 0
+ 280              		@ link register save eliminated.
+ 281 0000 80B4     		push	{r7}
+ 282              	.LCFI12:
+ 283              		.cfi_def_cfa_offset 4
+ 284              		.cfi_offset 7, -4
+ 285 0002 00AF     		add	r7, sp, #0
+ 286              	.LCFI13:
+ 287              		.cfi_def_cfa_register 7
+ 263:.\Generated_Source\PSoC5/Counter_7.c ****     return Counter_7_STATUS;
+ 288              		.loc 1 263 0
+ 289 0004 46F26453 		movw	r3, #25956
+ 290 0008 C4F20003 		movt	r3, 16384
+ 291 000c 1B78     		ldrb	r3, [r3, #0]
+ 292 000e DBB2     		uxtb	r3, r3
+ 264:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 293              		.loc 1 264 0
+ 294 0010 1846     		mov	r0, r3
+ 295 0012 BD46     		mov	sp, r7
+ 296 0014 80BC     		pop	{r7}
+ 297 0016 7047     		bx	lr
+ 298              		.cfi_endproc
+ 299              	.LFE5:
+ 300              		.size	Counter_7_ReadStatusRegister, .-Counter_7_ReadStatusRegister
+ 301              		.section	.text.Counter_7_ReadControlRegister,"ax",%progbits
+ 302              		.align	2
+ 303              		.global	Counter_7_ReadControlRegister
+ 304              		.thumb
+ 305              		.thumb_func
+ 306              		.type	Counter_7_ReadControlRegister, %function
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 11
+
+
+ 307              	Counter_7_ReadControlRegister:
+ 308              	.LFB6:
+ 265:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 266:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 267:.\Generated_Source\PSoC5/Counter_7.c **** #if(!Counter_7_ControlRegRemoved)
+ 268:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 269:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadControlRegister
+ 270:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 271:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 272:.\Generated_Source\PSoC5/Counter_7.c **** *   Reads the control register and returns it's state. This function should use
+ 273:.\Generated_Source\PSoC5/Counter_7.c **** *       defined types for the bit-field information as the bits in this
+ 274:.\Generated_Source\PSoC5/Counter_7.c **** *       register may be permuteable.
+ 275:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 276:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 277:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 278:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 279:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 280:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint8) The contents of the control register
+ 281:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 282:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 283:.\Generated_Source\PSoC5/Counter_7.c **** uint8   Counter_7_ReadControlRegister(void) 
+ 284:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 309              		.loc 1 284 0
+ 310              		.cfi_startproc
+ 311              		@ args = 0, pretend = 0, frame = 0
+ 312              		@ frame_needed = 1, uses_anonymous_args = 0
+ 313              		@ link register save eliminated.
+ 314 0000 80B4     		push	{r7}
+ 315              	.LCFI14:
+ 316              		.cfi_def_cfa_offset 4
+ 317              		.cfi_offset 7, -4
+ 318 0002 00AF     		add	r7, sp, #0
+ 319              	.LCFI15:
+ 320              		.cfi_def_cfa_register 7
+ 285:.\Generated_Source\PSoC5/Counter_7.c ****     return Counter_7_CONTROL;
+ 321              		.loc 1 285 0
+ 322 0004 46F27853 		movw	r3, #25976
+ 323 0008 C4F20003 		movt	r3, 16384
+ 324 000c 1B78     		ldrb	r3, [r3, #0]
+ 325 000e DBB2     		uxtb	r3, r3
+ 286:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 326              		.loc 1 286 0
+ 327 0010 1846     		mov	r0, r3
+ 328 0012 BD46     		mov	sp, r7
+ 329 0014 80BC     		pop	{r7}
+ 330 0016 7047     		bx	lr
+ 331              		.cfi_endproc
+ 332              	.LFE6:
+ 333              		.size	Counter_7_ReadControlRegister, .-Counter_7_ReadControlRegister
+ 334              		.section	.text.Counter_7_WriteControlRegister,"ax",%progbits
+ 335              		.align	2
+ 336              		.global	Counter_7_WriteControlRegister
+ 337              		.thumb
+ 338              		.thumb_func
+ 339              		.type	Counter_7_WriteControlRegister, %function
+ 340              	Counter_7_WriteControlRegister:
+ 341              	.LFB7:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 12
+
+
+ 287:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 288:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 289:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 290:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_WriteControlRegister
+ 291:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 292:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 293:.\Generated_Source\PSoC5/Counter_7.c **** *   Sets the bit-field of the control register.  This function should use
+ 294:.\Generated_Source\PSoC5/Counter_7.c **** *       defined types for the bit-field information as the bits in this
+ 295:.\Generated_Source\PSoC5/Counter_7.c **** *       register may be permuteable.
+ 296:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 297:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 298:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 299:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 300:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 301:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint8) The contents of the control register
+ 302:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 303:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 304:.\Generated_Source\PSoC5/Counter_7.c **** void    Counter_7_WriteControlRegister(uint8 control) 
+ 305:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 342              		.loc 1 305 0
+ 343              		.cfi_startproc
+ 344              		@ args = 0, pretend = 0, frame = 8
+ 345              		@ frame_needed = 1, uses_anonymous_args = 0
+ 346              		@ link register save eliminated.
+ 347 0000 80B4     		push	{r7}
+ 348              	.LCFI16:
+ 349              		.cfi_def_cfa_offset 4
+ 350              		.cfi_offset 7, -4
+ 351 0002 83B0     		sub	sp, sp, #12
+ 352              	.LCFI17:
+ 353              		.cfi_def_cfa_offset 16
+ 354 0004 00AF     		add	r7, sp, #0
+ 355              	.LCFI18:
+ 356              		.cfi_def_cfa_register 7
+ 357 0006 0346     		mov	r3, r0
+ 358 0008 FB71     		strb	r3, [r7, #7]
+ 306:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_CONTROL = control;
+ 359              		.loc 1 306 0
+ 360 000a 46F27853 		movw	r3, #25976
+ 361 000e C4F20003 		movt	r3, 16384
+ 362 0012 FA79     		ldrb	r2, [r7, #7]
+ 363 0014 1A70     		strb	r2, [r3, #0]
+ 307:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 364              		.loc 1 307 0
+ 365 0016 07F10C07 		add	r7, r7, #12
+ 366 001a BD46     		mov	sp, r7
+ 367 001c 80BC     		pop	{r7}
+ 368 001e 7047     		bx	lr
+ 369              		.cfi_endproc
+ 370              	.LFE7:
+ 371              		.size	Counter_7_WriteControlRegister, .-Counter_7_WriteControlRegister
+ 372              		.section	.text.Counter_7_WriteCounter,"ax",%progbits
+ 373              		.align	2
+ 374              		.global	Counter_7_WriteCounter
+ 375              		.thumb
+ 376              		.thumb_func
+ 377              		.type	Counter_7_WriteCounter, %function
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 13
+
+
+ 378              	Counter_7_WriteCounter:
+ 379              	.LFB8:
+ 308:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 309:.\Generated_Source\PSoC5/Counter_7.c **** #endif  /* (!Counter_7_ControlRegRemoved) */
+ 310:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 311:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 312:.\Generated_Source\PSoC5/Counter_7.c **** #if (!(Counter_7_UsingFixedFunction && (CY_PSOC5A)))
+ 313:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 314:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_WriteCounter
+ 315:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 316:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 317:.\Generated_Source\PSoC5/Counter_7.c **** *   This funtion is used to set the counter to a specific value
+ 318:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 319:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 320:.\Generated_Source\PSoC5/Counter_7.c **** *  counter:  New counter value. 
+ 321:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 322:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 323:.\Generated_Source\PSoC5/Counter_7.c **** *  void 
+ 324:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 325:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 326:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_WriteCounter(uint16 counter) \
+ 327:.\Generated_Source\PSoC5/Counter_7.c ****                                    
+ 328:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 380              		.loc 1 328 0
+ 381              		.cfi_startproc
+ 382              		@ args = 0, pretend = 0, frame = 8
+ 383              		@ frame_needed = 1, uses_anonymous_args = 0
+ 384              		@ link register save eliminated.
+ 385 0000 80B4     		push	{r7}
+ 386              	.LCFI19:
+ 387              		.cfi_def_cfa_offset 4
+ 388              		.cfi_offset 7, -4
+ 389 0002 83B0     		sub	sp, sp, #12
+ 390              	.LCFI20:
+ 391              		.cfi_def_cfa_offset 16
+ 392 0004 00AF     		add	r7, sp, #0
+ 393              	.LCFI21:
+ 394              		.cfi_def_cfa_register 7
+ 395 0006 0346     		mov	r3, r0
+ 396 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 329:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 330:.\Generated_Source\PSoC5/Counter_7.c ****         /* assert if block is already enabled */
+ 331:.\Generated_Source\PSoC5/Counter_7.c ****         CYASSERT (0u == (Counter_7_GLOBAL_ENABLE & Counter_7_BLOCK_EN_MASK));
+ 332:.\Generated_Source\PSoC5/Counter_7.c ****         /* If block is disabled, enable it and then write the counter */
+ 333:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_ENABLE |= Counter_7_BLOCK_EN_MASK;
+ 334:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_COUNTER_LSB_PTR, (uint16)counter);
+ 335:.\Generated_Source\PSoC5/Counter_7.c ****         Counter_7_GLOBAL_ENABLE &= ((uint8)(~Counter_7_BLOCK_EN_MASK));
+ 336:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 337:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_COUNTER_LSB_PTR, counter);
+ 397              		.loc 1 337 0
+ 398 000a 46F61023 		movw	r3, #27152
+ 399 000e C4F20003 		movt	r3, 16384
+ 400 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 401 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 338:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 339:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 402              		.loc 1 339 0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 14
+
+
+ 403 0016 07F10C07 		add	r7, r7, #12
+ 404 001a BD46     		mov	sp, r7
+ 405 001c 80BC     		pop	{r7}
+ 406 001e 7047     		bx	lr
+ 407              		.cfi_endproc
+ 408              	.LFE8:
+ 409              		.size	Counter_7_WriteCounter, .-Counter_7_WriteCounter
+ 410              		.section	.text.Counter_7_ReadCounter,"ax",%progbits
+ 411              		.align	2
+ 412              		.global	Counter_7_ReadCounter
+ 413              		.thumb
+ 414              		.thumb_func
+ 415              		.type	Counter_7_ReadCounter, %function
+ 416              	Counter_7_ReadCounter:
+ 417              	.LFB9:
+ 340:.\Generated_Source\PSoC5/Counter_7.c **** #endif /* (!(Counter_7_UsingFixedFunction && (CY_PSOC5A))) */
+ 341:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 342:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 343:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 344:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadCounter
+ 345:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 346:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 347:.\Generated_Source\PSoC5/Counter_7.c **** * Returns the current value of the counter.  It doesn't matter
+ 348:.\Generated_Source\PSoC5/Counter_7.c **** * if the counter is enabled or running.
+ 349:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 350:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 351:.\Generated_Source\PSoC5/Counter_7.c **** *  void:  
+ 352:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 353:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 354:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint16) The present value of the counter.
+ 355:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 356:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 357:.\Generated_Source\PSoC5/Counter_7.c **** uint16 Counter_7_ReadCounter(void) 
+ 358:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 418              		.loc 1 358 0
+ 419              		.cfi_startproc
+ 420              		@ args = 0, pretend = 0, frame = 0
+ 421              		@ frame_needed = 1, uses_anonymous_args = 0
+ 422              		@ link register save eliminated.
+ 423 0000 80B4     		push	{r7}
+ 424              	.LCFI22:
+ 425              		.cfi_def_cfa_offset 4
+ 426              		.cfi_offset 7, -4
+ 427 0002 00AF     		add	r7, sp, #0
+ 428              	.LCFI23:
+ 429              		.cfi_def_cfa_register 7
+ 359:.\Generated_Source\PSoC5/Counter_7.c ****     /* Force capture by reading Accumulator */
+ 360:.\Generated_Source\PSoC5/Counter_7.c ****     /* Must first do a software capture to be able to read the counter */
+ 361:.\Generated_Source\PSoC5/Counter_7.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 362:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 363:.\Generated_Source\PSoC5/Counter_7.c **** 		(void)CY_GET_REG16(Counter_7_COUNTER_LSB_PTR);
+ 364:.\Generated_Source\PSoC5/Counter_7.c **** 	#else
+ 365:.\Generated_Source\PSoC5/Counter_7.c **** 		(void)CY_GET_REG8(Counter_7_COUNTER_LSB_PTR_8BIT);
+ 430              		.loc 1 365 0
+ 431 0004 46F20853 		movw	r3, #25864
+ 432 0008 C4F20003 		movt	r3, 16384
+ 433 000c 1B78     		ldrb	r3, [r3, #0]
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 15
+
+
+ 366:.\Generated_Source\PSoC5/Counter_7.c **** 	#endif/* (Counter_7_UsingFixedFunction) */
+ 367:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 368:.\Generated_Source\PSoC5/Counter_7.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
+ 369:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 370:.\Generated_Source\PSoC5/Counter_7.c ****         return ((uint16)CY_GET_REG16(Counter_7_STATICCOUNT_LSB_PTR));
+ 371:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 372:.\Generated_Source\PSoC5/Counter_7.c ****         return (CY_GET_REG16(Counter_7_STATICCOUNT_LSB_PTR));
+ 434              		.loc 1 372 0
+ 435 000e 46F69023 		movw	r3, #27280
+ 436 0012 C4F20003 		movt	r3, 16384
+ 437 0016 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 438 0018 9BB2     		uxth	r3, r3
+ 373:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 374:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 439              		.loc 1 374 0
+ 440 001a 1846     		mov	r0, r3
+ 441 001c BD46     		mov	sp, r7
+ 442 001e 80BC     		pop	{r7}
+ 443 0020 7047     		bx	lr
+ 444              		.cfi_endproc
+ 445              	.LFE9:
+ 446              		.size	Counter_7_ReadCounter, .-Counter_7_ReadCounter
+ 447 0022 00BF     		.section	.text.Counter_7_ReadCapture,"ax",%progbits
+ 448              		.align	2
+ 449              		.global	Counter_7_ReadCapture
+ 450              		.thumb
+ 451              		.thumb_func
+ 452              		.type	Counter_7_ReadCapture, %function
+ 453              	Counter_7_ReadCapture:
+ 454              	.LFB10:
+ 375:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 376:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 377:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 378:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadCapture
+ 379:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 380:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 381:.\Generated_Source\PSoC5/Counter_7.c **** *   This function returns the last value captured.
+ 382:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 383:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 384:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 385:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 386:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 387:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint16) Present Capture value.
+ 388:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 389:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 390:.\Generated_Source\PSoC5/Counter_7.c **** uint16 Counter_7_ReadCapture(void) 
+ 391:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 455              		.loc 1 391 0
+ 456              		.cfi_startproc
+ 457              		@ args = 0, pretend = 0, frame = 0
+ 458              		@ frame_needed = 1, uses_anonymous_args = 0
+ 459              		@ link register save eliminated.
+ 460 0000 80B4     		push	{r7}
+ 461              	.LCFI24:
+ 462              		.cfi_def_cfa_offset 4
+ 463              		.cfi_offset 7, -4
+ 464 0002 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 16
+
+
+ 465              	.LCFI25:
+ 466              		.cfi_def_cfa_register 7
+ 392:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 393:.\Generated_Source\PSoC5/Counter_7.c ****         return ((uint16)CY_GET_REG16(Counter_7_STATICCOUNT_LSB_PTR));
+ 394:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 395:.\Generated_Source\PSoC5/Counter_7.c ****         return (CY_GET_REG16(Counter_7_STATICCOUNT_LSB_PTR));
+ 467              		.loc 1 395 0
+ 468 0004 46F69023 		movw	r3, #27280
+ 469 0008 C4F20003 		movt	r3, 16384
+ 470 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 471 000e 9BB2     		uxth	r3, r3
+ 396:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 397:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 472              		.loc 1 397 0
+ 473 0010 1846     		mov	r0, r3
+ 474 0012 BD46     		mov	sp, r7
+ 475 0014 80BC     		pop	{r7}
+ 476 0016 7047     		bx	lr
+ 477              		.cfi_endproc
+ 478              	.LFE10:
+ 479              		.size	Counter_7_ReadCapture, .-Counter_7_ReadCapture
+ 480              		.section	.text.Counter_7_WritePeriod,"ax",%progbits
+ 481              		.align	2
+ 482              		.global	Counter_7_WritePeriod
+ 483              		.thumb
+ 484              		.thumb_func
+ 485              		.type	Counter_7_WritePeriod, %function
+ 486              	Counter_7_WritePeriod:
+ 487              	.LFB11:
+ 398:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 399:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 400:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 401:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_WritePeriod
+ 402:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 403:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 404:.\Generated_Source\PSoC5/Counter_7.c **** * Changes the period of the counter.  The new period 
+ 405:.\Generated_Source\PSoC5/Counter_7.c **** * will be loaded the next time terminal count is detected.
+ 406:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 407:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 408:.\Generated_Source\PSoC5/Counter_7.c **** *  period: (uint16) A value of 0 will result in
+ 409:.\Generated_Source\PSoC5/Counter_7.c **** *         the counter remaining at zero.  
+ 410:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 411:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 412:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 413:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 414:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 415:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_WritePeriod(uint16 period) 
+ 416:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 488              		.loc 1 416 0
+ 489              		.cfi_startproc
+ 490              		@ args = 0, pretend = 0, frame = 8
+ 491              		@ frame_needed = 1, uses_anonymous_args = 0
+ 492              		@ link register save eliminated.
+ 493 0000 80B4     		push	{r7}
+ 494              	.LCFI26:
+ 495              		.cfi_def_cfa_offset 4
+ 496              		.cfi_offset 7, -4
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 17
+
+
+ 497 0002 83B0     		sub	sp, sp, #12
+ 498              	.LCFI27:
+ 499              		.cfi_def_cfa_offset 16
+ 500 0004 00AF     		add	r7, sp, #0
+ 501              	.LCFI28:
+ 502              		.cfi_def_cfa_register 7
+ 503 0006 0346     		mov	r3, r0
+ 504 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 417:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 418:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_PERIOD_LSB_PTR,(uint16)period);
+ 419:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 420:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_PERIOD_LSB_PTR, period);
+ 505              		.loc 1 420 0
+ 506 000a 46F65023 		movw	r3, #27216
+ 507 000e C4F20003 		movt	r3, 16384
+ 508 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 509 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 421:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 422:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 510              		.loc 1 422 0
+ 511 0016 07F10C07 		add	r7, r7, #12
+ 512 001a BD46     		mov	sp, r7
+ 513 001c 80BC     		pop	{r7}
+ 514 001e 7047     		bx	lr
+ 515              		.cfi_endproc
+ 516              	.LFE11:
+ 517              		.size	Counter_7_WritePeriod, .-Counter_7_WritePeriod
+ 518              		.section	.text.Counter_7_ReadPeriod,"ax",%progbits
+ 519              		.align	2
+ 520              		.global	Counter_7_ReadPeriod
+ 521              		.thumb
+ 522              		.thumb_func
+ 523              		.type	Counter_7_ReadPeriod, %function
+ 524              	Counter_7_ReadPeriod:
+ 525              	.LFB12:
+ 423:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 424:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 425:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 426:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadPeriod
+ 427:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 428:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 429:.\Generated_Source\PSoC5/Counter_7.c **** * Reads the current period value without affecting counter operation.
+ 430:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 431:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 432:.\Generated_Source\PSoC5/Counter_7.c **** *  void:  
+ 433:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 434:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 435:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint16) Present period value.
+ 436:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 437:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 438:.\Generated_Source\PSoC5/Counter_7.c **** uint16 Counter_7_ReadPeriod(void) 
+ 439:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 526              		.loc 1 439 0
+ 527              		.cfi_startproc
+ 528              		@ args = 0, pretend = 0, frame = 0
+ 529              		@ frame_needed = 1, uses_anonymous_args = 0
+ 530              		@ link register save eliminated.
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 18
+
+
+ 531 0000 80B4     		push	{r7}
+ 532              	.LCFI29:
+ 533              		.cfi_def_cfa_offset 4
+ 534              		.cfi_offset 7, -4
+ 535 0002 00AF     		add	r7, sp, #0
+ 536              	.LCFI30:
+ 537              		.cfi_def_cfa_register 7
+ 440:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 441:.\Generated_Source\PSoC5/Counter_7.c ****         return ((uint16)CY_GET_REG16(Counter_7_PERIOD_LSB_PTR));
+ 442:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 443:.\Generated_Source\PSoC5/Counter_7.c ****         return (CY_GET_REG16(Counter_7_PERIOD_LSB_PTR));
+ 538              		.loc 1 443 0
+ 539 0004 46F65023 		movw	r3, #27216
+ 540 0008 C4F20003 		movt	r3, 16384
+ 541 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 542 000e 9BB2     		uxth	r3, r3
+ 444:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 445:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 543              		.loc 1 445 0
+ 544 0010 1846     		mov	r0, r3
+ 545 0012 BD46     		mov	sp, r7
+ 546 0014 80BC     		pop	{r7}
+ 547 0016 7047     		bx	lr
+ 548              		.cfi_endproc
+ 549              	.LFE12:
+ 550              		.size	Counter_7_ReadPeriod, .-Counter_7_ReadPeriod
+ 551              		.section	.text.Counter_7_WriteCompare,"ax",%progbits
+ 552              		.align	2
+ 553              		.global	Counter_7_WriteCompare
+ 554              		.thumb
+ 555              		.thumb_func
+ 556              		.type	Counter_7_WriteCompare, %function
+ 557              	Counter_7_WriteCompare:
+ 558              	.LFB13:
+ 446:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 447:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 448:.\Generated_Source\PSoC5/Counter_7.c **** #if (!Counter_7_UsingFixedFunction)
+ 449:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 450:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_WriteCompare
+ 451:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 452:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 453:.\Generated_Source\PSoC5/Counter_7.c **** * Changes the compare value.  The compare output will 
+ 454:.\Generated_Source\PSoC5/Counter_7.c **** * reflect the new value on the next UDB clock.  The compare output will be 
+ 455:.\Generated_Source\PSoC5/Counter_7.c **** * driven high when the present counter value compares true based on the 
+ 456:.\Generated_Source\PSoC5/Counter_7.c **** * configured compare mode setting. 
+ 457:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 458:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 459:.\Generated_Source\PSoC5/Counter_7.c **** *  Compare:  New compare value. 
+ 460:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 461:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 462:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 463:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 464:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 465:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_WriteCompare(uint16 compare) \
+ 466:.\Generated_Source\PSoC5/Counter_7.c ****                                    
+ 467:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 559              		.loc 1 467 0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 19
+
+
+ 560              		.cfi_startproc
+ 561              		@ args = 0, pretend = 0, frame = 8
+ 562              		@ frame_needed = 1, uses_anonymous_args = 0
+ 563              		@ link register save eliminated.
+ 564 0000 80B4     		push	{r7}
+ 565              	.LCFI31:
+ 566              		.cfi_def_cfa_offset 4
+ 567              		.cfi_offset 7, -4
+ 568 0002 83B0     		sub	sp, sp, #12
+ 569              	.LCFI32:
+ 570              		.cfi_def_cfa_offset 16
+ 571 0004 00AF     		add	r7, sp, #0
+ 572              	.LCFI33:
+ 573              		.cfi_def_cfa_register 7
+ 574 0006 0346     		mov	r3, r0
+ 575 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 468:.\Generated_Source\PSoC5/Counter_7.c ****     #if(Counter_7_UsingFixedFunction)
+ 469:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_COMPARE_LSB_PTR, (uint16)compare);
+ 470:.\Generated_Source\PSoC5/Counter_7.c ****     #else
+ 471:.\Generated_Source\PSoC5/Counter_7.c ****         CY_SET_REG16(Counter_7_COMPARE_LSB_PTR, compare);
+ 576              		.loc 1 471 0
+ 577 000a 46F67023 		movw	r3, #27248
+ 578 000e C4F20003 		movt	r3, 16384
+ 579 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 580 0014 1A80     		strh	r2, [r3, #0]	@ movhi
+ 472:.\Generated_Source\PSoC5/Counter_7.c ****     #endif /* (Counter_7_UsingFixedFunction) */
+ 473:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 581              		.loc 1 473 0
+ 582 0016 07F10C07 		add	r7, r7, #12
+ 583 001a BD46     		mov	sp, r7
+ 584 001c 80BC     		pop	{r7}
+ 585 001e 7047     		bx	lr
+ 586              		.cfi_endproc
+ 587              	.LFE13:
+ 588              		.size	Counter_7_WriteCompare, .-Counter_7_WriteCompare
+ 589              		.section	.text.Counter_7_ReadCompare,"ax",%progbits
+ 590              		.align	2
+ 591              		.global	Counter_7_ReadCompare
+ 592              		.thumb
+ 593              		.thumb_func
+ 594              		.type	Counter_7_ReadCompare, %function
+ 595              	Counter_7_ReadCompare:
+ 596              	.LFB14:
+ 474:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 475:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 476:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 477:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ReadCompare
+ 478:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 479:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 480:.\Generated_Source\PSoC5/Counter_7.c **** * Returns the compare value.
+ 481:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 482:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 483:.\Generated_Source\PSoC5/Counter_7.c **** *  void:
+ 484:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 485:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 486:.\Generated_Source\PSoC5/Counter_7.c **** *  (uint16) Present compare value.
+ 487:.\Generated_Source\PSoC5/Counter_7.c **** *
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 20
+
+
+ 488:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 489:.\Generated_Source\PSoC5/Counter_7.c **** uint16 Counter_7_ReadCompare(void) 
+ 490:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 597              		.loc 1 490 0
+ 598              		.cfi_startproc
+ 599              		@ args = 0, pretend = 0, frame = 0
+ 600              		@ frame_needed = 1, uses_anonymous_args = 0
+ 601              		@ link register save eliminated.
+ 602 0000 80B4     		push	{r7}
+ 603              	.LCFI34:
+ 604              		.cfi_def_cfa_offset 4
+ 605              		.cfi_offset 7, -4
+ 606 0002 00AF     		add	r7, sp, #0
+ 607              	.LCFI35:
+ 608              		.cfi_def_cfa_register 7
+ 491:.\Generated_Source\PSoC5/Counter_7.c ****     return (CY_GET_REG16(Counter_7_COMPARE_LSB_PTR));
+ 609              		.loc 1 491 0
+ 610 0004 46F67023 		movw	r3, #27248
+ 611 0008 C4F20003 		movt	r3, 16384
+ 612 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
+ 613 000e 9BB2     		uxth	r3, r3
+ 492:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 614              		.loc 1 492 0
+ 615 0010 1846     		mov	r0, r3
+ 616 0012 BD46     		mov	sp, r7
+ 617 0014 80BC     		pop	{r7}
+ 618 0016 7047     		bx	lr
+ 619              		.cfi_endproc
+ 620              	.LFE14:
+ 621              		.size	Counter_7_ReadCompare, .-Counter_7_ReadCompare
+ 622              		.section	.text.Counter_7_ClearFIFO,"ax",%progbits
+ 623              		.align	2
+ 624              		.global	Counter_7_ClearFIFO
+ 625              		.thumb
+ 626              		.thumb_func
+ 627              		.type	Counter_7_ClearFIFO, %function
+ 628              	Counter_7_ClearFIFO:
+ 629              	.LFB15:
+ 493:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 494:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 495:.\Generated_Source\PSoC5/Counter_7.c **** #if (Counter_7_COMPARE_MODE_SOFTWARE)
+ 496:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 497:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_SetCompareMode
+ 498:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 499:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 500:.\Generated_Source\PSoC5/Counter_7.c **** *  Sets the software controlled Compare Mode.
+ 501:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 502:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:
+ 503:.\Generated_Source\PSoC5/Counter_7.c **** *  compareMode:  Compare Mode Enumerated Type.
+ 504:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 505:.\Generated_Source\PSoC5/Counter_7.c **** * Return:
+ 506:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 507:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 508:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 509:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_SetCompareMode(uint8 compareMode) 
+ 510:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 511:.\Generated_Source\PSoC5/Counter_7.c ****     /* Clear the compare mode bits in the control register */
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 21
+
+
+ 512:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_CONTROL &= ((uint8)(~Counter_7_CTRL_CMPMODE_MASK));
+ 513:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 514:.\Generated_Source\PSoC5/Counter_7.c ****     /* Write the new setting */
+ 515:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_CONTROL |= compareMode;
+ 516:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 517:.\Generated_Source\PSoC5/Counter_7.c **** #endif  /* (Counter_7_COMPARE_MODE_SOFTWARE) */
+ 518:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 519:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 520:.\Generated_Source\PSoC5/Counter_7.c **** #if (Counter_7_CAPTURE_MODE_SOFTWARE)
+ 521:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 522:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_SetCaptureMode
+ 523:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 524:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 525:.\Generated_Source\PSoC5/Counter_7.c **** *  Sets the software controlled Capture Mode.
+ 526:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 527:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:
+ 528:.\Generated_Source\PSoC5/Counter_7.c **** *  captureMode:  Capture Mode Enumerated Type.
+ 529:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 530:.\Generated_Source\PSoC5/Counter_7.c **** * Return:
+ 531:.\Generated_Source\PSoC5/Counter_7.c **** *  void
+ 532:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 533:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 534:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_SetCaptureMode(uint8 captureMode) 
+ 535:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 536:.\Generated_Source\PSoC5/Counter_7.c ****     /* Clear the capture mode bits in the control register */
+ 537:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_CONTROL &= ((uint8)(~Counter_7_CTRL_CAPMODE_MASK));
+ 538:.\Generated_Source\PSoC5/Counter_7.c ****     
+ 539:.\Generated_Source\PSoC5/Counter_7.c ****     /* Write the new setting */
+ 540:.\Generated_Source\PSoC5/Counter_7.c ****     Counter_7_CONTROL |= ((uint8)((uint8)captureMode << Counter_7_CTRL_CAPMODE0_SHIFT));
+ 541:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 542:.\Generated_Source\PSoC5/Counter_7.c **** #endif  /* (Counter_7_CAPTURE_MODE_SOFTWARE) */
+ 543:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 544:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 545:.\Generated_Source\PSoC5/Counter_7.c **** /*******************************************************************************
+ 546:.\Generated_Source\PSoC5/Counter_7.c **** * Function Name: Counter_7_ClearFIFO
+ 547:.\Generated_Source\PSoC5/Counter_7.c **** ********************************************************************************
+ 548:.\Generated_Source\PSoC5/Counter_7.c **** * Summary:
+ 549:.\Generated_Source\PSoC5/Counter_7.c **** *   This function clears all capture data from the capture FIFO
+ 550:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 551:.\Generated_Source\PSoC5/Counter_7.c **** * Parameters:  
+ 552:.\Generated_Source\PSoC5/Counter_7.c **** *  void:
+ 553:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 554:.\Generated_Source\PSoC5/Counter_7.c **** * Return: 
+ 555:.\Generated_Source\PSoC5/Counter_7.c **** *  None
+ 556:.\Generated_Source\PSoC5/Counter_7.c **** *
+ 557:.\Generated_Source\PSoC5/Counter_7.c **** *******************************************************************************/
+ 558:.\Generated_Source\PSoC5/Counter_7.c **** void Counter_7_ClearFIFO(void) 
+ 559:.\Generated_Source\PSoC5/Counter_7.c **** {
+ 630              		.loc 1 559 0
+ 631              		.cfi_startproc
+ 632              		@ args = 0, pretend = 0, frame = 0
+ 633              		@ frame_needed = 1, uses_anonymous_args = 0
+ 634 0000 80B5     		push	{r7, lr}
+ 635              	.LCFI36:
+ 636              		.cfi_def_cfa_offset 8
+ 637              		.cfi_offset 7, -8
+ 638              		.cfi_offset 14, -4
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 22
+
+
+ 639 0002 00AF     		add	r7, sp, #0
+ 640              	.LCFI37:
+ 641              		.cfi_def_cfa_register 7
+ 560:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 561:.\Generated_Source\PSoC5/Counter_7.c ****     while(0u != (Counter_7_ReadStatusRegister() & Counter_7_STATUS_FIFONEMP))
+ 642              		.loc 1 561 0
+ 643 0004 01E0     		b	.L24
+ 644              	.L25:
+ 562:.\Generated_Source\PSoC5/Counter_7.c ****     {
+ 563:.\Generated_Source\PSoC5/Counter_7.c ****         (void)Counter_7_ReadCapture();
+ 645              		.loc 1 563 0
+ 646 0006 FFF7FEFF 		bl	Counter_7_ReadCapture
+ 647              	.L24:
+ 561:.\Generated_Source\PSoC5/Counter_7.c ****     while(0u != (Counter_7_ReadStatusRegister() & Counter_7_STATUS_FIFONEMP))
+ 648              		.loc 1 561 0 discriminator 1
+ 649 000a FFF7FEFF 		bl	Counter_7_ReadStatusRegister
+ 650 000e 0346     		mov	r3, r0
+ 651 0010 03F04003 		and	r3, r3, #64
+ 652 0014 002B     		cmp	r3, #0
+ 653 0016 F6D1     		bne	.L25
+ 564:.\Generated_Source\PSoC5/Counter_7.c ****     }
+ 565:.\Generated_Source\PSoC5/Counter_7.c **** 
+ 566:.\Generated_Source\PSoC5/Counter_7.c **** }
+ 654              		.loc 1 566 0
+ 655 0018 80BD     		pop	{r7, pc}
+ 656              		.cfi_endproc
+ 657              	.LFE15:
+ 658              		.size	Counter_7_ClearFIFO, .-Counter_7_ClearFIFO
+ 659 001a 00BF     		.text
+ 660              	.Letext0:
+ 661              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 662              		.section	.debug_info,"",%progbits
+ 663              	.Ldebug_info0:
+ 664 0000 D7020000 		.4byte	0x2d7
+ 665 0004 0200     		.2byte	0x2
+ 666 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 667 000a 04       		.byte	0x4
+ 668 000b 01       		.uleb128 0x1
+ 669 000c A6020000 		.4byte	.LASF40
+ 670 0010 01       		.byte	0x1
+ 671 0011 91010000 		.4byte	.LASF41
+ 672 0015 D9000000 		.4byte	.LASF42
+ 673 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 674 001d 00000000 		.4byte	0
+ 675 0021 00000000 		.4byte	0
+ 676 0025 00000000 		.4byte	.Ldebug_line0
+ 677 0029 02       		.uleb128 0x2
+ 678 002a 01       		.byte	0x1
+ 679 002b 06       		.byte	0x6
+ 680 002c 14030000 		.4byte	.LASF0
+ 681 0030 02       		.uleb128 0x2
+ 682 0031 01       		.byte	0x1
+ 683 0032 08       		.byte	0x8
+ 684 0033 71000000 		.4byte	.LASF1
+ 685 0037 02       		.uleb128 0x2
+ 686 0038 02       		.byte	0x2
+ 687 0039 05       		.byte	0x5
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 23
+
+
+ 688 003a 8D020000 		.4byte	.LASF2
+ 689 003e 02       		.uleb128 0x2
+ 690 003f 02       		.byte	0x2
+ 691 0040 07       		.byte	0x7
+ 692 0041 3C000000 		.4byte	.LASF3
+ 693 0045 02       		.uleb128 0x2
+ 694 0046 04       		.byte	0x4
+ 695 0047 05       		.byte	0x5
+ 696 0048 EF020000 		.4byte	.LASF4
+ 697 004c 02       		.uleb128 0x2
+ 698 004d 04       		.byte	0x4
+ 699 004e 07       		.byte	0x7
+ 700 004f AA000000 		.4byte	.LASF5
+ 701 0053 02       		.uleb128 0x2
+ 702 0054 08       		.byte	0x8
+ 703 0055 05       		.byte	0x5
+ 704 0056 3F020000 		.4byte	.LASF6
+ 705 005a 02       		.uleb128 0x2
+ 706 005b 08       		.byte	0x8
+ 707 005c 07       		.byte	0x7
+ 708 005d B6010000 		.4byte	.LASF7
+ 709 0061 03       		.uleb128 0x3
+ 710 0062 04       		.byte	0x4
+ 711 0063 05       		.byte	0x5
+ 712 0064 696E7400 		.ascii	"int\000"
+ 713 0068 02       		.uleb128 0x2
+ 714 0069 04       		.byte	0x4
+ 715 006a 07       		.byte	0x7
+ 716 006b 84010000 		.4byte	.LASF8
+ 717 006f 04       		.uleb128 0x4
+ 718 0070 BC000000 		.4byte	.LASF9
+ 719 0074 02       		.byte	0x2
+ 720 0075 5B       		.byte	0x5b
+ 721 0076 30000000 		.4byte	0x30
+ 722 007a 04       		.uleb128 0x4
+ 723 007b 66010000 		.4byte	.LASF10
+ 724 007f 02       		.byte	0x2
+ 725 0080 5C       		.byte	0x5c
+ 726 0081 3E000000 		.4byte	0x3e
+ 727 0085 02       		.uleb128 0x2
+ 728 0086 04       		.byte	0x4
+ 729 0087 04       		.byte	0x4
+ 730 0088 63000000 		.4byte	.LASF11
+ 731 008c 02       		.uleb128 0x2
+ 732 008d 08       		.byte	0x8
+ 733 008e 04       		.byte	0x4
+ 734 008f 31010000 		.4byte	.LASF12
+ 735 0093 02       		.uleb128 0x2
+ 736 0094 01       		.byte	0x1
+ 737 0095 08       		.byte	0x8
+ 738 0096 F8020000 		.4byte	.LASF13
+ 739 009a 04       		.uleb128 0x4
+ 740 009b A5000000 		.4byte	.LASF14
+ 741 009f 02       		.byte	0x2
+ 742 00a0 F0       		.byte	0xf0
+ 743 00a1 A5000000 		.4byte	0xa5
+ 744 00a5 05       		.uleb128 0x5
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 24
+
+
+ 745 00a6 6F000000 		.4byte	0x6f
+ 746 00aa 04       		.uleb128 0x4
+ 747 00ab 00000000 		.4byte	.LASF15
+ 748 00af 02       		.byte	0x2
+ 749 00b0 F1       		.byte	0xf1
+ 750 00b1 B5000000 		.4byte	0xb5
+ 751 00b5 05       		.uleb128 0x5
+ 752 00b6 7A000000 		.4byte	0x7a
+ 753 00ba 02       		.uleb128 0x2
+ 754 00bb 04       		.byte	0x4
+ 755 00bc 07       		.byte	0x7
+ 756 00bd 1B020000 		.4byte	.LASF16
+ 757 00c1 06       		.uleb128 0x6
+ 758 00c2 01       		.byte	0x1
+ 759 00c3 38010000 		.4byte	.LASF22
+ 760 00c7 01       		.byte	0x1
+ 761 00c8 25       		.byte	0x25
+ 762 00c9 01       		.byte	0x1
+ 763 00ca 00000000 		.4byte	.LFB0
+ 764 00ce A4000000 		.4byte	.LFE0
+ 765 00d2 00000000 		.4byte	.LLST0
+ 766 00d6 01       		.byte	0x1
+ 767 00d7 F8000000 		.4byte	0xf8
+ 768 00db 07       		.uleb128 0x7
+ 769 00dc 16020000 		.4byte	.LASF17
+ 770 00e0 01       		.byte	0x1
+ 771 00e1 28       		.byte	0x28
+ 772 00e2 6F000000 		.4byte	0x6f
+ 773 00e6 02       		.byte	0x2
+ 774 00e7 91       		.byte	0x91
+ 775 00e8 77       		.sleb128 -9
+ 776 00e9 07       		.uleb128 0x7
+ 777 00ea 06000000 		.4byte	.LASF18
+ 778 00ee 01       		.byte	0x1
+ 779 00ef 2D       		.byte	0x2d
+ 780 00f0 6F000000 		.4byte	0x6f
+ 781 00f4 02       		.byte	0x2
+ 782 00f5 91       		.byte	0x91
+ 783 00f6 76       		.sleb128 -10
+ 784 00f7 00       		.byte	0
+ 785 00f8 08       		.uleb128 0x8
+ 786 00f9 01       		.byte	0x1
+ 787 00fa 4D020000 		.4byte	.LASF19
+ 788 00fe 01       		.byte	0x1
+ 789 00ff 8F       		.byte	0x8f
+ 790 0100 01       		.byte	0x1
+ 791 0101 00000000 		.4byte	.LFB1
+ 792 0105 26000000 		.4byte	.LFE1
+ 793 0109 38000000 		.4byte	.LLST1
+ 794 010d 01       		.byte	0x1
+ 795 010e 09       		.uleb128 0x9
+ 796 010f 01       		.byte	0x1
+ 797 0110 95000000 		.4byte	.LASF20
+ 798 0114 01       		.byte	0x1
+ 799 0115 B2       		.byte	0xb2
+ 800 0116 01       		.byte	0x1
+ 801 0117 00000000 		.4byte	.LFB2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 25
+
+
+ 802 011b 2A000000 		.4byte	.LFE2
+ 803 011f 64000000 		.4byte	.LLST2
+ 804 0123 01       		.byte	0x1
+ 805 0124 08       		.uleb128 0x8
+ 806 0125 01       		.byte	0x1
+ 807 0126 97020000 		.4byte	.LASF21
+ 808 012a 01       		.byte	0x1
+ 809 012b D0       		.byte	0xd0
+ 810 012c 01       		.byte	0x1
+ 811 012d 00000000 		.4byte	.LFB3
+ 812 0131 26000000 		.4byte	.LFE3
+ 813 0135 90000000 		.4byte	.LLST3
+ 814 0139 01       		.byte	0x1
+ 815 013a 0A       		.uleb128 0xa
+ 816 013b 01       		.byte	0x1
+ 817 013c 24020000 		.4byte	.LASF23
+ 818 0140 01       		.byte	0x1
+ 819 0141 ED       		.byte	0xed
+ 820 0142 01       		.byte	0x1
+ 821 0143 00000000 		.4byte	.LFB4
+ 822 0147 20000000 		.4byte	.LFE4
+ 823 014b BC000000 		.4byte	.LLST4
+ 824 014f 01       		.byte	0x1
+ 825 0150 63010000 		.4byte	0x163
+ 826 0154 0B       		.uleb128 0xb
+ 827 0155 CA000000 		.4byte	.LASF27
+ 828 0159 01       		.byte	0x1
+ 829 015a ED       		.byte	0xed
+ 830 015b 6F000000 		.4byte	0x6f
+ 831 015f 02       		.byte	0x2
+ 832 0160 91       		.byte	0x91
+ 833 0161 77       		.sleb128 -9
+ 834 0162 00       		.byte	0
+ 835 0163 0C       		.uleb128 0xc
+ 836 0164 01       		.byte	0x1
+ 837 0165 70020000 		.4byte	.LASF24
+ 838 0169 01       		.byte	0x1
+ 839 016a 0501     		.2byte	0x105
+ 840 016c 01       		.byte	0x1
+ 841 016d 6F000000 		.4byte	0x6f
+ 842 0171 00000000 		.4byte	.LFB5
+ 843 0175 18000000 		.4byte	.LFE5
+ 844 0179 F4000000 		.4byte	.LLST5
+ 845 017d 01       		.byte	0x1
+ 846 017e 0C       		.uleb128 0xc
+ 847 017f 01       		.byte	0x1
+ 848 0180 CD010000 		.4byte	.LASF25
+ 849 0184 01       		.byte	0x1
+ 850 0185 1B01     		.2byte	0x11b
+ 851 0187 01       		.byte	0x1
+ 852 0188 6F000000 		.4byte	0x6f
+ 853 018c 00000000 		.4byte	.LFB6
+ 854 0190 18000000 		.4byte	.LFE6
+ 855 0194 20010000 		.4byte	.LLST6
+ 856 0198 01       		.byte	0x1
+ 857 0199 0D       		.uleb128 0xd
+ 858 019a 01       		.byte	0x1
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 26
+
+
+ 859 019b 47010000 		.4byte	.LASF26
+ 860 019f 01       		.byte	0x1
+ 861 01a0 3001     		.2byte	0x130
+ 862 01a2 01       		.byte	0x1
+ 863 01a3 00000000 		.4byte	.LFB7
+ 864 01a7 20000000 		.4byte	.LFE7
+ 865 01ab 4C010000 		.4byte	.LLST7
+ 866 01af 01       		.byte	0x1
+ 867 01b0 C4010000 		.4byte	0x1c4
+ 868 01b4 0E       		.uleb128 0xe
+ 869 01b5 C2000000 		.4byte	.LASF28
+ 870 01b9 01       		.byte	0x1
+ 871 01ba 3001     		.2byte	0x130
+ 872 01bc 6F000000 		.4byte	0x6f
+ 873 01c0 02       		.byte	0x2
+ 874 01c1 91       		.byte	0x91
+ 875 01c2 77       		.sleb128 -9
+ 876 01c3 00       		.byte	0
+ 877 01c4 0D       		.uleb128 0xd
+ 878 01c5 01       		.byte	0x1
+ 879 01c6 FD020000 		.4byte	.LASF29
+ 880 01ca 01       		.byte	0x1
+ 881 01cb 4601     		.2byte	0x146
+ 882 01cd 01       		.byte	0x1
+ 883 01ce 00000000 		.4byte	.LFB8
+ 884 01d2 20000000 		.4byte	.LFE8
+ 885 01d6 84010000 		.4byte	.LLST8
+ 886 01da 01       		.byte	0x1
+ 887 01db EF010000 		.4byte	0x1ef
+ 888 01df 0E       		.uleb128 0xe
+ 889 01e0 69000000 		.4byte	.LASF30
+ 890 01e4 01       		.byte	0x1
+ 891 01e5 4601     		.2byte	0x146
+ 892 01e7 7A000000 		.4byte	0x7a
+ 893 01eb 02       		.byte	0x2
+ 894 01ec 91       		.byte	0x91
+ 895 01ed 76       		.sleb128 -10
+ 896 01ee 00       		.byte	0
+ 897 01ef 0C       		.uleb128 0xc
+ 898 01f0 01       		.byte	0x1
+ 899 01f1 7F000000 		.4byte	.LASF31
+ 900 01f5 01       		.byte	0x1
+ 901 01f6 6501     		.2byte	0x165
+ 902 01f8 01       		.byte	0x1
+ 903 01f9 7A000000 		.4byte	0x7a
+ 904 01fd 00000000 		.4byte	.LFB9
+ 905 0201 22000000 		.4byte	.LFE9
+ 906 0205 BC010000 		.4byte	.LLST9
+ 907 0209 01       		.byte	0x1
+ 908 020a 0C       		.uleb128 0xc
+ 909 020b 01       		.byte	0x1
+ 910 020c 26000000 		.4byte	.LASF32
+ 911 0210 01       		.byte	0x1
+ 912 0211 8601     		.2byte	0x186
+ 913 0213 01       		.byte	0x1
+ 914 0214 7A000000 		.4byte	0x7a
+ 915 0218 00000000 		.4byte	.LFB10
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 27
+
+
+ 916 021c 18000000 		.4byte	.LFE10
+ 917 0220 E8010000 		.4byte	.LLST10
+ 918 0224 01       		.byte	0x1
+ 919 0225 0D       		.uleb128 0xd
+ 920 0226 01       		.byte	0x1
+ 921 0227 00020000 		.4byte	.LASF33
+ 922 022b 01       		.byte	0x1
+ 923 022c 9F01     		.2byte	0x19f
+ 924 022e 01       		.byte	0x1
+ 925 022f 00000000 		.4byte	.LFB11
+ 926 0233 20000000 		.4byte	.LFE11
+ 927 0237 14020000 		.4byte	.LLST11
+ 928 023b 01       		.byte	0x1
+ 929 023c 50020000 		.4byte	0x250
+ 930 0240 0E       		.uleb128 0xe
+ 931 0241 1F000000 		.4byte	.LASF34
+ 932 0245 01       		.byte	0x1
+ 933 0246 9F01     		.2byte	0x19f
+ 934 0248 7A000000 		.4byte	0x7a
+ 935 024c 02       		.byte	0x2
+ 936 024d 91       		.byte	0x91
+ 937 024e 76       		.sleb128 -10
+ 938 024f 00       		.byte	0
+ 939 0250 0C       		.uleb128 0xc
+ 940 0251 01       		.byte	0x1
+ 941 0252 EB010000 		.4byte	.LASF35
+ 942 0256 01       		.byte	0x1
+ 943 0257 B601     		.2byte	0x1b6
+ 944 0259 01       		.byte	0x1
+ 945 025a 7A000000 		.4byte	0x7a
+ 946 025e 00000000 		.4byte	.LFB12
+ 947 0262 18000000 		.4byte	.LFE12
+ 948 0266 4C020000 		.4byte	.LLST12
+ 949 026a 01       		.byte	0x1
+ 950 026b 0D       		.uleb128 0xd
+ 951 026c 01       		.byte	0x1
+ 952 026d 6D010000 		.4byte	.LASF36
+ 953 0271 01       		.byte	0x1
+ 954 0272 D101     		.2byte	0x1d1
+ 955 0274 01       		.byte	0x1
+ 956 0275 00000000 		.4byte	.LFB13
+ 957 0279 20000000 		.4byte	.LFE13
+ 958 027d 78020000 		.4byte	.LLST13
+ 959 0281 01       		.byte	0x1
+ 960 0282 96020000 		.4byte	0x296
+ 961 0286 0E       		.uleb128 0xe
+ 962 0287 20030000 		.4byte	.LASF37
+ 963 028b 01       		.byte	0x1
+ 964 028c D101     		.2byte	0x1d1
+ 965 028e 7A000000 		.4byte	0x7a
+ 966 0292 02       		.byte	0x2
+ 967 0293 91       		.byte	0x91
+ 968 0294 76       		.sleb128 -10
+ 969 0295 00       		.byte	0
+ 970 0296 0C       		.uleb128 0xc
+ 971 0297 01       		.byte	0x1
+ 972 0298 28030000 		.4byte	.LASF38
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 28
+
+
+ 973 029c 01       		.byte	0x1
+ 974 029d E901     		.2byte	0x1e9
+ 975 029f 01       		.byte	0x1
+ 976 02a0 7A000000 		.4byte	0x7a
+ 977 02a4 00000000 		.4byte	.LFB14
+ 978 02a8 18000000 		.4byte	.LFE14
+ 979 02ac B0020000 		.4byte	.LLST14
+ 980 02b0 01       		.byte	0x1
+ 981 02b1 0F       		.uleb128 0xf
+ 982 02b2 01       		.byte	0x1
+ 983 02b3 4F000000 		.4byte	.LASF39
+ 984 02b7 01       		.byte	0x1
+ 985 02b8 2E02     		.2byte	0x22e
+ 986 02ba 01       		.byte	0x1
+ 987 02bb 00000000 		.4byte	.LFB15
+ 988 02bf 1A000000 		.4byte	.LFE15
+ 989 02c3 DC020000 		.4byte	.LLST15
+ 990 02c7 01       		.byte	0x1
+ 991 02c8 10       		.uleb128 0x10
+ 992 02c9 5E020000 		.4byte	.LASF43
+ 993 02cd 01       		.byte	0x1
+ 994 02ce 15       		.byte	0x15
+ 995 02cf 6F000000 		.4byte	0x6f
+ 996 02d3 01       		.byte	0x1
+ 997 02d4 05       		.byte	0x5
+ 998 02d5 03       		.byte	0x3
+ 999 02d6 00000000 		.4byte	Counter_7_initVar
+ 1000 02da 00       		.byte	0
+ 1001              		.section	.debug_abbrev,"",%progbits
+ 1002              	.Ldebug_abbrev0:
+ 1003 0000 01       		.uleb128 0x1
+ 1004 0001 11       		.uleb128 0x11
+ 1005 0002 01       		.byte	0x1
+ 1006 0003 25       		.uleb128 0x25
+ 1007 0004 0E       		.uleb128 0xe
+ 1008 0005 13       		.uleb128 0x13
+ 1009 0006 0B       		.uleb128 0xb
+ 1010 0007 03       		.uleb128 0x3
+ 1011 0008 0E       		.uleb128 0xe
+ 1012 0009 1B       		.uleb128 0x1b
+ 1013 000a 0E       		.uleb128 0xe
+ 1014 000b 55       		.uleb128 0x55
+ 1015 000c 06       		.uleb128 0x6
+ 1016 000d 11       		.uleb128 0x11
+ 1017 000e 01       		.uleb128 0x1
+ 1018 000f 52       		.uleb128 0x52
+ 1019 0010 01       		.uleb128 0x1
+ 1020 0011 10       		.uleb128 0x10
+ 1021 0012 06       		.uleb128 0x6
+ 1022 0013 00       		.byte	0
+ 1023 0014 00       		.byte	0
+ 1024 0015 02       		.uleb128 0x2
+ 1025 0016 24       		.uleb128 0x24
+ 1026 0017 00       		.byte	0
+ 1027 0018 0B       		.uleb128 0xb
+ 1028 0019 0B       		.uleb128 0xb
+ 1029 001a 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 29
+
+
+ 1030 001b 0B       		.uleb128 0xb
+ 1031 001c 03       		.uleb128 0x3
+ 1032 001d 0E       		.uleb128 0xe
+ 1033 001e 00       		.byte	0
+ 1034 001f 00       		.byte	0
+ 1035 0020 03       		.uleb128 0x3
+ 1036 0021 24       		.uleb128 0x24
+ 1037 0022 00       		.byte	0
+ 1038 0023 0B       		.uleb128 0xb
+ 1039 0024 0B       		.uleb128 0xb
+ 1040 0025 3E       		.uleb128 0x3e
+ 1041 0026 0B       		.uleb128 0xb
+ 1042 0027 03       		.uleb128 0x3
+ 1043 0028 08       		.uleb128 0x8
+ 1044 0029 00       		.byte	0
+ 1045 002a 00       		.byte	0
+ 1046 002b 04       		.uleb128 0x4
+ 1047 002c 16       		.uleb128 0x16
+ 1048 002d 00       		.byte	0
+ 1049 002e 03       		.uleb128 0x3
+ 1050 002f 0E       		.uleb128 0xe
+ 1051 0030 3A       		.uleb128 0x3a
+ 1052 0031 0B       		.uleb128 0xb
+ 1053 0032 3B       		.uleb128 0x3b
+ 1054 0033 0B       		.uleb128 0xb
+ 1055 0034 49       		.uleb128 0x49
+ 1056 0035 13       		.uleb128 0x13
+ 1057 0036 00       		.byte	0
+ 1058 0037 00       		.byte	0
+ 1059 0038 05       		.uleb128 0x5
+ 1060 0039 35       		.uleb128 0x35
+ 1061 003a 00       		.byte	0
+ 1062 003b 49       		.uleb128 0x49
+ 1063 003c 13       		.uleb128 0x13
+ 1064 003d 00       		.byte	0
+ 1065 003e 00       		.byte	0
+ 1066 003f 06       		.uleb128 0x6
+ 1067 0040 2E       		.uleb128 0x2e
+ 1068 0041 01       		.byte	0x1
+ 1069 0042 3F       		.uleb128 0x3f
+ 1070 0043 0C       		.uleb128 0xc
+ 1071 0044 03       		.uleb128 0x3
+ 1072 0045 0E       		.uleb128 0xe
+ 1073 0046 3A       		.uleb128 0x3a
+ 1074 0047 0B       		.uleb128 0xb
+ 1075 0048 3B       		.uleb128 0x3b
+ 1076 0049 0B       		.uleb128 0xb
+ 1077 004a 27       		.uleb128 0x27
+ 1078 004b 0C       		.uleb128 0xc
+ 1079 004c 11       		.uleb128 0x11
+ 1080 004d 01       		.uleb128 0x1
+ 1081 004e 12       		.uleb128 0x12
+ 1082 004f 01       		.uleb128 0x1
+ 1083 0050 40       		.uleb128 0x40
+ 1084 0051 06       		.uleb128 0x6
+ 1085 0052 9642     		.uleb128 0x2116
+ 1086 0054 0C       		.uleb128 0xc
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 30
+
+
+ 1087 0055 01       		.uleb128 0x1
+ 1088 0056 13       		.uleb128 0x13
+ 1089 0057 00       		.byte	0
+ 1090 0058 00       		.byte	0
+ 1091 0059 07       		.uleb128 0x7
+ 1092 005a 34       		.uleb128 0x34
+ 1093 005b 00       		.byte	0
+ 1094 005c 03       		.uleb128 0x3
+ 1095 005d 0E       		.uleb128 0xe
+ 1096 005e 3A       		.uleb128 0x3a
+ 1097 005f 0B       		.uleb128 0xb
+ 1098 0060 3B       		.uleb128 0x3b
+ 1099 0061 0B       		.uleb128 0xb
+ 1100 0062 49       		.uleb128 0x49
+ 1101 0063 13       		.uleb128 0x13
+ 1102 0064 02       		.uleb128 0x2
+ 1103 0065 0A       		.uleb128 0xa
+ 1104 0066 00       		.byte	0
+ 1105 0067 00       		.byte	0
+ 1106 0068 08       		.uleb128 0x8
+ 1107 0069 2E       		.uleb128 0x2e
+ 1108 006a 00       		.byte	0
+ 1109 006b 3F       		.uleb128 0x3f
+ 1110 006c 0C       		.uleb128 0xc
+ 1111 006d 03       		.uleb128 0x3
+ 1112 006e 0E       		.uleb128 0xe
+ 1113 006f 3A       		.uleb128 0x3a
+ 1114 0070 0B       		.uleb128 0xb
+ 1115 0071 3B       		.uleb128 0x3b
+ 1116 0072 0B       		.uleb128 0xb
+ 1117 0073 27       		.uleb128 0x27
+ 1118 0074 0C       		.uleb128 0xc
+ 1119 0075 11       		.uleb128 0x11
+ 1120 0076 01       		.uleb128 0x1
+ 1121 0077 12       		.uleb128 0x12
+ 1122 0078 01       		.uleb128 0x1
+ 1123 0079 40       		.uleb128 0x40
+ 1124 007a 06       		.uleb128 0x6
+ 1125 007b 9742     		.uleb128 0x2117
+ 1126 007d 0C       		.uleb128 0xc
+ 1127 007e 00       		.byte	0
+ 1128 007f 00       		.byte	0
+ 1129 0080 09       		.uleb128 0x9
+ 1130 0081 2E       		.uleb128 0x2e
+ 1131 0082 00       		.byte	0
+ 1132 0083 3F       		.uleb128 0x3f
+ 1133 0084 0C       		.uleb128 0xc
+ 1134 0085 03       		.uleb128 0x3
+ 1135 0086 0E       		.uleb128 0xe
+ 1136 0087 3A       		.uleb128 0x3a
+ 1137 0088 0B       		.uleb128 0xb
+ 1138 0089 3B       		.uleb128 0x3b
+ 1139 008a 0B       		.uleb128 0xb
+ 1140 008b 27       		.uleb128 0x27
+ 1141 008c 0C       		.uleb128 0xc
+ 1142 008d 11       		.uleb128 0x11
+ 1143 008e 01       		.uleb128 0x1
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 31
+
+
+ 1144 008f 12       		.uleb128 0x12
+ 1145 0090 01       		.uleb128 0x1
+ 1146 0091 40       		.uleb128 0x40
+ 1147 0092 06       		.uleb128 0x6
+ 1148 0093 9642     		.uleb128 0x2116
+ 1149 0095 0C       		.uleb128 0xc
+ 1150 0096 00       		.byte	0
+ 1151 0097 00       		.byte	0
+ 1152 0098 0A       		.uleb128 0xa
+ 1153 0099 2E       		.uleb128 0x2e
+ 1154 009a 01       		.byte	0x1
+ 1155 009b 3F       		.uleb128 0x3f
+ 1156 009c 0C       		.uleb128 0xc
+ 1157 009d 03       		.uleb128 0x3
+ 1158 009e 0E       		.uleb128 0xe
+ 1159 009f 3A       		.uleb128 0x3a
+ 1160 00a0 0B       		.uleb128 0xb
+ 1161 00a1 3B       		.uleb128 0x3b
+ 1162 00a2 0B       		.uleb128 0xb
+ 1163 00a3 27       		.uleb128 0x27
+ 1164 00a4 0C       		.uleb128 0xc
+ 1165 00a5 11       		.uleb128 0x11
+ 1166 00a6 01       		.uleb128 0x1
+ 1167 00a7 12       		.uleb128 0x12
+ 1168 00a8 01       		.uleb128 0x1
+ 1169 00a9 40       		.uleb128 0x40
+ 1170 00aa 06       		.uleb128 0x6
+ 1171 00ab 9742     		.uleb128 0x2117
+ 1172 00ad 0C       		.uleb128 0xc
+ 1173 00ae 01       		.uleb128 0x1
+ 1174 00af 13       		.uleb128 0x13
+ 1175 00b0 00       		.byte	0
+ 1176 00b1 00       		.byte	0
+ 1177 00b2 0B       		.uleb128 0xb
+ 1178 00b3 05       		.uleb128 0x5
+ 1179 00b4 00       		.byte	0
+ 1180 00b5 03       		.uleb128 0x3
+ 1181 00b6 0E       		.uleb128 0xe
+ 1182 00b7 3A       		.uleb128 0x3a
+ 1183 00b8 0B       		.uleb128 0xb
+ 1184 00b9 3B       		.uleb128 0x3b
+ 1185 00ba 0B       		.uleb128 0xb
+ 1186 00bb 49       		.uleb128 0x49
+ 1187 00bc 13       		.uleb128 0x13
+ 1188 00bd 02       		.uleb128 0x2
+ 1189 00be 0A       		.uleb128 0xa
+ 1190 00bf 00       		.byte	0
+ 1191 00c0 00       		.byte	0
+ 1192 00c1 0C       		.uleb128 0xc
+ 1193 00c2 2E       		.uleb128 0x2e
+ 1194 00c3 00       		.byte	0
+ 1195 00c4 3F       		.uleb128 0x3f
+ 1196 00c5 0C       		.uleb128 0xc
+ 1197 00c6 03       		.uleb128 0x3
+ 1198 00c7 0E       		.uleb128 0xe
+ 1199 00c8 3A       		.uleb128 0x3a
+ 1200 00c9 0B       		.uleb128 0xb
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 32
+
+
+ 1201 00ca 3B       		.uleb128 0x3b
+ 1202 00cb 05       		.uleb128 0x5
+ 1203 00cc 27       		.uleb128 0x27
+ 1204 00cd 0C       		.uleb128 0xc
+ 1205 00ce 49       		.uleb128 0x49
+ 1206 00cf 13       		.uleb128 0x13
+ 1207 00d0 11       		.uleb128 0x11
+ 1208 00d1 01       		.uleb128 0x1
+ 1209 00d2 12       		.uleb128 0x12
+ 1210 00d3 01       		.uleb128 0x1
+ 1211 00d4 40       		.uleb128 0x40
+ 1212 00d5 06       		.uleb128 0x6
+ 1213 00d6 9742     		.uleb128 0x2117
+ 1214 00d8 0C       		.uleb128 0xc
+ 1215 00d9 00       		.byte	0
+ 1216 00da 00       		.byte	0
+ 1217 00db 0D       		.uleb128 0xd
+ 1218 00dc 2E       		.uleb128 0x2e
+ 1219 00dd 01       		.byte	0x1
+ 1220 00de 3F       		.uleb128 0x3f
+ 1221 00df 0C       		.uleb128 0xc
+ 1222 00e0 03       		.uleb128 0x3
+ 1223 00e1 0E       		.uleb128 0xe
+ 1224 00e2 3A       		.uleb128 0x3a
+ 1225 00e3 0B       		.uleb128 0xb
+ 1226 00e4 3B       		.uleb128 0x3b
+ 1227 00e5 05       		.uleb128 0x5
+ 1228 00e6 27       		.uleb128 0x27
+ 1229 00e7 0C       		.uleb128 0xc
+ 1230 00e8 11       		.uleb128 0x11
+ 1231 00e9 01       		.uleb128 0x1
+ 1232 00ea 12       		.uleb128 0x12
+ 1233 00eb 01       		.uleb128 0x1
+ 1234 00ec 40       		.uleb128 0x40
+ 1235 00ed 06       		.uleb128 0x6
+ 1236 00ee 9742     		.uleb128 0x2117
+ 1237 00f0 0C       		.uleb128 0xc
+ 1238 00f1 01       		.uleb128 0x1
+ 1239 00f2 13       		.uleb128 0x13
+ 1240 00f3 00       		.byte	0
+ 1241 00f4 00       		.byte	0
+ 1242 00f5 0E       		.uleb128 0xe
+ 1243 00f6 05       		.uleb128 0x5
+ 1244 00f7 00       		.byte	0
+ 1245 00f8 03       		.uleb128 0x3
+ 1246 00f9 0E       		.uleb128 0xe
+ 1247 00fa 3A       		.uleb128 0x3a
+ 1248 00fb 0B       		.uleb128 0xb
+ 1249 00fc 3B       		.uleb128 0x3b
+ 1250 00fd 05       		.uleb128 0x5
+ 1251 00fe 49       		.uleb128 0x49
+ 1252 00ff 13       		.uleb128 0x13
+ 1253 0100 02       		.uleb128 0x2
+ 1254 0101 0A       		.uleb128 0xa
+ 1255 0102 00       		.byte	0
+ 1256 0103 00       		.byte	0
+ 1257 0104 0F       		.uleb128 0xf
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 33
+
+
+ 1258 0105 2E       		.uleb128 0x2e
+ 1259 0106 00       		.byte	0
+ 1260 0107 3F       		.uleb128 0x3f
+ 1261 0108 0C       		.uleb128 0xc
+ 1262 0109 03       		.uleb128 0x3
+ 1263 010a 0E       		.uleb128 0xe
+ 1264 010b 3A       		.uleb128 0x3a
+ 1265 010c 0B       		.uleb128 0xb
+ 1266 010d 3B       		.uleb128 0x3b
+ 1267 010e 05       		.uleb128 0x5
+ 1268 010f 27       		.uleb128 0x27
+ 1269 0110 0C       		.uleb128 0xc
+ 1270 0111 11       		.uleb128 0x11
+ 1271 0112 01       		.uleb128 0x1
+ 1272 0113 12       		.uleb128 0x12
+ 1273 0114 01       		.uleb128 0x1
+ 1274 0115 40       		.uleb128 0x40
+ 1275 0116 06       		.uleb128 0x6
+ 1276 0117 9642     		.uleb128 0x2116
+ 1277 0119 0C       		.uleb128 0xc
+ 1278 011a 00       		.byte	0
+ 1279 011b 00       		.byte	0
+ 1280 011c 10       		.uleb128 0x10
+ 1281 011d 34       		.uleb128 0x34
+ 1282 011e 00       		.byte	0
+ 1283 011f 03       		.uleb128 0x3
+ 1284 0120 0E       		.uleb128 0xe
+ 1285 0121 3A       		.uleb128 0x3a
+ 1286 0122 0B       		.uleb128 0xb
+ 1287 0123 3B       		.uleb128 0x3b
+ 1288 0124 0B       		.uleb128 0xb
+ 1289 0125 49       		.uleb128 0x49
+ 1290 0126 13       		.uleb128 0x13
+ 1291 0127 3F       		.uleb128 0x3f
+ 1292 0128 0C       		.uleb128 0xc
+ 1293 0129 02       		.uleb128 0x2
+ 1294 012a 0A       		.uleb128 0xa
+ 1295 012b 00       		.byte	0
+ 1296 012c 00       		.byte	0
+ 1297 012d 00       		.byte	0
+ 1298              		.section	.debug_loc,"",%progbits
+ 1299              	.Ldebug_loc0:
+ 1300              	.LLST0:
+ 1301 0000 00000000 		.4byte	.LFB0
+ 1302 0004 02000000 		.4byte	.LCFI0
+ 1303 0008 0200     		.2byte	0x2
+ 1304 000a 7D       		.byte	0x7d
+ 1305 000b 00       		.sleb128 0
+ 1306 000c 02000000 		.4byte	.LCFI0
+ 1307 0010 04000000 		.4byte	.LCFI1
+ 1308 0014 0200     		.2byte	0x2
+ 1309 0016 7D       		.byte	0x7d
+ 1310 0017 08       		.sleb128 8
+ 1311 0018 04000000 		.4byte	.LCFI1
+ 1312 001c 06000000 		.4byte	.LCFI2
+ 1313 0020 0200     		.2byte	0x2
+ 1314 0022 7D       		.byte	0x7d
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 34
+
+
+ 1315 0023 10       		.sleb128 16
+ 1316 0024 06000000 		.4byte	.LCFI2
+ 1317 0028 A4000000 		.4byte	.LFE0
+ 1318 002c 0200     		.2byte	0x2
+ 1319 002e 77       		.byte	0x77
+ 1320 002f 10       		.sleb128 16
+ 1321 0030 00000000 		.4byte	0
+ 1322 0034 00000000 		.4byte	0
+ 1323              	.LLST1:
+ 1324 0038 00000000 		.4byte	.LFB1
+ 1325 003c 02000000 		.4byte	.LCFI3
+ 1326 0040 0200     		.2byte	0x2
+ 1327 0042 7D       		.byte	0x7d
+ 1328 0043 00       		.sleb128 0
+ 1329 0044 02000000 		.4byte	.LCFI3
+ 1330 0048 04000000 		.4byte	.LCFI4
+ 1331 004c 0200     		.2byte	0x2
+ 1332 004e 7D       		.byte	0x7d
+ 1333 004f 04       		.sleb128 4
+ 1334 0050 04000000 		.4byte	.LCFI4
+ 1335 0054 26000000 		.4byte	.LFE1
+ 1336 0058 0200     		.2byte	0x2
+ 1337 005a 77       		.byte	0x77
+ 1338 005b 04       		.sleb128 4
+ 1339 005c 00000000 		.4byte	0
+ 1340 0060 00000000 		.4byte	0
+ 1341              	.LLST2:
+ 1342 0064 00000000 		.4byte	.LFB2
+ 1343 0068 02000000 		.4byte	.LCFI5
+ 1344 006c 0200     		.2byte	0x2
+ 1345 006e 7D       		.byte	0x7d
+ 1346 006f 00       		.sleb128 0
+ 1347 0070 02000000 		.4byte	.LCFI5
+ 1348 0074 04000000 		.4byte	.LCFI6
+ 1349 0078 0200     		.2byte	0x2
+ 1350 007a 7D       		.byte	0x7d
+ 1351 007b 08       		.sleb128 8
+ 1352 007c 04000000 		.4byte	.LCFI6
+ 1353 0080 2A000000 		.4byte	.LFE2
+ 1354 0084 0200     		.2byte	0x2
+ 1355 0086 77       		.byte	0x77
+ 1356 0087 08       		.sleb128 8
+ 1357 0088 00000000 		.4byte	0
+ 1358 008c 00000000 		.4byte	0
+ 1359              	.LLST3:
+ 1360 0090 00000000 		.4byte	.LFB3
+ 1361 0094 02000000 		.4byte	.LCFI7
+ 1362 0098 0200     		.2byte	0x2
+ 1363 009a 7D       		.byte	0x7d
+ 1364 009b 00       		.sleb128 0
+ 1365 009c 02000000 		.4byte	.LCFI7
+ 1366 00a0 04000000 		.4byte	.LCFI8
+ 1367 00a4 0200     		.2byte	0x2
+ 1368 00a6 7D       		.byte	0x7d
+ 1369 00a7 04       		.sleb128 4
+ 1370 00a8 04000000 		.4byte	.LCFI8
+ 1371 00ac 26000000 		.4byte	.LFE3
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 35
+
+
+ 1372 00b0 0200     		.2byte	0x2
+ 1373 00b2 77       		.byte	0x77
+ 1374 00b3 04       		.sleb128 4
+ 1375 00b4 00000000 		.4byte	0
+ 1376 00b8 00000000 		.4byte	0
+ 1377              	.LLST4:
+ 1378 00bc 00000000 		.4byte	.LFB4
+ 1379 00c0 02000000 		.4byte	.LCFI9
+ 1380 00c4 0200     		.2byte	0x2
+ 1381 00c6 7D       		.byte	0x7d
+ 1382 00c7 00       		.sleb128 0
+ 1383 00c8 02000000 		.4byte	.LCFI9
+ 1384 00cc 04000000 		.4byte	.LCFI10
+ 1385 00d0 0200     		.2byte	0x2
+ 1386 00d2 7D       		.byte	0x7d
+ 1387 00d3 04       		.sleb128 4
+ 1388 00d4 04000000 		.4byte	.LCFI10
+ 1389 00d8 06000000 		.4byte	.LCFI11
+ 1390 00dc 0200     		.2byte	0x2
+ 1391 00de 7D       		.byte	0x7d
+ 1392 00df 10       		.sleb128 16
+ 1393 00e0 06000000 		.4byte	.LCFI11
+ 1394 00e4 20000000 		.4byte	.LFE4
+ 1395 00e8 0200     		.2byte	0x2
+ 1396 00ea 77       		.byte	0x77
+ 1397 00eb 10       		.sleb128 16
+ 1398 00ec 00000000 		.4byte	0
+ 1399 00f0 00000000 		.4byte	0
+ 1400              	.LLST5:
+ 1401 00f4 00000000 		.4byte	.LFB5
+ 1402 00f8 02000000 		.4byte	.LCFI12
+ 1403 00fc 0200     		.2byte	0x2
+ 1404 00fe 7D       		.byte	0x7d
+ 1405 00ff 00       		.sleb128 0
+ 1406 0100 02000000 		.4byte	.LCFI12
+ 1407 0104 04000000 		.4byte	.LCFI13
+ 1408 0108 0200     		.2byte	0x2
+ 1409 010a 7D       		.byte	0x7d
+ 1410 010b 04       		.sleb128 4
+ 1411 010c 04000000 		.4byte	.LCFI13
+ 1412 0110 18000000 		.4byte	.LFE5
+ 1413 0114 0200     		.2byte	0x2
+ 1414 0116 77       		.byte	0x77
+ 1415 0117 04       		.sleb128 4
+ 1416 0118 00000000 		.4byte	0
+ 1417 011c 00000000 		.4byte	0
+ 1418              	.LLST6:
+ 1419 0120 00000000 		.4byte	.LFB6
+ 1420 0124 02000000 		.4byte	.LCFI14
+ 1421 0128 0200     		.2byte	0x2
+ 1422 012a 7D       		.byte	0x7d
+ 1423 012b 00       		.sleb128 0
+ 1424 012c 02000000 		.4byte	.LCFI14
+ 1425 0130 04000000 		.4byte	.LCFI15
+ 1426 0134 0200     		.2byte	0x2
+ 1427 0136 7D       		.byte	0x7d
+ 1428 0137 04       		.sleb128 4
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 36
+
+
+ 1429 0138 04000000 		.4byte	.LCFI15
+ 1430 013c 18000000 		.4byte	.LFE6
+ 1431 0140 0200     		.2byte	0x2
+ 1432 0142 77       		.byte	0x77
+ 1433 0143 04       		.sleb128 4
+ 1434 0144 00000000 		.4byte	0
+ 1435 0148 00000000 		.4byte	0
+ 1436              	.LLST7:
+ 1437 014c 00000000 		.4byte	.LFB7
+ 1438 0150 02000000 		.4byte	.LCFI16
+ 1439 0154 0200     		.2byte	0x2
+ 1440 0156 7D       		.byte	0x7d
+ 1441 0157 00       		.sleb128 0
+ 1442 0158 02000000 		.4byte	.LCFI16
+ 1443 015c 04000000 		.4byte	.LCFI17
+ 1444 0160 0200     		.2byte	0x2
+ 1445 0162 7D       		.byte	0x7d
+ 1446 0163 04       		.sleb128 4
+ 1447 0164 04000000 		.4byte	.LCFI17
+ 1448 0168 06000000 		.4byte	.LCFI18
+ 1449 016c 0200     		.2byte	0x2
+ 1450 016e 7D       		.byte	0x7d
+ 1451 016f 10       		.sleb128 16
+ 1452 0170 06000000 		.4byte	.LCFI18
+ 1453 0174 20000000 		.4byte	.LFE7
+ 1454 0178 0200     		.2byte	0x2
+ 1455 017a 77       		.byte	0x77
+ 1456 017b 10       		.sleb128 16
+ 1457 017c 00000000 		.4byte	0
+ 1458 0180 00000000 		.4byte	0
+ 1459              	.LLST8:
+ 1460 0184 00000000 		.4byte	.LFB8
+ 1461 0188 02000000 		.4byte	.LCFI19
+ 1462 018c 0200     		.2byte	0x2
+ 1463 018e 7D       		.byte	0x7d
+ 1464 018f 00       		.sleb128 0
+ 1465 0190 02000000 		.4byte	.LCFI19
+ 1466 0194 04000000 		.4byte	.LCFI20
+ 1467 0198 0200     		.2byte	0x2
+ 1468 019a 7D       		.byte	0x7d
+ 1469 019b 04       		.sleb128 4
+ 1470 019c 04000000 		.4byte	.LCFI20
+ 1471 01a0 06000000 		.4byte	.LCFI21
+ 1472 01a4 0200     		.2byte	0x2
+ 1473 01a6 7D       		.byte	0x7d
+ 1474 01a7 10       		.sleb128 16
+ 1475 01a8 06000000 		.4byte	.LCFI21
+ 1476 01ac 20000000 		.4byte	.LFE8
+ 1477 01b0 0200     		.2byte	0x2
+ 1478 01b2 77       		.byte	0x77
+ 1479 01b3 10       		.sleb128 16
+ 1480 01b4 00000000 		.4byte	0
+ 1481 01b8 00000000 		.4byte	0
+ 1482              	.LLST9:
+ 1483 01bc 00000000 		.4byte	.LFB9
+ 1484 01c0 02000000 		.4byte	.LCFI22
+ 1485 01c4 0200     		.2byte	0x2
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 37
+
+
+ 1486 01c6 7D       		.byte	0x7d
+ 1487 01c7 00       		.sleb128 0
+ 1488 01c8 02000000 		.4byte	.LCFI22
+ 1489 01cc 04000000 		.4byte	.LCFI23
+ 1490 01d0 0200     		.2byte	0x2
+ 1491 01d2 7D       		.byte	0x7d
+ 1492 01d3 04       		.sleb128 4
+ 1493 01d4 04000000 		.4byte	.LCFI23
+ 1494 01d8 22000000 		.4byte	.LFE9
+ 1495 01dc 0200     		.2byte	0x2
+ 1496 01de 77       		.byte	0x77
+ 1497 01df 04       		.sleb128 4
+ 1498 01e0 00000000 		.4byte	0
+ 1499 01e4 00000000 		.4byte	0
+ 1500              	.LLST10:
+ 1501 01e8 00000000 		.4byte	.LFB10
+ 1502 01ec 02000000 		.4byte	.LCFI24
+ 1503 01f0 0200     		.2byte	0x2
+ 1504 01f2 7D       		.byte	0x7d
+ 1505 01f3 00       		.sleb128 0
+ 1506 01f4 02000000 		.4byte	.LCFI24
+ 1507 01f8 04000000 		.4byte	.LCFI25
+ 1508 01fc 0200     		.2byte	0x2
+ 1509 01fe 7D       		.byte	0x7d
+ 1510 01ff 04       		.sleb128 4
+ 1511 0200 04000000 		.4byte	.LCFI25
+ 1512 0204 18000000 		.4byte	.LFE10
+ 1513 0208 0200     		.2byte	0x2
+ 1514 020a 77       		.byte	0x77
+ 1515 020b 04       		.sleb128 4
+ 1516 020c 00000000 		.4byte	0
+ 1517 0210 00000000 		.4byte	0
+ 1518              	.LLST11:
+ 1519 0214 00000000 		.4byte	.LFB11
+ 1520 0218 02000000 		.4byte	.LCFI26
+ 1521 021c 0200     		.2byte	0x2
+ 1522 021e 7D       		.byte	0x7d
+ 1523 021f 00       		.sleb128 0
+ 1524 0220 02000000 		.4byte	.LCFI26
+ 1525 0224 04000000 		.4byte	.LCFI27
+ 1526 0228 0200     		.2byte	0x2
+ 1527 022a 7D       		.byte	0x7d
+ 1528 022b 04       		.sleb128 4
+ 1529 022c 04000000 		.4byte	.LCFI27
+ 1530 0230 06000000 		.4byte	.LCFI28
+ 1531 0234 0200     		.2byte	0x2
+ 1532 0236 7D       		.byte	0x7d
+ 1533 0237 10       		.sleb128 16
+ 1534 0238 06000000 		.4byte	.LCFI28
+ 1535 023c 20000000 		.4byte	.LFE11
+ 1536 0240 0200     		.2byte	0x2
+ 1537 0242 77       		.byte	0x77
+ 1538 0243 10       		.sleb128 16
+ 1539 0244 00000000 		.4byte	0
+ 1540 0248 00000000 		.4byte	0
+ 1541              	.LLST12:
+ 1542 024c 00000000 		.4byte	.LFB12
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 38
+
+
+ 1543 0250 02000000 		.4byte	.LCFI29
+ 1544 0254 0200     		.2byte	0x2
+ 1545 0256 7D       		.byte	0x7d
+ 1546 0257 00       		.sleb128 0
+ 1547 0258 02000000 		.4byte	.LCFI29
+ 1548 025c 04000000 		.4byte	.LCFI30
+ 1549 0260 0200     		.2byte	0x2
+ 1550 0262 7D       		.byte	0x7d
+ 1551 0263 04       		.sleb128 4
+ 1552 0264 04000000 		.4byte	.LCFI30
+ 1553 0268 18000000 		.4byte	.LFE12
+ 1554 026c 0200     		.2byte	0x2
+ 1555 026e 77       		.byte	0x77
+ 1556 026f 04       		.sleb128 4
+ 1557 0270 00000000 		.4byte	0
+ 1558 0274 00000000 		.4byte	0
+ 1559              	.LLST13:
+ 1560 0278 00000000 		.4byte	.LFB13
+ 1561 027c 02000000 		.4byte	.LCFI31
+ 1562 0280 0200     		.2byte	0x2
+ 1563 0282 7D       		.byte	0x7d
+ 1564 0283 00       		.sleb128 0
+ 1565 0284 02000000 		.4byte	.LCFI31
+ 1566 0288 04000000 		.4byte	.LCFI32
+ 1567 028c 0200     		.2byte	0x2
+ 1568 028e 7D       		.byte	0x7d
+ 1569 028f 04       		.sleb128 4
+ 1570 0290 04000000 		.4byte	.LCFI32
+ 1571 0294 06000000 		.4byte	.LCFI33
+ 1572 0298 0200     		.2byte	0x2
+ 1573 029a 7D       		.byte	0x7d
+ 1574 029b 10       		.sleb128 16
+ 1575 029c 06000000 		.4byte	.LCFI33
+ 1576 02a0 20000000 		.4byte	.LFE13
+ 1577 02a4 0200     		.2byte	0x2
+ 1578 02a6 77       		.byte	0x77
+ 1579 02a7 10       		.sleb128 16
+ 1580 02a8 00000000 		.4byte	0
+ 1581 02ac 00000000 		.4byte	0
+ 1582              	.LLST14:
+ 1583 02b0 00000000 		.4byte	.LFB14
+ 1584 02b4 02000000 		.4byte	.LCFI34
+ 1585 02b8 0200     		.2byte	0x2
+ 1586 02ba 7D       		.byte	0x7d
+ 1587 02bb 00       		.sleb128 0
+ 1588 02bc 02000000 		.4byte	.LCFI34
+ 1589 02c0 04000000 		.4byte	.LCFI35
+ 1590 02c4 0200     		.2byte	0x2
+ 1591 02c6 7D       		.byte	0x7d
+ 1592 02c7 04       		.sleb128 4
+ 1593 02c8 04000000 		.4byte	.LCFI35
+ 1594 02cc 18000000 		.4byte	.LFE14
+ 1595 02d0 0200     		.2byte	0x2
+ 1596 02d2 77       		.byte	0x77
+ 1597 02d3 04       		.sleb128 4
+ 1598 02d4 00000000 		.4byte	0
+ 1599 02d8 00000000 		.4byte	0
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 39
+
+
+ 1600              	.LLST15:
+ 1601 02dc 00000000 		.4byte	.LFB15
+ 1602 02e0 02000000 		.4byte	.LCFI36
+ 1603 02e4 0200     		.2byte	0x2
+ 1604 02e6 7D       		.byte	0x7d
+ 1605 02e7 00       		.sleb128 0
+ 1606 02e8 02000000 		.4byte	.LCFI36
+ 1607 02ec 04000000 		.4byte	.LCFI37
+ 1608 02f0 0200     		.2byte	0x2
+ 1609 02f2 7D       		.byte	0x7d
+ 1610 02f3 08       		.sleb128 8
+ 1611 02f4 04000000 		.4byte	.LCFI37
+ 1612 02f8 1A000000 		.4byte	.LFE15
+ 1613 02fc 0200     		.2byte	0x2
+ 1614 02fe 77       		.byte	0x77
+ 1615 02ff 08       		.sleb128 8
+ 1616 0300 00000000 		.4byte	0
+ 1617 0304 00000000 		.4byte	0
+ 1618              		.section	.debug_aranges,"",%progbits
+ 1619 0000 94000000 		.4byte	0x94
+ 1620 0004 0200     		.2byte	0x2
+ 1621 0006 00000000 		.4byte	.Ldebug_info0
+ 1622 000a 04       		.byte	0x4
+ 1623 000b 00       		.byte	0
+ 1624 000c 0000     		.2byte	0
+ 1625 000e 0000     		.2byte	0
+ 1626 0010 00000000 		.4byte	.LFB0
+ 1627 0014 A4000000 		.4byte	.LFE0-.LFB0
+ 1628 0018 00000000 		.4byte	.LFB1
+ 1629 001c 26000000 		.4byte	.LFE1-.LFB1
+ 1630 0020 00000000 		.4byte	.LFB2
+ 1631 0024 2A000000 		.4byte	.LFE2-.LFB2
+ 1632 0028 00000000 		.4byte	.LFB3
+ 1633 002c 26000000 		.4byte	.LFE3-.LFB3
+ 1634 0030 00000000 		.4byte	.LFB4
+ 1635 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1636 0038 00000000 		.4byte	.LFB5
+ 1637 003c 18000000 		.4byte	.LFE5-.LFB5
+ 1638 0040 00000000 		.4byte	.LFB6
+ 1639 0044 18000000 		.4byte	.LFE6-.LFB6
+ 1640 0048 00000000 		.4byte	.LFB7
+ 1641 004c 20000000 		.4byte	.LFE7-.LFB7
+ 1642 0050 00000000 		.4byte	.LFB8
+ 1643 0054 20000000 		.4byte	.LFE8-.LFB8
+ 1644 0058 00000000 		.4byte	.LFB9
+ 1645 005c 22000000 		.4byte	.LFE9-.LFB9
+ 1646 0060 00000000 		.4byte	.LFB10
+ 1647 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1648 0068 00000000 		.4byte	.LFB11
+ 1649 006c 20000000 		.4byte	.LFE11-.LFB11
+ 1650 0070 00000000 		.4byte	.LFB12
+ 1651 0074 18000000 		.4byte	.LFE12-.LFB12
+ 1652 0078 00000000 		.4byte	.LFB13
+ 1653 007c 20000000 		.4byte	.LFE13-.LFB13
+ 1654 0080 00000000 		.4byte	.LFB14
+ 1655 0084 18000000 		.4byte	.LFE14-.LFB14
+ 1656 0088 00000000 		.4byte	.LFB15
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 40
+
+
+ 1657 008c 1A000000 		.4byte	.LFE15-.LFB15
+ 1658 0090 00000000 		.4byte	0
+ 1659 0094 00000000 		.4byte	0
+ 1660              		.section	.debug_ranges,"",%progbits
+ 1661              	.Ldebug_ranges0:
+ 1662 0000 00000000 		.4byte	.LFB0
+ 1663 0004 A4000000 		.4byte	.LFE0
+ 1664 0008 00000000 		.4byte	.LFB1
+ 1665 000c 26000000 		.4byte	.LFE1
+ 1666 0010 00000000 		.4byte	.LFB2
+ 1667 0014 2A000000 		.4byte	.LFE2
+ 1668 0018 00000000 		.4byte	.LFB3
+ 1669 001c 26000000 		.4byte	.LFE3
+ 1670 0020 00000000 		.4byte	.LFB4
+ 1671 0024 20000000 		.4byte	.LFE4
+ 1672 0028 00000000 		.4byte	.LFB5
+ 1673 002c 18000000 		.4byte	.LFE5
+ 1674 0030 00000000 		.4byte	.LFB6
+ 1675 0034 18000000 		.4byte	.LFE6
+ 1676 0038 00000000 		.4byte	.LFB7
+ 1677 003c 20000000 		.4byte	.LFE7
+ 1678 0040 00000000 		.4byte	.LFB8
+ 1679 0044 20000000 		.4byte	.LFE8
+ 1680 0048 00000000 		.4byte	.LFB9
+ 1681 004c 22000000 		.4byte	.LFE9
+ 1682 0050 00000000 		.4byte	.LFB10
+ 1683 0054 18000000 		.4byte	.LFE10
+ 1684 0058 00000000 		.4byte	.LFB11
+ 1685 005c 20000000 		.4byte	.LFE11
+ 1686 0060 00000000 		.4byte	.LFB12
+ 1687 0064 18000000 		.4byte	.LFE12
+ 1688 0068 00000000 		.4byte	.LFB13
+ 1689 006c 20000000 		.4byte	.LFE13
+ 1690 0070 00000000 		.4byte	.LFB14
+ 1691 0074 18000000 		.4byte	.LFE14
+ 1692 0078 00000000 		.4byte	.LFB15
+ 1693 007c 1A000000 		.4byte	.LFE15
+ 1694 0080 00000000 		.4byte	0
+ 1695 0084 00000000 		.4byte	0
+ 1696              		.section	.debug_line,"",%progbits
+ 1697              	.Ldebug_line0:
+ 1698 0000 89010000 		.section	.debug_str,"MS",%progbits,1
+ 1698      02004800 
+ 1698      00000201 
+ 1698      FB0E0D00 
+ 1698      01010101 
+ 1699              	.LASF15:
+ 1700 0000 72656731 		.ascii	"reg16\000"
+ 1700      3600
+ 1701              	.LASF18:
+ 1702 0006 436F756E 		.ascii	"Counter_7_interruptState\000"
+ 1702      7465725F 
+ 1702      375F696E 
+ 1702      74657272 
+ 1702      75707453 
+ 1703              	.LASF34:
+ 1704 001f 70657269 		.ascii	"period\000"
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 41
+
+
+ 1704      6F6400
+ 1705              	.LASF32:
+ 1706 0026 436F756E 		.ascii	"Counter_7_ReadCapture\000"
+ 1706      7465725F 
+ 1706      375F5265 
+ 1706      61644361 
+ 1706      70747572 
+ 1707              	.LASF3:
+ 1708 003c 73686F72 		.ascii	"short unsigned int\000"
+ 1708      7420756E 
+ 1708      7369676E 
+ 1708      65642069 
+ 1708      6E7400
+ 1709              	.LASF39:
+ 1710 004f 436F756E 		.ascii	"Counter_7_ClearFIFO\000"
+ 1710      7465725F 
+ 1710      375F436C 
+ 1710      65617246 
+ 1710      49464F00 
+ 1711              	.LASF11:
+ 1712 0063 666C6F61 		.ascii	"float\000"
+ 1712      7400
+ 1713              	.LASF30:
+ 1714 0069 636F756E 		.ascii	"counter\000"
+ 1714      74657200 
+ 1715              	.LASF1:
+ 1716 0071 756E7369 		.ascii	"unsigned char\000"
+ 1716      676E6564 
+ 1716      20636861 
+ 1716      7200
+ 1717              	.LASF31:
+ 1718 007f 436F756E 		.ascii	"Counter_7_ReadCounter\000"
+ 1718      7465725F 
+ 1718      375F5265 
+ 1718      6164436F 
+ 1718      756E7465 
+ 1719              	.LASF20:
+ 1720 0095 436F756E 		.ascii	"Counter_7_Start\000"
+ 1720      7465725F 
+ 1720      375F5374 
+ 1720      61727400 
+ 1721              	.LASF14:
+ 1722 00a5 72656738 		.ascii	"reg8\000"
+ 1722      00
+ 1723              	.LASF5:
+ 1724 00aa 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1724      20756E73 
+ 1724      69676E65 
+ 1724      6420696E 
+ 1724      7400
+ 1725              	.LASF9:
+ 1726 00bc 75696E74 		.ascii	"uint8\000"
+ 1726      3800
+ 1727              	.LASF28:
+ 1728 00c2 636F6E74 		.ascii	"control\000"
+ 1728      726F6C00 
+ 1729              	.LASF27:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 42
+
+
+ 1730 00ca 696E7465 		.ascii	"interruptsMask\000"
+ 1730      72727570 
+ 1730      74734D61 
+ 1730      736B00
+ 1731              	.LASF42:
+ 1732 00d9 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
+ 1732      73657273 
+ 1732      5C62696F 
+ 1732      6D696D65 
+ 1732      74696373 
+ 1733 0106 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
+ 1733      204C6567 
+ 1733      204A6163 
+ 1733      6F626961 
+ 1733      6E205155 
+ 1734              	.LASF12:
+ 1735 0131 646F7562 		.ascii	"double\000"
+ 1735      6C6500
+ 1736              	.LASF22:
+ 1737 0138 436F756E 		.ascii	"Counter_7_Init\000"
+ 1737      7465725F 
+ 1737      375F496E 
+ 1737      697400
+ 1738              	.LASF26:
+ 1739 0147 436F756E 		.ascii	"Counter_7_WriteControlRegister\000"
+ 1739      7465725F 
+ 1739      375F5772 
+ 1739      69746543 
+ 1739      6F6E7472 
+ 1740              	.LASF10:
+ 1741 0166 75696E74 		.ascii	"uint16\000"
+ 1741      313600
+ 1742              	.LASF36:
+ 1743 016d 436F756E 		.ascii	"Counter_7_WriteCompare\000"
+ 1743      7465725F 
+ 1743      375F5772 
+ 1743      69746543 
+ 1743      6F6D7061 
+ 1744              	.LASF8:
+ 1745 0184 756E7369 		.ascii	"unsigned int\000"
+ 1745      676E6564 
+ 1745      20696E74 
+ 1745      00
+ 1746              	.LASF41:
+ 1747 0191 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Counter_7.c\000"
+ 1747      6E657261 
+ 1747      7465645F 
+ 1747      536F7572 
+ 1747      63655C50 
+ 1748              	.LASF7:
+ 1749 01b6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1749      206C6F6E 
+ 1749      6720756E 
+ 1749      7369676E 
+ 1749      65642069 
+ 1750              	.LASF25:
+ 1751 01cd 436F756E 		.ascii	"Counter_7_ReadControlRegister\000"
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 43
+
+
+ 1751      7465725F 
+ 1751      375F5265 
+ 1751      6164436F 
+ 1751      6E74726F 
+ 1752              	.LASF35:
+ 1753 01eb 436F756E 		.ascii	"Counter_7_ReadPeriod\000"
+ 1753      7465725F 
+ 1753      375F5265 
+ 1753      61645065 
+ 1753      72696F64 
+ 1754              	.LASF33:
+ 1755 0200 436F756E 		.ascii	"Counter_7_WritePeriod\000"
+ 1755      7465725F 
+ 1755      375F5772 
+ 1755      69746550 
+ 1755      6572696F 
+ 1756              	.LASF17:
+ 1757 0216 6374726C 		.ascii	"ctrl\000"
+ 1757      00
+ 1758              	.LASF16:
+ 1759 021b 73697A65 		.ascii	"sizetype\000"
+ 1759      74797065 
+ 1759      00
+ 1760              	.LASF23:
+ 1761 0224 436F756E 		.ascii	"Counter_7_SetInterruptMode\000"
+ 1761      7465725F 
+ 1761      375F5365 
+ 1761      74496E74 
+ 1761      65727275 
+ 1762              	.LASF6:
+ 1763 023f 6C6F6E67 		.ascii	"long long int\000"
+ 1763      206C6F6E 
+ 1763      6720696E 
+ 1763      7400
+ 1764              	.LASF19:
+ 1765 024d 436F756E 		.ascii	"Counter_7_Enable\000"
+ 1765      7465725F 
+ 1765      375F456E 
+ 1765      61626C65 
+ 1765      00
+ 1766              	.LASF43:
+ 1767 025e 436F756E 		.ascii	"Counter_7_initVar\000"
+ 1767      7465725F 
+ 1767      375F696E 
+ 1767      69745661 
+ 1767      7200
+ 1768              	.LASF24:
+ 1769 0270 436F756E 		.ascii	"Counter_7_ReadStatusRegister\000"
+ 1769      7465725F 
+ 1769      375F5265 
+ 1769      61645374 
+ 1769      61747573 
+ 1770              	.LASF2:
+ 1771 028d 73686F72 		.ascii	"short int\000"
+ 1771      7420696E 
+ 1771      7400
+ 1772              	.LASF21:
+ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc9xjsbE.s 			page 44
+
+
+ 1773 0297 436F756E 		.ascii	"Counter_7_Stop\000"
+ 1773      7465725F 
+ 1773      375F5374 
+ 1773      6F7000
+ 1774              	.LASF40:
+ 1775 02a6 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1775      4320342E 
+ 1775      372E3320 
+ 1775      32303133 
+ 1775      30333132 
+ 1776 02d9 616E6368 		.ascii	"anch revision 196615]\000"
+ 1776      20726576 
+ 1776      6973696F 
+ 1776      6E203139 
+ 1776      36363135 
+ 1777              	.LASF4:
+ 1778 02ef 6C6F6E67 		.ascii	"long int\000"
+ 1778      20696E74 
+ 1778      00
+ 1779              	.LASF13:
+ 1780 02f8 63686172 		.ascii	"char\000"
+ 1780      00
+ 1781              	.LASF29:
+ 1782 02fd 436F756E 		.ascii	"Counter_7_WriteCounter\000"
+ 1782      7465725F 
+ 1782      375F5772 
+ 1782      69746543 
+ 1782      6F756E74 
+ 1783              	.LASF0:
+ 1784 0314 7369676E 		.ascii	"signed char\000"
+ 1784      65642063 
+ 1784      68617200 
+ 1785              	.LASF37:
+ 1786 0320 636F6D70 		.ascii	"compare\000"
+ 1786      61726500 
+ 1787              	.LASF38:
+ 1788 0328 436F756E 		.ascii	"Counter_7_ReadCompare\000"
+ 1788      7465725F 
+ 1788      375F5265 
+ 1788      6164436F 
+ 1788      6D706172 
+ 1789              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

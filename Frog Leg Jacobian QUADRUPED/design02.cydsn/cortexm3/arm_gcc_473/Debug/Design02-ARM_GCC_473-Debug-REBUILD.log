@@ -1,0 +1,28 @@
+--------------- Rebuild Started: 09/12/2014 14:47:21 Project: main.c, Configuration: ARM GCC 4.7.3 Debug ---------------
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC5 -Wno-main -mcpu=cortex-m3 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM3\ARM_GCC_473\Debug\main.lst -ffunction-sections -c .\main.c -o .\CortexM3\ARM_GCC_473\Debug\main.o
+.\main.c: In function 'Print32':
+.\main.c:92:5: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int32' [-Wformat]
+.\main.c:92:5: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int32' [-Wformat]
+.\main.c: In function 'main':
+.\main.c:526:9: warning: unused variable 'pitch1' [-Wunused-variable]
+.\main.c:514:9: warning: unused variable 'startSignal' [-Wunused-variable]
+.\main.c:504:9: warning: unused variable 'startCount' [-Wunused-variable]
+.\main.c:500:9: warning: unused variable 'i2' [-Wunused-variable]
+.\main.c:499:9: warning: unused variable 'i1' [-Wunused-variable]
+.\main.c:498:9: warning: unused variable 'c' [-Wunused-variable]
+.\main.c:488:15: warning: unused variable 'dir2' [-Wunused-variable]
+.\main.c:488:9: warning: unused variable 'dir1' [-Wunused-variable]
+.\main.c:487:9: warning: unused variable 'cmdSign' [-Wunused-variable]
+.\main.c:485:22: warning: variable 'cmdVal2Last' set but not used [-Wunused-but-set-variable]
+.\main.c:485:9: warning: variable 'cmdVal1Last' set but not used [-Wunused-but-set-variable]
+.\main.c:482:11: warning: unused variable 'revs2' [-Wunused-variable]
+.\main.c:481:11: warning: unused variable 'revs1' [-Wunused-variable]
+.\main.c:464:9: warning: unused variable 'maxon_motor2vel' [-Wunused-variable]
+.\main.c:463:9: warning: unused variable 'maxon_motor1vel' [-Wunused-variable]
+.\main.c:458:11: warning: unused variable 'Km' [-Wunused-variable]
+.\main.c:448:9: warning: unused variable 'check' [-Wunused-variable]
+.\main.c:447:9: warning: unused variable 'alpha' [-Wunused-variable]
+.\main.c:441:9: warning: unused variable 'velEstimate2' [-Wunused-variable]
+.\main.c:440:9: warning: unused variable 'velEstimate1' [-Wunused-variable]
+.\main.c:947:5: warning: control reaches end of non-void function [-Wreturn-type]
+--------------- Rebuild Succeeded: 09/12/2014 14:47:23 ---------------
