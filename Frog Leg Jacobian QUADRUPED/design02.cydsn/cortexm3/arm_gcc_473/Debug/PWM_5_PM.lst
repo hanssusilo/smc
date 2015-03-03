@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
   25:.\Generated_Source\PSoC5/PWM_5_PM.c **** ********************************************************************************
   26:.\Generated_Source\PSoC5/PWM_5_PM.c **** *
   27:.\Generated_Source\PSoC5/PWM_5_PM.c **** * Summary:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 2
 
 
   28:.\Generated_Source\PSoC5/PWM_5_PM.c **** *  Saves the current user configuration of the component.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
   45 0006 80BC     		pop	{r7}
   46 0008 7047     		bx	lr
   47              		.cfi_endproc
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 3
 
 
   48              	.LFE0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  100:.\Generated_Source\PSoC5/PWM_5_PM.c ****                 PWM_5_DeadBandMode == PWM_5__B_PWM__DBM_2_4_CLOCKS)
  101:.\Generated_Source\PSoC5/PWM_5_PM.c ****                 PWM_5_WriteDeadTime(PWM_5_backup.PWMdeadBandValue);
  102:.\Generated_Source\PSoC5/PWM_5_PM.c ****             #endif /* deadband count is either 2-4 clocks or 256 clocks */
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 4
 
 
  103:.\Generated_Source\PSoC5/PWM_5_PM.c ****             
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
   91              		.cfi_def_cfa_offset 8
   92              		.cfi_offset 7, -8
   93              		.cfi_offset 14, -4
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 5
 
 
   94 0002 00AF     		add	r7, sp, #0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  129              		.global	PWM_5_Wakeup
  130              		.thumb
  131              		.thumb_func
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 6
 
 
  132              		.type	PWM_5_Wakeup, %function
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  156 0016 FFF7FEFF 		bl	PWM_5_Enable
  157              	.L6:
  185:.\Generated_Source\PSoC5/PWM_5_PM.c ****     } /* Do nothing if component's block was disabled before */
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 7
 
 
  186:.\Generated_Source\PSoC5/PWM_5_PM.c ****     
@@ -382,7 +382,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  174 000c 8A000000 		.4byte	.LASF20
  175 0010 01       		.byte	0x1
  176 0011 37000000 		.4byte	.LASF21
- 177 0015 D9000000 		.4byte	.LASF22
+ 177 0015 EC000000 		.4byte	.LASF22
  178 0019 00000000 		.4byte	.Ldebug_ranges0+0
  179 001d 00000000 		.4byte	0
  180 0021 00000000 		.4byte	0
@@ -390,23 +390,23 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  182 0029 02       		.uleb128 0x2
  183 002a 01       		.byte	0x1
  184 002b 06       		.byte	0x6
- 185 002c 88010000 		.4byte	.LASF0
+ 185 002c 7E010000 		.4byte	.LASF0
  186 0030 02       		.uleb128 0x2
  187 0031 01       		.byte	0x1
  188 0032 08       		.byte	0x8
- 189 0033 31010000 		.4byte	.LASF1
+ 189 0033 DE000000 		.4byte	.LASF1
  190 0037 02       		.uleb128 0x2
  191 0038 02       		.byte	0x2
  192 0039 05       		.byte	0x5
- 193 003a B1010000 		.4byte	.LASF2
+ 193 003a A7010000 		.4byte	.LASF2
  194 003e 02       		.uleb128 0x2
  195 003f 02       		.byte	0x2
  196 0040 07       		.byte	0x7
- 197 0041 75010000 		.4byte	.LASF3
+ 197 0041 6B010000 		.4byte	.LASF3
  198 0045 02       		.uleb128 0x2
  199 0046 04       		.byte	0x4
  200 0047 05       		.byte	0x5
- 201 0048 44010000 		.4byte	.LASF4
+ 201 0048 3A010000 		.4byte	.LASF4
  202 004c 02       		.uleb128 0x2
  203 004d 04       		.byte	0x4
  204 004e 07       		.byte	0x7
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  210 005a 02       		.uleb128 0x2
  211 005b 08       		.byte	0x8
  212 005c 07       		.byte	0x7
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 8
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 8
 
 
  213 005d 73000000 		.4byte	.LASF7
@@ -442,13 +442,13 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  231 0081 02       		.uleb128 0x2
  232 0082 08       		.byte	0x8
  233 0083 04       		.byte	0x4
- 234 0084 5A010000 		.4byte	.LASF10
+ 234 0084 50010000 		.4byte	.LASF10
  235 0088 02       		.uleb128 0x2
  236 0089 01       		.byte	0x1
  237 008a 08       		.byte	0x8
- 238 008b 3F010000 		.4byte	.LASF11
+ 238 008b D9000000 		.4byte	.LASF11
  239 008f 04       		.uleb128 0x4
- 240 0090 BB010000 		.4byte	.LASF13
+ 240 0090 B1010000 		.4byte	.LASF13
  241 0094 02       		.byte	0x2
  242 0095 F0       		.byte	0xf0
  243 0096 9A000000 		.4byte	0x9a
@@ -457,7 +457,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  246 009f 02       		.uleb128 0x2
  247 00a0 04       		.byte	0x4
  248 00a1 07       		.byte	0x7
- 249 00a2 D3010000 		.4byte	.LASF14
+ 249 00a2 C9010000 		.4byte	.LASF14
  250 00a6 06       		.uleb128 0x6
  251 00a7 01       		.byte	0x1
  252 00a8 03       		.byte	0x3
@@ -473,16 +473,16 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  262 00bb 00       		.uleb128 0
  263 00bc 00       		.byte	0
  264 00bd 04       		.uleb128 0x4
- 265 00be C0010000 		.4byte	.LASF15
+ 265 00be B6010000 		.4byte	.LASF15
  266 00c2 03       		.byte	0x3
  267 00c3 8A       		.byte	0x8a
  268 00c4 A6000000 		.4byte	0xa6
  269 00c8 08       		.uleb128 0x8
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 9
 
 
  270 00c9 01       		.byte	0x1
- 271 00ca A0010000 		.4byte	.LASF16
+ 271 00ca 96010000 		.4byte	.LASF16
  272 00ce 01       		.byte	0x1
  273 00cf 2A       		.byte	0x2a
  274 00d0 01       		.byte	0x1
@@ -492,7 +492,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  278 00dd 01       		.byte	0x1
  279 00de 08       		.uleb128 0x8
  280 00df 01       		.byte	0x1
- 281 00e0 61010000 		.4byte	.LASF17
+ 281 00e0 57010000 		.4byte	.LASF17
  282 00e4 01       		.byte	0x1
  283 00e5 58       		.byte	0x58
  284 00e6 01       		.byte	0x1
@@ -502,7 +502,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  288 00f3 01       		.byte	0x1
  289 00f4 09       		.uleb128 0x9
  290 00f5 01       		.byte	0x1
- 291 00f6 94010000 		.4byte	.LASF18
+ 291 00f6 8A010000 		.4byte	.LASF18
  292 00fa 01       		.byte	0x1
  293 00fb 86       		.byte	0x86
  294 00fc 01       		.byte	0x1
@@ -512,7 +512,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  298 0109 01       		.byte	0x1
  299 010a 09       		.uleb128 0x9
  300 010b 01       		.byte	0x1
- 301 010c 4D010000 		.4byte	.LASF19
+ 301 010c 43010000 		.4byte	.LASF19
  302 0110 01       		.byte	0x1
  303 0111 B0       		.byte	0xb0
  304 0112 01       		.byte	0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  324 0004 0E       		.uleb128 0xe
  325 0005 13       		.uleb128 0x13
  326 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 10
 
 
  327 0007 03       		.uleb128 0x3
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  381 003d 00       		.byte	0
  382 003e 00       		.byte	0
  383 003f 06       		.uleb128 0x6
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 11
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 11
 
 
  384 0040 13       		.uleb128 0x13
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  438 0077 0C       		.uleb128 0xc
  439 0078 03       		.uleb128 0x3
  440 0079 0E       		.uleb128 0xe
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 12
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 12
 
 
  441 007a 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  495 0030 02000000 		.4byte	.LCFI2
  496 0034 0200     		.2byte	0x2
  497 0036 7D       		.byte	0x7d
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 13
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 13
 
 
  498 0037 00       		.sleb128 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  552 000b 00       		.byte	0
  553 000c 0000     		.2byte	0
  554 000e 0000     		.2byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 14
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 14
 
 
  555 0010 00000000 		.4byte	.LFB0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  589      63655C50 
  590              	.LASF12:
  591 005b 75696E74 		.ascii	"uint8\000"
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 15
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 15
 
 
  591      3800
@@ -868,81 +868,81 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 1
  599              	.LASF9:
  600 00d3 666C6F61 		.ascii	"float\000"
  600      7400
- 601              	.LASF22:
- 602 00d9 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 602      73657273 
- 602      5C62696F 
- 602      6D696D65 
- 602      74696373 
- 603 0106 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 603      204C6567 
- 603      204A6163 
- 603      6F626961 
- 603      6E205155 
- 604              	.LASF1:
- 605 0131 756E7369 		.ascii	"unsigned char\000"
- 605      676E6564 
- 605      20636861 
- 605      7200
- 606              	.LASF11:
- 607 013f 63686172 		.ascii	"char\000"
- 607      00
+ 601              	.LASF11:
+ 602 00d9 63686172 		.ascii	"char\000"
+ 602      00
+ 603              	.LASF1:
+ 604 00de 756E7369 		.ascii	"unsigned char\000"
+ 604      676E6564 
+ 604      20636861 
+ 604      7200
+ 605              	.LASF22:
+ 606 00ec 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 606      73657273 
+ 606      5C48616E 
+ 606      73205375 
+ 606      73696C6F 
+ 607 011a 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 607      616E2051 
+ 607      55414452 
+ 607      55504544 
+ 607      5C446573 
  608              	.LASF4:
- 609 0144 6C6F6E67 		.ascii	"long int\000"
+ 609 013a 6C6F6E67 		.ascii	"long int\000"
  609      20696E74 
  609      00
  610              	.LASF19:
- 611 014d 50574D5F 		.ascii	"PWM_5_Wakeup\000"
+ 611 0143 50574D5F 		.ascii	"PWM_5_Wakeup\000"
  611      355F5761 
  611      6B657570 
  611      00
  612              	.LASF10:
- 613 015a 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccsH9HEP.s 			page 16
+ 613 0150 646F7562 		.ascii	"double\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccTeSgUI.s 			page 16
 
 
  613      6C6500
  614              	.LASF17:
- 615 0161 50574D5F 		.ascii	"PWM_5_RestoreConfig\000"
+ 615 0157 50574D5F 		.ascii	"PWM_5_RestoreConfig\000"
  615      355F5265 
  615      73746F72 
  615      65436F6E 
  615      66696700 
  616              	.LASF3:
- 617 0175 73686F72 		.ascii	"short unsigned int\000"
+ 617 016b 73686F72 		.ascii	"short unsigned int\000"
  617      7420756E 
  617      7369676E 
  617      65642069 
  617      6E7400
  618              	.LASF0:
- 619 0188 7369676E 		.ascii	"signed char\000"
+ 619 017e 7369676E 		.ascii	"signed char\000"
  619      65642063 
  619      68617200 
  620              	.LASF18:
- 621 0194 50574D5F 		.ascii	"PWM_5_Sleep\000"
+ 621 018a 50574D5F 		.ascii	"PWM_5_Sleep\000"
  621      355F536C 
  621      65657000 
  622              	.LASF16:
- 623 01a0 50574D5F 		.ascii	"PWM_5_SaveConfig\000"
+ 623 0196 50574D5F 		.ascii	"PWM_5_SaveConfig\000"
  623      355F5361 
  623      7665436F 
  623      6E666967 
  623      00
  624              	.LASF2:
- 625 01b1 73686F72 		.ascii	"short int\000"
+ 625 01a7 73686F72 		.ascii	"short int\000"
  625      7420696E 
  625      7400
  626              	.LASF13:
- 627 01bb 72656738 		.ascii	"reg8\000"
+ 627 01b1 72656738 		.ascii	"reg8\000"
  627      00
  628              	.LASF15:
- 629 01c0 50574D5F 		.ascii	"PWM_5_backupStruct\000"
+ 629 01b6 50574D5F 		.ascii	"PWM_5_backupStruct\000"
  629      355F6261 
  629      636B7570 
  629      53747275 
  629      637400
  630              	.LASF14:
- 631 01d3 73697A65 		.ascii	"sizetype\000"
+ 631 01c9 73697A65 		.ascii	"sizetype\000"
  631      74797065 
  631      00
  632              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

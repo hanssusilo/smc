@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
   24:.\Generated_Source\PSoC5/Counter_3_PM.c **** /*******************************************************************************
   25:.\Generated_Source\PSoC5/Counter_3_PM.c **** * Function Name: Counter_3_SaveConfig
   26:.\Generated_Source\PSoC5/Counter_3_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 2
 
 
   27:.\Generated_Source\PSoC5/Counter_3_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
   56 0026 1A71     		strb	r2, [r3, #4]
   56:.\Generated_Source\PSoC5/Counter_3_PM.c ****         #endif /* (!Counter_3_ControlRegRemoved) */
   57:.\Generated_Source\PSoC5/Counter_3_PM.c **** 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 3
 
 
   58:.\Generated_Source\PSoC5/Counter_3_PM.c ****     #endif /* (!Counter_3_UsingFixedFunction) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
   87:.\Generated_Source\PSoC5/Counter_3_PM.c **** 
   88:.\Generated_Source\PSoC5/Counter_3_PM.c ****        Counter_3_WriteCounter(Counter_3_backup.CounterUdb);
   82              		.loc 1 88 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 4
 
 
   83 0004 40F20003 		movw	r3, #:lower16:Counter_3_backup
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  119:.\Generated_Source\PSoC5/Counter_3_PM.c **** *  void
  120:.\Generated_Source\PSoC5/Counter_3_PM.c **** *
  121:.\Generated_Source\PSoC5/Counter_3_PM.c **** * Global variables:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 5
 
 
  122:.\Generated_Source\PSoC5/Counter_3_PM.c **** *  Counter_3_backup.enableState:  Is modified depending on the enable 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  142:.\Generated_Source\PSoC5/Counter_3_PM.c ****         if(Counter_3_backup.CounterEnableState != 0u)
  143:.\Generated_Source\PSoC5/Counter_3_PM.c ****         {
  144:.\Generated_Source\PSoC5/Counter_3_PM.c ****             Counter_3_backup.CounterEnableState = 0u;
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 6
 
 
  145:.\Generated_Source\PSoC5/Counter_3_PM.c ****         }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  167 0002 00AF     		add	r7, sp, #0
  168              	.LCFI7:
  169              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 7
 
 
  173:.\Generated_Source\PSoC5/Counter_3_PM.c ****     Counter_3_RestoreConfig();
@@ -401,7 +401,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  197 000c B0000000 		.4byte	.LASF24
  198 0010 01       		.byte	0x1
  199 0011 59000000 		.4byte	.LASF25
- 200 0015 3F010000 		.4byte	.LASF26
+ 200 0015 23010000 		.4byte	.LASF26
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	0
@@ -409,26 +409,26 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  205 0029 02       		.uleb128 0x2
  206 002a 01       		.byte	0x1
  207 002b 06       		.byte	0x6
- 208 002c C1010000 		.4byte	.LASF0
+ 208 002c B7010000 		.4byte	.LASF0
  209 0030 02       		.uleb128 0x2
  210 0031 01       		.byte	0x1
  211 0032 08       		.byte	0x8
- 212 0033 10010000 		.4byte	.LASF1
+ 212 0033 15010000 		.4byte	.LASF1
  213 0037 02       		.uleb128 0x2
  214 0038 02       		.byte	0x2
  215 0039 05       		.byte	0x5
- 216 003a FB010000 		.4byte	.LASF2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 8
+ 216 003a F1010000 		.4byte	.LASF2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 8
 
 
  217 003e 02       		.uleb128 0x2
  218 003f 02       		.byte	0x2
  219 0040 07       		.byte	0x7
- 220 0041 AE010000 		.4byte	.LASF3
+ 220 0041 A4010000 		.4byte	.LASF3
  221 0045 02       		.uleb128 0x2
  222 0046 04       		.byte	0x4
  223 0047 05       		.byte	0x5
- 224 0048 23010000 		.4byte	.LASF4
+ 224 0048 71010000 		.4byte	.LASF4
  225 004c 02       		.uleb128 0x2
  226 004d 04       		.byte	0x4
  227 004e 07       		.byte	0x7
@@ -455,7 +455,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  248 0075 5B       		.byte	0x5b
  249 0076 30000000 		.4byte	0x30
  250 007a 04       		.uleb128 0x4
- 251 007b 05020000 		.4byte	.LASF10
+ 251 007b FB010000 		.4byte	.LASF10
  252 007f 02       		.byte	0x2
  253 0080 5C       		.byte	0x5c
  254 0081 3E000000 		.4byte	0x3e
@@ -466,32 +466,32 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  259 008c 02       		.uleb128 0x2
  260 008d 08       		.byte	0x8
  261 008e 04       		.byte	0x4
- 262 008f 97010000 		.4byte	.LASF12
+ 262 008f 8D010000 		.4byte	.LASF12
  263 0093 02       		.uleb128 0x2
  264 0094 01       		.byte	0x1
  265 0095 08       		.byte	0x8
- 266 0096 1E010000 		.4byte	.LASF13
+ 266 0096 FF000000 		.4byte	.LASF13
  267 009a 04       		.uleb128 0x4
- 268 009b 17020000 		.4byte	.LASF14
+ 268 009b 0D020000 		.4byte	.LASF14
  269 009f 02       		.byte	0x2
  270 00a0 F0       		.byte	0xf0
  271 00a1 A5000000 		.4byte	0xa5
  272 00a5 05       		.uleb128 0x5
  273 00a6 6F000000 		.4byte	0x6f
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 9
 
 
  274 00aa 02       		.uleb128 0x2
  275 00ab 04       		.byte	0x4
  276 00ac 07       		.byte	0x7
- 277 00ad 1C020000 		.4byte	.LASF15
+ 277 00ad 12020000 		.4byte	.LASF15
  278 00b1 06       		.uleb128 0x6
  279 00b2 06       		.byte	0x6
  280 00b3 03       		.byte	0x3
  281 00b4 38       		.byte	0x38
  282 00b5 E4000000 		.4byte	0xe4
  283 00b9 07       		.uleb128 0x7
- 284 00ba 2C010000 		.4byte	.LASF16
+ 284 00ba 7A010000 		.4byte	.LASF16
  285 00be 03       		.byte	0x3
  286 00bf 3A       		.byte	0x3a
  287 00c0 6F000000 		.4byte	0x6f
@@ -499,7 +499,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  289 00c5 23       		.byte	0x23
  290 00c6 00       		.uleb128 0
  291 00c7 07       		.uleb128 0x7
- 292 00c8 0C020000 		.4byte	.LASF17
+ 292 00c8 02020000 		.4byte	.LASF17
  293 00cc 03       		.byte	0x3
  294 00cd 3B       		.byte	0x3b
  295 00ce 7A000000 		.4byte	0x7a
@@ -507,7 +507,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  297 00d3 23       		.byte	0x23
  298 00d4 02       		.uleb128 0x2
  299 00d5 07       		.uleb128 0x7
- 300 00d6 E4010000 		.4byte	.LASF18
+ 300 00d6 DA010000 		.4byte	.LASF18
  301 00da 03       		.byte	0x3
  302 00db 44       		.byte	0x44
  303 00dc 6F000000 		.4byte	0x6f
@@ -516,7 +516,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  306 00e2 04       		.uleb128 0x4
  307 00e3 00       		.byte	0
  308 00e4 04       		.uleb128 0x4
- 309 00e5 CD010000 		.4byte	.LASF19
+ 309 00e5 C3010000 		.4byte	.LASF19
  310 00e9 03       		.byte	0x3
  311 00ea 47       		.byte	0x47
  312 00eb B1000000 		.4byte	0xb1
@@ -538,14 +538,14 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  328 010d 01       		.byte	0x1
  329 010e 00000000 		.4byte	.LFB1
  330 0112 26000000 		.4byte	.LFE1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 10
 
 
  331 0116 2C000000 		.4byte	.LLST1
  332 011a 01       		.byte	0x1
  333 011b 08       		.uleb128 0x8
  334 011c 01       		.byte	0x1
- 335 011d 9E010000 		.4byte	.LASF22
+ 335 011d 94010000 		.4byte	.LASF22
  336 0121 01       		.byte	0x1
  337 0122 7E       		.byte	0x7e
  338 0123 01       		.byte	0x1
@@ -555,7 +555,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  342 0130 01       		.byte	0x1
  343 0131 08       		.uleb128 0x8
  344 0132 01       		.byte	0x1
- 345 0133 FF000000 		.4byte	.LASF23
+ 345 0133 04010000 		.4byte	.LASF23
  346 0137 01       		.byte	0x1
  347 0138 AB       		.byte	0xab
  348 0139 01       		.byte	0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  385 0015 02       		.uleb128 0x2
  386 0016 24       		.uleb128 0x24
  387 0017 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 11
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 11
 
 
  388 0018 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  442 004e 00       		.byte	0
  443 004f 03       		.uleb128 0x3
  444 0050 0E       		.uleb128 0xe
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 12
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 12
 
 
  445 0051 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  499 0008 0200     		.2byte	0x2
  500 000a 7D       		.byte	0x7d
  501 000b 00       		.sleb128 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 13
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 13
 
 
  502 000c 02000000 		.4byte	.LCFI0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  556 0090 02000000 		.4byte	.LCFI6
  557 0094 04000000 		.4byte	.LCFI7
  558 0098 0200     		.2byte	0x2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 14
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 14
 
 
  559 009a 7D       		.byte	0x7d
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  604      335F5361 
  604      7665436F 
  604      6E666967 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 15
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 15
 
 
  605              	.LASF8:
@@ -893,93 +893,93 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 1
  622              	.LASF11:
  623 00f9 666C6F61 		.ascii	"float\000"
  623      7400
- 624              	.LASF23:
- 625 00ff 436F756E 		.ascii	"Counter_3_Wakeup\000"
- 625      7465725F 
- 625      335F5761 
- 625      6B657570 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 16
-
-
+ 624              	.LASF13:
+ 625 00ff 63686172 		.ascii	"char\000"
  625      00
- 626              	.LASF1:
- 627 0110 756E7369 		.ascii	"unsigned char\000"
- 627      676E6564 
- 627      20636861 
- 627      7200
- 628              	.LASF13:
- 629 011e 63686172 		.ascii	"char\000"
- 629      00
- 630              	.LASF4:
- 631 0123 6C6F6E67 		.ascii	"long int\000"
- 631      20696E74 
- 631      00
- 632              	.LASF16:
- 633 012c 436F756E 		.ascii	"CounterEnableState\000"
- 633      74657245 
- 633      6E61626C 
- 633      65537461 
- 633      746500
- 634              	.LASF26:
- 635 013f 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 635      73657273 
- 635      5C62696F 
- 635      6D696D65 
- 635      74696373 
- 636 016c 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 636      204C6567 
- 636      204A6163 
- 636      6F626961 
- 636      6E205155 
+ 626              	.LASF23:
+ 627 0104 436F756E 		.ascii	"Counter_3_Wakeup\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 16
+
+
+ 627      7465725F 
+ 627      335F5761 
+ 627      6B657570 
+ 627      00
+ 628              	.LASF1:
+ 629 0115 756E7369 		.ascii	"unsigned char\000"
+ 629      676E6564 
+ 629      20636861 
+ 629      7200
+ 630              	.LASF26:
+ 631 0123 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 631      73657273 
+ 631      5C48616E 
+ 631      73205375 
+ 631      73696C6F 
+ 632 0151 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 632      616E2051 
+ 632      55414452 
+ 632      55504544 
+ 632      5C446573 
+ 633              	.LASF4:
+ 634 0171 6C6F6E67 		.ascii	"long int\000"
+ 634      20696E74 
+ 634      00
+ 635              	.LASF16:
+ 636 017a 436F756E 		.ascii	"CounterEnableState\000"
+ 636      74657245 
+ 636      6E61626C 
+ 636      65537461 
+ 636      746500
  637              	.LASF12:
- 638 0197 646F7562 		.ascii	"double\000"
+ 638 018d 646F7562 		.ascii	"double\000"
  638      6C6500
  639              	.LASF22:
- 640 019e 436F756E 		.ascii	"Counter_3_Sleep\000"
+ 640 0194 436F756E 		.ascii	"Counter_3_Sleep\000"
  640      7465725F 
  640      335F536C 
  640      65657000 
  641              	.LASF3:
- 642 01ae 73686F72 		.ascii	"short unsigned int\000"
+ 642 01a4 73686F72 		.ascii	"short unsigned int\000"
  642      7420756E 
  642      7369676E 
  642      65642069 
  642      6E7400
  643              	.LASF0:
- 644 01c1 7369676E 		.ascii	"signed char\000"
+ 644 01b7 7369676E 		.ascii	"signed char\000"
  644      65642063 
  644      68617200 
  645              	.LASF19:
- 646 01cd 436F756E 		.ascii	"Counter_3_backupStruct\000"
+ 646 01c3 436F756E 		.ascii	"Counter_3_backupStruct\000"
  646      7465725F 
  646      335F6261 
  646      636B7570 
  646      53747275 
  647              	.LASF18:
- 648 01e4 436F756E 		.ascii	"CounterControlRegister\000"
+ 648 01da 436F756E 		.ascii	"CounterControlRegister\000"
  648      74657243 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccaAAv6V.s 			page 17
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccYHsH7Y.s 			page 17
 
 
  648      6F6E7472 
  648      6F6C5265 
  648      67697374 
  649              	.LASF2:
- 650 01fb 73686F72 		.ascii	"short int\000"
+ 650 01f1 73686F72 		.ascii	"short int\000"
  650      7420696E 
  650      7400
  651              	.LASF10:
- 652 0205 75696E74 		.ascii	"uint16\000"
+ 652 01fb 75696E74 		.ascii	"uint16\000"
  652      313600
  653              	.LASF17:
- 654 020c 436F756E 		.ascii	"CounterUdb\000"
+ 654 0202 436F756E 		.ascii	"CounterUdb\000"
  654      74657255 
  654      646200
  655              	.LASF14:
- 656 0217 72656738 		.ascii	"reg8\000"
+ 656 020d 72656738 		.ascii	"reg8\000"
  656      00
  657              	.LASF15:
- 658 021c 73697A65 		.ascii	"sizetype\000"
+ 658 0212 73697A65 		.ascii	"sizetype\000"
  658      74797065 
  658      00
  659              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

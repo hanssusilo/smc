@@ -137,31 +137,39 @@
     <pin number="43" name="P15[1]" pinSide="SOUTH" padSide="EAST" portId="15" pinId="1" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000800007">
       <function name="MHZ XTAL: XI" />
     </pin>
-    <pin number="44" name="P3[0]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="0" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="44" name="P3[0]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="0" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000017">
+      <ffbterm ffbtype="VIDAC" ffbid="1" term="iout" required="false" />
       <function name="IDAC1" />
     </pin>
-    <pin number="45" name="P3[1]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="1" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="45" name="P3[1]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="1" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000017">
+      <ffbterm ffbtype="VIDAC" ffbid="3" term="iout" required="false" />
       <function name="IDAC3" />
     </pin>
-    <pin number="46" name="P3[2]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="2" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020008004007">
+    <pin number="46" name="P3[2]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="2" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020008004087">
+      <ffbterm ffbtype="OpAmp" ffbid="3" term="vminus" required="false" />
       <ffbterm ffbtype="DSM" ffbid="0" term="ext_pin_2" required="true" />
       <function name="OPAMP3-" />
       <function name="EXTREF1" />
     </pin>
-    <pin number="47" name="P3[3]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="3" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="47" name="P3[3]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="3" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000027">
+      <ffbterm ffbtype="OpAmp" ffbid="3" term="vplus" required="false" />
       <function name="OPAMP3+" />
     </pin>
-    <pin number="48" name="P3[4]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="4" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="48" name="P3[4]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="4" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000087">
+      <ffbterm ffbtype="OpAmp" ffbid="1" term="vminus" required="false" />
       <function name="OPAMP1-" />
     </pin>
-    <pin number="49" name="P3[5]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="5" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="49" name="P3[5]" pinSide="SOUTH" padSide="EAST" portId="3" pinId="5" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000027">
+      <ffbterm ffbtype="OpAmp" ffbid="1" term="vplus" required="false" />
       <function name="OPAMP1+" />
     </pin>
     <pin number="50" name="Vio3" pinSide="SOUTH" padSide="EAST" ioSupplyPin="Vio3" ioSupplyPinNo="50" powerPadNames="Vio3" capabilities="0x0000000000000000" />
-    <pin number="51" name="P3[6]" pinSide="EAST" padSide="NORTH" portId="3" pinId="6" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="51" name="P3[6]" pinSide="EAST" padSide="NORTH" portId="3" pinId="6" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000047">
+      <ffbterm ffbtype="OpAmp" ffbid="1" term="vout" required="false" />
       <function name="OPAMP1OUT" />
     </pin>
-    <pin number="52" name="P3[7]" pinSide="EAST" padSide="NORTH" portId="3" pinId="7" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000007">
+    <pin number="52" name="P3[7]" pinSide="EAST" padSide="NORTH" portId="3" pinId="7" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000000047">
+      <ffbterm ffbtype="OpAmp" ffbid="3" term="vout" required="false" />
       <function name="OPAMP3OUT" />
     </pin>
     <pin number="53" name="P12[0]" pinSide="EAST" padSide="NORTH" portId="12" pinId="0" ioSupplyPin="Vio3" ioSupplyPinNo="50" capabilities="0x0000020000002009">
@@ -200,8 +208,9 @@
       <ffbterm ffbtype="OpAmp" ffbid="0" term="vout" required="false" />
       <function name="OPAMP0OUT" />
     </pin>
-    <pin number="73" name="P0[2]" pinSide="EAST" padSide="NORTH" portId="0" pinId="2" ioSupplyPin="Vio0" ioSupplyPinNo="75" capabilities="0x0000020000000027">
+    <pin number="73" name="P0[2]" pinSide="EAST" padSide="NORTH" portId="0" pinId="2" ioSupplyPin="Vio0" ioSupplyPinNo="75" capabilities="0x0000020010000027">
       <ffbterm ffbtype="OpAmp" ffbid="0" term="vplus" required="false" />
+      <ffbterm ffbtype="SAR" ffbid="1" term="ext_pin" required="true" />
       <function name="OPAMP0+" />
       <function name="EXTSAR1" />
     </pin>

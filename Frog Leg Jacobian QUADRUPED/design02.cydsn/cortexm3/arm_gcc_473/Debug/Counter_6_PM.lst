@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
   24:.\Generated_Source\PSoC5/Counter_6_PM.c **** /*******************************************************************************
   25:.\Generated_Source\PSoC5/Counter_6_PM.c **** * Function Name: Counter_6_SaveConfig
   26:.\Generated_Source\PSoC5/Counter_6_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 2
 
 
   27:.\Generated_Source\PSoC5/Counter_6_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
   56 0026 1A71     		strb	r2, [r3, #4]
   56:.\Generated_Source\PSoC5/Counter_6_PM.c ****         #endif /* (!Counter_6_ControlRegRemoved) */
   57:.\Generated_Source\PSoC5/Counter_6_PM.c **** 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 3
 
 
   58:.\Generated_Source\PSoC5/Counter_6_PM.c ****     #endif /* (!Counter_6_UsingFixedFunction) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
   87:.\Generated_Source\PSoC5/Counter_6_PM.c **** 
   88:.\Generated_Source\PSoC5/Counter_6_PM.c ****        Counter_6_WriteCounter(Counter_6_backup.CounterUdb);
   82              		.loc 1 88 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 4
 
 
   83 0004 40F20003 		movw	r3, #:lower16:Counter_6_backup
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  119:.\Generated_Source\PSoC5/Counter_6_PM.c **** *  void
  120:.\Generated_Source\PSoC5/Counter_6_PM.c **** *
  121:.\Generated_Source\PSoC5/Counter_6_PM.c **** * Global variables:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 5
 
 
  122:.\Generated_Source\PSoC5/Counter_6_PM.c **** *  Counter_6_backup.enableState:  Is modified depending on the enable 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  142:.\Generated_Source\PSoC5/Counter_6_PM.c ****         if(Counter_6_backup.CounterEnableState != 0u)
  143:.\Generated_Source\PSoC5/Counter_6_PM.c ****         {
  144:.\Generated_Source\PSoC5/Counter_6_PM.c ****             Counter_6_backup.CounterEnableState = 0u;
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 6
 
 
  145:.\Generated_Source\PSoC5/Counter_6_PM.c ****         }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  167 0002 00AF     		add	r7, sp, #0
  168              	.LCFI7:
  169              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 7
 
 
  173:.\Generated_Source\PSoC5/Counter_6_PM.c ****     Counter_6_RestoreConfig();
@@ -400,8 +400,8 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  196 000b 01       		.uleb128 0x1
  197 000c 47000000 		.4byte	.LASF24
  198 0010 01       		.byte	0x1
- 199 0011 90010000 		.4byte	.LASF25
- 200 0015 EA000000 		.4byte	.LASF26
+ 199 0011 86010000 		.4byte	.LASF25
+ 200 0015 FD000000 		.4byte	.LASF26
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	0
@@ -409,26 +409,26 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  205 0029 02       		.uleb128 0x2
  206 002a 01       		.byte	0x1
  207 002b 06       		.byte	0x6
- 208 002c CB010000 		.4byte	.LASF0
+ 208 002c C1010000 		.4byte	.LASF0
  209 0030 02       		.uleb128 0x2
  210 0031 01       		.byte	0x1
  211 0032 08       		.byte	0x8
- 212 0033 42010000 		.4byte	.LASF1
+ 212 0033 EF000000 		.4byte	.LASF1
  213 0037 02       		.uleb128 0x2
  214 0038 02       		.byte	0x2
  215 0039 05       		.byte	0x5
  216 003a A8000000 		.4byte	.LASF2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 8
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 8
 
 
  217 003e 02       		.uleb128 0x2
  218 003f 02       		.byte	0x2
  219 0040 07       		.byte	0x7
- 220 0041 B8010000 		.4byte	.LASF3
+ 220 0041 AE010000 		.4byte	.LASF3
  221 0045 02       		.uleb128 0x2
  222 0046 04       		.byte	0x4
  223 0047 05       		.byte	0x5
- 224 0048 5C010000 		.4byte	.LASF4
+ 224 0048 52010000 		.4byte	.LASF4
  225 004c 02       		.uleb128 0x2
  226 004d 04       		.byte	0x4
  227 004e 07       		.byte	0x7
@@ -455,43 +455,43 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  248 0075 5B       		.byte	0x5b
  249 0076 30000000 		.4byte	0x30
  250 007a 04       		.uleb128 0x4
- 251 007b F4010000 		.4byte	.LASF10
+ 251 007b EA010000 		.4byte	.LASF10
  252 007f 02       		.byte	0x2
  253 0080 5C       		.byte	0x5c
  254 0081 3E000000 		.4byte	0x3e
  255 0085 02       		.uleb128 0x2
  256 0086 04       		.byte	0x4
  257 0087 04       		.byte	0x4
- 258 0088 EE010000 		.4byte	.LASF11
+ 258 0088 E4010000 		.4byte	.LASF11
  259 008c 02       		.uleb128 0x2
  260 008d 08       		.byte	0x8
  261 008e 04       		.byte	0x4
- 262 008f 55010000 		.4byte	.LASF12
+ 262 008f 4B010000 		.4byte	.LASF12
  263 0093 02       		.uleb128 0x2
  264 0094 01       		.byte	0x1
  265 0095 08       		.byte	0x8
- 266 0096 50010000 		.4byte	.LASF13
+ 266 0096 EA000000 		.4byte	.LASF13
  267 009a 04       		.uleb128 0x4
- 268 009b 06020000 		.4byte	.LASF14
+ 268 009b FC010000 		.4byte	.LASF14
  269 009f 02       		.byte	0x2
  270 00a0 F0       		.byte	0xf0
  271 00a1 A5000000 		.4byte	0xa5
  272 00a5 05       		.uleb128 0x5
  273 00a6 6F000000 		.4byte	0x6f
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 9
 
 
  274 00aa 02       		.uleb128 0x2
  275 00ab 04       		.byte	0x4
  276 00ac 07       		.byte	0x7
- 277 00ad 0B020000 		.4byte	.LASF15
+ 277 00ad 01020000 		.4byte	.LASF15
  278 00b1 06       		.uleb128 0x6
  279 00b2 06       		.byte	0x6
  280 00b3 03       		.byte	0x3
  281 00b4 38       		.byte	0x38
  282 00b5 E4000000 		.4byte	0xe4
  283 00b9 07       		.uleb128 0x7
- 284 00ba 65010000 		.4byte	.LASF16
+ 284 00ba 5B010000 		.4byte	.LASF16
  285 00be 03       		.byte	0x3
  286 00bf 3A       		.byte	0x3a
  287 00c0 6F000000 		.4byte	0x6f
@@ -499,7 +499,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  289 00c5 23       		.byte	0x23
  290 00c6 00       		.uleb128 0
  291 00c7 07       		.uleb128 0x7
- 292 00c8 FB010000 		.4byte	.LASF17
+ 292 00c8 F1010000 		.4byte	.LASF17
  293 00cc 03       		.byte	0x3
  294 00cd 3B       		.byte	0x3b
  295 00ce 7A000000 		.4byte	0x7a
@@ -507,7 +507,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  297 00d3 23       		.byte	0x23
  298 00d4 02       		.uleb128 0x2
  299 00d5 07       		.uleb128 0x7
- 300 00d6 D7010000 		.4byte	.LASF18
+ 300 00d6 CD010000 		.4byte	.LASF18
  301 00da 03       		.byte	0x3
  302 00db 44       		.byte	0x44
  303 00dc 6F000000 		.4byte	0x6f
@@ -532,13 +532,13 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  322 0104 01       		.byte	0x1
  323 0105 08       		.uleb128 0x8
  324 0106 01       		.byte	0x1
- 325 0107 78010000 		.4byte	.LASF21
+ 325 0107 6E010000 		.4byte	.LASF21
  326 010b 01       		.byte	0x1
  327 010c 50       		.byte	0x50
  328 010d 01       		.byte	0x1
  329 010e 00000000 		.4byte	.LFB1
  330 0112 26000000 		.4byte	.LFE1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 10
 
 
  331 0116 2C000000 		.4byte	.LLST1
@@ -564,7 +564,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  351 0142 84000000 		.4byte	.LLST3
  352 0146 01       		.byte	0x1
  353 0147 09       		.uleb128 0x9
- 354 0148 14020000 		.4byte	.LASF27
+ 354 0148 0A020000 		.4byte	.LASF27
  355 014c 01       		.byte	0x1
  356 014d 15       		.byte	0x15
  357 014e E4000000 		.4byte	0xe4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  385 0015 02       		.uleb128 0x2
  386 0016 24       		.uleb128 0x24
  387 0017 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 11
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 11
 
 
  388 0018 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  442 004e 00       		.byte	0
  443 004f 03       		.uleb128 0x3
  444 0050 0E       		.uleb128 0xe
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 12
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 12
 
 
  445 0051 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  499 0008 0200     		.2byte	0x2
  500 000a 7D       		.byte	0x7d
  501 000b 00       		.sleb128 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 13
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 13
 
 
  502 000c 02000000 		.4byte	.LCFI0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  556 0090 02000000 		.4byte	.LCFI6
  557 0094 04000000 		.4byte	.LCFI7
  558 0098 0200     		.2byte	0x2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 14
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 14
 
 
  559 009a 7D       		.byte	0x7d
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  604      20696E74 
  604      00
  605              	.LASF20:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 15
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 15
 
 
  606 001b 436F756E 		.ascii	"Counter_6_SaveConfig\000"
@@ -893,91 +893,91 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 1
  623      7465725F 
  623      365F536C 
  623      65657000 
- 624              	.LASF26:
- 625 00ea 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 625      73657273 
- 625      5C62696F 
- 625      6D696D65 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 16
+ 624              	.LASF13:
+ 625 00ea 63686172 		.ascii	"char\000"
+ 625      00
+ 626              	.LASF1:
+ 627 00ef 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 16
 
 
- 625      74696373 
- 626 0117 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 626      204C6567 
- 626      204A6163 
- 626      6F626961 
- 626      6E205155 
- 627              	.LASF1:
- 628 0142 756E7369 		.ascii	"unsigned char\000"
- 628      676E6564 
- 628      20636861 
- 628      7200
- 629              	.LASF13:
- 630 0150 63686172 		.ascii	"char\000"
- 630      00
+ 627      676E6564 
+ 627      20636861 
+ 627      7200
+ 628              	.LASF26:
+ 629 00fd 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 629      73657273 
+ 629      5C48616E 
+ 629      73205375 
+ 629      73696C6F 
+ 630 012b 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 630      616E2051 
+ 630      55414452 
+ 630      55504544 
+ 630      5C446573 
  631              	.LASF12:
- 632 0155 646F7562 		.ascii	"double\000"
+ 632 014b 646F7562 		.ascii	"double\000"
  632      6C6500
  633              	.LASF4:
- 634 015c 6C6F6E67 		.ascii	"long int\000"
+ 634 0152 6C6F6E67 		.ascii	"long int\000"
  634      20696E74 
  634      00
  635              	.LASF16:
- 636 0165 436F756E 		.ascii	"CounterEnableState\000"
+ 636 015b 436F756E 		.ascii	"CounterEnableState\000"
  636      74657245 
  636      6E61626C 
  636      65537461 
  636      746500
  637              	.LASF21:
- 638 0178 436F756E 		.ascii	"Counter_6_RestoreConfig\000"
+ 638 016e 436F756E 		.ascii	"Counter_6_RestoreConfig\000"
  638      7465725F 
  638      365F5265 
  638      73746F72 
  638      65436F6E 
  639              	.LASF25:
- 640 0190 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Counter_6_PM.c\000"
+ 640 0186 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Counter_6_PM.c\000"
  640      6E657261 
  640      7465645F 
  640      536F7572 
  640      63655C50 
  641              	.LASF3:
- 642 01b8 73686F72 		.ascii	"short unsigned int\000"
+ 642 01ae 73686F72 		.ascii	"short unsigned int\000"
  642      7420756E 
  642      7369676E 
  642      65642069 
  642      6E7400
  643              	.LASF0:
- 644 01cb 7369676E 		.ascii	"signed char\000"
+ 644 01c1 7369676E 		.ascii	"signed char\000"
  644      65642063 
  644      68617200 
  645              	.LASF18:
- 646 01d7 436F756E 		.ascii	"CounterControlRegister\000"
+ 646 01cd 436F756E 		.ascii	"CounterControlRegister\000"
  646      74657243 
  646      6F6E7472 
  646      6F6C5265 
  646      67697374 
  647              	.LASF11:
- 648 01ee 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc1FtnAc.s 			page 17
+ 648 01e4 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccwwkAkk.s 			page 17
 
 
  648      7400
  649              	.LASF10:
- 650 01f4 75696E74 		.ascii	"uint16\000"
+ 650 01ea 75696E74 		.ascii	"uint16\000"
  650      313600
  651              	.LASF17:
- 652 01fb 436F756E 		.ascii	"CounterUdb\000"
+ 652 01f1 436F756E 		.ascii	"CounterUdb\000"
  652      74657255 
  652      646200
  653              	.LASF14:
- 654 0206 72656738 		.ascii	"reg8\000"
+ 654 01fc 72656738 		.ascii	"reg8\000"
  654      00
  655              	.LASF15:
- 656 020b 73697A65 		.ascii	"sizetype\000"
+ 656 0201 73697A65 		.ascii	"sizetype\000"
  656      74797065 
  656      00
  657              	.LASF27:
- 658 0214 436F756E 		.ascii	"Counter_6_backup\000"
+ 658 020a 436F756E 		.ascii	"Counter_6_backup\000"
  658      7465725F 
  658      365F6261 
  658      636B7570 

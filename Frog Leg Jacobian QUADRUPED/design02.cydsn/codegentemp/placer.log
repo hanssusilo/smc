@@ -6,7 +6,7 @@
 
 #Build Date:         Mar 26 2013 14:54:34
 
-#File Generated:     Feb 5 2015 14:55:23
+#File Generated:     Feb 18 2015 20:05:00
 
 #Purpose:            
 
@@ -58,7 +58,7 @@ Device Utilization Summary after Packing
     IOs                         :	47/72
 
 
-D2088: Phase 3, elapsed time : 0.1 (sec)
+D2088: Phase 3, elapsed time : 0.3 (sec)
 
 Phase 4
 D2088: Phase 4, elapsed time : 0.0 (sec)
@@ -85,8 +85,8 @@ Clock: Clock_2              | Frequency:  41.7 MHz | Target:  26.0 MHz
 Clock: Clock_2(fixed-function) | Frequency: N/A       | Target:  26.0 MHz
 Clock: Clock_4              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_4(fixed-function) | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_5              | Frequency: N/A       | Target:   0.0 MHz
-Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.0 MHz
+Clock: Clock_5              | Frequency: N/A       | Target:   0.1 MHz
+Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyBUS_CLK            | Frequency:  28.9 MHz | Target:  52.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
@@ -99,7 +99,7 @@ Clock: UART_2_IntClock      | Frequency:  43.4 MHz | Target:   7.4 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.3 (sec)
+D2088: Phase 6, elapsed time : 1.4 (sec)
 
 Phase 7
 ######################################################################
@@ -111,8 +111,8 @@ Clock: Clock_2              | Frequency:  41.7 MHz | Target:  26.0 MHz
 Clock: Clock_2(fixed-function) | Frequency: N/A       | Target:  26.0 MHz
 Clock: Clock_4              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_4(fixed-function) | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_5              | Frequency: N/A       | Target:   0.0 MHz
-Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.0 MHz
+Clock: Clock_5              | Frequency: N/A       | Target:   0.1 MHz
+Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyBUS_CLK            | Frequency:  30.3 MHz | Target:  52.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
@@ -124,7 +124,7 @@ Clock: UART_2_IntClock      | Frequency:  44.6 MHz | Target:   7.4 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 3.6 (sec)
+D2088: Phase 7, elapsed time : 13.2 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	65
@@ -160,8 +160,8 @@ Clock: Clock_2              | Frequency:  41.7 MHz | Target:  26.0 MHz
 Clock: Clock_2(fixed-function) | Frequency: N/A       | Target:  26.0 MHz
 Clock: Clock_4              | Frequency: N/A       | Target:   1.0 MHz
 Clock: Clock_4(fixed-function) | Frequency: N/A       | Target:   1.0 MHz
-Clock: Clock_5              | Frequency: N/A       | Target:   0.0 MHz
-Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.0 MHz
+Clock: Clock_5              | Frequency: N/A       | Target:   0.1 MHz
+Clock: Clock_5(fixed-function) | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyBUS_CLK            | Frequency:  33.2 MHz | Target:  52.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
@@ -179,5 +179,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 5.3 sec.
+I2076: Total run-time: 20.5 sec.
 

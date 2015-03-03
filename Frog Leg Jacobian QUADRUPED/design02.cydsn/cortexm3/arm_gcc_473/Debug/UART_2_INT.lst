@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
   29:.\Generated_Source\PSoC5/UART_2_INT.c **** 
   30:.\Generated_Source\PSoC5/UART_2_INT.c **** #if( (UART_2_RX_ENABLED || UART_2_HD_ENABLED) && \
   31:.\Generated_Source\PSoC5/UART_2_INT.c ****      (UART_2_RXBUFFERSIZE > UART_2_FIFO_LENGTH))
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/UART_2_INT.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
   43 0006 4FF00003 		mov	r3, #0
   44 000a BB71     		strb	r3, [r7, #6]
   70:.\Generated_Source\PSoC5/UART_2_INT.c ****         #if(CY_PSOC3)
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 3
 
 
   71:.\Generated_Source\PSoC5/UART_2_INT.c ****             uint8 int_en;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  117:.\Generated_Source\PSoC5/UART_2_INT.c ****                         increment_pointer = 1u;
  118:.\Generated_Source\PSoC5/UART_2_INT.c ****                     }
  119:.\Generated_Source\PSoC5/UART_2_INT.c ****                 }
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 4
 
 
  120:.\Generated_Source\PSoC5/UART_2_INT.c ****                 else /* without software addressing */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
   88 006c C0F20003 		movt	r3, #:upper16:UART_2_rxBufferWrite
   89 0070 1B78     		ldrb	r3, [r3, #0]
   90 0072 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 5
 
 
   91 0074 03F10103 		add	r3, r3, #1
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  158:.\Generated_Source\PSoC5/UART_2_INT.c **** 
  159:.\Generated_Source\PSoC5/UART_2_INT.c ****             /* Check again if there is data. */
  160:.\Generated_Source\PSoC5/UART_2_INT.c ****             readData = UART_2_RXSTATUS_REG;
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 6
 
 
  126              		.loc 1 160 0
@@ -347,7 +347,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  156 000c 41000000 		.4byte	.LASF22
  157 0010 01       		.byte	0x1
  158 0011 A2000000 		.4byte	.LASF23
- 159 0015 F5000000 		.4byte	.LASF24
+ 159 0015 15010000 		.4byte	.LASF24
  160 0019 00000000 		.4byte	.Ldebug_ranges0+0
  161 001d 00000000 		.4byte	0
  162 0021 00000000 		.4byte	0
@@ -355,26 +355,26 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  164 0029 02       		.uleb128 0x2
  165 002a 01       		.byte	0x1
  166 002b 06       		.byte	0x6
- 167 002c A8010000 		.4byte	.LASF0
+ 167 002c 9E010000 		.4byte	.LASF0
  168 0030 02       		.uleb128 0x2
  169 0031 01       		.byte	0x1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 7
 
 
  170 0032 08       		.byte	0x8
- 171 0033 5A010000 		.4byte	.LASF1
+ 171 0033 07010000 		.4byte	.LASF1
  172 0037 02       		.uleb128 0x2
  173 0038 02       		.byte	0x2
  174 0039 05       		.byte	0x5
- 175 003a D7010000 		.4byte	.LASF2
+ 175 003a CD010000 		.4byte	.LASF2
  176 003e 02       		.uleb128 0x2
  177 003f 02       		.byte	0x2
  178 0040 07       		.byte	0x7
- 179 0041 95010000 		.4byte	.LASF3
+ 179 0041 8B010000 		.4byte	.LASF3
  180 0045 02       		.uleb128 0x2
  181 0046 04       		.byte	0x4
  182 0047 05       		.byte	0x5
- 183 0048 6D010000 		.4byte	.LASF4
+ 183 0048 63010000 		.4byte	.LASF4
  184 004c 02       		.uleb128 0x2
  185 004d 04       		.byte	0x4
  186 004e 07       		.byte	0x7
@@ -407,28 +407,28 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  213 0081 02       		.uleb128 0x2
  214 0082 08       		.byte	0x8
  215 0083 04       		.byte	0x4
- 216 0084 8E010000 		.4byte	.LASF10
+ 216 0084 84010000 		.4byte	.LASF10
  217 0088 02       		.uleb128 0x2
  218 0089 01       		.byte	0x1
  219 008a 08       		.byte	0x8
- 220 008b 68010000 		.4byte	.LASF11
+ 220 008b F5000000 		.4byte	.LASF11
  221 008f 04       		.uleb128 0x4
- 222 0090 E1010000 		.4byte	.LASF13
+ 222 0090 D7010000 		.4byte	.LASF13
  223 0094 02       		.byte	0x2
  224 0095 F0       		.byte	0xf0
  225 0096 9A000000 		.4byte	0x9a
  226 009a 05       		.uleb128 0x5
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 8
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 8
 
 
  227 009b 6F000000 		.4byte	0x6f
  228 009f 02       		.uleb128 0x2
  229 00a0 04       		.byte	0x4
  230 00a1 07       		.byte	0x7
- 231 00a2 CE010000 		.4byte	.LASF14
+ 231 00a2 C4010000 		.4byte	.LASF14
  232 00a6 06       		.uleb128 0x6
  233 00a7 01       		.byte	0x1
- 234 00a8 4D010000 		.4byte	.LASF25
+ 234 00a8 FA000000 		.4byte	.LASF25
  235 00ac 01       		.byte	0x1
  236 00ad 42       		.byte	0x42
  237 00ae 01       		.byte	0x1
@@ -438,7 +438,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  241 00bb 01       		.byte	0x1
  242 00bc DD000000 		.4byte	0xdd
  243 00c0 07       		.uleb128 0x7
- 244 00c1 E6010000 		.4byte	.LASF15
+ 244 00c1 DC010000 		.4byte	.LASF15
  245 00c5 01       		.byte	0x1
  246 00c6 44       		.byte	0x44
  247 00c7 6F000000 		.4byte	0x6f
@@ -478,24 +478,24 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  281 010c 01       		.byte	0x1
  282 010d 01       		.byte	0x1
  283 010e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 9
 
 
- 284 010f EF010000 		.4byte	.LASF19
+ 284 010f E5010000 		.4byte	.LASF19
  285 0113 03       		.byte	0x3
  286 0114 5401     		.2byte	0x154
  287 0116 9A000000 		.4byte	0x9a
  288 011a 01       		.byte	0x1
  289 011b 01       		.byte	0x1
  290 011c 0A       		.uleb128 0xa
- 291 011d B4010000 		.4byte	.LASF20
+ 291 011d AA010000 		.4byte	.LASF20
  292 0121 03       		.byte	0x3
  293 0122 5501     		.2byte	0x155
  294 0124 9A000000 		.4byte	0x9a
  295 0128 01       		.byte	0x1
  296 0129 01       		.byte	0x1
  297 012a 0A       		.uleb128 0xa
- 298 012b 76010000 		.4byte	.LASF21
+ 298 012b 6C010000 		.4byte	.LASF21
  299 012f 03       		.byte	0x3
  300 0130 5601     		.2byte	0x156
  301 0132 9A000000 		.4byte	0x9a
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  338 001f 00       		.byte	0
  339 0020 03       		.uleb128 0x3
  340 0021 24       		.uleb128 0x24
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 10
 
 
  341 0022 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  395 0059 07       		.uleb128 0x7
  396 005a 34       		.uleb128 0x34
  397 005b 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 11
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 11
 
 
  398 005c 03       		.uleb128 0x3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  452 000a 7D       		.byte	0x7d
  453 000b 00       		.sleb128 0
  454 000c 02000000 		.4byte	.LCFI0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 12
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 12
 
 
  455 0010 04000000 		.4byte	.LCFI1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  497      745F706F 
  497      696E7465 
  497      7200
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 13
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 13
 
 
  498              	.LASF18:
@@ -767,82 +767,82 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 1
  514      5F325F72 
  514      78427566 
  514      66657200 
- 515              	.LASF24:
- 516 00f5 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 516      73657273 
- 516      5C62696F 
- 516      6D696D65 
- 516      74696373 
- 517 0122 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 517      204C6567 
- 517      204A6163 
- 517      6F626961 
- 517      6E205155 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 14
+ 515              	.LASF11:
+ 516 00f5 63686172 		.ascii	"char\000"
+ 516      00
+ 517              	.LASF25:
+ 518 00fa 55415254 		.ascii	"UART_2_RXISR\000"
+ 518      5F325F52 
+ 518      58495352 
+ 518      00
+ 519              	.LASF1:
+ 520 0107 756E7369 		.ascii	"unsigned char\000"
+ 520      676E6564 
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 14
 
 
- 518              	.LASF25:
- 519 014d 55415254 		.ascii	"UART_2_RXISR\000"
- 519      5F325F52 
- 519      58495352 
- 519      00
- 520              	.LASF1:
- 521 015a 756E7369 		.ascii	"unsigned char\000"
- 521      676E6564 
- 521      20636861 
- 521      7200
- 522              	.LASF11:
- 523 0168 63686172 		.ascii	"char\000"
- 523      00
+ 520      20636861 
+ 520      7200
+ 521              	.LASF24:
+ 522 0115 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 522      73657273 
+ 522      5C48616E 
+ 522      73205375 
+ 522      73696C6F 
+ 523 0143 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 523      616E2051 
+ 523      55414452 
+ 523      55504544 
+ 523      5C446573 
  524              	.LASF4:
- 525 016d 6C6F6E67 		.ascii	"long int\000"
+ 525 0163 6C6F6E67 		.ascii	"long int\000"
  525      20696E74 
  525      00
  526              	.LASF21:
- 527 0176 55415254 		.ascii	"UART_2_rxBufferOverflow\000"
+ 527 016c 55415254 		.ascii	"UART_2_rxBufferOverflow\000"
  527      5F325F72 
  527      78427566 
  527      6665724F 
  527      76657266 
  528              	.LASF10:
- 529 018e 646F7562 		.ascii	"double\000"
+ 529 0184 646F7562 		.ascii	"double\000"
  529      6C6500
  530              	.LASF3:
- 531 0195 73686F72 		.ascii	"short unsigned int\000"
+ 531 018b 73686F72 		.ascii	"short unsigned int\000"
  531      7420756E 
  531      7369676E 
  531      65642069 
  531      6E7400
  532              	.LASF0:
- 533 01a8 7369676E 		.ascii	"signed char\000"
+ 533 019e 7369676E 		.ascii	"signed char\000"
  533      65642063 
  533      68617200 
  534              	.LASF20:
- 535 01b4 55415254 		.ascii	"UART_2_rxBufferLoopDetect\000"
+ 535 01aa 55415254 		.ascii	"UART_2_rxBufferLoopDetect\000"
  535      5F325F72 
  535      78427566 
  535      6665724C 
  535      6F6F7044 
  536              	.LASF14:
- 537 01ce 73697A65 		.ascii	"sizetype\000"
+ 537 01c4 73697A65 		.ascii	"sizetype\000"
  537      74797065 
  537      00
  538              	.LASF2:
- 539 01d7 73686F72 		.ascii	"short int\000"
+ 539 01cd 73686F72 		.ascii	"short int\000"
  539      7420696E 
  539      7400
  540              	.LASF13:
- 541 01e1 72656738 		.ascii	"reg8\000"
+ 541 01d7 72656738 		.ascii	"reg8\000"
  541      00
  542              	.LASF15:
- 543 01e6 72656164 		.ascii	"readData\000"
+ 543 01dc 72656164 		.ascii	"readData\000"
  543      44617461 
  543      00
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\ccJgF1nP.s 			page 15
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccXlqfDY.s 			page 15
 
 
  544              	.LASF19:
- 545 01ef 55415254 		.ascii	"UART_2_rxBufferWrite\000"
+ 545 01e5 55415254 		.ascii	"UART_2_rxBufferWrite\000"
  545      5F325F72 
  545      78427566 
  545      66657257 

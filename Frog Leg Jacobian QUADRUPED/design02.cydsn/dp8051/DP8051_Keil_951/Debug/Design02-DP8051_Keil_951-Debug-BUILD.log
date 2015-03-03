@@ -1,23 +1,24 @@
---------------- Build Started: 11/22/2014 12:17:52 Project: Design02, Configuration: DP8051 Keil 9.51 Debug ---------------
+--------------- Build Started: 02/16/2015 00:45:04 Project: Design02, Configuration: DP8051 Keil 9.51 Debug ---------------
 Initializing Build...
-cydsfit.exe "-.appdatapath" "C:\Users\biomimetics\AppData\Local\Cypress Semiconductor\PSoC Creator\3.0" "-.fdsnotice" "-.fdswarpdepfile=warp_dependencies.txt" "-.fdselabdepfile=elab_dependencies.txt" "-.fdsbldfile=generated_files.txt" "-p" "C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cyprj" "-d" "CY8C3244AXA-153" "-s" "C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Generated_Source\PSoC3" "--" "-yv2" "-v3" "-ygs" "-q10" "-o2" "-.fftcfgtype=BE" "-.fasautosel=full"
+cydsfit.exe "-.appdatapath" "C:\Users\Hans Susilo\AppData\Local\Cypress Semiconductor\PSoC Creator\3.0" "-.fdsnotice" "-.fdswarpdepfile=warp_dependencies.txt" "-.fdselabdepfile=elab_dependencies.txt" "-.fdsbldfile=generated_files.txt" "-p" "C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cyprj" "-d" "CY8C3244AXA-153" "-s" "C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Generated_Source\PSoC3" "--" "-yv2" "-v3" "-ygs" "-q10" "-o2" "-.fftcfgtype=BE" "-.fasautosel=full"
 Elaborating Design...
 ADD: pft.M0025: error: Clock Error: (PLL_OUT must operate in the range of 24MHz to 50MHz for the currently selected device.).
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (PLL_OUT)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (PLL_OUT)
 ADD: pft.M0025: error: Clock Error: (Source clock 'PLL_OUT' contains an error.  Address the error on 'PLL_OUT' or select another source for this clock.).
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (MASTER_CLK)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (MASTER_CLK)
 ADD: pft.M0025: error: Clock Error: (The source clock's frequency is unknown. Source clocks must have a known frequency or an explicit divider must be used.).
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (BUS_CLK)
-ADD: pft.M0028: warning: Clock Warning: (Clock_1's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '26.000 MHz ± 1.000%, (25.740 MHz - 26.260 MHz)'.).
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (Clock_1)
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\TopDesign\TopDesign.cysch (Instance: Clock_1)
-ADD: pft.M0028: warning: Clock Warning: (Clock_2's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '52.000 MHz ± 1.000%, (51.480 MHz - 52.520 MHz)'.).
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (Clock_2)
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\TopDesign\TopDesign.cysch (Instance: Clock_2)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (BUS_CLK)
+ADD: pft.M0028: warning: Clock Warning: (Clock_1's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '52.000 MHz ± 1.000%, (51.480 MHz - 52.520 MHz)'.).
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (Clock_1)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\TopDesign\TopDesign.cysch (Instance: Clock_1)
+ADD: pft.M0028: warning: Clock Warning: (Clock_2's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '26.000 MHz ± 1.000%, (25.740 MHz - 26.260 MHz)'.).
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (Clock_2)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\TopDesign\TopDesign.cysch (Instance: Clock_2)
 ADD: pft.M0028: warning: Clock Warning: (UART_1_IntClock's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '7.373 MHz ± 2.000%, (7.225 MHz - 7.520 MHz)'.).
  * C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\UART_v2_30\UART_v2_30.cysch (Instance: IntClock)
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (UART_1_IntClock)
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (UART_1_IntClock)
 ADD: pft.M0028: warning: Clock Warning: (UART_2_IntClock's accuracy range '3.000 MHz ± 2.000%, (2.940 MHz - 3.060 MHz)' is not within the specified tolerance range '7.373 MHz ± 2.000%, (7.225 MHz - 7.520 MHz)'.).
  * C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\UART_v2_30\UART_v2_30.cysch (Instance: IntClock)
- * C:\Users\biomimetics\Dropbox\SMC\PSoC\PSoC 5\Frog Leg Jacobian Bi-Ped\Design02.cydsn\Design02.cydwr (UART_2_IntClock)
---------------- Build Failed: 11/22/2014 12:18:00 ---------------
+ * C:\Users\Hans Susilo\Documents\smc\Frog Leg Jacobian QUADRUPED\Design02.cydsn\Design02.cydwr (UART_2_IntClock)
+Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
+--------------- Build Failed: 02/16/2015 00:45:44 ---------------

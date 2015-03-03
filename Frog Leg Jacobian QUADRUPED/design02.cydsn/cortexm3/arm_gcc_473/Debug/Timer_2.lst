@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 1
 
 
    1              		.syntax unified
@@ -35,7 +35,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
   32              		.file 1 ".\\Generated_Source\\PSoC5\\Timer_2.c"
    1:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
    2:.\Generated_Source\PSoC5/Timer_2.c **** * File Name: Timer_2.c
-   3:.\Generated_Source\PSoC5/Timer_2.c **** * Version 2.50
+   3:.\Generated_Source\PSoC5/Timer_2.c **** * Version 2.60
    4:.\Generated_Source\PSoC5/Timer_2.c **** *
    5:.\Generated_Source\PSoC5/Timer_2.c **** * Description:
    6:.\Generated_Source\PSoC5/Timer_2.c **** *  The Timer component consists of a 8, 16, 24 or 32-bit timer with
@@ -50,7 +50,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
   15:.\Generated_Source\PSoC5/Timer_2.c **** * Note:
   16:.\Generated_Source\PSoC5/Timer_2.c **** *
   17:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
-  18:.\Generated_Source\PSoC5/Timer_2.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  18:.\Generated_Source\PSoC5/Timer_2.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
   19:.\Generated_Source\PSoC5/Timer_2.c **** * You may use this file only in accordance with the license, terms, conditions,
   20:.\Generated_Source\PSoC5/Timer_2.c **** * disclaimers, and limitations in the end user license agreement accompanying
   21:.\Generated_Source\PSoC5/Timer_2.c **** * the software package with which this file was provided.
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
   23:.\Generated_Source\PSoC5/Timer_2.c **** 
   24:.\Generated_Source\PSoC5/Timer_2.c **** #include "Timer_2.h"
   25:.\Generated_Source\PSoC5/Timer_2.c **** 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 2
 
 
   26:.\Generated_Source\PSoC5/Timer_2.c **** uint8 Timer_2_initVar = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
   58:.\Generated_Source\PSoC5/Timer_2.c **** 
   59:.\Generated_Source\PSoC5/Timer_2.c ****         #if (CY_PSOC3 || CY_PSOC5LP)
   60:.\Generated_Source\PSoC5/Timer_2.c ****             Timer_2_CONTROL3 &= ((uint8)(~Timer_2_CTRL_MODE_MASK));
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 3
 
 
   55              		.loc 1 60 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  105:.\Generated_Source\PSoC5/Timer_2.c ****         /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
  106:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_RT1 &= ((uint8)(~Timer_2_RT1_MASK));
   65              		.loc 1 106 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 4
 
 
   66 003c 44F62373 		movw	r3, #20259
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  112 00c0 42F00102 		orr	r2, r2, #1
  113 00c4 D2B2     		uxtb	r2, r2
  114 00c6 1A70     		strb	r2, [r3, #0]
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 5
 
 
  115:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Configuring registers of fixed function implementation */
@@ -264,44 +264,45 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  129:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set Capture Mode for UDB implementation if capture mode is software controlled */
  130:.\Generated_Source\PSoC5/Timer_2.c **** 
  131:.\Generated_Source\PSoC5/Timer_2.c ****         #if (Timer_2_SoftwareTriggerMode)
- 132:.\Generated_Source\PSoC5/Timer_2.c ****             if (0u == (Timer_2_CONTROL & Timer_2__B_TIMER__TM_SOFTWARE))
- 133:.\Generated_Source\PSoC5/Timer_2.c ****             {
- 134:.\Generated_Source\PSoC5/Timer_2.c ****                 Timer_2_SetTriggerMode(Timer_2_INIT_TRIGGER_MODE);
- 135:.\Generated_Source\PSoC5/Timer_2.c ****             }
- 136:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set trigger mode for UDB Implementation if trigger mode is software controlled */
- 137:.\Generated_Source\PSoC5/Timer_2.c **** 
- 138:.\Generated_Source\PSoC5/Timer_2.c ****         /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region critica
- 139:.\Generated_Source\PSoC5/Timer_2.c ****         /* Enter Critical Region*/
- 140:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_interruptState = CyEnterCriticalSection();
- 141:.\Generated_Source\PSoC5/Timer_2.c **** 
- 142:.\Generated_Source\PSoC5/Timer_2.c ****         /* Use the interrupt output of the status register for IRQ output */
- 143:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_STATUS_AUX_CTRL |= Timer_2_STATUS_ACTL_INT_EN_MASK;
- 144:.\Generated_Source\PSoC5/Timer_2.c **** 
- 145:.\Generated_Source\PSoC5/Timer_2.c ****         /* Exit Critical Region*/
- 146:.\Generated_Source\PSoC5/Timer_2.c ****         CyExitCriticalSection(Timer_2_interruptState);
- 147:.\Generated_Source\PSoC5/Timer_2.c **** 
- 148:.\Generated_Source\PSoC5/Timer_2.c ****         #if (Timer_2_EnableTriggerMode)
- 149:.\Generated_Source\PSoC5/Timer_2.c ****             Timer_2_EnableTrigger();
- 150:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set Trigger enable bit for UDB implementation in the control register*/
- 151:.\Generated_Source\PSoC5/Timer_2.c **** 
- 152:.\Generated_Source\PSoC5/Timer_2.c ****         #if (Timer_2_InterruptOnCaptureCount)
- 153:.\Generated_Source\PSoC5/Timer_2.c ****              #if (!Timer_2_ControlRegRemoved)
- 154:.\Generated_Source\PSoC5/Timer_2.c ****                 Timer_2_SetInterruptCount(Timer_2_INIT_INT_CAPTURE_COUNT);
- 155:.\Generated_Source\PSoC5/Timer_2.c ****             #endif /* Set interrupt count in control register if control register is not removed */
- 156:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /*Set interrupt count in UDB implementation if interrupt count feature is checked.*/
- 157:.\Generated_Source\PSoC5/Timer_2.c **** 
- 158:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_ClearFIFO();
- 159:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Configure additional features of UDB implementation */
- 160:.\Generated_Source\PSoC5/Timer_2.c **** 
- 161:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_SetInterruptMode(Timer_2_INIT_INTERRUPT_MODE);
- 121              		.loc 1 161 0
+ 132:.\Generated_Source\PSoC5/Timer_2.c ****             #if (!Timer_2_UDB_CONTROL_REG_REMOVED)
+ 133:.\Generated_Source\PSoC5/Timer_2.c ****                 if (0u == (Timer_2_CONTROL & Timer_2__B_TIMER__TM_SOFTWARE))
+ 134:.\Generated_Source\PSoC5/Timer_2.c ****                 {
+ 135:.\Generated_Source\PSoC5/Timer_2.c ****                     Timer_2_SetTriggerMode(Timer_2_INIT_TRIGGER_MODE);
+ 136:.\Generated_Source\PSoC5/Timer_2.c ****                 }
+ 137:.\Generated_Source\PSoC5/Timer_2.c ****             #endif /* (!Timer_2_UDB_CONTROL_REG_REMOVED) */
+ 138:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set trigger mode for UDB Implementation if trigger mode is software controlled */
+ 139:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 140:.\Generated_Source\PSoC5/Timer_2.c ****         /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region critica
+ 141:.\Generated_Source\PSoC5/Timer_2.c ****         /* Enter Critical Region*/
+ 142:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_interruptState = CyEnterCriticalSection();
+ 143:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 144:.\Generated_Source\PSoC5/Timer_2.c ****         /* Use the interrupt output of the status register for IRQ output */
+ 145:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_STATUS_AUX_CTRL |= Timer_2_STATUS_ACTL_INT_EN_MASK;
+ 146:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 147:.\Generated_Source\PSoC5/Timer_2.c ****         /* Exit Critical Region*/
+ 148:.\Generated_Source\PSoC5/Timer_2.c ****         CyExitCriticalSection(Timer_2_interruptState);
+ 149:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 150:.\Generated_Source\PSoC5/Timer_2.c ****         #if (Timer_2_EnableTriggerMode)
+ 151:.\Generated_Source\PSoC5/Timer_2.c ****             Timer_2_EnableTrigger();
+ 152:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set Trigger enable bit for UDB implementation in the control register*/
+ 153:.\Generated_Source\PSoC5/Timer_2.c **** 		
+ 154:.\Generated_Source\PSoC5/Timer_2.c **** 		
+ 155:.\Generated_Source\PSoC5/Timer_2.c ****         #if (Timer_2_InterruptOnCaptureCount && !Timer_2_UDB_CONTROL_REG_REMOVED)
+ 156:.\Generated_Source\PSoC5/Timer_2.c ****             Timer_2_SetInterruptCount(Timer_2_INIT_INT_CAPTURE_COUNT);
+ 157:.\Generated_Source\PSoC5/Timer_2.c ****         #endif /* Set interrupt count in UDB implementation if interrupt count feature is checked.*
+ 158:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 159:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_ClearFIFO();
+ 160:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Configure additional features of UDB implementation */
+ 161:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 162:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_SetInterruptMode(Timer_2_INIT_INTERRUPT_MODE);
+ 121              		.loc 1 162 0
  122 00d8 4FF00800 		mov	r0, #8
  123 00dc FFF7FEFF 		bl	Timer_2_SetInterruptMode
- 162:.\Generated_Source\PSoC5/Timer_2.c **** }
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 6
 
 
- 124              		.loc 1 162 0
+ 163:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 124              		.loc 1 163 0
  125 00e0 80BD     		pop	{r7, pc}
  126              		.cfi_endproc
  127              	.LFE0:
@@ -314,25 +315,25 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  134              		.type	Timer_2_Enable, %function
  135              	Timer_2_Enable:
  136              	.LFB1:
- 163:.\Generated_Source\PSoC5/Timer_2.c **** 
  164:.\Generated_Source\PSoC5/Timer_2.c **** 
- 165:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 166:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Enable
- 167:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 168:.\Generated_Source\PSoC5/Timer_2.c **** *
- 169:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 170:.\Generated_Source\PSoC5/Timer_2.c **** *  Enable the Timer
- 171:.\Generated_Source\PSoC5/Timer_2.c **** *
- 172:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 173:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 174:.\Generated_Source\PSoC5/Timer_2.c **** *
- 175:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 176:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 177:.\Generated_Source\PSoC5/Timer_2.c **** *
- 178:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 179:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Enable(void) 
- 180:.\Generated_Source\PSoC5/Timer_2.c **** {
- 137              		.loc 1 180 0
+ 165:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 166:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 167:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Enable
+ 168:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 169:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 170:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 171:.\Generated_Source\PSoC5/Timer_2.c **** *  Enable the Timer
+ 172:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 173:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 174:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 175:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 176:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 177:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 178:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 179:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 180:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Enable(void) 
+ 181:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 137              		.loc 1 181 0
  138              		.cfi_startproc
  139              		@ args = 0, pretend = 0, frame = 0
  140              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -344,10 +345,10 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  146 0002 00AF     		add	r7, sp, #0
  147              	.LCFI3:
  148              		.cfi_def_cfa_register 7
- 181:.\Generated_Source\PSoC5/Timer_2.c ****     /* Globally Enable the Fixed Function Block chosen */
- 182:.\Generated_Source\PSoC5/Timer_2.c ****     #if (Timer_2_UsingFixedFunction)
- 183:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_ENABLE |= Timer_2_BLOCK_EN_MASK;
- 149              		.loc 1 183 0
+ 182:.\Generated_Source\PSoC5/Timer_2.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 183:.\Generated_Source\PSoC5/Timer_2.c ****     #if (Timer_2_UsingFixedFunction)
+ 184:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_ENABLE |= Timer_2_BLOCK_EN_MASK;
+ 149              		.loc 1 184 0
  150 0004 44F2A333 		movw	r3, #17315
  151 0008 C4F20003 		movt	r3, 16384
  152 000c 44F2A332 		movw	r2, #17315
@@ -357,11 +358,11 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  156 0018 42F00402 		orr	r2, r2, #4
  157 001c D2B2     		uxtb	r2, r2
  158 001e 1A70     		strb	r2, [r3, #0]
- 184:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_STBY_ENABLE |= Timer_2_BLOCK_STBY_EN_MASK;
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 7
 
 
- 159              		.loc 1 184 0
+ 185:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_STBY_ENABLE |= Timer_2_BLOCK_STBY_EN_MASK;
+ 159              		.loc 1 185 0
  160 0020 44F2B333 		movw	r3, #17331
  161 0024 C4F20003 		movt	r3, 16384
  162 0028 44F2B332 		movw	r2, #17331
@@ -371,12 +372,12 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  166 0034 42F00402 		orr	r2, r2, #4
  167 0038 D2B2     		uxtb	r2, r2
  168 003a 1A70     		strb	r2, [r3, #0]
- 185:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Set Enable bit for enabling Fixed function timer*/
- 186:.\Generated_Source\PSoC5/Timer_2.c **** 
- 187:.\Generated_Source\PSoC5/Timer_2.c ****     /* Remove assignment if control register is removed */
- 188:.\Generated_Source\PSoC5/Timer_2.c ****     #if (!Timer_2_ControlRegRemoved || Timer_2_UsingFixedFunction)
- 189:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_CONTROL |= Timer_2_CTRL_ENABLE;
- 169              		.loc 1 189 0
+ 186:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Set Enable bit for enabling Fixed function timer*/
+ 187:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 188:.\Generated_Source\PSoC5/Timer_2.c ****     /* Remove assignment if control register is removed */
+ 189:.\Generated_Source\PSoC5/Timer_2.c ****     #if (!Timer_2_UDB_CONTROL_REG_REMOVED || Timer_2_UsingFixedFunction)
+ 190:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_CONTROL |= Timer_2_CTRL_ENABLE;
+ 169              		.loc 1 190 0
  170 003c 44F61873 		movw	r3, #20248
  171 0040 C4F20003 		movt	r3, 16384
  172 0044 44F61872 		movw	r2, #20248
@@ -386,9 +387,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  176 0050 42F00102 		orr	r2, r2, #1
  177 0054 D2B2     		uxtb	r2, r2
  178 0056 1A70     		strb	r2, [r3, #0]
- 190:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Remove assignment if control register is removed */
- 191:.\Generated_Source\PSoC5/Timer_2.c **** }
- 179              		.loc 1 191 0
+ 191:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Remove assignment if control register is removed */
+ 192:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 179              		.loc 1 192 0
  180 0058 BD46     		mov	sp, r7
  181 005a 80BC     		pop	{r7}
  182 005c 7047     		bx	lr
@@ -403,34 +404,34 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  191              		.type	Timer_2_Start, %function
  192              	Timer_2_Start:
  193              	.LFB2:
- 192:.\Generated_Source\PSoC5/Timer_2.c **** 
  193:.\Generated_Source\PSoC5/Timer_2.c **** 
- 194:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 195:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Start
- 196:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 197:.\Generated_Source\PSoC5/Timer_2.c **** *
- 198:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 199:.\Generated_Source\PSoC5/Timer_2.c **** *  The start function initializes the timer with the default values, the
- 200:.\Generated_Source\PSoC5/Timer_2.c **** *  enables the timerto begin counting.  It does not enable interrupts,
- 201:.\Generated_Source\PSoC5/Timer_2.c **** *  the EnableInt command should be called if interrupt generation is required.
- 202:.\Generated_Source\PSoC5/Timer_2.c **** *
- 203:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 204:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 205:.\Generated_Source\PSoC5/Timer_2.c **** *
- 206:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 8
+ 194:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 195:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 196:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Start
+ 197:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 198:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 199:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 200:.\Generated_Source\PSoC5/Timer_2.c **** *  The start function initializes the timer with the default values, the
+ 201:.\Generated_Source\PSoC5/Timer_2.c **** *  enables the timerto begin counting.  It does not enable interrupts,
+ 202:.\Generated_Source\PSoC5/Timer_2.c **** *  the EnableInt command should be called if interrupt generation is required.
+ 203:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 204:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 205:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 206:.\Generated_Source\PSoC5/Timer_2.c **** *
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 8
 
 
- 207:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 208:.\Generated_Source\PSoC5/Timer_2.c **** *
- 209:.\Generated_Source\PSoC5/Timer_2.c **** * Global variables:
- 210:.\Generated_Source\PSoC5/Timer_2.c **** *  Timer_2_initVar: Is modified when this function is called for the
- 211:.\Generated_Source\PSoC5/Timer_2.c **** *   first time. Is used to ensure that initialization happens only once.
- 212:.\Generated_Source\PSoC5/Timer_2.c **** *
- 213:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 214:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Start(void) 
- 215:.\Generated_Source\PSoC5/Timer_2.c **** {
- 194              		.loc 1 215 0
+ 207:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 208:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 209:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 210:.\Generated_Source\PSoC5/Timer_2.c **** * Global variables:
+ 211:.\Generated_Source\PSoC5/Timer_2.c **** *  Timer_2_initVar: Is modified when this function is called for the
+ 212:.\Generated_Source\PSoC5/Timer_2.c **** *   first time. Is used to ensure that initialization happens only once.
+ 213:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 214:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 215:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Start(void) 
+ 216:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 194              		.loc 1 216 0
  195              		.cfi_startproc
  196              		@ args = 0, pretend = 0, frame = 0
  197              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -442,33 +443,33 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  203 0002 00AF     		add	r7, sp, #0
  204              	.LCFI5:
  205              		.cfi_def_cfa_register 7
- 216:.\Generated_Source\PSoC5/Timer_2.c ****     if(Timer_2_initVar == 0u)
- 206              		.loc 1 216 0
+ 217:.\Generated_Source\PSoC5/Timer_2.c ****     if(Timer_2_initVar == 0u)
+ 206              		.loc 1 217 0
  207 0004 40F20003 		movw	r3, #:lower16:Timer_2_initVar
  208 0008 C0F20003 		movt	r3, #:upper16:Timer_2_initVar
  209 000c 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
  210 000e 002B     		cmp	r3, #0
  211 0010 08D1     		bne	.L4
- 217:.\Generated_Source\PSoC5/Timer_2.c ****     {
- 218:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_Init();
- 212              		.loc 1 218 0
+ 218:.\Generated_Source\PSoC5/Timer_2.c ****     {
+ 219:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_Init();
+ 212              		.loc 1 219 0
  213 0012 FFF7FEFF 		bl	Timer_2_Init
- 219:.\Generated_Source\PSoC5/Timer_2.c **** 
- 220:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_initVar = 1u;   /* Clear this bit for Initialization */
- 214              		.loc 1 220 0
+ 220:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 221:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_initVar = 1u;   /* Clear this bit for Initialization */
+ 214              		.loc 1 221 0
  215 0016 40F20003 		movw	r3, #:lower16:Timer_2_initVar
  216 001a C0F20003 		movt	r3, #:upper16:Timer_2_initVar
  217 001e 4FF00102 		mov	r2, #1
  218 0022 1A70     		strb	r2, [r3, #0]
  219              	.L4:
- 221:.\Generated_Source\PSoC5/Timer_2.c ****     }
- 222:.\Generated_Source\PSoC5/Timer_2.c **** 
- 223:.\Generated_Source\PSoC5/Timer_2.c ****     /* Enable the Timer */
- 224:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_Enable();
- 220              		.loc 1 224 0
+ 222:.\Generated_Source\PSoC5/Timer_2.c ****     }
+ 223:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 224:.\Generated_Source\PSoC5/Timer_2.c ****     /* Enable the Timer */
+ 225:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_Enable();
+ 220              		.loc 1 225 0
  221 0024 FFF7FEFF 		bl	Timer_2_Enable
- 225:.\Generated_Source\PSoC5/Timer_2.c **** }
- 222              		.loc 1 225 0
+ 226:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 222              		.loc 1 226 0
  223 0028 80BD     		pop	{r7, pc}
  224              		.cfi_endproc
  225              	.LFE2:
@@ -477,36 +478,36 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  228              		.align	2
  229              		.global	Timer_2_Stop
  230              		.thumb
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 9
+
+
  231              		.thumb_func
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 9
-
-
  232              		.type	Timer_2_Stop, %function
  233              	Timer_2_Stop:
  234              	.LFB3:
- 226:.\Generated_Source\PSoC5/Timer_2.c **** 
  227:.\Generated_Source\PSoC5/Timer_2.c **** 
- 228:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 229:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Stop
- 230:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 231:.\Generated_Source\PSoC5/Timer_2.c **** *
- 232:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 233:.\Generated_Source\PSoC5/Timer_2.c **** *  The stop function halts the timer, but does not change any modes or disable
- 234:.\Generated_Source\PSoC5/Timer_2.c **** *  interrupts.
- 235:.\Generated_Source\PSoC5/Timer_2.c **** *
- 236:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 237:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 238:.\Generated_Source\PSoC5/Timer_2.c **** *
- 239:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 240:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 241:.\Generated_Source\PSoC5/Timer_2.c **** *
- 242:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
- 243:.\Generated_Source\PSoC5/Timer_2.c **** *               has no effect on the operation of the timer.
- 244:.\Generated_Source\PSoC5/Timer_2.c **** *
- 245:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 246:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Stop(void) 
- 247:.\Generated_Source\PSoC5/Timer_2.c **** {
- 235              		.loc 1 247 0
+ 228:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 229:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 230:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_Stop
+ 231:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 232:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 233:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 234:.\Generated_Source\PSoC5/Timer_2.c **** *  The stop function halts the timer, but does not change any modes or disable
+ 235:.\Generated_Source\PSoC5/Timer_2.c **** *  interrupts.
+ 236:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 237:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 238:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 239:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 240:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 241:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 242:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 243:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects: If the Enable mode is set to Hardware only then this function
+ 244:.\Generated_Source\PSoC5/Timer_2.c **** *               has no effect on the operation of the timer.
+ 245:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 246:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 247:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_Stop(void) 
+ 248:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 235              		.loc 1 248 0
  236              		.cfi_startproc
  237              		@ args = 0, pretend = 0, frame = 0
  238              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -518,10 +519,10 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  244 0002 00AF     		add	r7, sp, #0
  245              	.LCFI7:
  246              		.cfi_def_cfa_register 7
- 248:.\Generated_Source\PSoC5/Timer_2.c ****     /* Disable Timer */
- 249:.\Generated_Source\PSoC5/Timer_2.c ****     #if(!Timer_2_ControlRegRemoved || Timer_2_UsingFixedFunction)
- 250:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_CONTROL &= ((uint8)(~Timer_2_CTRL_ENABLE));
- 247              		.loc 1 250 0
+ 249:.\Generated_Source\PSoC5/Timer_2.c ****     /* Disable Timer */
+ 250:.\Generated_Source\PSoC5/Timer_2.c ****     #if(!Timer_2_UDB_CONTROL_REG_REMOVED || Timer_2_UsingFixedFunction)
+ 251:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_CONTROL &= ((uint8)(~Timer_2_CTRL_ENABLE));
+ 247              		.loc 1 251 0
  248 0004 44F61873 		movw	r3, #20248
  249 0008 C4F20003 		movt	r3, 16384
  250 000c 44F61872 		movw	r2, #20248
@@ -531,16 +532,16 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  254 0018 22F00102 		bic	r2, r2, #1
  255 001c D2B2     		uxtb	r2, r2
  256 001e 1A70     		strb	r2, [r3, #0]
- 251:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Remove assignment if control register is removed */
- 252:.\Generated_Source\PSoC5/Timer_2.c **** 
- 253:.\Generated_Source\PSoC5/Timer_2.c ****     /* Globally disable the Fixed Function Block chosen */
- 254:.\Generated_Source\PSoC5/Timer_2.c ****     #if (Timer_2_UsingFixedFunction)
- 255:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_ENABLE &= ((uint8)(~Timer_2_BLOCK_EN_MASK));
- 257              		.loc 1 255 0
+ 252:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Remove assignment if control register is removed */
+ 253:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 254:.\Generated_Source\PSoC5/Timer_2.c ****     /* Globally disable the Fixed Function Block chosen */
+ 255:.\Generated_Source\PSoC5/Timer_2.c ****     #if (Timer_2_UsingFixedFunction)
+ 256:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_ENABLE &= ((uint8)(~Timer_2_BLOCK_EN_MASK));
+ 257              		.loc 1 256 0
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 10
+
+
  258 0020 44F2A333 		movw	r3, #17315
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 10
-
-
  259 0024 C4F20003 		movt	r3, 16384
  260 0028 44F2A332 		movw	r2, #17315
  261 002c C4F20002 		movt	r2, 16384
@@ -549,8 +550,8 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  264 0034 22F00402 		bic	r2, r2, #4
  265 0038 D2B2     		uxtb	r2, r2
  266 003a 1A70     		strb	r2, [r3, #0]
- 256:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_STBY_ENABLE &= ((uint8)(~Timer_2_BLOCK_STBY_EN_MASK));
- 267              		.loc 1 256 0
+ 257:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_GLOBAL_STBY_ENABLE &= ((uint8)(~Timer_2_BLOCK_STBY_EN_MASK));
+ 267              		.loc 1 257 0
  268 003c 44F2B333 		movw	r3, #17331
  269 0040 C4F20003 		movt	r3, 16384
  270 0044 44F2B332 		movw	r2, #17331
@@ -560,9 +561,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  274 0050 22F00402 		bic	r2, r2, #4
  275 0054 D2B2     		uxtb	r2, r2
  276 0056 1A70     		strb	r2, [r3, #0]
- 257:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Disable global enable for the Timer Fixed function block to stop the Timer*/
- 258:.\Generated_Source\PSoC5/Timer_2.c **** }
- 277              		.loc 1 258 0
+ 258:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Disable global enable for the Timer Fixed function block to stop the Timer*/
+ 259:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 277              		.loc 1 259 0
  278 0058 BD46     		mov	sp, r7
  279 005a 80BC     		pop	{r7}
  280 005c 7047     		bx	lr
@@ -577,31 +578,31 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  289              		.type	Timer_2_SetInterruptMode, %function
  290              	Timer_2_SetInterruptMode:
  291              	.LFB4:
- 259:.\Generated_Source\PSoC5/Timer_2.c **** 
  260:.\Generated_Source\PSoC5/Timer_2.c **** 
- 261:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 262:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_SetInterruptMode
- 263:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 264:.\Generated_Source\PSoC5/Timer_2.c **** *
- 265:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 266:.\Generated_Source\PSoC5/Timer_2.c **** *  This function selects which of the interrupt inputs may cause an interrupt.
- 267:.\Generated_Source\PSoC5/Timer_2.c **** *  The twosources are caputure and terminal.  One, both or neither may
- 268:.\Generated_Source\PSoC5/Timer_2.c **** *  be selected.
- 269:.\Generated_Source\PSoC5/Timer_2.c **** *
- 270:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 271:.\Generated_Source\PSoC5/Timer_2.c **** *  interruptMode:   This parameter is used to enable interrups on either/or
- 272:.\Generated_Source\PSoC5/Timer_2.c **** *                   terminal count or capture.
- 273:.\Generated_Source\PSoC5/Timer_2.c **** *
- 274:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 275:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 276:.\Generated_Source\PSoC5/Timer_2.c **** *
- 277:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 278:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_SetInterruptMode(uint8 interruptMode) 
- 279:.\Generated_Source\PSoC5/Timer_2.c **** {
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 11
+ 261:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 262:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 263:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_SetInterruptMode
+ 264:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 265:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 266:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 267:.\Generated_Source\PSoC5/Timer_2.c **** *  This function selects which of the interrupt inputs may cause an interrupt.
+ 268:.\Generated_Source\PSoC5/Timer_2.c **** *  The twosources are caputure and terminal.  One, both or neither may
+ 269:.\Generated_Source\PSoC5/Timer_2.c **** *  be selected.
+ 270:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 271:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 272:.\Generated_Source\PSoC5/Timer_2.c **** *  interruptMode:   This parameter is used to enable interrups on either/or
+ 273:.\Generated_Source\PSoC5/Timer_2.c **** *                   terminal count or capture.
+ 274:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 275:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 276:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 277:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 278:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 279:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_SetInterruptMode(uint8 interruptMode) 
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 11
 
 
- 292              		.loc 1 279 0
+ 280:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 292              		.loc 1 280 0
  293              		.cfi_startproc
  294              		@ args = 0, pretend = 0, frame = 8
  295              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -618,14 +619,14 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  306              		.cfi_def_cfa_register 7
  307 0006 0346     		mov	r3, r0
  308 0008 FB71     		strb	r3, [r7, #7]
- 280:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_STATUS_MASK = interruptMode;
- 309              		.loc 1 280 0
+ 281:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_STATUS_MASK = interruptMode;
+ 309              		.loc 1 281 0
  310 000a 44F61B73 		movw	r3, #20251
  311 000e C4F20003 		movt	r3, 16384
  312 0012 FA79     		ldrb	r2, [r7, #7]
  313 0014 1A70     		strb	r2, [r3, #0]
- 281:.\Generated_Source\PSoC5/Timer_2.c **** }
- 314              		.loc 1 281 0
+ 282:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 314              		.loc 1 282 0
  315 0016 07F10C07 		add	r7, r7, #12
  316 001a BD46     		mov	sp, r7
  317 001c 80BC     		pop	{r7}
@@ -641,31 +642,31 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  327              		.type	Timer_2_SoftwareCapture, %function
  328              	Timer_2_SoftwareCapture:
  329              	.LFB5:
- 282:.\Generated_Source\PSoC5/Timer_2.c **** 
  283:.\Generated_Source\PSoC5/Timer_2.c **** 
- 284:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 285:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_SoftwareCapture
- 286:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 287:.\Generated_Source\PSoC5/Timer_2.c **** *
- 288:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 289:.\Generated_Source\PSoC5/Timer_2.c **** *  This function forces a capture independent of the capture signal.
- 290:.\Generated_Source\PSoC5/Timer_2.c **** *
- 291:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 292:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 293:.\Generated_Source\PSoC5/Timer_2.c **** *
- 294:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 295:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 296:.\Generated_Source\PSoC5/Timer_2.c **** *
- 297:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects:
- 298:.\Generated_Source\PSoC5/Timer_2.c **** *  An existing hardware capture could be overwritten.
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 12
+ 284:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 285:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 286:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_SoftwareCapture
+ 287:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 288:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 289:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 290:.\Generated_Source\PSoC5/Timer_2.c **** *  This function forces a capture independent of the capture signal.
+ 291:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 292:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 293:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 294:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 295:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 296:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 297:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 298:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 12
 
 
- 299:.\Generated_Source\PSoC5/Timer_2.c **** *
- 300:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 301:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_SoftwareCapture(void) 
- 302:.\Generated_Source\PSoC5/Timer_2.c **** {
- 330              		.loc 1 302 0
+ 299:.\Generated_Source\PSoC5/Timer_2.c **** *  An existing hardware capture could be overwritten.
+ 300:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 301:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 302:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_SoftwareCapture(void) 
+ 303:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 330              		.loc 1 303 0
  331              		.cfi_startproc
  332              		@ args = 0, pretend = 0, frame = 0
  333              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -677,15 +678,15 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  339 0002 00AF     		add	r7, sp, #0
  340              	.LCFI12:
  341              		.cfi_def_cfa_register 7
- 303:.\Generated_Source\PSoC5/Timer_2.c ****     /* Generate a software capture by reading the counter register */
- 304:.\Generated_Source\PSoC5/Timer_2.c ****     (void)Timer_2_COUNTER_LSB;
- 342              		.loc 1 304 0
+ 304:.\Generated_Source\PSoC5/Timer_2.c ****     /* Generate a software capture by reading the counter register */
+ 305:.\Generated_Source\PSoC5/Timer_2.c ****     (void)Timer_2_COUNTER_LSB;
+ 342              		.loc 1 305 0
  343 0004 44F61E73 		movw	r3, #20254
  344 0008 C4F20003 		movt	r3, 16384
  345 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
- 305:.\Generated_Source\PSoC5/Timer_2.c ****     /* Capture Data is now in the FIFO */
- 306:.\Generated_Source\PSoC5/Timer_2.c **** }
- 346              		.loc 1 306 0
+ 306:.\Generated_Source\PSoC5/Timer_2.c ****     /* Capture Data is now in the FIFO */
+ 307:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 346              		.loc 1 307 0
  347 000e BD46     		mov	sp, r7
  348 0010 80BC     		pop	{r7}
  349 0012 7047     		bx	lr
@@ -700,33 +701,33 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  358              		.type	Timer_2_ReadStatusRegister, %function
  359              	Timer_2_ReadStatusRegister:
  360              	.LFB6:
- 307:.\Generated_Source\PSoC5/Timer_2.c **** 
  308:.\Generated_Source\PSoC5/Timer_2.c **** 
- 309:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 310:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadStatusRegister
- 311:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 312:.\Generated_Source\PSoC5/Timer_2.c **** *
- 313:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 314:.\Generated_Source\PSoC5/Timer_2.c **** *  Reads the status register and returns it's state. This function should use
- 315:.\Generated_Source\PSoC5/Timer_2.c **** *  defined types for the bit-field information as the bits in this register may
- 316:.\Generated_Source\PSoC5/Timer_2.c **** *  be permuteable.
- 317:.\Generated_Source\PSoC5/Timer_2.c **** *
- 318:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 319:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 320:.\Generated_Source\PSoC5/Timer_2.c **** *
- 321:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 322:.\Generated_Source\PSoC5/Timer_2.c **** *  The contents of the status register
- 323:.\Generated_Source\PSoC5/Timer_2.c **** *
- 324:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 13
+ 309:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 310:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 311:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadStatusRegister
+ 312:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 313:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 314:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 315:.\Generated_Source\PSoC5/Timer_2.c **** *  Reads the status register and returns it's state. This function should use
+ 316:.\Generated_Source\PSoC5/Timer_2.c **** *  defined types for the bit-field information as the bits in this register may
+ 317:.\Generated_Source\PSoC5/Timer_2.c **** *  be permuteable.
+ 318:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 319:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 320:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 321:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 322:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 323:.\Generated_Source\PSoC5/Timer_2.c **** *  The contents of the status register
+ 324:.\Generated_Source\PSoC5/Timer_2.c **** *
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 13
 
 
- 325:.\Generated_Source\PSoC5/Timer_2.c **** *  Status register bits may be clear on read.
- 326:.\Generated_Source\PSoC5/Timer_2.c **** *
- 327:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 328:.\Generated_Source\PSoC5/Timer_2.c **** uint8   Timer_2_ReadStatusRegister(void) 
- 329:.\Generated_Source\PSoC5/Timer_2.c **** {
- 361              		.loc 1 329 0
+ 325:.\Generated_Source\PSoC5/Timer_2.c **** * Side Effects:
+ 326:.\Generated_Source\PSoC5/Timer_2.c **** *  Status register bits may be clear on read.
+ 327:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 328:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 329:.\Generated_Source\PSoC5/Timer_2.c **** uint8   Timer_2_ReadStatusRegister(void) 
+ 330:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 361              		.loc 1 330 0
  362              		.cfi_startproc
  363              		@ args = 0, pretend = 0, frame = 0
  364              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -738,14 +739,14 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  370 0002 00AF     		add	r7, sp, #0
  371              	.LCFI14:
  372              		.cfi_def_cfa_register 7
- 330:.\Generated_Source\PSoC5/Timer_2.c ****     return (Timer_2_STATUS);
- 373              		.loc 1 330 0
+ 331:.\Generated_Source\PSoC5/Timer_2.c ****     return (Timer_2_STATUS);
+ 373              		.loc 1 331 0
  374 0004 44F61B73 		movw	r3, #20251
  375 0008 C4F20003 		movt	r3, 16384
  376 000c 1B78     		ldrb	r3, [r3, #0]
  377 000e DBB2     		uxtb	r3, r3
- 331:.\Generated_Source\PSoC5/Timer_2.c **** }
- 378              		.loc 1 331 0
+ 332:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 378              		.loc 1 332 0
  379 0010 1846     		mov	r0, r3
  380 0012 BD46     		mov	sp, r7
  381 0014 80BC     		pop	{r7}
@@ -761,31 +762,31 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  391              		.type	Timer_2_ReadControlRegister, %function
  392              	Timer_2_ReadControlRegister:
  393              	.LFB7:
- 332:.\Generated_Source\PSoC5/Timer_2.c **** 
  333:.\Generated_Source\PSoC5/Timer_2.c **** 
- 334:.\Generated_Source\PSoC5/Timer_2.c **** #if (!Timer_2_ControlRegRemoved) /* Remove API if control register is removed */
- 335:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 334:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 335:.\Generated_Source\PSoC5/Timer_2.c **** #if (!Timer_2_UDB_CONTROL_REG_REMOVED) /* Remove API if control register is unused */
  336:.\Generated_Source\PSoC5/Timer_2.c **** 
- 337:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 338:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadControlRegister
- 339:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 340:.\Generated_Source\PSoC5/Timer_2.c **** *
- 341:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 342:.\Generated_Source\PSoC5/Timer_2.c **** *  Reads the control register and returns it's value.
- 343:.\Generated_Source\PSoC5/Timer_2.c **** *
- 344:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 345:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 346:.\Generated_Source\PSoC5/Timer_2.c **** *
- 347:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 348:.\Generated_Source\PSoC5/Timer_2.c **** *  The contents of the control register
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 14
+ 337:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 338:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 339:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadControlRegister
+ 340:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 341:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 342:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 343:.\Generated_Source\PSoC5/Timer_2.c **** *  Reads the control register and returns it's value.
+ 344:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 345:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 346:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 347:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 348:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 14
 
 
- 349:.\Generated_Source\PSoC5/Timer_2.c **** *
- 350:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 351:.\Generated_Source\PSoC5/Timer_2.c **** uint8 Timer_2_ReadControlRegister(void) 
- 352:.\Generated_Source\PSoC5/Timer_2.c **** {
- 394              		.loc 1 352 0
+ 349:.\Generated_Source\PSoC5/Timer_2.c **** *  The contents of the control register
+ 350:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 351:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 352:.\Generated_Source\PSoC5/Timer_2.c **** uint8 Timer_2_ReadControlRegister(void) 
+ 353:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 394              		.loc 1 353 0
  395              		.cfi_startproc
  396              		@ args = 0, pretend = 0, frame = 0
  397              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -797,14 +798,18 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  403 0002 00AF     		add	r7, sp, #0
  404              	.LCFI16:
  405              		.cfi_def_cfa_register 7
- 353:.\Generated_Source\PSoC5/Timer_2.c ****     return ((uint8)Timer_2_CONTROL);
- 406              		.loc 1 353 0
+ 354:.\Generated_Source\PSoC5/Timer_2.c ****     #if (!Timer_2_UDB_CONTROL_REG_REMOVED) 
+ 355:.\Generated_Source\PSoC5/Timer_2.c ****         return ((uint8)Timer_2_CONTROL);
+ 406              		.loc 1 355 0
  407 0004 44F61873 		movw	r3, #20248
  408 0008 C4F20003 		movt	r3, 16384
  409 000c 1B78     		ldrb	r3, [r3, #0]
  410 000e DBB2     		uxtb	r3, r3
- 354:.\Generated_Source\PSoC5/Timer_2.c **** }
- 411              		.loc 1 354 0
+ 356:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 357:.\Generated_Source\PSoC5/Timer_2.c ****         return (0);
+ 358:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* (!Timer_2_UDB_CONTROL_REG_REMOVED) */
+ 359:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 411              		.loc 1 359 0
  412 0010 1846     		mov	r0, r3
  413 0012 BD46     		mov	sp, r7
  414 0014 80BC     		pop	{r7}
@@ -820,27 +825,27 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  424              		.type	Timer_2_WriteControlRegister, %function
  425              	Timer_2_WriteControlRegister:
  426              	.LFB8:
- 355:.\Generated_Source\PSoC5/Timer_2.c **** 
- 356:.\Generated_Source\PSoC5/Timer_2.c **** 
- 357:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 358:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WriteControlRegister
- 359:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 360:.\Generated_Source\PSoC5/Timer_2.c **** *
- 361:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 362:.\Generated_Source\PSoC5/Timer_2.c **** *  Sets the bit-field of the control register.
- 363:.\Generated_Source\PSoC5/Timer_2.c **** *
- 364:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 365:.\Generated_Source\PSoC5/Timer_2.c **** *  control: The contents of the control register
- 366:.\Generated_Source\PSoC5/Timer_2.c **** *
- 367:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 360:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 361:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 362:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 363:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WriteControlRegister
+ 364:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 365:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 366:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 367:.\Generated_Source\PSoC5/Timer_2.c **** *  Sets the bit-field of the control register.
  368:.\Generated_Source\PSoC5/Timer_2.c **** *
- 369:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 370:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WriteControlRegister(uint8 control) 
- 371:.\Generated_Source\PSoC5/Timer_2.c **** {
- 427              		.loc 1 371 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 15
+ 369:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 370:.\Generated_Source\PSoC5/Timer_2.c **** *  control: The contents of the control register
+ 371:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 372:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 15
 
 
+ 373:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 374:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 375:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WriteControlRegister(uint8 control) 
+ 376:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 427              		.loc 1 376 0
  428              		.cfi_startproc
  429              		@ args = 0, pretend = 0, frame = 8
  430              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -857,14 +862,18 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  441              		.cfi_def_cfa_register 7
  442 0006 0346     		mov	r3, r0
  443 0008 FB71     		strb	r3, [r7, #7]
- 372:.\Generated_Source\PSoC5/Timer_2.c ****     Timer_2_CONTROL = control;
- 444              		.loc 1 372 0
+ 377:.\Generated_Source\PSoC5/Timer_2.c ****     #if (!Timer_2_UDB_CONTROL_REG_REMOVED) 
+ 378:.\Generated_Source\PSoC5/Timer_2.c ****         Timer_2_CONTROL = control;
+ 444              		.loc 1 378 0
  445 000a 44F61873 		movw	r3, #20248
  446 000e C4F20003 		movt	r3, 16384
  447 0012 FA79     		ldrb	r2, [r7, #7]
  448 0014 1A70     		strb	r2, [r3, #0]
- 373:.\Generated_Source\PSoC5/Timer_2.c **** }
- 449              		.loc 1 373 0
+ 379:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 380:.\Generated_Source\PSoC5/Timer_2.c ****         control = 0u;
+ 381:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* (!Timer_2_UDB_CONTROL_REG_REMOVED) */
+ 382:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 449              		.loc 1 382 0
  450 0016 07F10C07 		add	r7, r7, #12
  451 001a BD46     		mov	sp, r7
  452 001c 80BC     		pop	{r7}
@@ -880,29 +889,30 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  462              		.type	Timer_2_ReadPeriod, %function
  463              	Timer_2_ReadPeriod:
  464              	.LFB9:
- 374:.\Generated_Source\PSoC5/Timer_2.c **** #endif /* Remove API if control register is removed */
- 375:.\Generated_Source\PSoC5/Timer_2.c **** 
- 376:.\Generated_Source\PSoC5/Timer_2.c **** 
- 377:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 378:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadPeriod
- 379:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 380:.\Generated_Source\PSoC5/Timer_2.c **** *
- 381:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 382:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the current value of the Period.
- 383:.\Generated_Source\PSoC5/Timer_2.c **** *
- 384:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 385:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 386:.\Generated_Source\PSoC5/Timer_2.c **** *
- 387:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 388:.\Generated_Source\PSoC5/Timer_2.c **** *  The present value of the counter.
- 389:.\Generated_Source\PSoC5/Timer_2.c **** *
- 390:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 391:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadPeriod(void) 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 16
+ 383:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 384:.\Generated_Source\PSoC5/Timer_2.c **** #endif /* Remove API if control register is unused */
+ 385:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 386:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 387:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 388:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadPeriod
+ 389:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 390:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 391:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 16
 
 
- 392:.\Generated_Source\PSoC5/Timer_2.c **** {
- 465              		.loc 1 392 0
+ 392:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the current value of the Period.
+ 393:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 394:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 395:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 396:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 397:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 398:.\Generated_Source\PSoC5/Timer_2.c **** *  The present value of the counter.
+ 399:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 400:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 401:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadPeriod(void) 
+ 402:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 465              		.loc 1 402 0
  466              		.cfi_startproc
  467              		@ args = 0, pretend = 0, frame = 0
  468              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -914,18 +924,18 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  474 0002 00AF     		add	r7, sp, #0
  475              	.LCFI21:
  476              		.cfi_def_cfa_register 7
- 393:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
- 394:.\Generated_Source\PSoC5/Timer_2.c ****        return ((uint16)CY_GET_REG16(Timer_2_PERIOD_LSB_PTR));
- 477              		.loc 1 394 0
+ 403:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
+ 404:.\Generated_Source\PSoC5/Timer_2.c ****        return ((uint16)CY_GET_REG16(Timer_2_PERIOD_LSB_PTR));
+ 477              		.loc 1 404 0
  478 0004 44F61C73 		movw	r3, #20252
  479 0008 C4F20003 		movt	r3, 16384
  480 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
  481 000e 9BB2     		uxth	r3, r3
- 395:.\Generated_Source\PSoC5/Timer_2.c ****    #else
- 396:.\Generated_Source\PSoC5/Timer_2.c ****        return (CY_GET_REG16(Timer_2_PERIOD_LSB_PTR));
- 397:.\Generated_Source\PSoC5/Timer_2.c ****    #endif /* (Timer_2_UsingFixedFunction) */
- 398:.\Generated_Source\PSoC5/Timer_2.c **** }
- 482              		.loc 1 398 0
+ 405:.\Generated_Source\PSoC5/Timer_2.c ****    #else
+ 406:.\Generated_Source\PSoC5/Timer_2.c ****        return (CY_GET_REG16(Timer_2_PERIOD_LSB_PTR));
+ 407:.\Generated_Source\PSoC5/Timer_2.c ****    #endif /* (Timer_2_UsingFixedFunction) */
+ 408:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 482              		.loc 1 408 0
  483 0010 1846     		mov	r0, r3
  484 0012 BD46     		mov	sp, r7
  485 0014 80BC     		pop	{r7}
@@ -941,30 +951,30 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  495              		.type	Timer_2_WritePeriod, %function
  496              	Timer_2_WritePeriod:
  497              	.LFB10:
- 399:.\Generated_Source\PSoC5/Timer_2.c **** 
- 400:.\Generated_Source\PSoC5/Timer_2.c **** 
- 401:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 402:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WritePeriod
- 403:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 404:.\Generated_Source\PSoC5/Timer_2.c **** *
- 405:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 406:.\Generated_Source\PSoC5/Timer_2.c **** *  This function is used to change the period of the counter.  The new period
- 407:.\Generated_Source\PSoC5/Timer_2.c **** *  will be loaded the next time terminal count is detected.
- 408:.\Generated_Source\PSoC5/Timer_2.c **** *
- 409:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 410:.\Generated_Source\PSoC5/Timer_2.c **** *  period: This value may be between 1 and (2^Resolution)-1.  A value of 0 will
- 411:.\Generated_Source\PSoC5/Timer_2.c **** *          result in the counter remaining at zero.
- 412:.\Generated_Source\PSoC5/Timer_2.c **** *
- 413:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 414:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 415:.\Generated_Source\PSoC5/Timer_2.c **** *
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 17
+ 409:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 410:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 411:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 412:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WritePeriod
+ 413:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 414:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 415:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 17
 
 
- 416:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 417:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WritePeriod(uint16 period) 
- 418:.\Generated_Source\PSoC5/Timer_2.c **** {
- 498              		.loc 1 418 0
+ 416:.\Generated_Source\PSoC5/Timer_2.c **** *  This function is used to change the period of the counter.  The new period
+ 417:.\Generated_Source\PSoC5/Timer_2.c **** *  will be loaded the next time terminal count is detected.
+ 418:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 419:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 420:.\Generated_Source\PSoC5/Timer_2.c **** *  period: This value may be between 1 and (2^Resolution)-1.  A value of 0 will
+ 421:.\Generated_Source\PSoC5/Timer_2.c **** *          result in the counter remaining at zero.
+ 422:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 423:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 424:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 425:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 426:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 427:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WritePeriod(uint16 period) 
+ 428:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 498              		.loc 1 428 0
  499              		.cfi_startproc
  500              		@ args = 0, pretend = 0, frame = 16
  501              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -981,22 +991,22 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  512              		.cfi_def_cfa_register 7
  513 0006 0346     		mov	r3, r0
  514 0008 FB80     		strh	r3, [r7, #6]	@ movhi
- 419:.\Generated_Source\PSoC5/Timer_2.c ****     #if(Timer_2_UsingFixedFunction)
- 420:.\Generated_Source\PSoC5/Timer_2.c ****         uint16 period_temp = (uint16)period;
- 515              		.loc 1 420 0
+ 429:.\Generated_Source\PSoC5/Timer_2.c ****     #if(Timer_2_UsingFixedFunction)
+ 430:.\Generated_Source\PSoC5/Timer_2.c ****         uint16 period_temp = (uint16)period;
+ 515              		.loc 1 430 0
  516 000a FB88     		ldrh	r3, [r7, #6]	@ movhi
  517 000c FB81     		strh	r3, [r7, #14]	@ movhi
- 421:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_PERIOD_LSB_PTR, period_temp);
- 518              		.loc 1 421 0
+ 431:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_PERIOD_LSB_PTR, period_temp);
+ 518              		.loc 1 431 0
  519 000e 44F61C73 		movw	r3, #20252
  520 0012 C4F20003 		movt	r3, 16384
  521 0016 FA89     		ldrh	r2, [r7, #14]	@ movhi
  522 0018 1A80     		strh	r2, [r3, #0]	@ movhi
- 422:.\Generated_Source\PSoC5/Timer_2.c ****     #else
- 423:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_PERIOD_LSB_PTR, period);
- 424:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /*Write Period value with appropriate resolution suffix depending on UDB or fixed functi
- 425:.\Generated_Source\PSoC5/Timer_2.c **** }
- 523              		.loc 1 425 0
+ 432:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 433:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_PERIOD_LSB_PTR, period);
+ 434:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /*Write Period value with appropriate resolution suffix depending on UDB or fixed functi
+ 435:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 523              		.loc 1 435 0
  524 001a 07F11407 		add	r7, r7, #20
  525 001e BD46     		mov	sp, r7
  526 0020 80BC     		pop	{r7}
@@ -1008,32 +1018,32 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  532              		.align	2
  533              		.global	Timer_2_ReadCapture
  534              		.thumb
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 18
+
+
  535              		.thumb_func
  536              		.type	Timer_2_ReadCapture, %function
  537              	Timer_2_ReadCapture:
  538              	.LFB11:
- 426:.\Generated_Source\PSoC5/Timer_2.c **** 
- 427:.\Generated_Source\PSoC5/Timer_2.c **** 
- 428:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 429:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadCapture
- 430:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 431:.\Generated_Source\PSoC5/Timer_2.c **** *
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 18
-
-
- 432:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 433:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the last value captured.
- 434:.\Generated_Source\PSoC5/Timer_2.c **** *
- 435:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 436:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 437:.\Generated_Source\PSoC5/Timer_2.c **** *
- 438:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 439:.\Generated_Source\PSoC5/Timer_2.c **** *  Present Capture value.
- 440:.\Generated_Source\PSoC5/Timer_2.c **** *
- 441:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 442:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadCapture(void) 
- 443:.\Generated_Source\PSoC5/Timer_2.c **** {
- 539              		.loc 1 443 0
+ 436:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 437:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 438:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 439:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadCapture
+ 440:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 441:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 442:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 443:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the last value captured.
+ 444:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 445:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 446:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 447:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 448:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 449:.\Generated_Source\PSoC5/Timer_2.c **** *  Present Capture value.
+ 450:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 451:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 452:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadCapture(void) 
+ 453:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 539              		.loc 1 453 0
  540              		.cfi_startproc
  541              		@ args = 0, pretend = 0, frame = 0
  542              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1045,18 +1055,18 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  548 0002 00AF     		add	r7, sp, #0
  549              	.LCFI26:
  550              		.cfi_def_cfa_register 7
- 444:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
- 445:.\Generated_Source\PSoC5/Timer_2.c ****        return ((uint16)CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
- 551              		.loc 1 445 0
+ 454:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
+ 455:.\Generated_Source\PSoC5/Timer_2.c ****        return ((uint16)CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
+ 551              		.loc 1 455 0
  552 0004 44F62073 		movw	r3, #20256
  553 0008 C4F20003 		movt	r3, 16384
  554 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
  555 000e 9BB2     		uxth	r3, r3
- 446:.\Generated_Source\PSoC5/Timer_2.c ****    #else
- 447:.\Generated_Source\PSoC5/Timer_2.c ****        return (CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
- 448:.\Generated_Source\PSoC5/Timer_2.c ****    #endif /* (Timer_2_UsingFixedFunction) */
- 449:.\Generated_Source\PSoC5/Timer_2.c **** }
- 556              		.loc 1 449 0
+ 456:.\Generated_Source\PSoC5/Timer_2.c ****    #else
+ 457:.\Generated_Source\PSoC5/Timer_2.c ****        return (CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
+ 458:.\Generated_Source\PSoC5/Timer_2.c ****    #endif /* (Timer_2_UsingFixedFunction) */
+ 459:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 556              		.loc 1 459 0
  557 0010 1846     		mov	r0, r3
  558 0012 BD46     		mov	sp, r7
  559 0014 80BC     		pop	{r7}
@@ -1068,33 +1078,32 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  565              		.align	2
  566              		.global	Timer_2_WriteCounter
  567              		.thumb
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 19
+
+
  568              		.thumb_func
  569              		.type	Timer_2_WriteCounter, %function
  570              	Timer_2_WriteCounter:
  571              	.LFB12:
- 450:.\Generated_Source\PSoC5/Timer_2.c **** 
- 451:.\Generated_Source\PSoC5/Timer_2.c **** 
- 452:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 453:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WriteCounter
- 454:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 455:.\Generated_Source\PSoC5/Timer_2.c **** *
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 19
-
-
- 456:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 457:.\Generated_Source\PSoC5/Timer_2.c **** *  This funtion is used to set the counter to a specific value
- 458:.\Generated_Source\PSoC5/Timer_2.c **** *
- 459:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 460:.\Generated_Source\PSoC5/Timer_2.c **** *  counter:  New counter value.
- 461:.\Generated_Source\PSoC5/Timer_2.c **** *
- 462:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 463:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 464:.\Generated_Source\PSoC5/Timer_2.c **** *
- 465:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 466:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WriteCounter(uint16 counter) \
- 467:.\Generated_Source\PSoC5/Timer_2.c ****                                    
- 468:.\Generated_Source\PSoC5/Timer_2.c **** {
- 572              		.loc 1 468 0
+ 460:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 461:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 462:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 463:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_WriteCounter
+ 464:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
+ 465:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 466:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 467:.\Generated_Source\PSoC5/Timer_2.c **** *  This funtion is used to set the counter to a specific value
+ 468:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 469:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 470:.\Generated_Source\PSoC5/Timer_2.c **** *  counter:  New counter value.
+ 471:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 472:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 473:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 474:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 475:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 476:.\Generated_Source\PSoC5/Timer_2.c **** void Timer_2_WriteCounter(uint16 counter) 
+ 477:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 572              		.loc 1 477 0
  573              		.cfi_startproc
  574              		@ args = 0, pretend = 0, frame = 8
  575              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1111,24 +1120,27 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  586              		.cfi_def_cfa_register 7
  587 0006 0346     		mov	r3, r0
  588 0008 FB80     		strh	r3, [r7, #6]	@ movhi
- 469:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
- 470:.\Generated_Source\PSoC5/Timer_2.c ****         /* This functionality is removed until a FixedFunction HW update to
- 471:.\Generated_Source\PSoC5/Timer_2.c ****          * allow this register to be written
- 472:.\Generated_Source\PSoC5/Timer_2.c ****          */
- 473:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_COUNTER_LSB_PTR, (uint16)counter);
- 589              		.loc 1 473 0
+ 478:.\Generated_Source\PSoC5/Timer_2.c ****    #if(Timer_2_UsingFixedFunction)
+ 479:.\Generated_Source\PSoC5/Timer_2.c ****         /* This functionality is removed until a FixedFunction HW update to
+ 480:.\Generated_Source\PSoC5/Timer_2.c ****          * allow this register to be written
+ 481:.\Generated_Source\PSoC5/Timer_2.c ****          */
+ 482:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_COUNTER_LSB_PTR, (uint16)counter);
+ 589              		.loc 1 482 0
  590 000a 44F61E73 		movw	r3, #20254
  591 000e C4F20003 		movt	r3, 16384
  592 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
  593 0014 1A80     		strh	r2, [r3, #0]	@ movhi
- 474:.\Generated_Source\PSoC5/Timer_2.c ****         
- 475:.\Generated_Source\PSoC5/Timer_2.c ****     #else
- 476:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_COUNTER_LSB_PTR, counter);
- 477:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Set Write Counter only for the UDB implementation (Write Counter not available in fix
- 478:.\Generated_Source\PSoC5/Timer_2.c **** }
- 594              		.loc 1 478 0
+ 483:.\Generated_Source\PSoC5/Timer_2.c ****         
+ 484:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 485:.\Generated_Source\PSoC5/Timer_2.c ****         CY_SET_REG16(Timer_2_COUNTER_LSB_PTR, counter);
+ 486:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* Set Write Counter only for the UDB implementation (Write Counter not available in fix
+ 487:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 594              		.loc 1 487 0
  595 0016 07F10C07 		add	r7, r7, #12
  596 001a BD46     		mov	sp, r7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 20
+
+
  597 001c 80BC     		pop	{r7}
  598 001e 7047     		bx	lr
  599              		.cfi_endproc
@@ -1138,32 +1150,29 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  603              		.align	2
  604              		.global	Timer_2_ReadCounter
  605              		.thumb
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 20
-
-
  606              		.thumb_func
  607              		.type	Timer_2_ReadCounter, %function
  608              	Timer_2_ReadCounter:
  609              	.LFB13:
- 479:.\Generated_Source\PSoC5/Timer_2.c **** 
- 480:.\Generated_Source\PSoC5/Timer_2.c **** 
- 481:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
- 482:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadCounter
- 483:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
- 484:.\Generated_Source\PSoC5/Timer_2.c **** *
- 485:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
- 486:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the current counter value.
- 487:.\Generated_Source\PSoC5/Timer_2.c **** *
- 488:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
- 489:.\Generated_Source\PSoC5/Timer_2.c **** *  void
- 490:.\Generated_Source\PSoC5/Timer_2.c **** *
- 491:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
- 492:.\Generated_Source\PSoC5/Timer_2.c **** *  Present compare value.
+ 488:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 489:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 490:.\Generated_Source\PSoC5/Timer_2.c **** /*******************************************************************************
+ 491:.\Generated_Source\PSoC5/Timer_2.c **** * Function Name: Timer_2_ReadCounter
+ 492:.\Generated_Source\PSoC5/Timer_2.c **** ********************************************************************************
  493:.\Generated_Source\PSoC5/Timer_2.c **** *
- 494:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
- 495:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadCounter(void) 
- 496:.\Generated_Source\PSoC5/Timer_2.c **** {
- 610              		.loc 1 496 0
+ 494:.\Generated_Source\PSoC5/Timer_2.c **** * Summary:
+ 495:.\Generated_Source\PSoC5/Timer_2.c **** *  This function returns the current counter value.
+ 496:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 497:.\Generated_Source\PSoC5/Timer_2.c **** * Parameters:
+ 498:.\Generated_Source\PSoC5/Timer_2.c **** *  void
+ 499:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 500:.\Generated_Source\PSoC5/Timer_2.c **** * Return:
+ 501:.\Generated_Source\PSoC5/Timer_2.c **** *  Present compare value.
+ 502:.\Generated_Source\PSoC5/Timer_2.c **** *
+ 503:.\Generated_Source\PSoC5/Timer_2.c **** *******************************************************************************/
+ 504:.\Generated_Source\PSoC5/Timer_2.c **** uint16 Timer_2_ReadCounter(void) 
+ 505:.\Generated_Source\PSoC5/Timer_2.c **** {
+ 610              		.loc 1 505 0
  611              		.cfi_startproc
  612              		@ args = 0, pretend = 0, frame = 0
  613              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1175,32 +1184,35 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  619 0002 00AF     		add	r7, sp, #0
  620              	.LCFI31:
  621              		.cfi_def_cfa_register 7
- 497:.\Generated_Source\PSoC5/Timer_2.c **** 
- 498:.\Generated_Source\PSoC5/Timer_2.c ****     /* Force capture by reading Accumulator */
- 499:.\Generated_Source\PSoC5/Timer_2.c ****     /* Must first do a software capture to be able to read the counter */
- 500:.\Generated_Source\PSoC5/Timer_2.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
- 501:.\Generated_Source\PSoC5/Timer_2.c ****     (void)Timer_2_COUNTER_LSB;
- 622              		.loc 1 501 0
+ 506:.\Generated_Source\PSoC5/Timer_2.c ****     /* Force capture by reading Accumulator */
+ 507:.\Generated_Source\PSoC5/Timer_2.c ****     /* Must first do a software capture to be able to read the counter */
+ 508:.\Generated_Source\PSoC5/Timer_2.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 509:.\Generated_Source\PSoC5/Timer_2.c ****     #if(Timer_2_UsingFixedFunction)
+ 510:.\Generated_Source\PSoC5/Timer_2.c ****         (void)CY_GET_REG16(Timer_2_COUNTER_LSB_PTR);
+ 622              		.loc 1 510 0
  623 0004 44F61E73 		movw	r3, #20254
  624 0008 C4F20003 		movt	r3, 16384
  625 000c 1B88     		ldrh	r3, [r3, #0]	@ movhi
- 502:.\Generated_Source\PSoC5/Timer_2.c **** 
- 503:.\Generated_Source\PSoC5/Timer_2.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
- 504:.\Generated_Source\PSoC5/Timer_2.c ****     #if(Timer_2_UsingFixedFunction)
- 505:.\Generated_Source\PSoC5/Timer_2.c ****         return ((uint16)CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
- 626              		.loc 1 505 0
+ 511:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 512:.\Generated_Source\PSoC5/Timer_2.c ****         (void)CY_GET_REG8(Timer_2_COUNTER_LSB_PTR_8BIT);
+ 513:.\Generated_Source\PSoC5/Timer_2.c ****     #endif/* (Timer_2_UsingFixedFunction) */
+ 514:.\Generated_Source\PSoC5/Timer_2.c **** 
+ 515:.\Generated_Source\PSoC5/Timer_2.c ****     /* Read the data from the FIFO (or capture register for Fixed Function)*/
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 21
+
+
+ 516:.\Generated_Source\PSoC5/Timer_2.c ****     #if(Timer_2_UsingFixedFunction)
+ 517:.\Generated_Source\PSoC5/Timer_2.c ****         return ((uint16)CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
+ 626              		.loc 1 517 0
  627 000e 44F62073 		movw	r3, #20256
  628 0012 C4F20003 		movt	r3, 16384
  629 0016 1B88     		ldrh	r3, [r3, #0]	@ movhi
  630 0018 9BB2     		uxth	r3, r3
- 506:.\Generated_Source\PSoC5/Timer_2.c ****     #else
- 507:.\Generated_Source\PSoC5/Timer_2.c ****         return (CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
- 508:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* (Timer_2_UsingFixedFunction) */
- 509:.\Generated_Source\PSoC5/Timer_2.c **** }
- 631              		.loc 1 509 0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 21
-
-
+ 518:.\Generated_Source\PSoC5/Timer_2.c ****     #else
+ 519:.\Generated_Source\PSoC5/Timer_2.c ****         return (CY_GET_REG16(Timer_2_CAPTURE_LSB_PTR));
+ 520:.\Generated_Source\PSoC5/Timer_2.c ****     #endif /* (Timer_2_UsingFixedFunction) */
+ 521:.\Generated_Source\PSoC5/Timer_2.c **** }
+ 631              		.loc 1 521 0
  632 001a 1846     		mov	r0, r3
  633 001c BD46     		mov	sp, r7
  634 001e 80BC     		pop	{r7}
@@ -1218,10 +1230,10 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  646 0006 00000000 		.4byte	.Ldebug_abbrev0
  647 000a 04       		.byte	0x4
  648 000b 01       		.uleb128 0x1
- 649 000c 37020000 		.4byte	.LASF35
+ 649 000c 2D020000 		.4byte	.LASF35
  650 0010 01       		.byte	0x1
- 651 0011 14020000 		.4byte	.LASF36
- 652 0015 FF000000 		.4byte	.LASF37
+ 651 0011 0A020000 		.4byte	.LASF36
+ 652 0015 94000000 		.4byte	.LASF37
  653 0019 00000000 		.4byte	.Ldebug_ranges0+0
  654 001d 00000000 		.4byte	0
  655 0021 00000000 		.4byte	0
@@ -1229,15 +1241,15 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  657 0029 02       		.uleb128 0x2
  658 002a 01       		.byte	0x1
  659 002b 06       		.byte	0x6
- 660 002c AA020000 		.4byte	.LASF0
+ 660 002c A0020000 		.4byte	.LASF0
  661 0030 02       		.uleb128 0x2
  662 0031 01       		.byte	0x1
  663 0032 08       		.byte	0x8
- 664 0033 B8000000 		.4byte	.LASF1
+ 664 0033 06010000 		.4byte	.LASF1
  665 0037 02       		.uleb128 0x2
  666 0038 02       		.byte	0x2
  667 0039 05       		.byte	0x5
- 668 003a 0A020000 		.4byte	.LASF2
+ 668 003a 00020000 		.4byte	.LASF2
  669 003e 02       		.uleb128 0x2
  670 003f 02       		.byte	0x2
  671 0040 07       		.byte	0x7
@@ -1245,22 +1257,22 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  673 0045 02       		.uleb128 0x2
  674 0046 04       		.byte	0x4
  675 0047 05       		.byte	0x5
- 676 0048 9C020000 		.4byte	.LASF4
+ 676 0048 92020000 		.4byte	.LASF4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 22
+
+
  677 004c 02       		.uleb128 0x2
  678 004d 04       		.byte	0x4
  679 004e 07       		.byte	0x7
- 680 004f DF000000 		.4byte	.LASF5
+ 680 004f 2D010000 		.4byte	.LASF5
  681 0053 02       		.uleb128 0x2
  682 0054 08       		.byte	0x8
  683 0055 05       		.byte	0x5
- 684 0056 C0010000 		.4byte	.LASF6
+ 684 0056 B6010000 		.4byte	.LASF6
  685 005a 02       		.uleb128 0x2
  686 005b 08       		.byte	0x8
  687 005c 07       		.byte	0x7
- 688 005d 72010000 		.4byte	.LASF7
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 22
-
-
+ 688 005d 68010000 		.4byte	.LASF7
  689 0061 03       		.uleb128 0x3
  690 0062 04       		.byte	0x4
  691 0063 05       		.byte	0x5
@@ -1268,14 +1280,14 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  693 0068 02       		.uleb128 0x2
  694 0069 04       		.byte	0x4
  695 006a 07       		.byte	0x7
- 696 006b 65010000 		.4byte	.LASF8
+ 696 006b 5B010000 		.4byte	.LASF8
  697 006f 04       		.uleb128 0x4
- 698 0070 F1000000 		.4byte	.LASF9
+ 698 0070 3F010000 		.4byte	.LASF9
  699 0074 02       		.byte	0x2
  700 0075 5B       		.byte	0x5b
  701 0076 30000000 		.4byte	0x30
  702 007a 04       		.uleb128 0x4
- 703 007b 5E010000 		.4byte	.LASF10
+ 703 007b 54010000 		.4byte	.LASF10
  704 007f 02       		.byte	0x2
  705 0080 5C       		.byte	0x5c
  706 0081 3E000000 		.4byte	0x3e
@@ -1286,13 +1298,13 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  711 008c 02       		.uleb128 0x2
  712 008d 08       		.byte	0x8
  713 008e 04       		.byte	0x4
- 714 008f 57010000 		.4byte	.LASF12
+ 714 008f 4D010000 		.4byte	.LASF12
  715 0093 02       		.uleb128 0x2
  716 0094 01       		.byte	0x1
  717 0095 08       		.byte	0x8
- 718 0096 A5020000 		.4byte	.LASF13
+ 718 0096 9B020000 		.4byte	.LASF13
  719 009a 04       		.uleb128 0x4
- 720 009b C6000000 		.4byte	.LASF14
+ 720 009b 14010000 		.4byte	.LASF14
  721 009f 02       		.byte	0x2
  722 00a0 F0       		.byte	0xf0
  723 00a1 A5000000 		.4byte	0xa5
@@ -1306,27 +1318,27 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  731 00b5 05       		.uleb128 0x5
  732 00b6 7A000000 		.4byte	0x7a
  733 00ba 02       		.uleb128 0x2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 23
+
+
  734 00bb 04       		.byte	0x4
  735 00bc 07       		.byte	0x7
- 736 00bd B7010000 		.4byte	.LASF16
+ 736 00bd AD010000 		.4byte	.LASF16
  737 00c1 06       		.uleb128 0x6
  738 00c2 01       		.byte	0x1
- 739 00c3 CF020000 		.4byte	.LASF17
+ 739 00c3 C5020000 		.4byte	.LASF17
  740 00c7 01       		.byte	0x1
  741 00c8 2B       		.byte	0x2b
  742 00c9 01       		.byte	0x1
  743 00ca 00000000 		.4byte	.LFB0
  744 00ce E2000000 		.4byte	.LFE0
  745 00d2 00000000 		.4byte	.LLST0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 23
-
-
  746 00d6 01       		.byte	0x1
  747 00d7 07       		.uleb128 0x7
  748 00d8 01       		.byte	0x1
- 749 00d9 94000000 		.4byte	.LASF18
+ 749 00d9 E2000000 		.4byte	.LASF18
  750 00dd 01       		.byte	0x1
- 751 00de B3       		.byte	0xb3
+ 751 00de B4       		.byte	0xb4
  752 00df 01       		.byte	0x1
  753 00e0 00000000 		.4byte	.LFB1
  754 00e4 5E000000 		.4byte	.LFE1
@@ -1334,9 +1346,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  756 00ec 01       		.byte	0x1
  757 00ed 06       		.uleb128 0x6
  758 00ee 01       		.byte	0x1
- 759 00ef A9010000 		.4byte	.LASF19
+ 759 00ef 9F010000 		.4byte	.LASF19
  760 00f3 01       		.byte	0x1
- 761 00f4 D6       		.byte	0xd6
+ 761 00f4 D7       		.byte	0xd7
  762 00f5 01       		.byte	0x1
  763 00f6 00000000 		.4byte	.LFB2
  764 00fa 2A000000 		.4byte	.LFE2
@@ -1344,9 +1356,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  766 0102 01       		.byte	0x1
  767 0103 07       		.uleb128 0x7
  768 0104 01       		.byte	0x1
- 769 0105 AB000000 		.4byte	.LASF20
+ 769 0105 F9000000 		.4byte	.LASF20
  770 0109 01       		.byte	0x1
- 771 010a F6       		.byte	0xf6
+ 771 010a F7       		.byte	0xf7
  772 010b 01       		.byte	0x1
  773 010c 00000000 		.4byte	.LFB3
  774 0110 5E000000 		.4byte	.LFE3
@@ -1354,9 +1366,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  776 0118 01       		.byte	0x1
  777 0119 08       		.uleb128 0x8
  778 011a 01       		.byte	0x1
- 779 011b B6020000 		.4byte	.LASF24
+ 779 011b AC020000 		.4byte	.LASF24
  780 011f 01       		.byte	0x1
- 781 0120 1601     		.2byte	0x116
+ 781 0120 1701     		.2byte	0x117
  782 0122 01       		.byte	0x1
  783 0123 00000000 		.4byte	.LFB4
  784 0127 20000000 		.4byte	.LFE4
@@ -1364,9 +1376,12 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  786 012f 01       		.byte	0x1
  787 0130 44010000 		.4byte	0x144
  788 0134 09       		.uleb128 0x9
- 789 0135 CE010000 		.4byte	.LASF26
+ 789 0135 C4010000 		.4byte	.LASF26
  790 0139 01       		.byte	0x1
- 791 013a 1601     		.2byte	0x116
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 24
+
+
+ 791 013a 1701     		.2byte	0x117
  792 013c 6F000000 		.4byte	0x6f
  793 0140 02       		.byte	0x2
  794 0141 91       		.byte	0x91
@@ -1376,20 +1391,17 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  798 0145 01       		.byte	0x1
  799 0146 06000000 		.4byte	.LASF21
  800 014a 01       		.byte	0x1
- 801 014b 2D01     		.2byte	0x12d
+ 801 014b 2E01     		.2byte	0x12e
  802 014d 01       		.byte	0x1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 24
-
-
  803 014e 00000000 		.4byte	.LFB5
  804 0152 14000000 		.4byte	.LFE5
  805 0156 E8000000 		.4byte	.LLST5
  806 015a 01       		.byte	0x1
  807 015b 0B       		.uleb128 0xb
  808 015c 01       		.byte	0x1
- 809 015d DC010000 		.4byte	.LASF22
+ 809 015d D2010000 		.4byte	.LASF22
  810 0161 01       		.byte	0x1
- 811 0162 4801     		.2byte	0x148
+ 811 0162 4901     		.2byte	0x149
  812 0164 01       		.byte	0x1
  813 0165 6F000000 		.4byte	0x6f
  814 0169 00000000 		.4byte	.LFB6
@@ -1398,9 +1410,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  817 0175 01       		.byte	0x1
  818 0176 0B       		.uleb128 0xb
  819 0177 01       		.byte	0x1
- 820 0178 80020000 		.4byte	.LASF23
+ 820 0178 76020000 		.4byte	.LASF23
  821 017c 01       		.byte	0x1
- 822 017d 5F01     		.2byte	0x15f
+ 822 017d 6001     		.2byte	0x160
  823 017f 01       		.byte	0x1
  824 0180 6F000000 		.4byte	0x6f
  825 0184 00000000 		.4byte	.LFB7
@@ -1411,7 +1423,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  830 0192 01       		.byte	0x1
  831 0193 77000000 		.4byte	.LASF25
  832 0197 01       		.byte	0x1
- 833 0198 7201     		.2byte	0x172
+ 833 0198 7701     		.2byte	0x177
  834 019a 01       		.byte	0x1
  835 019b 00000000 		.4byte	.LFB8
  836 019f 20000000 		.4byte	.LFE8
@@ -1419,33 +1431,33 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  838 01a7 01       		.byte	0x1
  839 01a8 BC010000 		.4byte	0x1bc
  840 01ac 09       		.uleb128 0x9
- 841 01ad F7000000 		.4byte	.LASF27
+ 841 01ad 45010000 		.4byte	.LASF27
  842 01b1 01       		.byte	0x1
- 843 01b2 7201     		.2byte	0x172
+ 843 01b2 7701     		.2byte	0x177
  844 01b4 6F000000 		.4byte	0x6f
  845 01b8 02       		.byte	0x2
  846 01b9 91       		.byte	0x91
  847 01ba 77       		.sleb128 -9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 25
+
+
  848 01bb 00       		.byte	0
  849 01bc 0B       		.uleb128 0xb
  850 01bd 01       		.byte	0x1
- 851 01be F7010000 		.4byte	.LASF28
+ 851 01be ED010000 		.4byte	.LASF28
  852 01c2 01       		.byte	0x1
- 853 01c3 8701     		.2byte	0x187
+ 853 01c3 9101     		.2byte	0x191
  854 01c5 01       		.byte	0x1
  855 01c6 7A000000 		.4byte	0x7a
  856 01ca 00000000 		.4byte	.LFB9
  857 01ce 18000000 		.4byte	.LFE9
  858 01d2 A4010000 		.4byte	.LLST9
  859 01d6 01       		.byte	0x1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 25
-
-
  860 01d7 08       		.uleb128 0x8
  861 01d8 01       		.byte	0x1
  862 01d9 50000000 		.4byte	.LASF29
  863 01dd 01       		.byte	0x1
- 864 01de A101     		.2byte	0x1a1
+ 864 01de AB01     		.2byte	0x1ab
  865 01e0 01       		.byte	0x1
  866 01e1 00000000 		.4byte	.LFB10
  867 01e5 24000000 		.4byte	.LFE10
@@ -1455,15 +1467,15 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  871 01f2 09       		.uleb128 0x9
  872 01f3 49000000 		.4byte	.LASF30
  873 01f7 01       		.byte	0x1
- 874 01f8 A101     		.2byte	0x1a1
+ 874 01f8 AB01     		.2byte	0x1ab
  875 01fa 7A000000 		.4byte	0x7a
  876 01fe 02       		.byte	0x2
  877 01ff 91       		.byte	0x91
  878 0200 6E       		.sleb128 -18
  879 0201 0C       		.uleb128 0xc
- 880 0202 9D010000 		.4byte	.LASF38
+ 880 0202 93010000 		.4byte	.LASF38
  881 0206 01       		.byte	0x1
- 882 0207 A401     		.2byte	0x1a4
+ 882 0207 AE01     		.2byte	0x1ae
  883 0209 7A000000 		.4byte	0x7a
  884 020d 02       		.byte	0x2
  885 020e 91       		.byte	0x91
@@ -1471,9 +1483,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  887 0210 00       		.byte	0
  888 0211 0B       		.uleb128 0xb
  889 0212 01       		.byte	0x1
- 890 0213 CB000000 		.4byte	.LASF31
+ 890 0213 19010000 		.4byte	.LASF31
  891 0217 01       		.byte	0x1
- 892 0218 BA01     		.2byte	0x1ba
+ 892 0218 C401     		.2byte	0x1c4
  893 021a 01       		.byte	0x1
  894 021b 7A000000 		.4byte	0x7a
  895 021f 00000000 		.4byte	.LFB11
@@ -1484,30 +1496,30 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  900 022d 01       		.byte	0x1
  901 022e 34000000 		.4byte	.LASF32
  902 0232 01       		.byte	0x1
- 903 0233 D201     		.2byte	0x1d2
+ 903 0233 DC01     		.2byte	0x1dc
  904 0235 01       		.byte	0x1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 26
+
+
  905 0236 00000000 		.4byte	.LFB12
  906 023a 20000000 		.4byte	.LFE12
  907 023e 34020000 		.4byte	.LLST12
  908 0242 01       		.byte	0x1
  909 0243 57020000 		.4byte	0x257
  910 0247 09       		.uleb128 0x9
- 911 0248 A3000000 		.4byte	.LASF33
+ 911 0248 F1000000 		.4byte	.LASF33
  912 024c 01       		.byte	0x1
- 913 024d D201     		.2byte	0x1d2
+ 913 024d DC01     		.2byte	0x1dc
  914 024f 7A000000 		.4byte	0x7a
  915 0253 02       		.byte	0x2
  916 0254 91       		.byte	0x91
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 26
-
-
  917 0255 76       		.sleb128 -10
  918 0256 00       		.byte	0
  919 0257 0B       		.uleb128 0xb
  920 0258 01       		.byte	0x1
- 921 0259 89010000 		.4byte	.LASF34
+ 921 0259 7F010000 		.4byte	.LASF34
  922 025d 01       		.byte	0x1
- 923 025e EF01     		.2byte	0x1ef
+ 923 025e F801     		.2byte	0x1f8
  924 0260 01       		.byte	0x1
  925 0261 7A000000 		.4byte	0x7a
  926 0265 00000000 		.4byte	.LFB13
@@ -1546,6 +1558,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  959 0011 10       		.uleb128 0x10
  960 0012 06       		.uleb128 0x6
  961 0013 00       		.byte	0
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 27
+
+
  962 0014 00       		.byte	0
  963 0015 02       		.uleb128 0x2
  964 0016 24       		.uleb128 0x24
@@ -1558,9 +1573,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  971 001d 0E       		.uleb128 0xe
  972 001e 00       		.byte	0
  973 001f 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 27
-
-
  974 0020 03       		.uleb128 0x3
  975 0021 24       		.uleb128 0x24
  976 0022 00       		.byte	0
@@ -1606,6 +1618,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1016 004a 27       		.uleb128 0x27
  1017 004b 0C       		.uleb128 0xc
  1018 004c 11       		.uleb128 0x11
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 28
+
+
  1019 004d 01       		.uleb128 0x1
  1020 004e 12       		.uleb128 0x12
  1021 004f 01       		.uleb128 0x1
@@ -1618,9 +1633,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1028 0057 07       		.uleb128 0x7
  1029 0058 2E       		.uleb128 0x2e
  1030 0059 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 28
-
-
  1031 005a 3F       		.uleb128 0x3f
  1032 005b 0C       		.uleb128 0xc
  1033 005c 03       		.uleb128 0x3
@@ -1666,6 +1678,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1073 0086 13       		.uleb128 0x13
  1074 0087 00       		.byte	0
  1075 0088 00       		.byte	0
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 29
+
+
  1076 0089 09       		.uleb128 0x9
  1077 008a 05       		.uleb128 0x5
  1078 008b 00       		.byte	0
@@ -1678,9 +1693,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1085 0092 49       		.uleb128 0x49
  1086 0093 13       		.uleb128 0x13
  1087 0094 02       		.uleb128 0x2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 29
-
-
  1088 0095 0A       		.uleb128 0xa
  1089 0096 00       		.byte	0
  1090 0097 00       		.byte	0
@@ -1726,6 +1738,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1130 00c0 01       		.uleb128 0x1
  1131 00c1 12       		.uleb128 0x12
  1132 00c2 01       		.uleb128 0x1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 30
+
+
  1133 00c3 40       		.uleb128 0x40
  1134 00c4 06       		.uleb128 0x6
  1135 00c5 9742     		.uleb128 0x2117
@@ -1738,9 +1753,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1142 00cd 03       		.uleb128 0x3
  1143 00ce 0E       		.uleb128 0xe
  1144 00cf 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 30
-
-
  1145 00d0 0B       		.uleb128 0xb
  1146 00d1 3B       		.uleb128 0x3b
  1147 00d2 05       		.uleb128 0x5
@@ -1786,6 +1798,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1187 0020 0200     		.2byte	0x2
  1188 0022 77       		.byte	0x77
  1189 0023 08       		.sleb128 8
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 31
+
+
  1190 0024 00000000 		.4byte	0
  1191 0028 00000000 		.4byte	0
  1192              	.LLST1:
@@ -1798,9 +1813,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1199 003c 04000000 		.4byte	.LCFI3
  1200 0040 0200     		.2byte	0x2
  1201 0042 7D       		.byte	0x7d
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 31
-
-
  1202 0043 04       		.sleb128 4
  1203 0044 04000000 		.4byte	.LCFI3
  1204 0048 5E000000 		.4byte	.LFE1
@@ -1846,6 +1858,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1244 00a8 00000000 		.4byte	0
  1245 00ac 00000000 		.4byte	0
  1246              	.LLST4:
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 32
+
+
  1247 00b0 00000000 		.4byte	.LFB4
  1248 00b4 02000000 		.4byte	.LCFI8
  1249 00b8 0200     		.2byte	0x2
@@ -1858,9 +1873,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1256 00c7 04       		.sleb128 4
  1257 00c8 04000000 		.4byte	.LCFI9
  1258 00cc 06000000 		.4byte	.LCFI10
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 32
-
-
  1259 00d0 0200     		.2byte	0x2
  1260 00d2 7D       		.byte	0x7d
  1261 00d3 10       		.sleb128 16
@@ -1906,6 +1918,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1301 0136 77       		.byte	0x77
  1302 0137 04       		.sleb128 4
  1303 0138 00000000 		.4byte	0
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 33
+
+
  1304 013c 00000000 		.4byte	0
  1305              	.LLST7:
  1306 0140 00000000 		.4byte	.LFB7
@@ -1918,9 +1933,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1313 0154 0200     		.2byte	0x2
  1314 0156 7D       		.byte	0x7d
  1315 0157 04       		.sleb128 4
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 33
-
-
  1316 0158 04000000 		.4byte	.LCFI16
  1317 015c 18000000 		.4byte	.LFE7
  1318 0160 0200     		.2byte	0x2
@@ -1966,6 +1978,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1358 01c0 18000000 		.4byte	.LFE9
  1359 01c4 0200     		.2byte	0x2
  1360 01c6 77       		.byte	0x77
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 34
+
+
  1361 01c7 04       		.sleb128 4
  1362 01c8 00000000 		.4byte	0
  1363 01cc 00000000 		.4byte	0
@@ -1978,9 +1993,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1370 01dc 02000000 		.4byte	.LCFI22
  1371 01e0 04000000 		.4byte	.LCFI23
  1372 01e4 0200     		.2byte	0x2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 34
-
-
  1373 01e6 7D       		.byte	0x7d
  1374 01e7 04       		.sleb128 4
  1375 01e8 04000000 		.4byte	.LCFI23
@@ -2026,6 +2038,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1415 024b 04       		.sleb128 4
  1416 024c 04000000 		.4byte	.LCFI28
  1417 0250 06000000 		.4byte	.LCFI29
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 35
+
+
  1418 0254 0200     		.2byte	0x2
  1419 0256 7D       		.byte	0x7d
  1420 0257 10       		.sleb128 16
@@ -2038,9 +2053,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1427 0268 00000000 		.4byte	0
  1428              	.LLST13:
  1429 026c 00000000 		.4byte	.LFB13
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 35
-
-
  1430 0270 02000000 		.4byte	.LCFI30
  1431 0274 0200     		.2byte	0x2
  1432 0276 7D       		.byte	0x7d
@@ -2086,6 +2098,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1472 0058 00000000 		.4byte	.LFB9
  1473 005c 18000000 		.4byte	.LFE9-.LFB9
  1474 0060 00000000 		.4byte	.LFB10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 36
+
+
  1475 0064 24000000 		.4byte	.LFE10-.LFB10
  1476 0068 00000000 		.4byte	.LFB11
  1477 006c 18000000 		.4byte	.LFE11-.LFB11
@@ -2098,9 +2113,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1484              		.section	.debug_ranges,"",%progbits
  1485              	.Ldebug_ranges0:
  1486 0000 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 36
-
-
  1487 0004 E2000000 		.4byte	.LFE0
  1488 0008 00000000 		.4byte	.LFB1
  1489 000c 5E000000 		.4byte	.LFE1
@@ -2146,6 +2158,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1522      536F6674 
  1522      77617265 
  1522      43617074 
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 37
+
+
  1523              	.LASF11:
  1524 001e 666C6F61 		.ascii	"float\000"
  1524      7400
@@ -2158,9 +2173,6 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1528 0034 54696D65 		.ascii	"Timer_2_WriteCounter\000"
  1528      725F325F 
  1528      57726974 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 37
-
-
  1528      65436F75 
  1528      6E746572 
  1529              	.LASF30:
@@ -2184,169 +2196,169 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 1
  1536      57726974 
  1536      65436F6E 
  1536      74726F6C 
- 1537              	.LASF18:
- 1538 0094 54696D65 		.ascii	"Timer_2_Enable\000"
- 1538      725F325F 
- 1538      456E6162 
- 1538      6C6500
- 1539              	.LASF33:
- 1540 00a3 636F756E 		.ascii	"counter\000"
- 1540      74657200 
- 1541              	.LASF20:
- 1542 00ab 54696D65 		.ascii	"Timer_2_Stop\000"
- 1542      725F325F 
- 1542      53746F70 
- 1542      00
- 1543              	.LASF1:
- 1544 00b8 756E7369 		.ascii	"unsigned char\000"
- 1544      676E6564 
- 1544      20636861 
- 1544      7200
- 1545              	.LASF14:
- 1546 00c6 72656738 		.ascii	"reg8\000"
- 1546      00
- 1547              	.LASF31:
- 1548 00cb 54696D65 		.ascii	"Timer_2_ReadCapture\000"
- 1548      725F325F 
- 1548      52656164 
- 1548      43617074 
- 1548      75726500 
- 1549              	.LASF5:
- 1550 00df 6C6F6E67 		.ascii	"long unsigned int\000"
- 1550      20756E73 
- 1550      69676E65 
- 1550      6420696E 
- 1550      7400
- 1551              	.LASF9:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 38
+ 1537              	.LASF37:
+ 1538 0094 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 1538      73657273 
+ 1538      5C48616E 
+ 1538      73205375 
+ 1538      73696C6F 
+ 1539 00c2 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 1539      616E2051 
+ 1539      55414452 
+ 1539      55504544 
+ 1539      5C446573 
+ 1540              	.LASF18:
+ 1541 00e2 54696D65 		.ascii	"Timer_2_Enable\000"
+ 1541      725F325F 
+ 1541      456E6162 
+ 1541      6C6500
+ 1542              	.LASF33:
+ 1543 00f1 636F756E 		.ascii	"counter\000"
+ 1543      74657200 
+ 1544              	.LASF20:
+ 1545 00f9 54696D65 		.ascii	"Timer_2_Stop\000"
+ 1545      725F325F 
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 38
 
 
- 1552 00f1 75696E74 		.ascii	"uint8\000"
- 1552      3800
- 1553              	.LASF27:
- 1554 00f7 636F6E74 		.ascii	"control\000"
- 1554      726F6C00 
- 1555              	.LASF37:
- 1556 00ff 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 1556      73657273 
- 1556      5C62696F 
- 1556      6D696D65 
- 1556      74696373 
- 1557 012c 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 1557      204C6567 
- 1557      204A6163 
- 1557      6F626961 
- 1557      6E205155 
+ 1545      53746F70 
+ 1545      00
+ 1546              	.LASF1:
+ 1547 0106 756E7369 		.ascii	"unsigned char\000"
+ 1547      676E6564 
+ 1547      20636861 
+ 1547      7200
+ 1548              	.LASF14:
+ 1549 0114 72656738 		.ascii	"reg8\000"
+ 1549      00
+ 1550              	.LASF31:
+ 1551 0119 54696D65 		.ascii	"Timer_2_ReadCapture\000"
+ 1551      725F325F 
+ 1551      52656164 
+ 1551      43617074 
+ 1551      75726500 
+ 1552              	.LASF5:
+ 1553 012d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1553      20756E73 
+ 1553      69676E65 
+ 1553      6420696E 
+ 1553      7400
+ 1554              	.LASF9:
+ 1555 013f 75696E74 		.ascii	"uint8\000"
+ 1555      3800
+ 1556              	.LASF27:
+ 1557 0145 636F6E74 		.ascii	"control\000"
+ 1557      726F6C00 
  1558              	.LASF12:
- 1559 0157 646F7562 		.ascii	"double\000"
+ 1559 014d 646F7562 		.ascii	"double\000"
  1559      6C6500
  1560              	.LASF10:
- 1561 015e 75696E74 		.ascii	"uint16\000"
+ 1561 0154 75696E74 		.ascii	"uint16\000"
  1561      313600
  1562              	.LASF8:
- 1563 0165 756E7369 		.ascii	"unsigned int\000"
+ 1563 015b 756E7369 		.ascii	"unsigned int\000"
  1563      676E6564 
  1563      20696E74 
  1563      00
  1564              	.LASF7:
- 1565 0172 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1565 0168 6C6F6E67 		.ascii	"long long unsigned int\000"
  1565      206C6F6E 
  1565      6720756E 
  1565      7369676E 
  1565      65642069 
  1566              	.LASF34:
- 1567 0189 54696D65 		.ascii	"Timer_2_ReadCounter\000"
+ 1567 017f 54696D65 		.ascii	"Timer_2_ReadCounter\000"
  1567      725F325F 
  1567      52656164 
  1567      436F756E 
  1567      74657200 
  1568              	.LASF38:
- 1569 019d 70657269 		.ascii	"period_temp\000"
+ 1569 0193 70657269 		.ascii	"period_temp\000"
  1569      6F645F74 
  1569      656D7000 
  1570              	.LASF19:
- 1571 01a9 54696D65 		.ascii	"Timer_2_Start\000"
+ 1571 019f 54696D65 		.ascii	"Timer_2_Start\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 39
+
+
  1571      725F325F 
  1571      53746172 
  1571      7400
  1572              	.LASF16:
- 1573 01b7 73697A65 		.ascii	"sizetype\000"
+ 1573 01ad 73697A65 		.ascii	"sizetype\000"
  1573      74797065 
  1573      00
  1574              	.LASF6:
- 1575 01c0 6C6F6E67 		.ascii	"long long int\000"
+ 1575 01b6 6C6F6E67 		.ascii	"long long int\000"
  1575      206C6F6E 
  1575      6720696E 
  1575      7400
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 39
-
-
  1576              	.LASF26:
- 1577 01ce 696E7465 		.ascii	"interruptMode\000"
+ 1577 01c4 696E7465 		.ascii	"interruptMode\000"
  1577      72727570 
  1577      744D6F64 
  1577      6500
  1578              	.LASF22:
- 1579 01dc 54696D65 		.ascii	"Timer_2_ReadStatusRegister\000"
+ 1579 01d2 54696D65 		.ascii	"Timer_2_ReadStatusRegister\000"
  1579      725F325F 
  1579      52656164 
  1579      53746174 
  1579      75735265 
  1580              	.LASF28:
- 1581 01f7 54696D65 		.ascii	"Timer_2_ReadPeriod\000"
+ 1581 01ed 54696D65 		.ascii	"Timer_2_ReadPeriod\000"
  1581      725F325F 
  1581      52656164 
  1581      50657269 
  1581      6F6400
  1582              	.LASF2:
- 1583 020a 73686F72 		.ascii	"short int\000"
+ 1583 0200 73686F72 		.ascii	"short int\000"
  1583      7420696E 
  1583      7400
  1584              	.LASF36:
- 1585 0214 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Timer_2.c\000"
+ 1585 020a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Timer_2.c\000"
  1585      6E657261 
  1585      7465645F 
  1585      536F7572 
  1585      63655C50 
  1586              	.LASF35:
- 1587 0237 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1587 022d 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
  1587      4320342E 
  1587      372E3320 
  1587      32303133 
  1587      30333132 
- 1588 026a 616E6368 		.ascii	"anch revision 196615]\000"
+ 1588 0260 616E6368 		.ascii	"anch revision 196615]\000"
  1588      20726576 
  1588      6973696F 
  1588      6E203139 
  1588      36363135 
  1589              	.LASF23:
- 1590 0280 54696D65 		.ascii	"Timer_2_ReadControlRegister\000"
+ 1590 0276 54696D65 		.ascii	"Timer_2_ReadControlRegister\000"
  1590      725F325F 
  1590      52656164 
  1590      436F6E74 
  1590      726F6C52 
  1591              	.LASF4:
- 1592 029c 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccUXmgSs.s 			page 40
+
+
+ 1592 0292 6C6F6E67 		.ascii	"long int\000"
  1592      20696E74 
  1592      00
  1593              	.LASF13:
- 1594 02a5 63686172 		.ascii	"char\000"
+ 1594 029b 63686172 		.ascii	"char\000"
  1594      00
  1595              	.LASF0:
- 1596 02aa 7369676E 		.ascii	"signed char\000"
+ 1596 02a0 7369676E 		.ascii	"signed char\000"
  1596      65642063 
  1596      68617200 
  1597              	.LASF24:
- 1598 02b6 54696D65 		.ascii	"Timer_2_SetInterruptMode\000"
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc95YmQh.s 			page 40
-
-
+ 1598 02ac 54696D65 		.ascii	"Timer_2_SetInterruptMode\000"
  1598      725F325F 
  1598      53657449 
  1598      6E746572 
  1598      72757074 
  1599              	.LASF17:
- 1600 02cf 54696D65 		.ascii	"Timer_2_Init\000"
+ 1600 02c5 54696D65 		.ascii	"Timer_2_Init\000"
  1600      725F325F 
  1600      496E6974 
  1600      00

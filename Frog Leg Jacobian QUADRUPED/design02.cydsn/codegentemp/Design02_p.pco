@@ -1,13 +1,6 @@
 dont_use_io iocell 1 0
 dont_use_io iocell 1 1
 dont_use_io iocell 1 3
-dont_use_location sccell -1 -1 1
-dont_use_location sccell -1 -1 3
-dont_use_location vidaccell -1 -1 1
-dont_use_location vidaccell -1 -1 3
-dont_use_location sarcell -1 -1 1
-dont_use_location abufcell -1 -1 1
-dont_use_location abufcell -1 -1 3
 set_location "\Counter_5:CounterUDB:count_up\" macrocell 0 3 0 2
 set_location "\PWM_1:PWMUDB:status_1\" macrocell 3 2 0 2
 set_location "\PWM_2:PWMUDB:status_1\" macrocell 2 4 0 2

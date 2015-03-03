@@ -1,6 +1,6 @@
 /*******************************************************************************
 * File Name: foot56.c  
-* Version 2.0
+* Version 2.5
 *
 * Description:
 *  This file contains API to enable firmware control of a Pins component.

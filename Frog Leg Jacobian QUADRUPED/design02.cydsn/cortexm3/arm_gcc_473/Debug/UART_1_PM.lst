@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
   25:.\Generated_Source\PSoC5/UART_1_PM.c **** {
   26:.\Generated_Source\PSoC5/UART_1_PM.c ****     /* enableState - disabled */
   27:.\Generated_Source\PSoC5/UART_1_PM.c ****     0u,
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 2
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 2
 
 
   28:.\Generated_Source\PSoC5/UART_1_PM.c **** };
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
   70:.\Generated_Source\PSoC5/UART_1_PM.c ****             #if(UART_1_TXCLKGEN_DP)
   71:.\Generated_Source\PSoC5/UART_1_PM.c ****                 UART_1_backup.tx_clk_ctr = UART_1_TXBITCLKGEN_CTR_REG;
   72:.\Generated_Source\PSoC5/UART_1_PM.c ****                 UART_1_backup.tx_clk_compl = UART_1_TXBITCLKTX_COMPLETE_REG;
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 3
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 3
 
 
   73:.\Generated_Source\PSoC5/UART_1_PM.c ****             #else
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  104:.\Generated_Source\PSoC5/UART_1_PM.c **** *  UART_1_backup - used when non-retention registers are restored.
  105:.\Generated_Source\PSoC5/UART_1_PM.c **** *
  106:.\Generated_Source\PSoC5/UART_1_PM.c **** * Reentrant:
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 4
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 4
 
 
  107:.\Generated_Source\PSoC5/UART_1_PM.c **** *  No.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  142:.\Generated_Source\PSoC5/UART_1_PM.c ****         #endif /* End UART_1_CONTROL_REG_REMOVED */
  143:.\Generated_Source\PSoC5/UART_1_PM.c **** 
  144:.\Generated_Source\PSoC5/UART_1_PM.c ****     #endif  /* End CY_UDB_V0 */
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 5
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 5
 
 
  145:.\Generated_Source\PSoC5/UART_1_PM.c **** }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  172:.\Generated_Source\PSoC5/UART_1_PM.c **** 
  173:.\Generated_Source\PSoC5/UART_1_PM.c ****     #if(UART_1_RX_ENABLED || UART_1_HD_ENABLED)
  174:.\Generated_Source\PSoC5/UART_1_PM.c ****         if((UART_1_RXSTATUS_ACTL_REG  & UART_1_INT_ENABLE) != 0u)
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 6
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 6
 
 
  112              		.loc 1 174 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  145              		.thumb
  146              		.thumb_func
  147              		.type	UART_1_Wakeup, %function
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 7
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 7
 
 
  148              	UART_1_Wakeup:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  168              		.loc 1 229 0
  169 0010 40F20003 		movw	r3, #:lower16:UART_1_backup
  170 0014 C0F20003 		movt	r3, #:upper16:UART_1_backup
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 8
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 8
 
 
  171 0018 1B78     		ldrb	r3, [r3, #0]	@ zero_extendqisi2
@@ -449,8 +449,8 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  192 000b 01       		.uleb128 0x1
  193 000c 34000000 		.4byte	.LASF22
  194 0010 01       		.byte	0x1
- 195 0011 5C010000 		.4byte	.LASF23
- 196 0015 EF000000 		.4byte	.LASF24
+ 195 0011 52010000 		.4byte	.LASF23
+ 196 0015 E6000000 		.4byte	.LASF24
  197 0019 00000000 		.4byte	.Ldebug_ranges0+0
  198 001d 00000000 		.4byte	0
  199 0021 00000000 		.4byte	0
@@ -458,27 +458,27 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  201 0029 02       		.uleb128 0x2
  202 002a 01       		.byte	0x1
  203 002b 06       		.byte	0x6
- 204 002c 94010000 		.4byte	.LASF0
+ 204 002c 8A010000 		.4byte	.LASF0
  205 0030 02       		.uleb128 0x2
  206 0031 01       		.byte	0x1
  207 0032 08       		.byte	0x8
- 208 0033 D3000000 		.4byte	.LASF1
+ 208 0033 D8000000 		.4byte	.LASF1
  209 0037 02       		.uleb128 0x2
  210 0038 02       		.byte	0x2
  211 0039 05       		.byte	0x5
- 212 003a BB010000 		.4byte	.LASF2
+ 212 003a B1010000 		.4byte	.LASF2
  213 003e 02       		.uleb128 0x2
  214 003f 02       		.byte	0x2
  215 0040 07       		.byte	0x7
- 216 0041 81010000 		.4byte	.LASF3
+ 216 0041 77010000 		.4byte	.LASF3
  217 0045 02       		.uleb128 0x2
  218 0046 04       		.byte	0x4
  219 0047 05       		.byte	0x5
- 220 0048 E6000000 		.4byte	.LASF4
+ 220 0048 34010000 		.4byte	.LASF4
  221 004c 02       		.uleb128 0x2
  222 004d 04       		.byte	0x4
  223 004e 07       		.byte	0x7
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 9
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 9
 
 
  224 004f 83000000 		.4byte	.LASF5
@@ -506,17 +506,17 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  246 007a 02       		.uleb128 0x2
  247 007b 04       		.byte	0x4
  248 007c 04       		.byte	0x4
- 249 007d B5010000 		.4byte	.LASF9
+ 249 007d AB010000 		.4byte	.LASF9
  250 0081 02       		.uleb128 0x2
  251 0082 08       		.byte	0x8
  252 0083 04       		.byte	0x4
- 253 0084 47010000 		.4byte	.LASF10
+ 253 0084 3D010000 		.4byte	.LASF10
  254 0088 02       		.uleb128 0x2
  255 0089 01       		.byte	0x1
  256 008a 08       		.byte	0x8
- 257 008b E1000000 		.4byte	.LASF11
+ 257 008b BE000000 		.4byte	.LASF11
  258 008f 04       		.uleb128 0x4
- 259 0090 C5010000 		.4byte	.LASF13
+ 259 0090 BB010000 		.4byte	.LASF13
  260 0094 02       		.byte	0x2
  261 0095 F0       		.byte	0xf0
  262 0096 9A000000 		.4byte	0x9a
@@ -525,9 +525,9 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  265 009f 02       		.uleb128 0x2
  266 00a0 04       		.byte	0x4
  267 00a1 07       		.byte	0x7
- 268 00a2 E2010000 		.4byte	.LASF14
+ 268 00a2 D8010000 		.4byte	.LASF14
  269 00a6 06       		.uleb128 0x6
- 270 00a7 BE000000 		.4byte	.LASF25
+ 270 00a7 C3000000 		.4byte	.LASF25
  271 00ab 03       		.byte	0x3
  272 00ac 03       		.byte	0x3
  273 00ad 45       		.byte	0x45
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  278 00b8 47       		.byte	0x47
  279 00b9 6F000000 		.4byte	0x6f
  280 00bd 02       		.byte	0x2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 10
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 10
 
 
  281 00be 23       		.byte	0x23
@@ -552,7 +552,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  289 00cb 23       		.byte	0x23
  290 00cc 01       		.uleb128 0x1
  291 00cd 07       		.uleb128 0x7
- 292 00ce D8010000 		.4byte	.LASF16
+ 292 00ce CE010000 		.4byte	.LASF16
  293 00d2 03       		.byte	0x3
  294 00d3 4D       		.byte	0x4d
  295 00d4 6F000000 		.4byte	0x6f
@@ -561,7 +561,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  298 00da 02       		.uleb128 0x2
  299 00db 00       		.byte	0
  300 00dc 04       		.uleb128 0x4
- 301 00dd EB010000 		.4byte	.LASF17
+ 301 00dd E1010000 		.4byte	.LASF17
  302 00e1 03       		.byte	0x3
  303 00e2 64       		.byte	0x64
  304 00e3 A6000000 		.4byte	0xa6
@@ -577,7 +577,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  314 00fc 01       		.byte	0x1
  315 00fd 09       		.uleb128 0x9
  316 00fe 01       		.byte	0x1
- 317 00ff A0010000 		.4byte	.LASF19
+ 317 00ff 96010000 		.4byte	.LASF19
  318 0103 01       		.byte	0x1
  319 0104 6E       		.byte	0x6e
  320 0105 01       		.byte	0x1
@@ -597,8 +597,8 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  334 0128 01       		.byte	0x1
  335 0129 0A       		.uleb128 0xa
  336 012a 01       		.byte	0x1
- 337 012b CA010000 		.4byte	.LASF21
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 11
+ 337 012b C0010000 		.4byte	.LASF21
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 11
 
 
  338 012f 01       		.byte	0x1
@@ -609,7 +609,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  343 013a 84000000 		.4byte	.LLST3
  344 013e 01       		.byte	0x1
  345 013f 0B       		.uleb128 0xb
- 346 0140 4E010000 		.4byte	.LASF26
+ 346 0140 44010000 		.4byte	.LASF26
  347 0144 01       		.byte	0x1
  348 0145 18       		.byte	0x18
  349 0146 DC000000 		.4byte	0xdc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  392 0024 0B       		.uleb128 0xb
  393 0025 3E       		.uleb128 0x3e
  394 0026 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 12
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 12
 
 
  395 0027 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  449 005d 08       		.uleb128 0x8
  450 005e 0D       		.uleb128 0xd
  451 005f 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 13
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 13
 
 
  452 0060 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  506 0097 9642     		.uleb128 0x2116
  507 0099 0C       		.uleb128 0xc
  508 009a 00       		.byte	0
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 14
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 14
 
 
  509 009b 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  563 0054 00000000 		.4byte	0
  564              	.LLST2:
  565 0058 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 15
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 15
 
 
  566 005c 02000000 		.4byte	.LCFI4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  620 0000 00000000 		.4byte	.LFB0
  621 0004 20000000 		.4byte	.LFE0
  622 0008 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 16
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 16
 
 
  623 000c 1E000000 		.4byte	.LFE1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  649 0095 55415254 		.ascii	"UART_1_SaveConfig\000"
  649      5F315F53 
  649      61766543 
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 17
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 17
 
 
  649      6F6E6669 
@@ -969,93 +969,93 @@ ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 1
  651      6720756E 
  651      7369676E 
  651      65642069 
- 652              	.LASF25:
- 653 00be 55415254 		.ascii	"UART_1_backupStruct_\000"
- 653      5F315F62 
- 653      61636B75 
- 653      70537472 
- 653      7563745F 
- 654              	.LASF1:
- 655 00d3 756E7369 		.ascii	"unsigned char\000"
- 655      676E6564 
- 655      20636861 
- 655      7200
- 656              	.LASF11:
- 657 00e1 63686172 		.ascii	"char\000"
- 657      00
- 658              	.LASF4:
- 659 00e6 6C6F6E67 		.ascii	"long int\000"
- 659      20696E74 
- 659      00
- 660              	.LASF24:
- 661 00ef 433A5C55 		.ascii	"C:\\Users\\biomimetics\\Dropbox\\SMC\\PSoC\\PSoC 5\\"
- 661      73657273 
- 661      5C62696F 
- 661      6D696D65 
- 661      74696373 
- 662 011c 46726F67 		.ascii	"Frog Leg Jacobian QUADRUPED\\Design02.cydsn\000"
- 662      204C6567 
- 662      204A6163 
- 662      6F626961 
- 662      6E205155 
+ 652              	.LASF11:
+ 653 00be 63686172 		.ascii	"char\000"
+ 653      00
+ 654              	.LASF25:
+ 655 00c3 55415254 		.ascii	"UART_1_backupStruct_\000"
+ 655      5F315F62 
+ 655      61636B75 
+ 655      70537472 
+ 655      7563745F 
+ 656              	.LASF1:
+ 657 00d8 756E7369 		.ascii	"unsigned char\000"
+ 657      676E6564 
+ 657      20636861 
+ 657      7200
+ 658              	.LASF24:
+ 659 00e6 433A5C55 		.ascii	"C:\\Users\\Hans Susilo\\Documents\\smc\\Frog Leg Ja"
+ 659      73657273 
+ 659      5C48616E 
+ 659      73205375 
+ 659      73696C6F 
+ 660 0114 636F6269 		.ascii	"cobian QUADRUPED\\Design02.cydsn\000"
+ 660      616E2051 
+ 660      55414452 
+ 660      55504544 
+ 660      5C446573 
+ 661              	.LASF4:
+ 662 0134 6C6F6E67 		.ascii	"long int\000"
+ 662      20696E74 
+ 662      00
  663              	.LASF10:
- 664 0147 646F7562 		.ascii	"double\000"
+ 664 013d 646F7562 		.ascii	"double\000"
  664      6C6500
  665              	.LASF26:
- 666 014e 55415254 		.ascii	"UART_1_backup\000"
+ 666 0144 55415254 		.ascii	"UART_1_backup\000"
  666      5F315F62 
  666      61636B75 
  666      7000
  667              	.LASF23:
- 668 015c 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\UART_1_PM.c\000"
+ 668 0152 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\UART_1_PM.c\000"
  668      6E657261 
  668      7465645F 
  668      536F7572 
  668      63655C50 
  669              	.LASF3:
- 670 0181 73686F72 		.ascii	"short unsigned int\000"
+ 670 0177 73686F72 		.ascii	"short unsigned int\000"
  670      7420756E 
  670      7369676E 
  670      65642069 
  670      6E7400
-ARM GAS  C:\Users\BIOMIM~1\AppData\Local\Temp\cc6ZDDcj.s 			page 18
+ARM GAS  C:\Users\HANSSU~1\AppData\Local\Temp\ccC21cMf.s 			page 18
 
 
  671              	.LASF0:
- 672 0194 7369676E 		.ascii	"signed char\000"
+ 672 018a 7369676E 		.ascii	"signed char\000"
  672      65642063 
  672      68617200 
  673              	.LASF19:
- 674 01a0 55415254 		.ascii	"UART_1_RestoreConfig\000"
+ 674 0196 55415254 		.ascii	"UART_1_RestoreConfig\000"
  674      5F315F52 
  674      6573746F 
  674      7265436F 
  674      6E666967 
  675              	.LASF9:
- 676 01b5 666C6F61 		.ascii	"float\000"
+ 676 01ab 666C6F61 		.ascii	"float\000"
  676      7400
  677              	.LASF2:
- 678 01bb 73686F72 		.ascii	"short int\000"
+ 678 01b1 73686F72 		.ascii	"short int\000"
  678      7420696E 
  678      7400
  679              	.LASF13:
- 680 01c5 72656738 		.ascii	"reg8\000"
+ 680 01bb 72656738 		.ascii	"reg8\000"
  680      00
  681              	.LASF21:
- 682 01ca 55415254 		.ascii	"UART_1_Wakeup\000"
+ 682 01c0 55415254 		.ascii	"UART_1_Wakeup\000"
  682      5F315F57 
  682      616B6575 
  682      7000
  683              	.LASF16:
- 684 01d8 72785F70 		.ascii	"rx_period\000"
+ 684 01ce 72785F70 		.ascii	"rx_period\000"
  684      6572696F 
  684      6400
  685              	.LASF14:
- 686 01e2 73697A65 		.ascii	"sizetype\000"
+ 686 01d8 73697A65 		.ascii	"sizetype\000"
  686      74797065 
  686      00
  687              	.LASF17:
- 688 01eb 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
+ 688 01e1 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
  688      5F315F42 
  688      41434B55 
  688      505F5354 

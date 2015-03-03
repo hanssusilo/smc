@@ -2,7 +2,7 @@
 --	Conversion of Design02.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Feb 05 14:55:20 2015
+--	Wed Feb 18 20:04:52 2015
 --
 
 USE cypress.cypress.all;
@@ -5840,7 +5840,7 @@ Clock_5:cy_clock_v1_0
 		id=>"b103971a-87dc-490c-96b5-589d3d328af9",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"1000000000000",
+		period=>"10000000000",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_200,

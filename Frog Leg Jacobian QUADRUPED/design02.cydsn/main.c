@@ -17,10 +17,17 @@
 #include "cydevice_trm.h"
 #include <math.h>
 
+#define MAXITER 150
+#define STAYITER 500
+
 //Global Variables
 uint32 global_time_loops = 0;
 uint32 global_time = 0;
 int i = 1;
+
+uint32 loop_iter = 0;
+uint32 inter_iter = 2;
+uint32 inter_iter2 = 0;
 
 int motor1pos_current;
 int motor1pos_previous;
@@ -210,8 +217,17 @@ motor8pos_previous = motor8pos_current;
 //Put any UART data here
 void Index_ISR_3()
 {
-UART_1_LoadTxConfig();
-Print32(motor1pos_current);
+    UART_1_LoadTxConfig();
+    Print32(inter_iter);
+    Print32(loop_iter);
+    inter_iter2++;
+    if (inter_iter2 >= STAYITER){
+        Timer_3_WritePeriod(inter_iter*100);
+        inter_iter++;
+        inter_iter2=0;
+        if (inter_iter > MAXITER)
+            inter_iter = 2;
+    }
 }
 
 int main()
@@ -588,7 +604,7 @@ int main()
         pinA_Write(0);
         global_time = (global_time_loops*Timer_3_ReadPeriod()) + Timer_3_ReadCounter();
         //Toggle pin for speed measuring purposes
-
+        loop_iter++;
         //GetIMUdata();
         
         //LED2_Write(1);
@@ -1189,6 +1205,7 @@ int main()
     Enable_6_Write(0);
     Enable_7_Write(0);
     Enable_8_Write(0);
+
     }
 
 
